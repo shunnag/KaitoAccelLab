@@ -41,7 +41,10 @@ CPU の 1 core より遥かに遅いが、thread 数で補えるかどうかが�
 - SIMD-per-block: 32 lane が同じ sequence header を読んで揃って進み、literal と match の copy を 32 byte ずつ行う。
   offset < 32 の重なった match は `min(offset, 32)` byte ずつ段階的に copy する。
 
-（結果は speed-report 4.2）
+結果（speed-report §4.2）: どちらも 256 MiB を byte 同一に復号した。GPU の 1 thread は CPU の 1 core の 1/350 で、64 KiB block × 4,096 では
+thread が足りず 6 GB/s、4 KiB block × 65,536 で 24 GB/s。CPU は 16 lane で 41〜50 GB/s。さらに GPU だけが block ごとの展開後 size を事前に
+必要とし、LZ4 frame にはその表がないので sequence を舐める scan がもう一度かかる。「独立 block を GPU で並列復号」は正しく動くが、
+既存の書庫 format の block 数と粒度では CPU に届かない。
 
 ### 3.2 byte 単位の kernel（histogram、CRC-32）
 
@@ -75,11 +78,30 @@ range coder は block ごとに CPU で走る。推論 1 回あたり N byte 進
   CPU に落ちるが、線形 + 活性で書いた cell は ANE に載る。batch 形状は固定（1024 と 4096 の二つの model を同じ重みから書き出す）。
 - 入力は直前の byte の one-hot [N, 256]（embedding は one-hot と重みの行列積で行う。gather op の ANE 対応は試していない）、出力は softmax [N, 256] と h_out。
 
-### 4.3 約束事（demo の container header に書く）
+### 4.3 何が起きたか（speed-report §5）
+
+- 学習 domain（辞書の単語列）では GRU h1536 が 2.23 bits/byte で PPMd（2.32）と xz（2.78）を上回った。model が「次に来る文字」の分布を
+  文脈から直接出せる text では、辞書 match に頼る LZ 系より比が良い。これは神経圧縮の先行研究が示してきたことの再現である。
+- domain 外（英語の散文、Swift の source）では PPMd / xz に大きく負け、source では膨らんだ。静的な model は学習した分布しか知らない。
+  NNCP や cmix が比で勝つのは符号化しながら model を更新する（online learning）からで、独立 block を batch にして NPU に載せる設計とは
+  相性が悪い（block 間で学習を共有できない）。
+- 速度は 0.24〜0.65 MB/s。時間の 95% が Core ML の呼び出しで、ANE は同じ model の CPU 実行より 1.4〜1.6 倍速いが、Core ML の GPU 実行が
+  さらに 1.1〜1.2 倍速かった。この大きさの GRU では ANE は最速の unit ではなく、状態テンソルの往復と呼び出しの固定費が効いている。
+- 1 step の予測に必要な演算は 4096 block × 4.6 M MAC = 19 GMAC。既存の CPU codec（xz 322 MB/s、PPMd 9〜14 MB/s）が 1 byte に使う演算の
+  数千倍で、「NPU が速い」以前に「予測に使う演算量が違う」。比の 4〜15% の改善に速度の 2 桁を払う取引になる。
+
+### 4.4 約束事（demo の container header に書く）
 
 fp16 の演算は device ごとに結果が僅かに違う（ANE と CPU で最大 3e-3 程度）。符号化と復号は **同じ model file、同じ compute unit、
 同じ batch 形状** で走らせなければならない。header に predictor の tag（model 名と unit）を書き、復号側で照合する。
 
 ## 5. 結論
 
-（speed-report 完成後に書く）
+- **今日の M4 Max で、書庫の圧縮・展開に GPU / NPU は使われていない。** Apple の圧縮 library、暗号 library、MTLIO の展開まで含めて CPU で動く。
+  CPU 側の基準値が高い（CRC-32 命令、AES 命令、16 core）ので、byte 単位の軽い処理を送る余地はない。
+- **GPU で動くもの**: 独立 block の LZ 復号、histogram、CRC-32 の chunk 計算。正しく動くが、既存の format の block 粒度では CPU 16 lane に負ける。
+  GPU が勝つには format 側の設計（数万の小 block、size 表、GPU 上で使う出力）が要る。これは既存の書庫を読む library の仕事ではない。
+- **NPU で動くもの**: 予測 + 算術符号の予測部分。ANE で符号化・復号ともに往復し、学習 domain では PPMd を超える比を出した。
+  速度は 2 桁遅く、domain 外に弱く、符号化と復号の unit を揃える約束が要る。「書庫の圧縮に NPU を使う」なら、対象 domain が決まっていて
+  比が最優先で速度を捨てられる用途（特定 domain の log や text の長期保存）に限られる。
+- **本体（KaitoKit / GyoshukuKit）には入れない。** どの経路も CPU より速くならなかった。lab の code と計測は KaitoAccelLab に残す。

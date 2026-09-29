@@ -46,3 +46,7 @@
 - 学習済み MLP（text256、3,000 step、valid 4.0 bits/byte、可変 batch 1〜8192）: batch 1024 で ANE 1.22 ms（84 万/s）、CPU 2.71 ms、GPU 1.86 ms。
   可変形状は ANE で遅い（batch 4096 で 7.55 ms、固定形状の 2.75 ms より悪い）→ demo は列挙形状か固定形状を使う。
 - 推論 1 回の overhead は 0.07〜0.1 ms（ms 級ではない）。
+
+## 結果（2026-09-29）
+速度レポート `speed-report.md`、解説 `technology.md`、demo `accel-lab demo-pack / demo-unpack`。結論: GPU / NPU で圧縮・展開の一部は動く
+（LZ4 block 並列復号、histogram、CRC-32、GRU 予測 + range coder）が、どれも CPU より速くならない。本体には合流させない。
