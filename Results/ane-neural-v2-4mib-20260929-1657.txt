@@ -1,0 +1,24 @@
+== 4 MiB words, blocks 4096, model b4096, units ane ==
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes out: 1334207
+ratio: 0.318100; bits/byte: 2.544798
+wall seconds: 9.589822; bytes/s: 437370.378
+predictor ms/step: 8.473641; coder ms/step: 0.886322
+== 4 MiB words, blocks 4096, model b4096, units cpu ==
+preferred-device histogram: [CPU: 18, n/a: 14]
+bytes out: 1334170
+ratio: 0.318091; bits/byte: 2.544727
+wall seconds: 20.100874; bytes/s: 208662.773
+predictor ms/step: 18.972505; coder ms/step: 0.651819
+== 4 MiB words, blocks 4096, model b4096, units gpu ==
+preferred-device histogram: [GPU: 18, n/a: 14]
+bytes out: 1334007
+ratio: 0.318052; bits/byte: 2.544416
+wall seconds: 10.695839; bytes/s: 392143.520
+predictor ms/step: 9.516182; coder ms/step: 0.922579
+== 4 MiB words, blocks 1024, model b1024, units ane ==
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes out: 1305886
+ratio: 0.311347; bits/byte: 2.490780
+wall seconds: 13.684296; bytes/s: 306504.915
+predictor ms/step: 3.160687; coder ms/step: 0.178890
