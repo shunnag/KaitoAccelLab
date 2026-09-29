@@ -1,0 +1,4 @@
+# ANE と Core ML GPU で別々の 2 MiB を同時に符号化した場合（gru-words-h1024-b4096、4096 block、idle、load 3.4）
+sequential: ane half-a 3.80 s (552 KB/s), gpu half-b 2.99 s (700 KB/s) -> 4 MiB in 6.79 s = 618 KB/s
+concurrent: ane half-a 4.85 s (433 KB/s) || gpu half-b 5.04 s (416 KB/s) -> 4 MiB in 5.15 s = 815 KB/s (1.32x)
+ANE output bytes identical alone vs concurrent (cmp)
