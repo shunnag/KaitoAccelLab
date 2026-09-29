@@ -1,0 +1,10 @@
+== wp: 3359610 bytes ==
+bytes out: 2168135
+ratio: 0.645353; bits/byte: 5.162825
+wall seconds: 10.766339; bytes/s: 312047.587
+xz-9: 935368  zstd-19: 943323  bzip2-9: 888580  ppmd-o8: 738602
+== swift4m: 4194304 bytes ==
+bytes out: 4574471
+ratio: 1.090639; bits/byte: 8.725111
+wall seconds: 13.664424; bytes/s: 306950.674
+xz-9: 599152  zstd-19: 605293  bzip2-9: 605147  ppmd-o8: 516139

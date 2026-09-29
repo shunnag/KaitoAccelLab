@@ -73,7 +73,7 @@ range coder は block ごとに CPU で走る。推論 1 回あたり N byte 進
 
 - 再帰型（GRU 1 層、hidden 1024）。状態 h を MLState ではなく入出力のテンソルとして往復させる。native の `lstm` op は
   CPU に落ちるが、線形 + 活性で書いた cell は ANE に載る。batch 形状は固定（1024 と 4096 の二つの model を同じ重みから書き出す）。
-- 入力は直前の byte の one-hot [N, 256]（embedding を行列積で行う。gather は ANE で不安定）、出力は softmax [N, 256] と h_out。
+- 入力は直前の byte の one-hot [N, 256]（embedding は one-hot と重みの行列積で行う。gather op の ANE 対応は試していない）、出力は softmax [N, 256] と h_out。
 
 ### 4.3 約束事（demo の container header に書く）
 
