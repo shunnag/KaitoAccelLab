@@ -1,0 +1,38 @@
+Torch version 2.14.0 has not been tested with coremltools. You may run into unexpected errors. Torch 2.7.0 is the most recent version that has been tested.
+step 0 loss 5.550 valid bits/byte 7.697 (1s)
+step 250 loss 2.069 valid bits/byte 3.003 (61s)
+step 500 loss 1.958 valid bits/byte 2.823 (120s)
+step 750 loss 1.903 valid bits/byte 2.751 (179s)
+step 1000 loss 1.867 valid bits/byte 2.705 (239s)
+step 1250 loss 1.840 valid bits/byte 2.653 (300s)
+step 1500 loss 1.815 valid bits/byte 2.625 (359s)
+step 1750 loss 1.783 valid bits/byte 2.603 (419s)
+step 2000 loss 1.766 valid bits/byte 2.560 (478s)
+step 2250 loss 1.767 valid bits/byte 2.560 (537s)
+step 2500 loss 1.747 valid bits/byte 2.530 (597s)
+step 2750 loss 1.739 valid bits/byte 2.514 (657s)
+step 3000 loss 1.735 valid bits/byte 2.511 (719s)
+step 3250 loss 1.728 valid bits/byte 2.490 (779s)
+step 3500 loss 1.718 valid bits/byte 2.482 (840s)
+step 3750 loss 1.729 valid bits/byte 2.482 (899s)
+step 3999 loss 1.722 valid bits/byte 2.496 (957s)
+/Users/nagash/Github/KaitoAccelLab/.venv/lib/python3.12/site-packages/torch/jit/_trace.py:1006: FutureWarning: `torch.jit.trace` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/Users/nagash/Github/KaitoAccelLab/.venv/lib/python3.12/site-packages/torch/jit/_trace.py:1145: FutureWarning: `torch.jit.trace_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Tuple detected at graph output. This will be flattened in the converted model.
+Converting PyTorch Frontend ==> MIL Ops:   0%|          | 0/28 [00:00<?, ? ops/s]Converting PyTorch Frontend ==> MIL Ops:  93%|█████████▎| 26/28 [00:00<00:00, 7571.47 ops/s]
+Running MIL frontend_pytorch pipeline:   0%|          | 0/5 [00:00<?, ? passes/s]Running MIL frontend_pytorch pipeline: 100%|██████████| 5/5 [00:00<00:00, 5181.99 passes/s]
+Running MIL default pipeline:   0%|          | 0/95 [00:00<?, ? passes/s]Running MIL default pipeline: 100%|██████████| 95/95 [00:00<00:00, 1116.97 passes/s]
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 7605.27 passes/s]
+saved Models/gru-words-h1024-b1024.mlpackage
+/Users/nagash/Github/KaitoAccelLab/.venv/lib/python3.12/site-packages/torch/jit/_trace.py:1006: FutureWarning: `torch.jit.trace` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/Users/nagash/Github/KaitoAccelLab/.venv/lib/python3.12/site-packages/torch/jit/_trace.py:1145: FutureWarning: `torch.jit.trace_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Tuple detected at graph output. This will be flattened in the converted model.
+Converting PyTorch Frontend ==> MIL Ops:   0%|          | 0/28 [00:00<?, ? ops/s]Converting PyTorch Frontend ==> MIL Ops:  93%|█████████▎| 26/28 [00:00<00:00, 13979.22 ops/s]
+Running MIL frontend_pytorch pipeline:   0%|          | 0/5 [00:00<?, ? passes/s]Running MIL frontend_pytorch pipeline: 100%|██████████| 5/5 [00:00<00:00, 6594.82 passes/s]
+Running MIL default pipeline:   0%|          | 0/95 [00:00<?, ? passes/s]Running MIL default pipeline: 100%|██████████| 95/95 [00:00<00:00, 1217.94 passes/s]
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 7353.05 passes/s]
+saved Models/gru-words-h1024-b4096.mlpackage

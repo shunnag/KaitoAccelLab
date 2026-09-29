@@ -1,0 +1,8 @@
+# ANE round trip 2026-09-29 16:36 (accel-lab work/neural first version, gru-words-h1024-b1024, --units ane, 1024 blocks)
+input: words-tail4m.txt first 1 MiB (dictionary words corpus, held-out tail)
+bytes in: 1048576
+bytes out: 332788
+ratio: 0.317371; bits/byte: 2.538971
+wall seconds: 45.953117; bytes/s: 22818.387
+decode: 42.58 s, 24623 bytes/s, cmp OK
+xz -9: 414116  zstd -19: 415668  bzip2 -9: 399692

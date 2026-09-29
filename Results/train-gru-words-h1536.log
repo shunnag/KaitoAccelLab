@@ -1,0 +1,2 @@
+Torch version 2.14.0 has not been tested with coremltools. You may run into unexpected errors. Torch 2.7.0 is the most recent version that has been tested.
+step 0 loss 5.545 valid bits/byte 7.518 (1s)

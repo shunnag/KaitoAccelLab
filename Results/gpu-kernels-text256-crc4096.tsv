@@ -1,0 +1,8 @@
+name	bytes	median_s	GB_per_s	note
+gpu-read-sum	268435456	0.000664	404.32	gpu time; wall 0.000863
+gpu-histogram	268435456	0.004024	66.71	gpu time; wall 0.004257; match OK
+cpu-histogram-16lane	268435456	0.009550	28.11	concurrentPerform 16; private counts
+gpu-crc32-chunks	268435456	0.001129	237.69	gpu time; wall 0.001380; 65536 chunks × 4096 B; slice-by-4 in threadgroup memory
+cpu-crc32-combine-of-gpu-chunks	268435456	0.000323	831.23	crc32_combine 16 lane tree; match OK
+gpu-crc32-total	268435456	0.001452	184.84	gpu kernel + combine
+cpu-crc32-zlib-16lane	268435456	0.001210	221.85	reference

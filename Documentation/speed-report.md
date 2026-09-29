@@ -36,9 +36,22 @@
 
 ## 4. GPU（Metal 4、40 core）
 
-### 4.1 byte 単位の kernel: histogram、CRC-32、読み出し帯域（Scripts/gpu-kernels.swift）
+### 4.1 byte 単位の kernel: histogram、CRC-32、読み出し帯域（Scripts/gpu-kernels.swift、Results/gpu-kernels-*.tsv）
 
-（計測待ち）
+256 MiB、5 round 中央値。GPU の時間は command buffer の `gpuEndTime - gpuStartTime`（wall は +0.2〜0.4 ms）。
+
+| 処理 | random256 | text256 | 備考 |
+|---|---|---|---|
+| GPU 読み出し（uint4 sum） | 277〜379 GB/s | 404〜483 GB/s | 帯域の上限の目安 |
+| GPU histogram（threadgroup atomic） | 147〜149 GB/s | 67〜73 GB/s | text は偏った bin への atomic 競合で遅い |
+| CPU histogram 16 lane | 44 GB/s | 28 GB/s | 私有 count の和 |
+| GPU CRC-32 4 KiB chunk（slice-by-4）+ CPU 16 lane combine | 244 GB/s（kernel 355 + combine 0.34 ms） | 185 GB/s | 結果は zlib と一致 |
+| GPU CRC-32 16 KiB chunk + combine | 105 GB/s（kernel 111） | 290 GB/s（kernel 334） | run 間のばらつきが大きい（±2 倍） |
+| CPU CRC-32 zlib 16 lane + combine | 222〜257 GB/s | 222〜233 GB/s | 基準 |
+
+読み: histogram は GPU が 3〜5 倍速い唯一の byte kernel だが、Deflate / LH5 が数えるのは LZ77 parse 後の記号なので生 byte の histogram
+に用途がない（order-0 符号器にしか効かない）。CRC-32 は GPU kernel 単体なら CPU 16 lane と同程度〜上回るが、wall で見ると dispatch 往復と
+combine を足して同程度で、CPU 1 core の 43.7 GB/s（CRC32 命令）で十分な用途に GPU を使う理由はない。
 
 ### 4.2 LZ4 block 並列復号（Sources/AccelLab/LZ4、accel-lab lz4-gpu）
 
@@ -54,7 +67,23 @@
 
 ### 5.2 神経 block codec（accel-lab neural-encode / neural-decode）
 
-（計測待ち）
+model: GRU 1 層 hidden 1024（Scripts/train_gru_predictor.py、words32 の先頭 90% で 4,000 step 学習、valid 2.50 bits/byte）、
+固定 batch 1024 の fp16 mlprogram。入力は学習に使っていない words32 の末尾。
+
+最初の版（Results/ane-roundtrip-v1-20260929-1636.txt、1 MiB、1024 block、`--units ane`、MLComputePlan: ANE 18 op / n.a. 14）:
+
+| | bytes | 比 | bits/byte |
+|---|---|---|---|
+| 神経 block codec（ANE） | 332,788 | 0.317 | 2.54 |
+| PPMd o8 mem 256m（7zz） | 350,387 | 0.334 | 2.67 |
+| bzip2 -9 | 399,692 | 0.381 | 3.05 |
+| xz -9 | 414,116 | 0.395 | 3.16 |
+| LZMA2 mx9（7zz） | 414,268 | 0.395 | 3.16 |
+| zstd -19 | 415,668 | 0.396 | 3.17 |
+
+- 符号化 45.95 s（22.8 KB/s）、復号 42.58 s（24.6 KB/s）、`cmp` 一致。ANE で符号化した bit 列を ANE で復号して元に戻った。
+- この版の時間はほぼ CPU 側（FrequencyQuantizer の余剰調整 loop）で、`sample` の main thread の 98% がそこ。ANE の推論は 1 step 1 ms 弱。
+  修正版の数値は 5.3 に書く。
 
 ## 6. CPU 側で見つかった改善余地（NPU / GPU ではない）
 
