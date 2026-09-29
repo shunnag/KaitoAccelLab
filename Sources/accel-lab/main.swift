@@ -1,9 +1,14 @@
-import AccelLab
-import Foundation
+internal import AccelLab
+internal import Foundation
+private import Dispatch
 
 // 引数なしでは従来どおり probe を実行する。
 let arguments = Array(CommandLine.arguments.dropFirst())
-let usage = "Usage: accel-lab probe | baseline [--size MiB] [--rounds N] [--out path]"
+let usage = """
+Usage: accel-lab probe | baseline [--size MiB] [--rounds N] [--out path]
+       accel-lab neural-encode <in> <out> --blocks N (--order0 | --order1 | --uniform | --mlp <mlmodelc> | --gru <mlmodelc>) [--units ane|cpu|gpu|all]
+       accel-lab neural-decode <in> <out> (--order0 | --order1 | --uniform | --mlp <mlmodelc> | --gru <mlmodelc>) [--units ane|cpu|gpu|all]
+"""
 
 func argumentError(_ message: String) -> NSError {
     NSError(domain: "accel-lab", code: 1, userInfo: [NSLocalizedDescriptionKey: "\(message)\n\(usage)"])
@@ -75,6 +80,19 @@ do {
         try table.write(to: output, atomically: true, encoding: .utf8)
         print(table, terminator: "")
         print("Wrote \(output.path)")
+    case "neural-encode", "neural-decode":
+        // 待機するメインスレッドと async 処理の実行スレッドを分離する。
+        let semaphore = DispatchSemaphore(value: 0)
+        Task.detached {
+            do {
+                try await NeuralCommand.run(arguments: arguments)
+            } catch {
+                FileHandle.standardError.write(Data("error: \(error.localizedDescription)\n".utf8))
+                exit(1)
+            }
+            semaphore.signal()
+        }
+        semaphore.wait()
     default:
         throw argumentError("Unknown command: \(arguments[0])")
     }
