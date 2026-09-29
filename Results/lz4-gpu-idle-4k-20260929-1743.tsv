@@ -1,0 +1,15 @@
+blocks: 65536, blockMaxSize: 65536, independence: true, contentSize: 268435456
+name	bytes	median_s	GB_per_s	note
+scan-serial	268435456	0.058351250	4.600338	once; serial decoded-size scan+size-table allocation+validation; file I/O/frame parse/output-offset table excluded
+scan-16lane	268435456	0.007275459	36.896017	once; 16 static lanes; dispatch+decoded-size scan+size-table allocation+validation; file I/O/frame parse/output-offset table excluded
+cpu-1lane-apple	268435456	0.056986875	4.710479	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-16lane-apple	268435456	0.006482750	41.407652	16 static lanes; dispatch+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-16lane-apple-dynamic	268435456	0.013377667	20.065939	16 dynamic lanes; dispatch+locked block counter+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-1lane-swift	268435456	0.272563875	0.984853	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+single-block-cpu-1core-apple	4096	0.000000625	6.553600	block=0; decode/copy call only; scan/allocation/prefault/verification excluded; output reused; stored=false; rounds=5
+upload	268435456	0.012089500	22.204016	once per decoder; input MTLBuffer allocation+copy; input_bytes=240215918; bytes=decoded
+gpu-thread-per-block	268435456	0.011246375	23.868621	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-thread-per-block-cpu-wall	268435456	0.011861791	22.630264	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+gpu-simd-per-block	268435456	0.011875417	22.604298	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-simd-per-block-cpu-wall	268435456	0.012491708	21.489091	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+single-block-gpu-1thread	4096	0.000340375	0.012034	GPU execution only; block=0; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; rounds=5

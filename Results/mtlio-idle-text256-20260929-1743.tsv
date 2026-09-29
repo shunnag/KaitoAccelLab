@@ -1,0 +1,9 @@
+name	bytes	median_s	GB_per_s	note
+mtlio-compress-lz4	268435456	0.470846	0.570	status=0; chunk=65536; compressed_bytes=212113936; ratio=0.790
+mtlio-load-lz4	268435456	0.078566	3.417	wall (commit+wait, file cached); match OK
+mtlio-compress-lzfse	268435456	3.452240	0.078	status=0; chunk=65536; compressed_bytes=133731372; ratio=0.498
+mtlio-load-lzfse	268435456	0.214229	1.253	wall (commit+wait, file cached); match OK
+mtlio-compress-zlib	268435456	6.017267	0.045	status=0; chunk=65536; compressed_bytes=133402527; ratio=0.497
+mtlio-load-zlib	268435456	0.658320	0.408	wall (commit+wait, file cached); match OK
+mtlio-compress-lzbitmap	268435456	0.743935	0.361	status=0; chunk=65536; compressed_bytes=189421949; ratio=0.706
+mtlio-load-lzbitmap	268435456	0.057759	4.648	wall (commit+wait, file cached); match OK

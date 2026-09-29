@@ -1,0 +1,76 @@
+== words-tail4m 4 MiB, h1024, blocks 1024, units ane ==
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes out: 1305886
+ratio: 0.311347; bits/byte: 2.490780
+wall seconds: 10.664000; bytes/s: 393314.310
+predictor ms/step: 2.469006; coder ms/step: 0.133761
+== words-tail4m 4 MiB, h1024, blocks 1024, units cpu ==
+preferred-device histogram: [CPU: 18, n/a: 14]
+bytes out: 1305851
+ratio: 0.311339; bits/byte: 2.490713
+wall seconds: 15.412120; bytes/s: 272143.220
+predictor ms/step: 3.618592; coder ms/step: 0.143070
+== words-tail4m 4 MiB, h1024, blocks 1024, units gpu ==
+preferred-device histogram: [GPU: 18, n/a: 14]
+bytes out: 1305696
+ratio: 0.311302; bits/byte: 2.490417
+wall seconds: 9.670878; bytes/s: 433704.557
+predictor ms/step: 2.233990; coder ms/step: 0.126338
+== words-tail4m 4 MiB, h1024, blocks 4096, units ane ==
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes out: 1334207
+ratio: 0.318100; bits/byte: 2.544798
+wall seconds: 7.905875; bytes/s: 530530.023
+predictor ms/step: 7.346173; coder ms/step: 0.371874
+== words-tail4m 4 MiB, h1024, blocks 4096, units cpu ==
+preferred-device histogram: [CPU: 18, n/a: 14]
+bytes out: 1334170
+ratio: 0.318091; bits/byte: 2.544727
+wall seconds: 11.340900; bytes/s: 369838.725
+predictor ms/step: 10.661701; coder ms/step: 0.409975
+== words-tail4m 4 MiB, h1024, blocks 4096, units gpu ==
+preferred-device histogram: [GPU: 18, n/a: 14]
+bytes out: 1334007
+ratio: 0.318052; bits/byte: 2.544416
+wall seconds: 6.429654; bytes/s: 652337.486
+predictor ms/step: 5.896994; coder ms/step: 0.379181
+== words-tail4m 4 MiB, h1536, blocks 1024, units ane ==
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes out: 1169473
+ratio: 0.278824; bits/byte: 2.230593
+wall seconds: 17.165333; bytes/s: 244347.367
+predictor ms/step: 4.053030; coder ms/step: 0.136846
+== words-tail4m 4 MiB, h1536, blocks 1024, units cpu ==
+preferred-device histogram: [CPU: 18, n/a: 14]
+bytes out: 1169436
+ratio: 0.278815; bits/byte: 2.230522
+wall seconds: 25.939388; bytes/s: 161696.336
+predictor ms/step: 6.191686; coder ms/step: 0.139913
+== words-tail4m 4 MiB, h1536, blocks 1024, units gpu ==
+preferred-device histogram: [GPU: 18, n/a: 14]
+bytes out: 1169176
+ratio: 0.278753; bits/byte: 2.230026
+wall seconds: 16.176959; bytes/s: 259276.423
+predictor ms/step: 3.800754; coder ms/step: 0.147653
+== words-tail4m 4 MiB, h1536, blocks 4096, units ane ==
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes out: 1198470
+ratio: 0.285738; bits/byte: 2.285900
+wall seconds: 13.955628; bytes/s: 300545.693
+predictor ms/step: 13.246739; coder ms/step: 0.378457
+== words-tail4m 4 MiB, h1536, blocks 4096, units cpu ==
+preferred-device histogram: [CPU: 18, n/a: 14]
+bytes out: 1198432
+ratio: 0.285728; bits/byte: 2.285828
+wall seconds: 22.102085; bytes/s: 189769.608
+predictor ms/step: 21.189955; coder ms/step: 0.390604
+== words-tail4m 4 MiB, h1536, blocks 4096, units gpu ==
+preferred-device histogram: [GPU: 18, n/a: 14]
+bytes out: 1198202
+ratio: 0.285674; bits/byte: 2.285389
+wall seconds: 11.977974; bytes/s: 350168.077
+predictor ms/step: 11.309230; coder ms/step: 0.384732
+== decode h1536 b1024 ane ==
+wall seconds: 17.439824; bytes/s: 240501.507
+predictor ms/step: 4.117349; coder ms/step: 0.139479
+/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/idle-rerun.sh:19: command not found: cmp

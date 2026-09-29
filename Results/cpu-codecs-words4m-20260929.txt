@@ -1,0 +1,8 @@
+# CPU codecs on words-tail4m.txt (4194304 bytes), the input of neural-idle-words4m
+xz-9: 1460024
+zstd-19: 1463092
+bzip2-9: 1575503
+ppmd-o8-256m: 1213978
+ppmd-o6-1g: 1219965
+lzma2-mx9: 1460550
+# words32 (33554432): xz-9 10237840 zstd-19 10271351 ppmd-o8 8140953

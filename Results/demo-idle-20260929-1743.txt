@@ -1,0 +1,37 @@
+preferred-device histogram: [ANE: 18, n/a: 14]
+entries: 10
+tar_bytes: 7567360
+archive_bytes: 3321246
+ratio: 0.438891
+stage	seconds
+tar	0.003955
+compress	35.640237
+write	0.001832
+-- unpack
+preferred-device histogram: [ANE: 18, n/a: 14]
+entries: 10
+tar_bytes: 7567360
+archive_bytes: 3321246
+stage	seconds
+read	0.000495
+decode	35.571170
+extract	0.003105
+/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/idle-rerun.sh:22: command not found: diff
+-- lz4
+entries: 10
+tar_bytes: 7567360
+archive_bytes: 6285981
+ratio: 0.830670
+stage	seconds
+tar	0.009214
+compress	0.011323
+write	0.001653
+-- unpack thread
+/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/idle-rerun.sh:22: command not found: tail
+/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/idle-rerun.sh:22: command not found: diff
+-- unpack simd
+/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/idle-rerun.sh:22: command not found: tail
+/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/idle-rerun.sh:22: command not found: diff
+-- unpack cpu
+/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/idle-rerun.sh:22: command not found: tail
+/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/idle-rerun.sh:22: command not found: diff

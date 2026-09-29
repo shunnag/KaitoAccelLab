@@ -1,0 +1,14 @@
+blocks: 4096, blockMaxSize: 65536, independence: true, contentSize: 268435456
+name	bytes	median_s	GB_per_s	note
+scan-skipped (assume-uniform)
+cpu-1lane-apple	268435456	0.073587041	3.647863	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-16lane-apple	268435456	0.007564375	35.486799	16 static lanes; dispatch+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-16lane-apple-dynamic	268435456	0.005881541	45.640327	16 dynamic lanes; dispatch+locked block counter+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-1lane-swift	268435456	0.466595333	0.575307	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+single-block-cpu-1core-apple	65536	0.000017583	3.727237	block=0; decode/copy call only; scan/allocation/prefault/verification excluded; output reused; stored=false; rounds=5
+upload	268435456	0.011281500	23.794305	once per decoder; input MTLBuffer allocation+copy; input_bytes=203301988; bytes=decoded
+gpu-thread-per-block	268435456	0.041756208	6.428636	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-thread-per-block-cpu-wall	268435456	0.042627375	6.297255	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+gpu-simd-per-block	268435456	0.023176958	11.581997	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-simd-per-block-cpu-wall	268435456	0.023970167	11.198731	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+single-block-gpu-1thread	65536	0.006244875	0.010494	GPU execution only; block=0; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; rounds=5

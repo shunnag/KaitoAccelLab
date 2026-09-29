@@ -1,0 +1,8 @@
+== wp h1536 b1024 ane ==
+bytes out: 2134304
+ratio: 0.635283; bits/byte: 5.082266
+wall seconds: 13.400775; bytes/s: 250702.659
+== swift4m h1536 b1024 ane ==
+bytes out: 4559830
+ratio: 1.087148; bits/byte: 8.697186
+wall seconds: 17.215031; bytes/s: 243641.964
