@@ -12,7 +12,7 @@
 | GPU で圧縮・展開の一部が動くか | 動く。独立 block の LZ4 復号を Metal kernel で書き、256 MiB を byte 同一に復号した（§4.2）。histogram、CRC-32 も動く（§4.1）。 |
 | GPU は CPU より速いか | 速くない。LZ4 復号は CPU 16 lane の 0.15〜0.6 倍（block size による）。histogram だけ 2.5〜8 倍速いが用途がない。CRC-32 は同程度で往復の費用分だけ負ける。 |
 | NPU で圧縮・展開の一部が動くか | 動く。GRU の byte 予測器を Core ML で ANE に載せ（MLComputePlan で全 18 op が ANE）、range coder と組み合わせた lossless codec で符号化・復号ともに ANE で往復した（§5）。 |
-| NPU は CPU より速いか | 同じ model を CPU で回すより 1.4〜1.6 倍速いが、既存の CPU codec（xz 322 MB/s、PPMd 9〜14 MB/s）には 2 桁遅い（0.24〜0.53 MB/s）。ただし比は学習 domain（辞書の単語を無作為に並べた合成 text で、試験側の語彙はすべて学習で見ている）では PPMd を上回る（0.279 対 0.289）。domain 外では PPMd / xz に大きく負ける。 |
+| NPU は CPU より速いか | 同じ model を CPU で回すより 1.4〜1.6 倍速いが、既存の CPU codec（xz 322 MB/s、PPMd 9〜14 MB/s）には 2 桁遅い（0.24〜0.53 MB/s）。ただし比は学習 domain（辞書の単語を無作為に並べた合成 text で、試験側の語彙はすべて学習で見ている）では PPMd を上回る（0.279 対 0.289）。domain 外では大きく負け、混合 corpus で学習し直しても PPMd 級か以下（§5.6）。 |
 | 本体に合流させるか | しない。CPU より速い経路がない。条件が揃えば GPU が勝ちうる形（§4.4）と、NPU codec が意味を持つ条件（§5.5）を書き残す。 |
 
 ## 2. 現状: NPU / GPU は圧縮・展開に寄与しているか
@@ -111,9 +111,10 @@ literal と match を 32 byte ずつ copy）。出力はすべて CPU の結果�
 数万個の独立 block（4〜16 KiB）、container が block ごとの展開後 size を持つ、出力を GPU 側で使う（texture、GPU 上の後続処理）、入力が既に GPU memory にある。
 これは nvCOMP / GDeflate が format を作り直した理由そのもので、ZIP / 7z / RAR / tar.xz の既存書庫には一つも当てはまらない。
 
-### 4.5 GPU の clock 状態の確認
+### 4.5 GPU の clock 状態の確認（Results/lz4-gpu-clock-test-20260929-1826.tsv）
 
-（学習終了後に追記）
+4 KiB frame、thread-per-block、20 round: GPU を数分休ませた直後 24.2 GB/s、gpu-kernels を走らせた直後 16.6 GB/s。「別の負荷で clock が上がっていた」という
+推定は再現せず、途中の 38 GB/s の原因は未確定（その時は MPS の学習が数十分続いていた）。idle の値 24 GB/s を採る。いずれにせよ CPU 16 lane の 41〜50 GB/s に届かない。
 
 ## 5. NPU（Apple Neural Engine、Core ML）
 
@@ -179,9 +180,22 @@ ANE で符号化した bit 列を同じ model・同じ batch の Core ML CPU 実
 NBC1 の header に predictor tag（model 名と unit）を入れ、復号側で照合して警告する。同じ unit 同士で往復を確かめたもの: h1024 b1024 ANE（1 MiB）、
 h1024 b4096 ANE（4 MiB）、h1024 b4096 Core ML GPU（4 MiB、Results/neural-roundtrip-b4096-ane-gpu-20260929.txt）、h1536 b1024 ANE（4 MiB）、demo（h1024 と h1536、ANE）。すべて `cmp` 一致。
 
-### 5.6 混合 corpus の model
+### 5.6 混合 corpus の model（Results/neural-idle-mixed-h1536-20260929-1826.txt、cpu-codecs-swift-heldout-20260929.txt）
 
-（学習完了後に追記）
+GRU h1536 を混合 corpus（words32 の先頭 16 MiB + Gutenberg の英語散文 10 冊 13 MB + swift-src の先頭 8 MiB、計 38 MB）で 4,000 step 学習。
+試験入力はいずれも学習に含まれない: words32 の末尾 4 MiB、War and Peace（Gutenberg 2600、学習の 10 冊に含まない）、swift-src の 8 MiB 以降 3.5 MB。
+ANE、1024 block、比（bytes / 元 bytes）:
+
+| 入力 | 混合 GRU h1536 | 単語専用 GRU h1536 | PPMd o8 | xz -9 | zstd -19 |
+|---|---|---|---|---|---|
+| 単語 text 4 MiB | 0.290 | 0.279 | 0.289 | 0.348 | 0.349 |
+| 英語散文 3.36 MB | **0.240** | 0.635 | 0.220 | 0.278 | 0.281 |
+| Swift source 3.5 MB | 0.214 | 1.087 | 0.133 | 0.144 | 0.148 |
+
+- 混合 model は三つの domain すべてで膨らまず、散文では xz / zstd / bzip2（0.264）を上回るが PPMd には負ける。source は LZ 系の長い一致（file 間の重複）が
+  効く domain で、文脈 256 byte 以内の統計しか持たない GRU は xz にも届かない。
+- 速度は 258〜262 KB/s（h1536 b1024 と同じ）。散文の復号は `cmp` 一致。
+- 結論は変わらない: 静的 model の神経 codec は domain を跨ぐと PPMd 級か以下で、速度は 2 桁遅い。比で勝てるのは model が学習した分布に近い入力に限る。
 
 ## 6. 技術デモ（`accel-lab demo-pack / demo-unpack`、Results/demo-idle-20260929-1743.txt）
 
@@ -195,7 +209,7 @@ directory → tar（GyoshukuKit `ArchiveWriter`）→ 神経 block codec（ANE�
 | LZ4 4 KiB block、GPU SIMD-per-block | 同上 | | | 0.028 ※ | 一致 |
 | LZ4 4 KiB block、CPU 16 lane | 同上 | | | 0.002 ※ | 一致 |
 
-※ LZ4 の展開 3 行は Results/demo-roundtrip-20260929-1725.txt（GPU で学習が並走中の値）。idle の再計測は §4.5 と同時に行う。
+※ idle の再計測（Results/demo-idle-lz4-unpack-20260929-1826.txt）: thread 0.036 s、SIMD 0.023 s、CPU 0.0015 s、木はすべて一致。表の値は Results/demo-roundtrip-20260929-1725.txt。
 
 ## 7. 試さなかったこと・残る手
 

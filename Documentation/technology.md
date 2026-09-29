@@ -83,6 +83,7 @@ range coder は block ごとに CPU で走る。推論 1 回あたり N byte 進
 - 学習 domain（辞書の単語を無作為に並べた合成 text、試験側の語彙は学習で全て見ている）では GRU h1536 が 2.23 bits/byte で PPMd（2.32）と xz（2.78）を上回った。model が「次に来る文字」の分布を
   文脈から直接出せる text では、辞書 match に頼る LZ 系より比が良い。これは神経圧縮の先行研究が示してきたことの再現である。
 - domain 外（英語の散文、Swift の source）では PPMd / xz に大きく負け、source では膨らんだ。静的な model は学習した分布しか知らない。
+  単語・散文・source を混ぜて学習し直すと膨らみは消え、散文では xz を上回るが PPMd には負け、source では xz にも届かない（speed-report §5.6）。
   NNCP や cmix が比で勝つのは符号化しながら model を更新する（online learning）からで、独立 block を batch にして NPU に載せる設計とは
   相性が悪い（block 間で学習を共有できない）。
 - 速度は 0.24〜0.65 MB/s。時間の 95% が Core ML の呼び出しで、ANE は同じ model の CPU 実行より 1.4〜1.6 倍速いが、Core ML の GPU 実行が

@@ -1,0 +1,18 @@
+-- demo-unpack --gpu-variant thread (idle)
+stage	seconds
+read	0.001887
+decode	0.036499
+extract	0.004013
+TREE-OK
+-- demo-unpack --gpu-variant simd (idle)
+stage	seconds
+read	0.000891
+decode	0.023427
+extract	0.006327
+TREE-OK
+-- demo-unpack --gpu-variant cpu (idle)
+stage	seconds
+read	0.000857
+decode	0.001503
+extract	0.006486
+TREE-OK

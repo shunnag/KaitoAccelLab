@@ -2,3 +2,27 @@ Torch version 2.14.0 has not been tested with coremltools. You may run into unex
 step 0 loss 5.553 valid bits/byte 7.514 (1s)
 step 250 loss 1.816 valid bits/byte 2.374 (154s)
 step 500 loss 1.679 valid bits/byte 2.060 (322s)
+step 750 loss 1.614 valid bits/byte 1.877 (464s)
+step 1000 loss 1.562 valid bits/byte 1.874 (599s)
+step 1250 loss 1.518 valid bits/byte 1.786 (732s)
+step 1500 loss 1.478 valid bits/byte 1.702 (865s)
+step 1750 loss 1.405 valid bits/byte 1.721 (998s)
+step 2000 loss 1.428 valid bits/byte 1.729 (1126s)
+step 2250 loss 1.403 valid bits/byte 1.613 (1255s)
+step 2500 loss 1.346 valid bits/byte 1.658 (1385s)
+step 2750 loss 1.374 valid bits/byte 1.596 (1509s)
+step 3000 loss 1.379 valid bits/byte 1.631 (1629s)
+step 3250 loss 1.377 valid bits/byte 1.583 (1748s)
+step 3500 loss 1.357 valid bits/byte 1.525 (1866s)
+step 3750 loss 1.347 valid bits/byte 1.545 (1984s)
+step 3999 loss 1.330 valid bits/byte 1.529 (2101s)
+/Users/nagash/Github/KaitoAccelLab/.venv/lib/python3.12/site-packages/torch/jit/_trace.py:1006: FutureWarning: `torch.jit.trace` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/Users/nagash/Github/KaitoAccelLab/.venv/lib/python3.12/site-packages/torch/jit/_trace.py:1145: FutureWarning: `torch.jit.trace_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Tuple detected at graph output. This will be flattened in the converted model.
+Converting PyTorch Frontend ==> MIL Ops:   0%|          | 0/28 [00:00<?, ? ops/s]Converting PyTorch Frontend ==> MIL Ops:  93%|█████████▎| 26/28 [00:00<00:00, 6254.77 ops/s]
+Running MIL frontend_pytorch pipeline:   0%|          | 0/5 [00:00<?, ? passes/s]Running MIL frontend_pytorch pipeline: 100%|██████████| 5/5 [00:00<00:00, 2122.84 passes/s]
+Running MIL default pipeline:   0%|          | 0/95 [00:00<?, ? passes/s]Running MIL default pipeline:  62%|██████▏   | 59/95 [00:00<00:00, 487.43 passes/s]Running MIL default pipeline: 100%|██████████| 95/95 [00:00<00:00, 652.77 passes/s]
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 7313.52 passes/s]
+saved Models/gru-mixed-h1536-b1024.mlpackage

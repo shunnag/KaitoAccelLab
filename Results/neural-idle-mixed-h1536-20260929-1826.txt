@@ -1,0 +1,18 @@
+== words-tail4m (4194304 bytes) mixed h1536 b1024 ane ==
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes out: 1214577
+ratio: 0.289578; bits/byte: 2.316622
+wall seconds: 16.284949; bytes/s: 257557.085
+== wp (3359610 bytes) mixed h1536 b1024 ane ==
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes out: 805152
+ratio: 0.239656; bits/byte: 1.917251
+wall seconds: 12.820010; bytes/s: 262059.852
+== swift-heldout (3506434 bytes) mixed h1536 b1024 ane ==
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes out: 748677
+ratio: 0.213515; bits/byte: 1.708122
+wall seconds: 13.483770; bytes/s: 260048.481
+== decode wp mixed ane ==
+wall seconds: 12.902291; bytes/s: 260388.636
+ROUND TRIP OK

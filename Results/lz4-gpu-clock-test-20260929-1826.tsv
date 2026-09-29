@@ -1,0 +1,6 @@
+# cold (GPU idle for minutes)
+gpu-thread-per-block	268435456	0.011110188	24.161199	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-thread-per-block-cpu-wall	268435456	0.011937437	22.486858	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+# warm (immediately after gpu-kernels on random256)
+gpu-thread-per-block	268435456	0.016202521	16.567512	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-thread-per-block-cpu-wall	268435456	0.016682375	16.090962	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
