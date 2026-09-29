@@ -21,3 +21,21 @@
 ## 方針
 - Fable の subagent で研究と設計を、実装は Codex か Fable subagent（GPU 実行が sandbox でできない場合）、判断は Fable advisor に相談。
 - すべての計測は release build、同じ入力、alternating、中央値。
+
+## 補正（advisor 2026-09-29）
+- ANE: 1 byte ごとの推論は Core ML の呼び出し overhead（ms 級）で 1 KB/s 程度になり demo にならない。設計は最初から
+  (1) 多数の独立 block を一つの推論に batch（入力 [blocks × context]）、(2) 再帰状態は `MLState` で保持、とする。
+  ANE で動いた証明は `MLComputePlan` の op ごとの配置（ANE / GPU / CPU）を記録して行う。GPU に落ちた LSTM は NPU の結果ではない。
+- GPU の第一候補は「既に独立 block である形式の block 並列復号」（bzip2 block、LZMA2 chunk、zstd frame、GyoshukuKit の圧縮 tar の chunk 切り）。
+  Huffman / range coder の直列部分は block 内に留め、40 並列で走らせる。
+- baseline は各 codec の現在の実装（CRC-32 は ARM の CRC 命令、AES は CommonCrypto の AES 命令、Deflate は zlib、多 core の並列を含む）で先に計測する。
+  GPU の CRC-32 / AES は負けると予想される。計測はするが、レポートは先に「予想どおり負ける理由」を書く。
+- 確認事項: 本体の codec ごとの既存の並列度（圧縮 tar の chunk pipeline、zstd frame、7z solid folder）; Apple Compression の LZFSE / LZ4 が M4 で
+  CPU 以外の hardware を使うかどうか（文書か trace で確認。記憶で決めない）。
+
+## 判定規則（計測の前に確定）
+- 「動いた」= perf corpus で CPU 経路と byte 同一の出力。
+- 「速い」= 同じ run の base-vs-base の noise floor を超えて、多 core の CPU 経路の wall 中央値に勝つ。
+- それ以外は比と理由を添えて報告する。生の計測は `Results/` に file で残し、レポートは file を引く。
+- Codex の sandbox は GPU / Core ML を使えない見込み。Codex には純 Swift（算術符号器、block 分割、harness、MSL の source 文字列）を、
+  GPU / ANE の実行と計測は orchestrator か Fable subagent が行う。計測は他の agent や build が走っていない時に行う。
