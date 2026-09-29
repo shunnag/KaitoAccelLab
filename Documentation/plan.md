@@ -39,3 +39,10 @@
 - それ以外は比と理由を添えて報告する。生の計測は `Results/` に file で残し、レポートは file を引く。
 - Codex の sandbox は GPU / Core ML を使えない見込み。Codex には純 Swift（算術符号器、block 分割、harness、MSL の source 文字列）を、
   GPU / ANE の実行と計測は orchestrator か Fable subagent が行う。計測は他の agent や build が走っていない時に行う。
+
+## 途中結果（2026-09-29 ANE probe、Results/ane-*.txt）
+- 全 op が ANE 対応でも Core ML の cost model が CPU を選ぶことがある（小さな model）。hidden 1024・4 層・batch 1024 から ANE が選ばれる。
+- 乱数重み MLP（context 64、hidden 1024、4 層、固定 batch 1024）: ANE 0.87 ms（117 万予測/s）、CPU 2.49 ms、GPU 1.68 ms。batch 4096: ANE 2.75 ms（149 万/s）。
+- 学習済み MLP（text256、3,000 step、valid 4.0 bits/byte、可変 batch 1〜8192）: batch 1024 で ANE 1.22 ms（84 万/s）、CPU 2.71 ms、GPU 1.86 ms。
+  可変形状は ANE で遅い（batch 4096 で 7.55 ms、固定形状の 2.75 ms より悪い）→ demo は列挙形状か固定形状を使う。
+- 推論 1 回の overhead は 0.07〜0.1 ms（ms 級ではない）。

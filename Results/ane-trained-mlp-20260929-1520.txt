@@ -1,0 +1,16 @@
+== trained MLP batch=1 ==
+[cpuAndNeuralEngine] preferred-device histogram: ["n/a": 18, "NeuralEngine": 16] ; batch=1 median=0.109 ms => 9188.4 predictions/s
+[cpuOnly] preferred-device histogram: ["CPU": 16, "n/a": 18] ; batch=1 median=0.120 ms => 8353.7 predictions/s
+[cpuAndGPU] preferred-device histogram: ["GPU": 16, "n/a": 18] ; batch=1 median=0.776 ms => 1288.5 predictions/s
+== trained MLP batch=256 ==
+[cpuAndNeuralEngine] preferred-device histogram: ["n/a": 18, "NeuralEngine": 16] ; batch=256 median=0.753 ms => 339917.0 predictions/s
+[cpuOnly] preferred-device histogram: ["n/a": 18, "CPU": 16] ; batch=256 median=0.795 ms => 322164.5 predictions/s
+[cpuAndGPU] preferred-device histogram: ["n/a": 18, "GPU": 16] ; batch=256 median=1.794 ms => 142687.9 predictions/s
+== trained MLP batch=1024 ==
+[cpuAndNeuralEngine] preferred-device histogram: ["NeuralEngine": 16, "n/a": 18] ; batch=1024 median=1.219 ms => 840176.2 predictions/s
+[cpuOnly] preferred-device histogram: ["CPU": 16, "n/a": 18] ; batch=1024 median=2.708 ms => 378098.1 predictions/s
+[cpuAndGPU] preferred-device histogram: ["n/a": 18, "GPU": 16] ; batch=1024 median=1.864 ms => 549478.9 predictions/s
+== trained MLP batch=4096 ==
+[cpuAndNeuralEngine] preferred-device histogram: ["n/a": 18, "NeuralEngine": 16] ; batch=4096 median=7.553 ms => 542271.1 predictions/s
+[cpuOnly] preferred-device histogram: ["n/a": 18, "CPU": 16] ; batch=4096 median=7.758 ms => 527993.8 predictions/s
+[cpuAndGPU] preferred-device histogram: ["n/a": 18, "GPU": 16] ; batch=4096 median=4.571 ms => 896051.3 predictions/s
