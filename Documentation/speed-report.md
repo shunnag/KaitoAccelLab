@@ -84,6 +84,9 @@ model: GRU 1 層 hidden 1024（Scripts/train_gru_predictor.py、words32 の先�
 - 符号化 45.95 s（22.8 KB/s）、復号 42.58 s（24.6 KB/s）、`cmp` 一致。ANE で符号化した bit 列を ANE で復号して元に戻った。
 - この版の時間はほぼ CPU 側（FrequencyQuantizer の余剰調整 loop）で、`sample` の main thread の 98% がそこ。ANE の推論は 1 step 1 ms 弱。
   修正版の数値は 5.3 に書く。
+- 同じ bit 列を `--units cpu`（同じ model file、同じ batch、CPU 実行）で復号すると `Invalid range-coded payload` で失敗する
+  （Results/ane-encoded-cpu-decode-mismatch-20260929.txt）。fp16 の計算結果が device で異なるため、符号化と復号は同じ compute unit で
+  走らせなければならない。header の predictor tag はこの照合のためにある。
 
 ## 6. CPU 側で見つかった改善余地（NPU / GPU ではない）
 
