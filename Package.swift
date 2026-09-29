@@ -16,7 +16,8 @@ let package = Package(
         .target(name: "AccelLab", dependencies: ["KaitoKit", "GyoshukuKit"],
                 linkerSettings: [.linkedFramework("Metal"), .linkedFramework("MetalPerformanceShaders"),
                                  .linkedFramework("MetalPerformanceShadersGraph"), .linkedFramework("CoreML"),
-                                 .linkedFramework("Accelerate")]),
+                                 .linkedFramework("Accelerate"), .linkedLibrary("compression"),
+                                 .linkedLibrary("z"), .linkedLibrary("bz2")]),
         .executableTarget(name: "accel-lab", dependencies: ["AccelLab"]),
         .testTarget(name: "AccelLabTests", dependencies: ["AccelLab"]),
     ]

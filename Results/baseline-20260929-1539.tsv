@@ -1,0 +1,19 @@
+name	bytes	median_s	GB_per_s	note
+crc32-zlib	268435456	0.006136667	43.742875	random; single-thread; crc32=2592826944
+crc32-table	268435456	0.483104250	0.555647	random; single-thread; 8-bit table; crc32=2592826944
+adler32-zlib	268435456	0.012264291	21.887564	random; single-thread; adler32=3245014935
+aes-ctr-commoncrypto	268435456	0.018875167	14.221620	random; single-thread; AES-256; CCCryptorCreateWithMode/Update/Final/Release (CCCrypt has no CTR)
+aes-cbc-decrypt-commoncrypto	268435456	0.016001125	16.776036	random; single-thread; AES-256; CCCrypt; no padding
+sha256-commoncrypto	268435456	0.078342083	3.426453	random; single-thread; SHA-256
+deflate6-zlib-compress	268435456	8.404268791	0.031940	text=/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/corpora/text256.txt; level=6; single-thread; compressed_bytes=127544293; ratio=0.475140 (compressed/original); bytes=original; round-trip=OK
+inflate-zlib	268435456	0.313706250	0.855690	text=/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/corpora/text256.txt; level=6; single-thread; compressed_bytes=127544293; ratio=0.475140 (compressed/original); bytes=original; round-trip=OK
+bzip2-compress	268435456	12.231574458	0.021946	text=/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/corpora/text256.txt; block=900k; single-thread; compressed_bytes=100332811; ratio=0.373769 (compressed/original); bytes=original; round-trip=OK
+bzip2-decompress	268435456	5.410126917	0.049617	text=/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/corpora/text256.txt; block=900k; single-thread; compressed_bytes=100332811; ratio=0.373769 (compressed/original); bytes=original; round-trip=OK
+lzfse-compress	268435456	3.466074333	0.077447	text=/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/corpora/text256.txt; single-thread; compressed_bytes=127080328; ratio=0.473411 (compressed/original); bytes=original; round-trip=OK
+lzfse-decompress	268435456	0.190842875	1.406578	text=/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/corpora/text256.txt; single-thread; compressed_bytes=127080328; ratio=0.473411 (compressed/original); bytes=original; round-trip=OK
+lz4-compress	268435456	0.441396708	0.608150	text=/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/corpora/text256.txt; single-thread; compressed_bytes=208477546; ratio=0.776639 (compressed/original); bytes=original; round-trip=OK
+lz4-decompress	268435456	0.069482250	3.863367	text=/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/corpora/text256.txt; single-thread; compressed_bytes=208477546; ratio=0.776639 (compressed/original); bytes=original; round-trip=OK
+lzma-compress	268435456	118.902910083	0.002258	text=/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/corpora/text256.txt; single-thread; compressed_bytes=80809700; ratio=0.301040 (compressed/original); bytes=original; round-trip=OK
+lzma-decompress	268435456	1.583130292	0.169560	text=/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/corpora/text256.txt; single-thread; compressed_bytes=80809700; ratio=0.301040 (compressed/original); bytes=original; round-trip=OK
+parallel-crc32-zlib-16	268435456	0.001194708	224.687083	random; 16 equal chunks; crc32_combine included; crc32=2592826944
+memcpy	268435456	0.003749291	71.596325	random; single-thread; bytes=copied bytes (read+write traffic is 2x)
