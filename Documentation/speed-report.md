@@ -12,7 +12,7 @@
 | GPU で圧縮・展開の一部が動くか | 動く。独立 block の LZ4 復号を Metal kernel で書き、256 MiB を byte 同一に復号した（§4.2）。histogram、CRC-32 も動く（§4.1）。 |
 | GPU は CPU より速いか | 速くない。LZ4 復号は CPU 16 lane の 0.15〜0.6 倍（block size による）。histogram だけ 2.5〜8 倍速いが用途がない。CRC-32 は同程度で往復の費用分だけ負ける。 |
 | NPU で圧縮・展開の一部が動くか | 動く。GRU の byte 予測器を Core ML で ANE に載せ（MLComputePlan で全 18 op が ANE）、range coder と組み合わせた lossless codec で符号化・復号ともに ANE で往復した（§5）。 |
-| NPU は CPU より速いか | 同じ model を CPU で回すより 1.4〜1.6 倍速いが、既存の CPU codec（xz 322 MB/s、PPMd 9〜14 MB/s）には 2 桁遅い（0.24〜0.53 MB/s）。ただし比は学習 domain（辞書の単語を無作為に並べた合成 text で、試験側の語彙はすべて学習で見ている）では PPMd を上回る（0.279 対 0.289）。domain 外では大きく負け、混合 corpus で学習し直しても PPMd 級か以下（§5.6）。 |
+| NPU は CPU より速いか | 同じ model を Core ML の CPU で回すより 1.4〜1.6 倍速いが、同じ model を Core ML の GPU で回した方が ANE より 1.06〜1.23 倍速く、既存の CPU codec（xz 322 MB/s、PPMd 9〜14 MB/s）には 2 桁遅い（0.24〜0.53 MB/s）。ただし比は学習 domain（辞書の単語を無作為に並べた合成 text で、試験側の語彙はすべて学習で見ている）では PPMd を上回る（0.279 対 0.289）。domain 外では大きく負け、混合 corpus で学習し直しても PPMd 級か以下（§5.6）。 |
 | 本体に合流させるか | しない。CPU より速い経路がない。条件が揃えば GPU が勝ちうる形（§4.4）と、NPU codec が意味を持つ条件（§5.5）を書き残す。 |
 
 ## 2. 現状: NPU / GPU は圧縮・展開に寄与しているか
@@ -164,7 +164,7 @@ range coder と量子化は CPU で 16 lane 並列。model は GRU 1 層（Scrip
 | GRU h1536 | 4096 | 301 KB/s | 190 KB/s | 350 KB/s | 13.2 / 0.38 |
 
 - 復号は符号化と同じ速度（h1536 b1024 ANE: 240 KB/s、`cmp` 一致）。
-- ANE は同じ model の Core ML CPU 実行の **1.4〜1.6 倍**。しかし Core ML の GPU 実行（40 core、fp16）がさらに 1.1〜1.2 倍速く、この model では **ANE は最速の unit ではない**。
+- ANE は同じ model の Core ML CPU 実行の **1.4〜1.6 倍**。しかし Core ML の GPU 実行（40 core、fp16）がさらに 1.06〜1.23 倍速く、この model では **ANE は最速の unit ではない**。
   1 step あたり ANE 7.35 ms で 4096 × 6.82 M MAC（重み形状から: W_ih と W_hh が各 [3072, 1024]、embed [1024, 256]、out [256, 1024]）= 27.9 GMAC → 3.8 TMAC/s
   （7.6 TFLOPS 相当）。h1536 は 14.9 M MAC / 行、61.2 GMAC / step、13.2 ms → 4.6 TMAC/s。M4 の ANE の公称 38 TOPS（int8）の fp16 半分を上限とすれば 4〜5 割で、
   残りは状態テンソルの往復（[4096, H] fp16 の出入り）と Core ML の呼び出し。MLState で状態を ANE 側に置く版は試していない（§7）。
@@ -190,7 +190,7 @@ ANE、1024 block、比（bytes / 元 bytes）:
 |---|---|---|---|---|---|
 | 単語 text 4 MiB | 0.290 | 0.279 | 0.289 | 0.348 | 0.349 |
 | 英語散文 3.36 MB | **0.240** | 0.635 | 0.220 | 0.278 | 0.281 |
-| Swift source 3.5 MB | 0.214 | 1.087 | 0.133 | 0.144 | 0.148 |
+| Swift source 3.5 MB | 0.214 | 1.187 | 0.133 | 0.144 | 0.148 |
 
 - 混合 model は三つの domain すべてで膨らまず、散文では xz / zstd / bzip2（0.264）を上回るが PPMd には負ける。source は LZ 系の長い一致（file 間の重複）が
   効く domain で、文脈 256 byte 以内の統計しか持たない GRU は xz にも届かない。

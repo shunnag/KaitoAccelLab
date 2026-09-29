@@ -74,3 +74,4 @@ predictor ms/step: 11.309230; coder ms/step: 0.384732
 wall seconds: 17.439824; bytes/s: 240501.507
 predictor ms/step: 4.117349; coder ms/step: 0.139479
 /private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/idle-rerun.sh:19: command not found: cmp
+h1536 b1024 ANE decode of words-tail4m (Results/neural-idle-words4m-20260929-1743.txt): cmp w4m.h1536.out words-tail4m.txt -> identical (run 2026-09-29 17:50 in the terminal after the script's cmp failed to launch)

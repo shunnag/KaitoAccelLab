@@ -3,6 +3,7 @@ Core ML model の入出力: x_onehot [B,256] fp16（直前の byte の one-hot�
 probabilities [B,256] fp16、h_out [B,H] fp16。状態はテンソルとして往復させる（MLState を使わず、どの batch 形状でも
 同じ重みを固定 batch で書き出せる）。
 使い方: train_gru_predictor.py <corpus> <out-prefix> [steps] [hidden] [seq] [batch-shapes 例 1024,4096]
+steps に 0 を渡すと学習せず <out-prefix>.pt を読んで Core ML への書き出しだけを行う。
 """
 import sys, time, numpy as np, torch, torch.nn as nn
 import coremltools as ct
@@ -62,6 +63,8 @@ def batch_from(arr, size, rng):
     return onehot, y
 
 model = Trainer().to(device)
+if steps == 0:
+    model.load_state_dict(torch.load(prefix + ".pt", map_location=device))
 opt = torch.optim.AdamW(model.parameters(), lr=2e-3)
 sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, steps)
 rng = np.random.default_rng(7)
@@ -80,7 +83,8 @@ for step in range(steps):
         print(f"step {step} loss {loss.item():.3f} valid bits/byte {vl.item() / np.log(2):.3f} ({time.time() - t0:.0f}s)", flush=True)
 
 model.eval().cpu()
-torch.save(model.state_dict(), prefix + ".pt")
+if steps > 0:
+    torch.save(model.state_dict(), prefix + ".pt")
 cell = Cell(model).eval()
 for b in shapes:
     traced = torch.jit.trace(cell, (torch.zeros(b, 256), torch.zeros(b, hidden)))

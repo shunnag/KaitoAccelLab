@@ -20,7 +20,7 @@ range coder の区間、LZ の window）が必要で、1 本の stream の中で
 | | CPU（P core） | GPU（40 core） | ANE（16 core） |
 |---|---|---|---|
 | 得意 | 分岐の多い逐次処理、表引き、bit 操作 | 数万 thread の同じ処理、帯域 | fp16 の行列積（静的な graph） |
-| 逐次の 1 thread の速さ | 速い（LZ4 復号 3.9 GB/s） | 遅い（同じ処理で 1/60 程度） | 逐次処理は書けない |
+| 逐次の 1 thread の速さ | 速い（LZ4 復号 3.6〜4.7 GB/s） | 遅い（LZ4 block 復号で CPU 1 core の 1/350） | 逐次処理は書けない |
 | 呼び出しの費用 | なし | 0.13〜0.17 ms（dispatch 往復） | 0.07〜0.2 ms（推論 1 回） |
 | 触り方 | Swift / C | Metal（MSL を runtime compile 可） | Core ML の model 実行のみ |
 | 整数 / bit 操作 | 全部 | 32 bit atomic、bit 操作あり | なし（fp16 の演算 graph だけ） |
