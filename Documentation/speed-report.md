@@ -218,4 +218,4 @@ directory → tar（GyoshukuKit `ArchiveWriter`）→ 神経 block codec（ANE�
 - GPU LZ4 kernel の copy 幅の拡張（4 byte / 16 byte copy）。thread-per-block の 1 thread あたり 10 MB/s は byte 単位 copy の上限に近い。
 - `powermetrics` による ANE / GPU の電力測定（sudo が要る）。効率（J/byte）は未計測。
 - SME（CPU 側の行列命令、4.0 int8 TOPS / thread）で同じ GRU を回す比較。Core ML の CPU 経路（BNNS）がそれを既に使っているかは未確認。
-- CPU 側の改善余地（NPU / GPU ではない）: xz の block 並列復号（`xz -lvv` で perf corpus の text.tar.xz は 11 block）、libcompression の呼び出し単位を 16 KiB 以上に保つこと。
+- CPU 側の改善余地（NPU / GPU ではない）は同日に KaitoKit 本流で実現した: xz の block 並列復号（PR #41、tar.xz staging 5〜6.7 倍）と単一 stream bzip2 の block 単位並列（PR #42、5.5〜6 倍）。libcompression の呼び出し粒度は全 codec が既に 256 KiB で前提が誤りだった（KaitoKit Documentation/verification/2026-09-29-parallel-decoders.md）。

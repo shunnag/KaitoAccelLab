@@ -9,6 +9,7 @@ M4 Max の GPU（Metal 4）と NPU（Apple Neural Engine、Core ML）が書庫�
 - GPU で独立 block の LZ4 復号、histogram、CRC-32 は動く（byte 同一）。しかし LZ4 復号は CPU 16 lane の 0.15〜0.6 倍で、GPU 1 thread は CPU 1 core の 1/350。
 - NPU で GRU の byte 予測器 + range coder の lossless codec が符号化・復号ともに動く（全 op が ANE）。学習 domain では PPMd を超える比を出すが、速度は 0.24〜0.65 MB/s で既存 codec より 2 桁遅く、符号化と復号の compute unit を揃える必要がある。
 - どの経路も CPU より速くならなかったので本体には入れない。
+- 副産物として見つけた CPU 側の伸びしろ（xz の block 並列復号、単一 stream bzip2 の block 単位並列）は KaitoKit 本流で実現した（KaitoKit PR #41 / #42、tar.xz staging 5〜6.7 倍、tar.bz2 staging 5.5〜6 倍）。
 
 詳細: [速度レポート](Documentation/speed-report.md)、[解説](Documentation/technology.md)、[計画](Documentation/plan.md)、[研究報告 JSON](Documentation/research/2026-09-29-research.json)、生の計測 `Results/`。
 
