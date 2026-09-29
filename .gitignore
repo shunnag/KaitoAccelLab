@@ -3,3 +3,4 @@
 *.mlmodelc/
 *.mlpackage/
 Results/*.tmp
+.DS_Store
