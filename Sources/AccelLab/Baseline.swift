@@ -1,8 +1,8 @@
 import CommonCrypto
-import Compression
+internal import Compression
 import Darwin
-import Dispatch
-import Foundation
+internal import Dispatch
+internal import Foundation
 import zlib
 
 // macOS SDK には bz2 の Swift モジュールがないため、公開 C ABI を直接宣言する。

@@ -1,5 +1,5 @@
-import Foundation
-import Metal
+internal import Foundation
+internal import Metal
 
 /// GPU の有無と runtime での MSL compile を確かめる最小の probe。
 public enum MetalProbe {

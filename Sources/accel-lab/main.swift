@@ -3,7 +3,7 @@ import Foundation
 
 // 引数なしでは従来どおり probe を実行する。
 let arguments = Array(CommandLine.arguments.dropFirst())
-let usage = "Usage: accel-lab probe | baseline [--size MiB] [--rounds N] [--out path]"
+let usage = "Usage: accel-lab probe | baseline [--size MiB] [--rounds N] [--out path] | lz4-gpu <file.lz4> [--rounds N] [--simdgroups k] [--variant thread|simd|both] [--assume-uniform] | lz4-make-frame <in> <out> --block-size <bytes>"
 
 func argumentError(_ message: String) -> NSError {
     NSError(domain: "accel-lab", code: 1, userInfo: [NSLocalizedDescriptionKey: "\(message)\n\(usage)"])
@@ -75,6 +75,51 @@ do {
         try table.write(to: output, atomically: true, encoding: .utf8)
         print(table, terminator: "")
         print("Wrote \(output.path)")
+    case "lz4-make-frame":
+        guard arguments.count == 5, arguments[3] == "--block-size",
+              let blockSize = Int(arguments[4]), (4_096...4_194_304).contains(blockSize),
+              !arguments[1].hasPrefix("--"), !arguments[2].hasPrefix("--") else {
+            throw argumentError("lz4-make-frame requires <in> <out> --block-size <bytes> (4096...4194304)")
+        }
+        let result = try LZ4FrameEncoder.encodeFile(inputPath: arguments[1], outputPath: arguments[2], blockSize: blockSize)
+        print("input_bytes: \(result.inputBytes), output_bytes: \(result.outputBytes), blocks: \(result.blockCount), block_size: \(blockSize)")
+    case "lz4-gpu":
+        guard arguments.count >= 2, !arguments[1].hasPrefix("--") else {
+            throw argumentError("Missing LZ4 file path")
+        }
+        var rounds = 5
+        var simdgroups = 4
+        var variant = LZ4Benchmark.VariantSelection.both
+        var assumeUniform = false
+        var seen: Set<String> = []
+        var index = 2
+        while index < arguments.count {
+            let option = arguments[index]
+            guard ["--rounds", "--simdgroups", "--variant", "--assume-uniform"].contains(option) else {
+                throw argumentError("Unknown option: \(option)")
+            }
+            guard seen.insert(option).inserted else { throw argumentError("Duplicate option: \(option)") }
+            if option == "--assume-uniform" {
+                assumeUniform = true
+                index += 1
+                continue
+            }
+            guard index + 1 < arguments.count else { throw argumentError("Missing value for \(option)") }
+            if option == "--variant" {
+                guard let selected = LZ4Benchmark.VariantSelection(rawValue: arguments[index + 1]) else {
+                    throw argumentError("--variant must be thread, simd, or both")
+                }
+                variant = selected
+            } else {
+                guard let value = Int(arguments[index + 1]), value > 0 else {
+                    throw argumentError("\(option) must be a positive integer")
+                }
+                if option == "--rounds" { rounds = value } else { simdgroups = value }
+            }
+            index += 2
+        }
+        try LZ4Benchmark.run(path: arguments[1], rounds: rounds, simdgroups: simdgroups,
+                             variant: variant, assumeUniform: assumeUniform)
     default:
         throw argumentError("Unknown command: \(arguments[0])")
     }

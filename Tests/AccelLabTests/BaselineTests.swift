@@ -1,4 +1,4 @@
-import XCTest
+internal import XCTest
 @testable import AccelLab
 
 final class BaselineTests: XCTestCase {
