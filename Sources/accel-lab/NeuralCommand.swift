@@ -1,5 +1,4 @@
 private import AccelLab
-private import CoreML
 private import Foundation
 
 internal struct NeuralCommand {
@@ -71,32 +70,9 @@ internal struct NeuralCommand {
     }
 
     private func run() async throws {
-        let computeUnits: MLComputeUnits
-        switch units {
-        case "cpu": computeUnits = .cpuOnly
-        case "gpu": computeUnits = .cpuAndGPU
-        case "all": computeUnits = .all
-        default: computeUnits = .cpuAndNeuralEngine
-        }
-        let predictor: any BytePredictor
-        let tag: String
-        switch selection {
-        case "uniform": predictor = UniformPredictor(); tag = selection
-        case "order0": predictor = OrderZeroPredictor(); tag = selection
-        case "order1": predictor = OrderOnePredictor(); tag = selection
-        case "mlp":
-            let modelURL = modelURL!
-            let coreML = try CoreMLContextPredictor(modelURL: modelURL, computeUnits: computeUnits)
-            print(try await coreML.computePlanSummary())
-            predictor = coreML
-            tag = "mlp:\(modelURL.deletingPathExtension().lastPathComponent):\(units)"
-        default:
-            let modelURL = modelURL!
-            let coreML = try CoreMLRecurrentPredictor(modelURL: modelURL, computeUnits: computeUnits)
-            print(try await coreML.computePlanSummary())
-            predictor = coreML
-            tag = "gru:\(modelURL.deletingPathExtension().lastPathComponent):\(units)"
-        }
+        let selected = try await NeuralPredictor.make(selection: selection, modelURL: modelURL, units: units)
+        let predictor = selected.predictor
+        let tag = selected.tag
         let input = try Data(contentsOf: inputURL)
         if !encoding {
             let header = try Header.decode(input)

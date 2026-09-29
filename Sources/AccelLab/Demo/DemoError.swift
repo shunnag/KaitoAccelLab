@@ -1,0 +1,7 @@
+internal import Foundation
+
+internal struct DemoError: LocalizedError {
+    let message: String
+    init(_ message: String) { self.message = message }
+    var errorDescription: String? { message }
+}

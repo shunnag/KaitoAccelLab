@@ -1,0 +1,15 @@
+# accel-lab demo-pack / demo-unpack 2026-09-29 17:25（GPU では MPS の学習が並走、時間は参考値）
+# 入力 directory: words-tail4m を 512 KiB × 8 に分けた file（うち 4 つは sub/）+ sub/wp.txt（War and Peace、domain 外）= 10 entries
+== demo-pack neural (ANE, gru-words-h1024-b1024, 1024 blocks) ==
+preferred-device histogram: [ANE: 18, n/a: 14]
+entries: 10  tar_bytes: 7567360  archive_bytes: 3491645  ratio: 0.461409
+stage seconds: tar 0.005364  compress 32.398585  write 0.002326
+== demo-unpack neural (ANE) ==
+stage seconds: read 0.000732  decode 32.216748  extract 0.004333
+diff -r: TREE-OK
+== demo-pack lz4 4 KiB ==
+archive_bytes: 6285982  ratio: 0.830670
+stage seconds: tar 0.005650  compress 0.011479  write 0.002012
+== demo-unpack --gpu-variant thread ==  decode 0.081899 (Metal library compile 含む)  extract 0.004294  TREE-OK
+== demo-unpack --gpu-variant simd   ==  decode 0.027674  extract 0.004421  TREE-OK
+== demo-unpack --gpu-variant cpu    ==  decode 0.001989  extract 0.005360  TREE-OK

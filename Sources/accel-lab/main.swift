@@ -10,6 +10,8 @@ Usage: accel-lab probe | baseline [--size MiB] [--rounds N] [--out path]
        accel-lab lz4-make-frame <in> <out> --block-size <bytes>
        accel-lab neural-encode <in> <out> --blocks N (--order0 | --order1 | --uniform | --mlp <mlmodelc> | --gru <mlmodelc>) [--units ane|cpu|gpu|all]
        accel-lab neural-decode <in> <out> (--order0 | --order1 | --uniform | --mlp <mlmodelc> | --gru <mlmodelc>) [--units ane|cpu|gpu|all]
+       accel-lab demo-pack <dir> <out> (--neural --blocks N (--gru <mlmodelc> | --mlp <mlmodelc> | --order1) [--units ane|cpu|gpu|all] | --lz4 --block-size <bytes>)
+       accel-lab demo-unpack <archive> <dir> [(--gru <mlmodelc> | --mlp <mlmodelc> | --order1) [--units ane|cpu|gpu|all]] [--gpu-variant thread|simd|cpu]
 """
 
 func argumentError(_ message: String) -> NSError {
@@ -127,12 +129,16 @@ do {
         }
         try LZ4Benchmark.run(path: arguments[1], rounds: rounds, simdgroups: simdgroups,
                              variant: variant, assumeUniform: assumeUniform)
-    case "neural-encode", "neural-decode":
+    case "neural-encode", "neural-decode", "demo-pack", "demo-unpack":
         // 待機するメインスレッドと async 処理の実行スレッドを分離する。
         let semaphore = DispatchSemaphore(value: 0)
         Task.detached {
             do {
-                try await NeuralCommand.run(arguments: arguments)
+                if arguments[0] == "demo-pack" || arguments[0] == "demo-unpack" {
+                    try await DemoCommand.run(arguments: arguments)
+                } else {
+                    try await NeuralCommand.run(arguments: arguments)
+                }
             } catch {
                 FileHandle.standardError.write(Data("error: \(error.localizedDescription)\n".utf8))
                 exit(1)
