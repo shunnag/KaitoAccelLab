@@ -1,0 +1,28 @@
+Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]
+Running MIL default pipeline:   0%|          | 0/95 [00:00<?, ? passes/s]Running MIL default pipeline: 100%|██████████| 95/95 [00:00<00:00, 2939.87 passes/s]
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 7176.91 passes/s]
+== batch=1024 context=64 hidden=1024 layers=4 ==
+[cpuAndNeuralEngine] preferred-device histogram: ["NeuralEngine": 12, "n/a": 24] ; batch=1024 median=0.872 ms => 1174761.9 predictions/s
+[cpuOnly] preferred-device histogram: ["CPU": 12, "n/a": 24] ; batch=1024 median=2.485 ms => 412072.4 predictions/s
+[cpuAndGPU] preferred-device histogram: ["n/a": 24, "GPU": 12] ; batch=1024 median=1.682 ms => 608633.0 predictions/s
+Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]
+Running MIL default pipeline:   0%|          | 0/95 [00:00<?, ? passes/s]Running MIL default pipeline:  97%|█████████▋| 92/95 [00:00<00:00, 695.68 passes/s]Running MIL default pipeline: 100%|██████████| 95/95 [00:00<00:00, 714.11 passes/s]
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 4588.54 passes/s]
+== batch=1024 context=64 hidden=2048 layers=8 ==
+[cpuAndNeuralEngine] preferred-device histogram: ["n/a": 40, "NeuralEngine": 20] ; batch=1024 median=6.033 ms => 169721.4 predictions/s
+[cpuOnly] preferred-device histogram: ["CPU": 20, "n/a": 40] ; batch=1024 median=11.181 ms => 91581.2 predictions/s
+[cpuAndGPU] preferred-device histogram: ["GPU": 20, "n/a": 40] ; batch=1024 median=6.000 ms => 170656.0 predictions/s
+Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]
+Running MIL default pipeline:   0%|          | 0/95 [00:00<?, ? passes/s]Running MIL default pipeline:  97%|█████████▋| 92/95 [00:00<00:00, 690.60 passes/s]Running MIL default pipeline: 100%|██████████| 95/95 [00:00<00:00, 708.70 passes/s]
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 4524.60 passes/s]
+== batch=256 context=64 hidden=2048 layers=8 ==
+[cpuAndNeuralEngine] preferred-device histogram: ["NeuralEngine": 20, "n/a": 40] ; batch=256 median=1.186 ms => 215844.0 predictions/s
+[cpuOnly] preferred-device histogram: ["n/a": 40, "CPU": 20] ; batch=256 median=3.554 ms => 72023.1 predictions/s
+[cpuAndGPU] preferred-device histogram: ["GPU": 20, "n/a": 40] ; batch=256 median=2.412 ms => 106134.2 predictions/s
+Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]Running MIL frontend_milinternal pipeline: 0 passes [00:00, ? passes/s]
+Running MIL default pipeline:   0%|          | 0/95 [00:00<?, ? passes/s]Running MIL default pipeline: 100%|██████████| 95/95 [00:00<00:00, 2910.09 passes/s]
+Running MIL backend_mlprogram pipeline:   0%|          | 0/12 [00:00<?, ? passes/s]Running MIL backend_mlprogram pipeline: 100%|██████████| 12/12 [00:00<00:00, 7251.35 passes/s]
+== batch=4096 context=64 hidden=1024 layers=4 ==
+[cpuAndNeuralEngine] preferred-device histogram: ["n/a": 24, "NeuralEngine": 12] ; batch=4096 median=2.754 ms => 1487404.1 predictions/s
+[cpuOnly] preferred-device histogram: ["CPU": 12, "n/a": 24] ; batch=4096 median=5.732 ms => 714522.5 predictions/s
+[cpuAndGPU] preferred-device histogram: ["GPU": 12, "n/a": 24] ; batch=4096 median=3.309 ms => 1237773.7 predictions/s
