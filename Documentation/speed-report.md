@@ -10,9 +10,9 @@
 |---|---|
 | 現在 NPU / GPU は圧縮・展開に寄与しているか | していない。本体も Apple の圧縮 / 暗号 library も CPU だけで動く（§2）。 |
 | GPU で圧縮・展開の一部が動くか | 動く。独立 block の LZ4 復号を Metal kernel で書き、256 MiB を byte 同一に復号した（§4.2）。histogram、CRC-32 も動く（§4.1）。 |
-| GPU は CPU より速いか | 速くない。LZ4 復号は最良でも CPU 16 lane の 0.5〜0.6 倍。histogram だけ 3〜8 倍速いが用途がない。CRC-32 は同程度で往復の費用分だけ負ける。 |
+| GPU は CPU より速いか | 速くない。LZ4 復号は CPU 16 lane の 0.15〜0.6 倍（block size による）。histogram だけ 2.5〜8 倍速いが用途がない。CRC-32 は同程度で往復の費用分だけ負ける。 |
 | NPU で圧縮・展開の一部が動くか | 動く。GRU の byte 予測器を Core ML で ANE に載せ（MLComputePlan で全 18 op が ANE）、range coder と組み合わせた lossless codec で符号化・復号ともに ANE で往復した（§5）。 |
-| NPU は CPU より速いか | 同じ model を CPU で回すより 1.4〜1.6 倍速いが、既存の CPU codec（xz 322 MB/s、PPMd 9〜14 MB/s）には 2 桁遅い（0.24〜0.53 MB/s）。ただし比は学習 domain では PPMd を上回る（0.279 対 0.289）。 |
+| NPU は CPU より速いか | 同じ model を CPU で回すより 1.4〜1.6 倍速いが、既存の CPU codec（xz 322 MB/s、PPMd 9〜14 MB/s）には 2 桁遅い（0.24〜0.53 MB/s）。ただし比は学習 domain（辞書の単語を無作為に並べた合成 text で、試験側の語彙はすべて学習で見ている）では PPMd を上回る（0.279 対 0.289）。domain 外では PPMd / xz に大きく負ける。 |
 | 本体に合流させるか | しない。CPU より速い経路がない。条件が揃えば GPU が勝ちうる形（§4.4）と、NPU codec が意味を持つ条件（§5.5）を書き残す。 |
 
 ## 2. 現状: NPU / GPU は圧縮・展開に寄与しているか
@@ -21,7 +21,7 @@
 - KaitoKit / GyoshukuKit / KaitoFinder は Metal、Core ML、Accelerate を link しない。使う codec は自前 Swift、zlib、libbz2、Apple Compression、CommonCrypto。
 - Apple Compression（`libcompression.dylib`）は liblzma と libSystem 以外を link せず、LZFSE / LZ4 / zlib / LZMA の実行中に IOKit / Metal / ANE の image は読み込まれない。圧縮の IOService も存在しない（Documentation/research/2026-09-29-research.json、apple-platform）。
 - CommonCrypto の AES / SHA は CPU の暗号命令、zlib の CRC-32 は ARM の CRC32 命令で動く（1 core 43.7 GB/s、§3）。
-- Metal 4 の MTLIO（`MTLIOCompressionContext` で圧縮した file を `MTLIOCommandQueue` で読み込む）は Apple が GPU 資産のために用意した唯一の「圧縮付き読み込み」だが、256 MiB の展開は LZ4 3.4 GB/s、LZBitmap 4.6 GB/s、LZFSE 1.25 GB/s、zlib 0.41 GB/s（Results/mtlio-idle-text256-20260929-1743.tsv）。libcompression の 1 core（LZ4 3.5〜4.7 GB/s、LZFSE 1.4 GB/s）と同じ水準で、16 lane の 41 GB/s には遠い。GPU が展開している痕跡はない。
+- Metal 4 の MTLIO（`MTLIOCompressionContext` で圧縮した file を `MTLIOCommandQueue` で読み込む）は Apple が GPU 資産のために用意した唯一の「圧縮付き読み込み」だが、256 MiB の展開は LZ4 3.4 GB/s、LZBitmap 4.6 GB/s、LZFSE 1.25 GB/s、zlib 0.41 GB/s（Results/mtlio-idle-text256-20260929-1743.tsv）。libcompression の 1 core（LZ4 3.5〜4.7 GB/s、LZFSE 1.4 GB/s）と同じ水準で、16 lane の 41 GB/s には遠い。どの unit で展開しているかは計測していない（速度は CPU 1 core 相当）。
 - ANE は Core ML の model 実行でしか触れない。bit 操作、表引き、逐次の復号は ANE には載らない。
 
 ## 3. CPU の基準値（Results/baseline-20260929-1539.tsv、256 MiB、5 round 中央値）
@@ -58,7 +58,7 @@
 | GPU CRC-32 16 KiB chunk + combine | 178 GB/s | 211 GB/s | |
 | CPU CRC-32 zlib 16 lane + combine | 205〜238 GB/s | 217〜246 GB/s | 基準 |
 
-読み: histogram は GPU が 3〜8 倍速い唯一の byte kernel だが、Deflate / LH5 が数えるのは LZ77 parse 後の記号なので生 byte の histogram
+読み: histogram は GPU が 2.5〜8 倍速い唯一の byte kernel だが、Deflate / LH5 が数えるのは LZ77 parse 後の記号なので生 byte の histogram
 に用途がない（order-0 符号器にしか効かない）。CRC-32 は GPU kernel 単体で CPU 16 lane と同程度、wall では dispatch 往復と combine を足して
 同程度以下。CPU 1 core の 43.7 GB/s で足りる用途に GPU を使う理由はない。
 
@@ -88,8 +88,9 @@ literal と match を 32 byte ずつ copy）。出力はすべて CPU の結果�
 - GPU の 1 thread は CPU の 1 core の **1/350**（64 KiB block: 6.24 ms 対 18 µs）。分岐と byte 単位 copy の多い LZ 復号は GPU の 1 thread に最悪の形。
   thread 数で補うには数万 block が要り、64 KiB block × 4,096 では occupancy が足りず 6.4 GB/s に留まる。
 - block を小さくすると GPU は 25 GB/s まで伸びるが CPU も伸び（block が小さいほど cache に収まる）、**どの block size でも CPU 16 lane が 1.7〜6 倍速い**。
-  途中の計測で GPU が 4 KiB block で CPU を上回ったように見えたのは、CPU 側の lock 付き動的分割の崩れと、GPU の clock が別の負荷で上がっていた
-  ためで、静的分割の libcompression と liblz4 に対しては負ける。GPU の値は clock 状態で 24〜38 GB/s の幅があった（idle は低い側）。
+  途中の計測（別の GPU 負荷が並走中）で GPU が 4 KiB block で 38 GB/s を出し CPU の動的分割 20 GB/s を上回ったように見えたが、CPU 側は lock 付き
+  動的分割の崩れで、静的分割の libcompression（41 GB/s）と liblz4（50 GB/s）に対しては負ける。GPU 側の 38 と idle の 24 GB/s の差は GPU の clock 状態の
+  違いと推定する（§4.5 で確かめる）。
 - GPU 経路は block ごとの展開後 size を事前に知る必要がある。LZ4 frame にはその表がなく、sequence を舐める scan（直列 58〜97 ms、16 lane で 7〜9 ms）
   が復号本体（6〜12 ms）と同じ桁でかかる。CPU 経路にはこの費用がない。`--assume-uniform` で scan を省いても GPU 側の順位は変わらない。
 - SIMD-per-block は 64 KiB block で thread-per-block の 1.9 倍だが、小さい block では barrier の費用が勝って逆転する。
@@ -109,6 +110,10 @@ literal と match を 32 byte ずつ copy）。出力はすべて CPU の結果�
 
 数万個の独立 block（4〜16 KiB）、container が block ごとの展開後 size を持つ、出力を GPU 側で使う（texture、GPU 上の後続処理）、入力が既に GPU memory にある。
 これは nvCOMP / GDeflate が format を作り直した理由そのもので、ZIP / 7z / RAR / tar.xz の既存書庫には一つも当てはまらない。
+
+### 4.5 GPU の clock 状態の確認
+
+（学習終了後に追記）
 
 ## 5. NPU（Apple Neural Engine、Core ML）
 
@@ -145,7 +150,8 @@ range coder と量子化は CPU で 16 lane 並列。model は GRU 1 層（Scrip
   （words32 全体 32 MiB では PPMd 0.243）。
 - **domain 外では成立しない**（Results/neural-idle-offdomain-h1536-20260929-1743.txt、ane-neural-v2-offdomain-*）: War and Peace（英語の散文 3.36 MB）で
   h1536 は 0.635（xz 0.278、PPMd 0.220）、Swift の source 4 MiB では 1.087 と**膨らむ**（xz 0.143、PPMd 0.123）。静的な model は学習した分布しか知らない。
-  混合 corpus（単語 + 英語散文 + Swift）で学習した model の結果は §5.6。
+  words32 は辞書の約 23 万語を無作為に並べた合成 text で、文法も長距離の構造もなく、試験側の語彙はすべて学習で見ている。上の PPMd 超えは
+  この語彙の記憶によるもので、一般の text に敷衍できる数字ではない。混合 corpus（単語 + 英語散文 + Swift）で学習した model の結果は §5.6。
 
 ### 5.4 速度（同 file、4 MiB、idle、`--units` で compute unit を切り替え、model と batch は同一）
 
@@ -158,8 +164,10 @@ range coder と量子化は CPU で 16 lane 並列。model は GRU 1 層（Scrip
 
 - 復号は符号化と同じ速度（h1536 b1024 ANE: 240 KB/s、`cmp` 一致）。
 - ANE は同じ model の Core ML CPU 実行の **1.4〜1.6 倍**。しかし Core ML の GPU 実行（40 core、fp16）がさらに 1.1〜1.2 倍速く、この model では **ANE は最速の unit ではない**。
-  1 step あたり ANE 7.35 ms で 4096 × 4.6 M MAC = 19 GMAC → 2.6 TMAC/s。ANE の公称値の 1/6 程度で、状態テンソルの往復（[4096, 1536] fp16 の出入り）と
-  Core ML の呼び出しが効いている。MLState で状態を ANE 側に置く版は試していない（§7）。
+  1 step あたり ANE 7.35 ms で 4096 × 6.82 M MAC（重み形状から: W_ih と W_hh が各 [3072, 1024]、embed [1024, 256]、out [256, 1024]）= 27.9 GMAC → 3.8 TMAC/s
+  （7.6 TFLOPS 相当）。h1536 は 14.9 M MAC / 行、61.2 GMAC / step、13.2 ms → 4.6 TMAC/s。M4 の ANE の公称 38 TOPS（int8）の fp16 半分を上限とすれば 4〜5 割で、
+  残りは状態テンソルの往復（[4096, H] fp16 の出入り）と Core ML の呼び出し。MLState で状態を ANE 側に置く版は試していない（§7）。
+- compute plan の 32 op のうち 18 が ANE、残る 14 は定数・reshape で device を持たない（n/a）。
 - 時間の 95% が予測器（Core ML 呼び出し）で、CPU の range coder は 16 lane 並列で 0.13〜0.38 ms / step。
 - 既存の CPU codec との比較: xz -d 322 MB/s、KaitoKit の PPMd 9〜14 MB/s、bzip2 78 MB/s。神経 codec は最速でも 0.65 MB/s で、**2 桁遅い**。
 - 最初の版は量子化の余剰調整 loop が 1 step 43 ms を使い 23 KB/s だった（Results/ane-roundtrip-v1）。修正後は Core ML が律速。
@@ -168,7 +176,8 @@ range coder と量子化は CPU で 16 lane 並列。model は GRU 1 層（Scrip
 
 ANE で符号化した bit 列を同じ model・同じ batch の Core ML CPU 実行で復号すると `Invalid range-coded payload` で失敗する
 （Results/ane-encoded-cpu-decode-mismatch-20260929.txt）。fp16 の丸めが device で異なり、量子化後の頻度表が 1 でも違えば range coder は破綻する。
-NBC1 の header に predictor tag（model 名と unit）を入れ、復号側で照合して警告する。同じ unit 同士なら 4 MiB × 複数 model で全て一致した。
+NBC1 の header に predictor tag（model 名と unit）を入れ、復号側で照合して警告する。同じ unit 同士で往復を確かめたもの: h1024 b1024 ANE（1 MiB）、
+h1024 b4096 ANE（4 MiB）、h1024 b4096 Core ML GPU（4 MiB、Results/neural-roundtrip-b4096-ane-gpu-20260929.txt）、h1536 b1024 ANE（4 MiB）、demo（h1024 と h1536、ANE）。すべて `cmp` 一致。
 
 ### 5.6 混合 corpus の model
 
@@ -182,9 +191,11 @@ directory → tar（GyoshukuKit `ArchiveWriter`）→ 神経 block codec（ANE�
 | 経路 | 書庫 bytes | 比 | 圧縮 s | 展開 s | 木の一致 |
 |---|---|---|---|---|---|
 | 神経 codec GRU h1536、1024 block、ANE | 3,321,246 | 0.439 | 35.6（tar 0.005） | 35.6（extract 0.004） | `diff -r` 一致 |
-| LZ4 4 KiB block、GPU thread-per-block | 6,285,981 | 0.831 | 0.011 | 0.082（初回の Metal compile 込み） | 一致 |
-| LZ4 4 KiB block、GPU SIMD-per-block | 同上 | | | 0.028 | 一致 |
-| LZ4 4 KiB block、CPU 16 lane | 同上 | | | 0.002 | 一致 |
+| LZ4 4 KiB block、GPU thread-per-block | 6,285,981 | 0.831 | 0.011 | 0.082（Metal library の compile 込み）※ | 一致 |
+| LZ4 4 KiB block、GPU SIMD-per-block | 同上 | | | 0.028 ※ | 一致 |
+| LZ4 4 KiB block、CPU 16 lane | 同上 | | | 0.002 ※ | 一致 |
+
+※ LZ4 の展開 3 行は Results/demo-roundtrip-20260929-1725.txt（GPU で学習が並走中の値）。idle の再計測は §4.5 と同時に行う。
 
 ## 7. 試さなかったこと・残る手
 

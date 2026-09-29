@@ -1,0 +1,6 @@
+== decode h1024 b4096 ANE (encoded on ANE) ==
+wall seconds: 9.908878; bytes/s: 423287.462
+ANE b4096 round trip OK
+== decode h1024 b4096 GPU (encoded on Core ML GPU; MPS training running, timing not citable) ==
+wall seconds: 12.148185; bytes/s: 345261.790
+GPU b4096 round trip OK
