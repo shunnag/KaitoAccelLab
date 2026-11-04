@@ -1,0 +1,125 @@
+Building for production...
+[1 / 6]
+[2 / 7] KaitoKit
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar15/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[3 / 8] KaitoKit
+[8 / 12] KaitoKitCompat
+[14 / 15] KaitoKitDynamic-product
+[20 / 28] kaito-product
+[22 / 30] KaitoKitTests-product
+[23 / 31] kaito-product
+[25 / 31] kaito-product
+[25 / 31] KaitoKitCompatTests-product
+[27 / 31] KaitoKitCompatTests-product
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar15/Tests/KaitoKitTests/SevenZip/SevenZipFolderPrefetchTests.swift:370:17: warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+368 |         let holder = Mutex<Task<Void, any Error>?>(nil)
+369 |         let task = Task.detached {
+370 |             try await LeafDecodePool.$testingSubmission.withValue({ holder.withLock { $0?.cancel() } }) {
+    |                 `- warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+371 |                 let reader = try SevenZipReader(source: DataByteSource(archive), options: ReaderOptions(decodeThreads: 16))
+372 |                 for entry in reader.entries { _ = try reader.stream(for: entry, limits: ReadLimits()).readAll() }
+
+[#UnnecessaryEffectMarker]: <https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker>
+[27 / 31] KaitoKitTests-product
+[31 / 32] KaitoKitTests-product
+[34 / 34] KaitoKitTests-product
+[37 / 37] KaitoKitCompatTests-product
+[38 / 38] KaitoKitDynamic-product
+[40 / 40] kaito-product
+Build complete! (190.16秒)
+Test Suite 'Selected tests' started at 2026-11-05 00:14:16.026.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 00:14:16.027.
+Test Suite 'RAR29R1Tests' started at 2026-11-05 00:14:16.027.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' passed (0.020 seconds).
+Test Suite 'RAR29R1Tests' passed at 2026-11-05 00:14:16.046.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.020) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 00:14:16.046.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.020) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:14:16.046.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.021) seconds
+RAR3-GLOBAL filters=16 bytes=128 decode1000_ms=18.434
+Test Suite 'Selected tests' started at 2026-11-05 00:14:16.119.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-05 00:14:16.119.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-05 00:14:16.119.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:14:16.119.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'Selected tests' started at 2026-11-05 00:14:16.816.
+Test Suite 'rar3-global-baseline.xctest' started at 2026-11-05 00:14:16.817.
+Test Suite 'RAR29R1Tests' started at 2026-11-05 00:14:16.817.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' passed (0.025 seconds).
+Test Suite 'RAR29R1Tests' passed at 2026-11-05 00:14:16.843.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.025 (0.026) seconds
+Test Suite 'rar3-global-baseline.xctest' passed at 2026-11-05 00:14:16.843.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.025 (0.026) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:14:16.843.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.025 (0.026) seconds
+RAR3-GLOBAL filters=16 bytes=128 decode1000_ms=24.070
+Test Suite 'Selected tests' started at 2026-11-05 00:14:16.902.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 00:14:16.902.
+Test Suite 'RAR29R1Tests' started at 2026-11-05 00:14:16.902.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' passed (0.020 seconds).
+Test Suite 'RAR29R1Tests' passed at 2026-11-05 00:14:16.922.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.020) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 00:14:16.922.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.020) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:14:16.922.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.021) seconds
+RAR3-GLOBAL filters=16 bytes=128 decode1000_ms=18.620
+Test Suite 'Selected tests' started at 2026-11-05 00:14:16.980.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 00:14:16.980.
+Test Suite 'RAR29R1Tests' started at 2026-11-05 00:14:16.980.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' passed (0.020 seconds).
+Test Suite 'RAR29R1Tests' passed at 2026-11-05 00:14:17.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.020) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 00:14:17.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.020) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:14:17.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.021) seconds
+RAR3-GLOBAL filters=16 bytes=128 decode1000_ms=18.830
+Test Suite 'Selected tests' started at 2026-11-05 00:14:17.060.
+Test Suite 'rar3-global-baseline.xctest' started at 2026-11-05 00:14:17.060.
+Test Suite 'RAR29R1Tests' started at 2026-11-05 00:14:17.060.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' passed (0.026 seconds).
+Test Suite 'RAR29R1Tests' passed at 2026-11-05 00:14:17.086.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.026 (0.026) seconds
+Test Suite 'rar3-global-baseline.xctest' passed at 2026-11-05 00:14:17.086.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.026 (0.026) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:14:17.086.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.026 (0.027) seconds
+RAR3-GLOBAL filters=16 bytes=128 decode1000_ms=24.558
+Test Suite 'Selected tests' started at 2026-11-05 00:14:17.143.
+Test Suite 'rar3-global-baseline.xctest' started at 2026-11-05 00:14:17.144.
+Test Suite 'RAR29R1Tests' started at 2026-11-05 00:14:17.144.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' passed (0.025 seconds).
+Test Suite 'RAR29R1Tests' passed at 2026-11-05 00:14:17.169.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.025 (0.025) seconds
+Test Suite 'rar3-global-baseline.xctest' passed at 2026-11-05 00:14:17.169.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.025 (0.025) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:14:17.169.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.025 (0.026) seconds
+RAR3-GLOBAL filters=16 bytes=128 decode1000_ms=23.652
+Test Suite 'Selected tests' started at 2026-11-05 00:14:17.228.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 00:14:17.229.
+Test Suite 'RAR29R1Tests' started at 2026-11-05 00:14:17.229.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' passed (0.020 seconds).
+Test Suite 'RAR29R1Tests' passed at 2026-11-05 00:14:17.248.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.020) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 00:14:17.248.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.020) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:14:17.248.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.021) seconds
+RAR3-GLOBAL filters=16 bytes=128 decode1000_ms=18.525

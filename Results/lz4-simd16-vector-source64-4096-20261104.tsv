@@ -1,0 +1,26 @@
+blocks: 16384, blockMaxSize: 65536, independence: true, contentSize: 67108864
+name	bytes	median_s	GB_per_s	note
+scan-serial	67108864	0.014225542	4.717491	once; serial decoded-size scan+size-table allocation+validation; file I/O/frame parse/output-offset table excluded
+scan-16lane	67108864	0.002301125	29.163502	once; 16 static lanes; dispatch+decoded-size scan+size-table allocation+validation; file I/O/frame parse/output-offset table excluded
+cpu-1lane-apple	67108864	0.014912250	4.500251	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=3
+cpu-16lane-apple	67108864	0.001905833	35.212353	16 static lanes; dispatch+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=3
+cpu-16lane-apple-dynamic	67108864	0.003095250	21.681242	16 dynamic lanes; dispatch+locked block counter+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=3
+cpu-1lane-swift	67108864	0.073812000	0.909186	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=3
+single-block-cpu-1core-apple	4096	0.000000750	5.461333	block=0; decode/copy call only; scan/allocation/prefault/verification excluded; output reused; stored=false; rounds=3
+upload	67108864	0.001922083	34.914655	once per decoder; input MTLBuffer allocation+copy; input_bytes=35702307; bytes=decoded
+match: OK (gpu-thread-per-block; round=1)
+match: OK (gpu-thread-per-block; round=2)
+match: OK (gpu-thread-per-block; round=3)
+gpu-thread-per-block	67108864	0.004657167	14.409805	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-thread-per-block-cpu-wall	67108864	0.005293750	12.676999	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+match: OK (gpu-simd-per-block; round=1)
+match: OK (gpu-simd-per-block; round=2)
+match: OK (gpu-simd-per-block; round=3)
+gpu-simd-per-block	67108864	0.005007750	13.401001	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-simd-per-block-cpu-wall	67108864	0.005526375	12.143379	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+match: OK (gpu-simd16-per-block; round=1)
+match: OK (gpu-simd16-per-block; round=2)
+match: OK (gpu-simd16-per-block; round=3)
+gpu-simd16-per-block	67108864	0.009182875	7.308045	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-simd16-per-block-cpu-wall	67108864	0.009803333	6.845515	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+single-block-gpu-1thread	4096	0.000559875	0.007316	GPU execution only; block=0; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; rounds=3

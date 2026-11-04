@@ -1,0 +1,224 @@
+tmp
+Test Suite 'Selected tests' started at 2026-11-04 21:24:47.961.
+Test Suite 'kaito-deflate64-baseline.xctest' started at 2026-11-04 21:24:47.962.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:24:47.962.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.399 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:24:50.361.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.399 (2.399) seconds
+Test Suite 'kaito-deflate64-baseline.xctest' passed at 2026-11-04 21:24:50.361.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.399 (2.399) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:24:50.361.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.399 (2.400) seconds
+M1B Deflate64 reference: median 0.486478 s, 131.56 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016951 s, 3775.51 MiB/s (64 MiB, 3 runs)
+Release
+Test Suite 'Selected tests' started at 2026-11-04 21:24:50.429.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 21:24:50.430.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:24:50.430.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.410 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:24:52.840.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.410 (2.410) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 21:24:52.840.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.410 (2.410) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:24:52.840.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.410 (2.411) seconds
+M1B Deflate64 reference: median 0.493084 s, 129.80 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016956 s, 3774.41 MiB/s (64 MiB, 3 runs)
+tmp
+Test Suite 'Selected tests' started at 2026-11-04 21:24:52.907.
+Test Suite 'kaito-deflate64-baseline.xctest' started at 2026-11-04 21:24:52.908.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:24:52.908.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.406 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:24:55.314.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.406 (2.406) seconds
+Test Suite 'kaito-deflate64-baseline.xctest' passed at 2026-11-04 21:24:55.314.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.406 (2.406) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:24:55.314.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.406 (2.407) seconds
+M1B Deflate64 reference: median 0.493249 s, 129.75 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016876 s, 3792.38 MiB/s (64 MiB, 3 runs)
+Release
+Test Suite 'Selected tests' started at 2026-11-04 21:24:55.381.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 21:24:55.382.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:24:55.382.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.416 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:24:57.799.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.416 (2.417) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 21:24:57.799.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.416 (2.417) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:24:57.799.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.416 (2.418) seconds
+M1B Deflate64 reference: median 0.499028 s, 128.25 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016738 s, 3823.52 MiB/s (64 MiB, 3 runs)
+tmp
+Test Suite 'Selected tests' started at 2026-11-04 21:24:57.867.
+Test Suite 'kaito-deflate64-baseline.xctest' started at 2026-11-04 21:24:57.868.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:24:57.868.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.390 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:00.258.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.390 (2.390) seconds
+Test Suite 'kaito-deflate64-baseline.xctest' passed at 2026-11-04 21:25:00.258.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.390 (2.390) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:00.258.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.390 (2.391) seconds
+M1B Deflate64 reference: median 0.485683 s, 131.77 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016918 s, 3782.89 MiB/s (64 MiB, 3 runs)
+Release
+Test Suite 'Selected tests' started at 2026-11-04 21:25:00.326.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 21:25:00.326.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:25:00.326.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.369 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:02.696.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.369 (2.370) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 21:25:02.696.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.369 (2.370) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:02.696.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.369 (2.370) seconds
+M1B Deflate64 reference: median 0.481582 s, 132.90 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016999 s, 3764.92 MiB/s (64 MiB, 3 runs)
+tmp
+Test Suite 'Selected tests' started at 2026-11-04 21:25:02.764.
+Test Suite 'kaito-deflate64-baseline.xctest' started at 2026-11-04 21:25:02.765.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:25:02.765.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.409 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:05.174.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.409 (2.409) seconds
+Test Suite 'kaito-deflate64-baseline.xctest' passed at 2026-11-04 21:25:05.174.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.409 (2.409) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:05.174.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.409 (2.410) seconds
+M1B Deflate64 reference: median 0.494887 s, 129.32 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016917 s, 3783.25 MiB/s (64 MiB, 3 runs)
+Release
+Test Suite 'Selected tests' started at 2026-11-04 21:25:05.243.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 21:25:05.243.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:25:05.244.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.380 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:07.623.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.380 (2.380) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 21:25:07.623.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.380 (2.380) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:07.623.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.380 (2.381) seconds
+M1B Deflate64 reference: median 0.484775 s, 132.02 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.017072 s, 3748.87 MiB/s (64 MiB, 3 runs)
+tmp
+Test Suite 'Selected tests' started at 2026-11-04 21:25:07.691.
+Test Suite 'kaito-deflate64-baseline.xctest' started at 2026-11-04 21:25:07.692.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:25:07.692.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.395 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:10.087.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.395 (2.395) seconds
+Test Suite 'kaito-deflate64-baseline.xctest' passed at 2026-11-04 21:25:10.087.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.395 (2.395) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:10.087.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.395 (2.395) seconds
+M1B Deflate64 reference: median 0.487236 s, 131.35 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016760 s, 3818.73 MiB/s (64 MiB, 3 runs)
+Release
+Test Suite 'Selected tests' started at 2026-11-04 21:25:10.155.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 21:25:10.156.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:25:10.156.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.396 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:12.552.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.396 (2.396) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 21:25:12.552.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.396 (2.397) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:12.552.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.396 (2.397) seconds
+M1B Deflate64 reference: median 0.489289 s, 130.80 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016960 s, 3773.48 MiB/s (64 MiB, 3 runs)
+tmp
+Test Suite 'Selected tests' started at 2026-11-04 21:25:12.620.
+Test Suite 'kaito-deflate64-baseline.xctest' started at 2026-11-04 21:25:12.621.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:25:12.621.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.383 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:15.004.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.383 (2.384) seconds
+Test Suite 'kaito-deflate64-baseline.xctest' passed at 2026-11-04 21:25:15.004.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.383 (2.384) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:15.004.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.383 (2.384) seconds
+M1B Deflate64 reference: median 0.484613 s, 132.06 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016797 s, 3810.15 MiB/s (64 MiB, 3 runs)
+Release
+Test Suite 'Selected tests' started at 2026-11-04 21:25:15.073.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 21:25:15.073.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:25:15.073.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.378 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:17.452.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.378 (2.378) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 21:25:17.452.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.378 (2.378) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:17.452.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.378 (2.379) seconds
+M1B Deflate64 reference: median 0.481935 s, 132.80 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016901 s, 3786.77 MiB/s (64 MiB, 3 runs)
+tmp
+Test Suite 'Selected tests' started at 2026-11-04 21:25:17.520.
+Test Suite 'kaito-deflate64-baseline.xctest' started at 2026-11-04 21:25:17.521.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:25:17.521.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.392 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:19.913.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.392 (2.393) seconds
+Test Suite 'kaito-deflate64-baseline.xctest' passed at 2026-11-04 21:25:19.913.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.392 (2.393) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:19.913.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.392 (2.393) seconds
+M1B Deflate64 reference: median 0.486512 s, 131.55 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.017025 s, 3759.20 MiB/s (64 MiB, 3 runs)
+Release
+Test Suite 'Selected tests' started at 2026-11-04 21:25:19.982.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 21:25:19.982.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:25:19.982.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.389 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:22.371.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.389 (2.389) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 21:25:22.371.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.389 (2.389) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:22.371.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.389 (2.390) seconds
+M1B Deflate64 reference: median 0.489100 s, 130.85 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016936 s, 3778.90 MiB/s (64 MiB, 3 runs)
+tmp
+Test Suite 'Selected tests' started at 2026-11-04 21:25:22.439.
+Test Suite 'kaito-deflate64-baseline.xctest' started at 2026-11-04 21:25:22.440.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:25:22.440.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.397 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:24.837.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.397 (2.397) seconds
+Test Suite 'kaito-deflate64-baseline.xctest' passed at 2026-11-04 21:25:24.837.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.397 (2.398) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:24.837.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.397 (2.398) seconds
+M1B Deflate64 reference: median 0.491882 s, 130.11 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.016778 s, 3814.50 MiB/s (64 MiB, 3 runs)
+Release
+Test Suite 'Selected tests' started at 2026-11-04 21:25:24.905.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 21:25:24.906.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:25:24.906.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.396 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:25:27.302.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.396 (2.396) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 21:25:27.302.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.396 (2.396) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:25:27.302.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.396 (2.397) seconds
+M1B Deflate64 reference: median 0.488257 s, 131.08 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.017081 s, 3746.94 MiB/s (64 MiB, 3 runs)

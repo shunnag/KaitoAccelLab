@@ -1,0 +1,147 @@
+Building for debugging...
+[Planning deferred tasks]
+[12 / 44]
+[13 / 45] KaitoKit
+[18 / 58] KaitoKit
+[19 / 58] KaitoKit
+[20 / 59] KaitoKit
+[24 / 64] KaitoKit
+[26 / 64] KaitoKit
+[29 / 68] KaitoKit
+[31 / 69] KaitoKit
+[33 / 69] KaitoKit
+[34 / 71] KaitoKit
+[37 / 71] KaitoKit
+[38 / 71] KaitoKit
+[45 / 71] KaitoKit
+[45 / 71] GyoshukuKit
+[50 / 90] KaitoKit
+[51 / 90] KaitoKit
+[53 / 89] GyoshukuKit
+[58 / 89] GyoshukuKit
+[59 / 89] GyoshukuKitTests-product
+[60 / 89] GyoshukuKit
+[62 / 89] GyoshukuKit
+[64 / 89] KaitoKit
+[66 / 89] GyoshukuKit
+[68 / 89] GyoshukuKit
+[69 / 89] GyoshukuKit
+[70 / 89] GyoshukuKit
+[71 / 89] GyoshukuKit
+[71 / 87] GyoshukuKit
+[76 / 87] GyoshukuKitTests-product
+[81 / 104] GyoshukuKitTests-product
+[83 / 104] GyoshukuKitTests-product
+[89 / 104] GyoshukuKitTests-product
+[90 / 104] GyoshukuKitTests-product
+[91 / 104] GyoshukuKitTests-product
+[92 / 104] GyoshukuKitTests-product
+[93 / 104] GyoshukuKitTests-product
+[95 / 104] GyoshukuKitTests-product
+[96 / 104] GyoshukuKitTests-product
+[98 / 104] GyoshukuKitTests-product
+[98 / 104] AllIncludingTests
+[98 / 104] GyoshukuKitTests-product
+[100 / 104] GyoshukuKitTests-product
+Build complete! (18.24秒)
+Test Suite 'Selected tests' started at 2026-11-05 03:30:26.919.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 03:30:26.920.
+Test Suite 'Bzip2SpliceTests' started at 2026-11-05 03:30:26.920.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testAllEightEOSPaddingCandidates]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testAllEightEOSPaddingCandidates]' passed (0.001 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testBulkPayloadAtEveryBitOffsetMatchesBitByBitReference]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testBulkPayloadAtEveryBitOffsetMatchesBitByBitReference]' passed (1.564 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testEmptyOneByteAndEOSCandidateValidation]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testEmptyOneByteAndEOSCandidateValidation]' passed (0.014 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testFixedMemoryReservations]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testFixedMemoryReservations]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testForcedCutsDecodeAsExactlyOneStream]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testForcedCutsDecodeAsExactlyOneStream]' passed (0.075 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeIdentityAcrossTheRealInputCap]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeIdentityAcrossTheRealInputCap]' passed (1.062 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeSeparateFinishMatchesWholeInputAtExactBlockTail]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeSeparateFinishMatchesWholeInputAtExactBlockTail]' passed (1.730 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testManyThreadsKeepSizeBasedChunkCountAndIdentity]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testManyThreadsKeepSizeBasedChunkCountAndIdentity]' passed (2.188 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testOddReadsAndMultiBlockChunksKeepIdentity]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testOddReadsAndMultiBlockChunksKeepIdentity]' passed (1.123 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRandomTextAndExactBlockIdentityAtLevels1And5And9]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRandomTextAndExactBlockIdentityAtLevels1And5And9]' passed (3.739 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize]' passed (27.715 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsNearEveryPredictedBoundary]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsNearEveryPredictedBoundary]' passed (1.105 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testScannerCarriesPendingRunAndCountsFinalBlock]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testScannerCarriesPendingRunAndCountsFinalBlock]' passed (0.297 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testSizeBasedChunkWidthsAndEstimatedCounts]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testSizeBasedChunkWidthsAndEstimatedCounts]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testUnknownSizeStreamingIdentityAcrossThreadsAndReadSizes]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testUnknownSizeStreamingIdentityAcrossThreadsAndReadSizes]' passed (1.255 seconds).
+Test Suite 'Bzip2SpliceTests' passed at 2026-11-05 03:31:08.790.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 41.869 (41.870) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 03:31:08.790.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 41.869 (41.870) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 03:31:08.790.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 41.869 (41.871) seconds
+Building for production...
+[Planning deferred tasks]
+[12 / 39]
+[13 / 40] KaitoKit
+/Users/nagash/Github/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[15 / 41] KaitoKit
+[21 / 41] GyoshukuKit
+[23 / 42] GyoshukuKit
+[30 / 40] GyoshukuKitTests-product
+/Users/nagash/Github/GyoshukuKit/Tests/GyoshukuKitTests/Probes/LZ4FrameEncoderBenchmarkTests.swift:21:17: warning: immutable value 'iteration' was never used; consider replacing with '_' or removing it [#NoUsage]
+19 |             var reference: Data?
+20 |             var durations: [Double] = []
+21 |             for iteration in 0..<repeats {
+   |                 `- warning: immutable value 'iteration' was never used; consider replacing with '_' or removing it [#NoUsage]
+22 |                 let encoder = try LZ4FrameEncoder(contentSize: UInt64(input.count), blockChecksums: true, threads: 1)
+23 |                 var encoded = Data()
+
+[#NoUsage]: <https://docs.swift.org/compiler/documentation/diagnostics/no-usage>
+[32 / 41] GyoshukuKitTests-product
+[36 / 40] GyoshukuKitTests-product
+[38 / 40] GyoshukuKitTests-product
+Build complete! (161.99秒)
+Test Suite 'Selected tests' started at 2026-11-05 03:33:52.533.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 03:33:52.534.
+Test Suite 'Bzip2BlockScannerBenchmarkTests' started at 2026-11-05 03:33:52.534.
+Test Case '-[GyoshukuKitTests.Bzip2BlockScannerBenchmarkTests testThroughput]' started.
+BZIP2-SCAN	corpus	level	blocks	best_s	best_MBps	median_s	median_MBps
+BZIP2-SCAN	text	1	42	0.003232375	1297.592	0.003428625	1223.320
+BZIP2-SCAN	text	9	5	0.003252375	1289.613	0.003497167	1199.343
+BZIP2-SCAN	alternating	1	42	0.003171500	1322.499	0.003216375	1304.047
+BZIP2-SCAN	alternating	9	5	0.003023250	1387.349	0.003208292	1307.333
+BZIP2-SCAN	runs127	1	2	0.001543458	2717.472	0.001591958	2634.682
+BZIP2-SCAN	runs127	9	1	0.001588583	2640.279	0.001592458	2633.855
+BZIP2-SCAN	repeated	1	1	0.001393167	3010.626	0.001600500	2620.621
+BZIP2-SCAN	repeated	9	1	0.001580875	2653.153	0.001603500	2615.718
+BZIP2-SCAN	random	1	42	0.003272625	1281.633	0.003283375	1277.437
+BZIP2-SCAN	random	9	5	0.003114000	1346.918	0.003289042	1275.236
+Test Case '-[GyoshukuKitTests.Bzip2BlockScannerBenchmarkTests testThroughput]' passed (0.565 seconds).
+Test Suite 'Bzip2BlockScannerBenchmarkTests' passed at 2026-11-05 03:33:53.099.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.565 (0.565) seconds
+Test Suite 'Bzip2EncoderBenchmarkTests' started at 2026-11-05 03:33:53.099.
+Test Case '-[GyoshukuKitTests.Bzip2EncoderBenchmarkTests testThroughput]' started.
+BZIP2-ENC	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+BZIP2-ENC	text	1	608853	0.178513167	23.496	0.179169958	23.410
+BZIP2-ENC	text	9	581720	0.193854833	21.636	0.194067625	21.613
+BZIP2-ENC	runs127	1	3560	0.030367583	138.118	0.030464000	137.681
+BZIP2-ENC	runs127	9	1827	0.032830333	127.757	0.032988875	127.143
+BZIP2-ENC	repeated	1	49	0.024726375	169.629	0.024795875	169.153
+BZIP2-ENC	repeated	9	49	0.024542708	170.898	0.024632833	170.273
+Test Case '-[GyoshukuKitTests.Bzip2EncoderBenchmarkTests testThroughput]' passed (1.962 seconds).
+Test Suite 'Bzip2EncoderBenchmarkTests' passed at 2026-11-05 03:33:55.061.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.962 (1.962) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 03:33:55.061.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 2.527 (2.527) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 03:33:55.061.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 2.527 (2.528) seconds

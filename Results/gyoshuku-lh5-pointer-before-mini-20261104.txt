@@ -1,0 +1,55 @@
+Building for production...
+[Planning deferred tasks]
+[33 / 60]
+[34 / 61] KaitoKit
+[45 / 104]
+[54 / 104]
+[58 / 104]
+[65 / 104]
+[69 / 104]
+[73 / 104]
+[75 / 104]
+[76 / 104]
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[78 / 104] KaitoKit
+[85 / 105] GyoshukuKit
+[88 / 107] GyoshukuKit
+[98 / 108] GyoshukuKitTests-product
+[108 / 139]
+[116 / 139]
+[119 / 139]
+[122 / 139]
+[125 / 139]
+[128 / 139]
+[129 / 139]
+[130 / 139] GyoshukuKitTests-product
+[135 / 139] GyoshukuKitTests-product
+[137 / 139] GyoshukuKitTests-product
+Build complete! (156.05秒)
+Test Suite 'Selected tests' started at 2026-11-04 19:07:07.121.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 19:07:07.121.
+Test Suite 'LH5EncoderBenchmarkTests' started at 2026-11-04 19:07:07.121.
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LH5-BENCH	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+LH5-BENCH	text	1	1013738	0.031849	131.692	0.032282	129.928
+LH5-BENCH	text	6	993973	0.053677	78.139	0.054190	77.400
+LH5-BENCH	text	9	990926	0.096470	43.478	0.097073	43.208
+LH5-BENCH	binary	1	1450488	0.036969	111.690	0.037016	111.548
+LH5-BENCH	binary	6	1441575	0.046337	89.109	0.047098	87.670
+LH5-BENCH	binary	9	1421143	0.117170	35.240	0.117361	35.183
+LH5-BENCH	random	1	4201082	0.050292	83.398	0.051304	81.754
+LH5-BENCH	random	6	4201082	0.050910	82.386	0.051243	81.852
+LH5-BENCH	random	9	4201082	0.050610	82.874	0.051033	82.188
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' passed (3.692 seconds).
+Test Suite 'LH5EncoderBenchmarkTests' passed at 2026-11-04 19:07:10.813.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.692 (3.692) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 19:07:10.813.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.692 (3.692) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 19:07:10.813.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.692 (3.693) seconds

@@ -1,0 +1,36 @@
+LZW dictionary key layout (2026-11-04)
+
+Candidate
+- Keep the existing UnsafeMutablePointer<UInt64> linear-probe dictionary and hash/probe order.
+- Change each entry from key << 16 | code to code << 48 | key. This lets the probe compare UInt32(truncatingIfNeeded: entry) directly instead of shifting every loaded entry right by 16.
+- No compressed-output or API change is intended. Key values use at most 24 bits and codes fit in 16 bits.
+
+Benchmark
+- New opt-in LZWStreamEncoderBenchmarkTests, documented in Tests/README.md.
+- 4 MiB fixed text, /usr/lib/dyld, and 4 MiB fixed-seed random input; maxbits 12 and 16.
+- Every run compares the encoded bytes with the independent ReferenceLZWStreamEncoder and with earlier iterations.
+- Mac mini baseline is a saved pre-change XCTest bundle. M4 Max baseline is built separately from tracked sources, whose LZW source SHA-256 matches HEAD.
+- XCTest runner alternates baseline and candidate three times each, with ten inner repetitions. Values below are medians of each run's best time in seconds. Raw timings are retained because the host load caused visible frequency variation.
+
+corpus, maxbits, mini baseline, mini candidate, ratio, Max baseline, Max candidate, ratio
+text, 12, 0.025075, 0.024150, 0.9631, 0.027259, 0.026917, 0.9875
+text, 16, 0.032991, 0.032569, 0.9872, 0.041136, 0.041449, 1.0076
+binary, 12, 0.034636, 0.033651, 0.9716, 0.037405, 0.036835, 0.9848
+binary, 16, 0.035329, 0.035188, 0.9960, 0.041453, 0.041487, 1.0008
+random, 12, 0.050014, 0.047755, 0.9548, 0.052424, 0.052185, 0.9954
+random, 16, 0.053139, 0.051070, 0.9611, 0.058824, 0.058630, 0.9967
+
+- All six Mac mini best-time comparisons improved by about 0.4% to 4.5%. M4 Max is near neutral with mixed sub-1% differences; these are not claimed as consistent M4 Max improvements.
+- Earlier five-inner-repetition comparisons are retained to expose rather than hide the timing variation.
+- Raw logs: gyoshuku-lzw-key32-ab-{mini,max}-20261104.txt and gyoshuku-lzw-key32-ab10-{mini,max}-20261104.txt.
+
+Generated-code check (own binaries only)
+- Baseline probe comparison: cmp x22, x8, lsr #16.
+- Candidate probe comparison: cmp w22, w8.
+- The write function shrank from 3,276 to 3,260 bytes in these builds.
+
+Verification status
+- LZWStreamEncoderTests and FilterSpeedDifferentialTests: 10 tests, 1 skipped, 0 failures. This includes real compress compatibility and all maxbits 12...16, width changes, CLEAR and split writes.
+- AddressSanitizer: the same 10 tests passed with no sanitizer findings. Log: gyoshuku-lzw-key32-asan-mini-20261104.txt.
+- Full GyoshukuKit suite: 946 tests, 53 skipped, 0 failures in 3,259.073 seconds. Log: gyoshuku-lzw-key32-full-mini-20261105.txt.
+- Adopted in GyoshukuKit. No commit, push or release was performed.

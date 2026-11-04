@@ -1,0 +1,18 @@
+Building for production...
+[1 / 1]
+[2 / 5] KaitoKit
+/Users/nagash/Github/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[4 / 6] KaitoKit
+[10 / 13] kaito-product
+[12 / 13] kaito-product
+[13 / 13] kaito-product
+Build complete! (63.08秒)
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar20-biglz.rar	baseline	1.923500	200	163840	4	1.917000,1.930000,1.891000,1.949000
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar20-biglz.rar	candidate	1.732000	200	163840	4	1.729000,1.733000,1.735000,1.731000

@@ -1,0 +1,114 @@
+Building for debugging...
+[Pre-planning 1 / 241]
+[Planning deferred tasks]
+[51 / 112]
+[52 / 113] KaitoKit
+[61 / 172]
+[64 / 172]
+[71 / 172]
+[75 / 172]
+[81 / 172]
+[84 / 172]
+[90 / 172]
+[92 / 172]
+[93 / 172]
+[99 / 172] KaitoKit
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-larc-bits/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[103 / 172] KaitoKit
+[109 / 172] KaitoKit
+[110 / 172] kaito-product
+[111 / 172] kaito-product
+[113 / 172] KaitoKit
+[114 / 172] KaitoKit
+[116 / 172] KaitoKit
+[117 / 172] KaitoKit
+[122 / 173]
+[124 / 182] kaito-product
+[126 / 182] kaito-product
+[128 / 182] kaito-product
+[130 / 182] kaito-product
+[132 / 182] kaito-product
+[133 / 183]
+[134 / 183] KaitoKitCompat
+[137 / 187] KaitoKitCompat
+[148 / 187] KaitoKitCompat
+[149 / 187] KaitoKit
+[157 / 188] KaitoKitCompat
+[162 / 189]
+[167 / 189] KaitoKitCompatTests-product
+[173 / 236]
+[180 / 253]
+[186 / 253]
+[190 / 253]
+[193 / 253]
+[196 / 253]
+[197 / 253]
+[202 / 253] KaitoKitTests-product
+[213 / 253] KaitoKitTests-product
+[217 / 253] KaitoKitTests-product
+[218 / 253] KaitoKitTests-product
+[219 / 253] KaitoKitTests-product
+[220 / 253] KaitoKitTests-product
+[221 / 253] KaitoKitTests-product
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-larc-bits/Tests/KaitoKitTests/SevenZip/SevenZipFolderPrefetchTests.swift:370:17: warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+368 |         let holder = Mutex<Task<Void, any Error>?>(nil)
+369 |         let task = Task.detached {
+370 |             try await LeafDecodePool.$testingSubmission.withValue({ holder.withLock { $0?.cancel() } }) {
+    |                 `- warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+371 |                 let reader = try SevenZipReader(source: DataByteSource(archive), options: ReaderOptions(decodeThreads: 16))
+372 |                 for entry in reader.entries { _ = try reader.stream(for: entry, limits: ReadLimits()).readAll() }
+
+[#UnnecessaryEffectMarker]: <https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker>
+[222 / 253] KaitoKitTests-product
+[223 / 253] KaitoKitTests-product
+[225 / 253] KaitoKitTests-product
+[226 / 253] KaitoKitCompatTests-product
+[228 / 253] KaitoKitCompatTests-product
+[229 / 253] KaitoKitCompatTests-product
+[231 / 253] KaitoKitCompatTests-product
+[234 / 253] KaitoKitCompatTests-product
+[236 / 253] KaitoKitCompatTests-product
+[238 / 253] KaitoKitCompatTests-product
+[240 / 253] KaitoKitCompatTests-product
+[241 / 253] KaitoKitCompatTests-product
+[243 / 253] KaitoKitCompatTests-product
+[247 / 253] KaitoKitTests-product
+[249 / 253] KaitoKitTests-product
+Build complete! (35.19秒)
+Test Suite 'Selected tests' started at 2026-11-05 02:15:54.603.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 02:15:54.604.
+Test Suite 'LHLegacyDecoderTests' started at 2026-11-05 02:15:54.604.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testHandcraftedLegacyArchiveAgainstLhasa]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testHandcraftedLegacyArchiveAgainstLhasa]' passed (0.207 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLegacyDecodersRejectTruncationOvershootAndLimits]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLegacyDecodersRejectTruncationOvershootAndLimits]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZ5FlagOrderMatchAndFixedWindowSeed]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZ5FlagOrderMatchAndFixedWindowSeed]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZHUFLongOraclePrefixCrossesDictionaryWrap]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZHUFLongOraclePrefixCrossesDictionaryWrap]' passed (0.005 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZHUFZeroAndDeterministicOracleVectors]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZHUFZeroAndDeterministicOracleVectors]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSAbsoluteMatchAndTinyReads]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSAbsoluteMatchAndTinyReads]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSDeterministicLongStreamAndTruncation]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSDeterministicLongStreamAndTruncation]' passed (0.158 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSReadsPresetSpaceHistory]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSReadsPresetSpaceHistory]' passed (0.000 seconds).
+Test Suite 'LHLegacyDecoderTests' passed at 2026-11-05 02:15:54.978.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.373 (0.374) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 02:15:54.978.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.373 (0.374) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 02:15:54.978.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.373 (0.375) seconds
+Test Suite 'Selected tests' started at 2026-11-05 02:15:55.051.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-05 02:15:55.052.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-05 02:15:55.052.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 02:15:55.052.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds

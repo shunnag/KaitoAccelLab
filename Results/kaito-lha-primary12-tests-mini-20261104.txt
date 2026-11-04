@@ -1,0 +1,77 @@
+Building for debugging...
+[3 / 29] KaitoKit
+[6 / 32] KaitoKit
+[7 / 34] KaitoKit
+[8 / 37] KaitoKit
+[9 / 37] KaitoKit
+[10 / 37] KaitoKit
+[13 / 36] KaitoKit
+[19 / 42] KaitoKit
+[24 / 38] KaitoKit-product
+[26 / 39] KaitoKit-product
+[29 / 39] KaitoKitCompatTests-product
+[30 / 39] KaitoKitCompat-product
+[34 / 40] KaitoKitTests-product
+[36 / 42] KaitoKitTests-product
+[36 / 42] KaitoKitCompatTests-product
+[38 / 43] KaitoKitTests-product
+[42 / 43] KaitoKitTests-product
+[47 / 47] kaito-product
+Build complete! (6.13秒)
+Test Suite 'Selected tests' started at 2026-11-04 22:13:07.311.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 22:13:07.312.
+Test Suite 'LHAStaticHuffmanDecoderTests' started at 2026-11-04 22:13:07.312.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testCanonicalCommandTreeAndLongZeroRun]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testCanonicalCommandTreeAndLongZeroRun]' passed (0.002 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testConstantLiteralBlocksDecodeForEveryMethodAndTinyReads]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testConstantLiteralBlocksDecodeForEveryMethodAndTinyReads]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testInitialDictionaryContainsSpaces]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testInitialDictionaryContainsSpaces]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLHArkMaximumCommandProduces514ByteMatch]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLHArkMaximumCommandProduces514ByteMatch]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLHArkPositionAlphabetAccepts31AndRejects32]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLHArkPositionAlphabetAccepts31AndRejects32]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLHArkRejectsPositionLengthCountAboveItsAlphabet]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLHArkRejectsPositionLengthCountAboveItsAlphabet]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLHArkSixBitPositionTreeAndExtendedLengthCodes]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLHArkSixBitPositionTreeAndExtendedLengthCodes]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLHXPositionAlphabetReachesOneMiBAndRejectsSymbol21]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLHXPositionAlphabetReachesOneMiBAndRejectsSymbol21]' passed (0.002 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLiteralMatchAndPresetWindowVectorsMatchLhasaOracleWhenAvailable]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testLiteralMatchAndPresetWindowVectorsMatchLhasaOracleWhenAvailable]' passed (0.216 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testMatchUsesPriorOutputAndPositionSuffix]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testMatchUsesPriorOutputAndPositionSuffix]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testMaximumLengthCommandCodesDecodeThroughSecondaryNodes]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testMaximumLengthCommandCodesDecodeThroughSecondaryNodes]' passed (0.005 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testMixedCodeLengthsCrossBulkRefillsAndReadBoundaries]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testMixedCodeLengthsCrossBulkRefillsAndReadBoundaries]' passed (0.036 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testRejectsCodeLengthUnaryRunBeyondSixteenBits]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testRejectsCodeLengthUnaryRunBeyondSixteenBits]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testRejectsCommandZeroRunBeyondDeclaredTableCountAndStaysTerminal]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testRejectsCommandZeroRunBeyondDeclaredTableCountAndStaysTerminal]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testRejectsIncompleteLongTreeWithInvalidPrefixSpace]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testRejectsIncompleteLongTreeWithInvalidPrefixSpace]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testRejectsSpecialCodeLengthZeroRunBeyondDeclaredCount]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testRejectsSpecialCodeLengthZeroRunBeyondDeclaredCount]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testRejectsTruncatedBlockMetadata]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testRejectsTruncatedBlockMetadata]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testSharedWindowCopyCapsOneCallToOneRingTurn]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testSharedWindowCopyCapsOneCallToOneRingTurn]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testTruncatedMaximumLengthCodeCannotUseLookaheadPadding]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testTruncatedMaximumLengthCodeCannotUseLookaheadPadding]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testValidatesMethodAndDictionaryLimitBeforeDecoding]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testValidatesMethodAndDictionaryLimitBeforeDecoding]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testZeroCommandBlockMakesBoundedForwardProgress]' started.
+Test Case '-[KaitoKitTests.LHAStaticHuffmanDecoderTests testZeroCommandBlockMakesBoundedForwardProgress]' passed (0.000 seconds).
+Test Suite 'LHAStaticHuffmanDecoderTests' passed at 2026-11-04 22:13:07.580.
+	 Executed 21 tests, with 0 failures (0 unexpected) in 0.267 (0.268) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 22:13:07.580.
+	 Executed 21 tests, with 0 failures (0 unexpected) in 0.267 (0.268) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 22:13:07.580.
+	 Executed 21 tests, with 0 failures (0 unexpected) in 0.267 (0.268) seconds
+Test Suite 'Selected tests' started at 2026-11-04 22:13:07.648.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-04 22:13:07.648.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-04 22:13:07.648.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 22:13:07.648.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds

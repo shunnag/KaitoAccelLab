@@ -66,7 +66,6 @@ public enum Baseline {
         }
     }
 
-    private static let corpusPath = "/private/tmp/claude-501/-Users-nagash-Github-KaitoFinder/404391ed-5c96-4f47-afa7-7911dab682d1/scratchpad/corpora/text256.txt"
     private static let fallbackText = """
         The morning light falls across the quiet library. A researcher opens a book,
         reads a story about rivers and mountains, and writes careful notes for a friend.
@@ -75,7 +74,7 @@ public enum Baseline {
 
         """
 
-    public static func run(sizeMiB: Int = 256, rounds: Int = 5) throws -> [Measurement] {
+    public static func run(sizeMiB: Int = 256, rounds: Int = 5, textPath: String? = nil) throws -> [Measurement] {
         // zlib・bzip2・CommonCrypto の一括 API が扱える長さに制限する。
         guard sizeMiB > 0, sizeMiB <= 2_047, rounds > 0 else {
             throw Failure(message: "sizeMiB must be in 1...2047 and rounds must be positive")
@@ -90,7 +89,7 @@ public enum Baseline {
             random.pointer[index] = UInt8(truncatingIfNeeded: seed)
         }
         let text = Buffer(count: byteCount)
-        let textSource = try fillText(text)
+        let textSource = try fillText(text, path: textPath)
         let output = Buffer(count: byteCount)
         var measurements: [Measurement] = []
         measurements.reserveCapacity(18)
@@ -237,15 +236,15 @@ public enum Baseline {
         return measurements
     }
 
-    private static func fillText(_ buffer: Buffer) throws -> String {
+    private static func fillText(_ buffer: Buffer, path: String?) throws -> String {
         let corpus: Data
         let source: String
-        if FileManager.default.fileExists(atPath: corpusPath) {
-            let file = try FileHandle(forReadingFrom: URL(fileURLWithPath: corpusPath))
+        if let path {
+            let file = try FileHandle(forReadingFrom: URL(fileURLWithPath: path))
             defer { try? file.close() }
             corpus = try file.read(upToCount: buffer.count) ?? Data()
-            try require(!corpus.isEmpty, "Text corpus is empty: \(corpusPath)")
-            source = "text=\(corpusPath)"
+            try require(!corpus.isEmpty, "Text corpus is empty: \(path)")
+            source = "text=\(path)"
         } else {
             corpus = Data(fallbackText.utf8)
             source = "text=generated-English"

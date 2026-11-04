@@ -1,0 +1,50 @@
+lzx-ab-local
+reps	5
+open-median-ms	0.510
+extract-median-ms	30.759
+bytes	5882101
+lzx-ab-local
+reps	5
+open-median-ms	0.536
+extract-median-ms	29.015
+bytes	5882101
+lzx-ab-local
+reps	5
+open-median-ms	0.546
+extract-median-ms	30.282
+bytes	5882101
+lzx-ab-local
+reps	5
+open-median-ms	0.497
+extract-median-ms	28.673
+bytes	5882101
+lzx-ab-local
+reps	5
+open-median-ms	0.545
+extract-median-ms	30.309
+bytes	5882101
+lzx-ab-local
+reps	5
+open-median-ms	0.515
+extract-median-ms	28.677
+bytes	5882101
+lzx-ab-local
+reps	5
+open-median-ms	0.530
+extract-median-ms	30.642
+bytes	5882101
+lzx-ab-local
+reps	5
+open-median-ms	0.560
+extract-median-ms	28.407
+bytes	5882101
+lzx-ab-local
+reps	5
+open-median-ms	0.527
+extract-median-ms	31.587
+bytes	5882101
+lzx-ab-local
+reps	5
+open-median-ms	0.565
+extract-median-ms	28.589
+bytes	5882101

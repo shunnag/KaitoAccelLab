@@ -1,0 +1,31 @@
+LH5 8-byte match-length comparison, M4 Max (2026-11-04)
+
+Candidate
+- Keep the pointer-based LH5 dictionary.
+- Replace scalar match extension with unaligned UInt64 XOR and trailing-zero count, retaining scalar tail handling.
+- Do not read beyond the input limit; candidate and current positions use the same maximum.
+
+Median best MB/s of three alternating pointer/match8 benchmark processes
+corpus, level, pointer, match8, speedup
+text, 1, 143.072, 166.380, 1.162911
+text, 6, 88.130, 97.971, 1.111665
+text, 9, 48.125, 55.803, 1.159543
+binary, 1, 114.571, 119.408, 1.042218
+binary, 6, 94.138, 97.427, 1.034938
+binary, 9, 41.136, 42.527, 1.033815
+random, 1, 83.716, 83.178, 0.993574
+random, 6, 84.124, 83.150, 0.988422
+random, 9, 83.926, 83.212, 0.991493
+
+Validation
+- All 27 pointer/match8 frame pairs from three rounds were byte-identical.
+- LH5EncoderTests: 7 tests, 0 failures.
+- AddressSanitizer: 2 tests, 0 findings; log Results/gyoshuku-lh5-match8-asan-20261104.txt.
+- Full alternating log: Results/gyoshuku-lh5-match8-ab-max-20261104.txt.
+
+Scalar-prefix variant
+- A guarded variant compared the first 8 bytes scalar and used UInt64 only afterward.
+- It recovered some random performance but lost most of the text improvement. For example, one text level 1 run was 145.180 MB/s, versus 166.380 MB/s for the unguarded median and 142.046 MB/s for pointer in the corresponding single run.
+- The guarded change was rejected and reverted; the measured candidate is the unguarded implementation.
+
+Mac mini measurement is recorded separately after the full baseline test run, to avoid contention.

@@ -1,0 +1,190 @@
+Building for production...
+[Planning deferred tasks]
+[31 / 56]
+[32 / 57] KaitoKit
+[43 / 100]
+[48 / 100]
+[56 / 100]
+[62 / 100]
+[65 / 100]
+[71 / 100]
+[73 / 100]
+[74 / 100]
+[76 / 100] KaitoKit
+/private/tmp/kaito-kit-current.27P4uQ/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[85 / 102] KaitoKitCompat
+[89 / 104] KaitoKitCompat
+[97 / 104] KaitoKitDynamic-product
+[99 / 104] KaitoKitDynamic-product
+[100 / 104] kaito-product
+[102 / 104] kaito-product
+[103 / 104] kaito-product
+Build complete! (63.70秒)
+case: block=4096 run=1
+0	67108864	kaito-accel-source64-4096
+total	1	67108864	
+case: block=4096 run=2
+real 0.46
+user 0.15
+sys 0.11
+0	67108864	kaito-accel-source64-4096
+total	1	67108864	
+case: block=4096 run=3
+real 0.11
+user 0.14
+sys 0.09
+0	67108864	kaito-accel-source64-4096
+total	1	67108864	
+case: block=4096 run=4
+real 0.11
+user 0.14
+sys 0.09
+0	67108864	kaito-accel-source64-4096
+total	1	67108864	
+case: block=4096 run=5
+real 0.11
+user 0.14
+sys 0.09
+0	67108864	kaito-accel-source64-4096
+total	1	67108864	
+real 0.11
+user 0.14
+sys 0.09
+blocks: 16384, blockMaxSize: 65536, independence: true, contentSize: 67108864
+name	bytes	median_s	GB_per_s	note
+scan-skipped (assume-uniform)
+cpu-1lane-apple	67108864	0.014451583	4.643703	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-16lane-apple	67108864	0.002680541	25.035567	16 static lanes; dispatch+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-16lane-apple-dynamic	67108864	0.003090167	21.716905	16 dynamic lanes; dispatch+locked block counter+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-1lane-swift	67108864	0.080111625	0.837692	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+single-block-cpu-1core-apple	4096	0.000000584	7.013699	block=0; decode/copy call only; scan/allocation/prefault/verification excluded; output reused; stored=false; rounds=5
+upload	67108864	0.002127667	31.541056	once per decoder; input MTLBuffer allocation+copy; input_bytes=35702307; bytes=decoded
+match: OK (gpu-thread-per-block; round=1)
+match: OK (gpu-thread-per-block; round=2)
+match: OK (gpu-thread-per-block; round=3)
+match: OK (gpu-thread-per-block; round=4)
+match: OK (gpu-thread-per-block; round=5)
+gpu-thread-per-block	67108864	0.007308875	9.181832	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-thread-per-block-cpu-wall	67108864	0.007869000	8.528258	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+match: OK (gpu-simd-per-block; round=1)
+match: OK (gpu-simd-per-block; round=2)
+match: OK (gpu-simd-per-block; round=3)
+match: OK (gpu-simd-per-block; round=4)
+match: OK (gpu-simd-per-block; round=5)
+gpu-simd-per-block	67108864	0.010649458	6.301622	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-simd-per-block-cpu-wall	67108864	0.011181750	6.001642	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+single-block-gpu-1thread	4096	0.000307375	0.013326	GPU execution only; block=0; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; rounds=5
+case: block=16384 run=1
+0	67108864	kaito-accel-source64-16384
+total	1	67108864	
+case: block=16384 run=2
+real 0.10
+user 0.11
+sys 0.04
+0	67108864	kaito-accel-source64-16384
+total	1	67108864	
+case: block=16384 run=3
+real 0.05
+user 0.12
+sys 0.04
+0	67108864	kaito-accel-source64-16384
+total	1	67108864	
+case: block=16384 run=4
+real 0.05
+user 0.12
+sys 0.04
+0	67108864	kaito-accel-source64-16384
+total	1	67108864	
+case: block=16384 run=5
+real 0.05
+user 0.12
+sys 0.04
+0	67108864	kaito-accel-source64-16384
+total	1	67108864	
+real 0.05
+user 0.12
+sys 0.03
+blocks: 4096, blockMaxSize: 65536, independence: true, contentSize: 67108864
+name	bytes	median_s	GB_per_s	note
+scan-skipped (assume-uniform)
+cpu-1lane-apple	67108864	0.014818792	4.528633	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-16lane-apple	67108864	0.002788458	24.066658	16 static lanes; dispatch+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-16lane-apple-dynamic	67108864	0.002739041	24.500861	16 dynamic lanes; dispatch+locked block counter+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-1lane-swift	67108864	0.084816834	0.791221	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+single-block-cpu-1core-apple	16384	0.000002709	6.047988	block=0; decode/copy call only; scan/allocation/prefault/verification excluded; output reused; stored=false; rounds=5
+upload	67108864	0.001714666	39.138155	once per decoder; input MTLBuffer allocation+copy; input_bytes=30044103; bytes=decoded
+match: OK (gpu-thread-per-block; round=1)
+match: OK (gpu-thread-per-block; round=2)
+match: OK (gpu-thread-per-block; round=3)
+match: OK (gpu-thread-per-block; round=4)
+match: OK (gpu-thread-per-block; round=5)
+gpu-thread-per-block	67108864	0.010894042	6.160144	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-thread-per-block-cpu-wall	67108864	0.011497167	5.836991	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+match: OK (gpu-simd-per-block; round=1)
+match: OK (gpu-simd-per-block; round=2)
+match: OK (gpu-simd-per-block; round=3)
+match: OK (gpu-simd-per-block; round=4)
+match: OK (gpu-simd-per-block; round=5)
+gpu-simd-per-block	67108864	0.011182292	6.001352	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-simd-per-block-cpu-wall	67108864	0.011716208	5.727866	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+single-block-gpu-1thread	16384	0.001279625	0.012804	GPU execution only; block=0; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; rounds=5
+case: block=65536 run=1
+0	67108864	kaito-accel-source64-65536
+total	1	67108864	
+case: block=65536 run=2
+real 0.08
+user 0.11
+sys 0.02
+0	67108864	kaito-accel-source64-65536
+total	1	67108864	
+case: block=65536 run=3
+real 0.04
+user 0.10
+sys 0.01
+0	67108864	kaito-accel-source64-65536
+total	1	67108864	
+case: block=65536 run=4
+real 0.04
+user 0.11
+sys 0.01
+0	67108864	kaito-accel-source64-65536
+total	1	67108864	
+case: block=65536 run=5
+real 0.04
+user 0.11
+sys 0.01
+0	67108864	kaito-accel-source64-65536
+total	1	67108864	
+real 0.04
+user 0.11
+sys 0.01
+blocks: 1024, blockMaxSize: 65536, independence: true, contentSize: 67108864
+name	bytes	median_s	GB_per_s	note
+scan-skipped (assume-uniform)
+cpu-1lane-apple	67108864	0.015093791	4.446124	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-16lane-apple	67108864	0.002838667	23.640978	16 static lanes; dispatch+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-16lane-apple-dynamic	67108864	0.002355958	28.484745	16 dynamic lanes; dispatch+locked block counter+decode/copy only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+cpu-1lane-swift	67108864	0.085795042	0.782200	serial decode/copy loop only; scan/allocation/prefault/verification excluded; output reused; rounds=5
+single-block-cpu-1core-apple	65536	0.000012208	5.368283	block=0; decode/copy call only; scan/allocation/prefault/verification excluded; output reused; stored=false; rounds=5
+upload	67108864	0.001597042	42.020726	once per decoder; input MTLBuffer allocation+copy; input_bytes=27151849; bytes=decoded
+match: OK (gpu-thread-per-block; round=1)
+match: OK (gpu-thread-per-block; round=2)
+match: OK (gpu-thread-per-block; round=3)
+match: OK (gpu-thread-per-block; round=4)
+match: OK (gpu-thread-per-block; round=5)
+gpu-thread-per-block	67108864	0.042194500	1.590465	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-thread-per-block-cpu-wall	67108864	0.042750000	1.569798	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+match: OK (gpu-simd-per-block; round=1)
+match: OK (gpu-simd-per-block; round=2)
+match: OK (gpu-simd-per-block; round=3)
+match: OK (gpu-simd-per-block; round=4)
+match: OK (gpu-simd-per-block; round=5)
+gpu-simd-per-block	67108864	0.013146000	5.104888	GPU execution only; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; simdgroups=4
+gpu-simd-per-block-cpu-wall	67108864	0.013682791	4.904618	command/encoder creation+encode+commit+wait only; scan/upload/buffer allocation/prefault/status reset/verification excluded; buffers reused
+single-block-gpu-1thread	65536	0.005241417	0.012503	GPU execution only; block=0; scan/upload/buffer allocation/prefault/verification excluded; buffers reused; rounds=5

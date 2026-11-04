@@ -1,0 +1,49 @@
+PPMd H/I context-access optimization (2026-11-04)
+
+Scope and provenance
+- KaitoKit's own PPMd source and frozen Swift differential decoders only.
+- No third-party decoder source or disassembly was used. 7zz is a black-box writer/test oracle.
+- The baseline executable has HEAD's PPMd sources plus the separately validated LZ4/LZX changes.
+
+Corpus
+- Scripts/make_ppmd_corpus.py uses KaitoKit's own image generator and fixed-seed text.
+- 16,777,216-byte text, three 2048-square BMPs (37,748,898 bytes total), and their three JPEG conversions (3,848,833 bytes total).
+- 7zz black-box PPMd H (7z) and PPMd I (ZIP), one thread, six archives.
+- Timing: five alternating whole-process rounds, kaito sha --sink --threads 1; output includes archive CRC verification. The table reports milliseconds; smaller is better.
+- Mac mini: /tmp/kaito-ppmd-corpus.wfvs1C/workloads. M4 Max: /tmp/kaito-ppmd-m4max.x26G41/workloads.
+- Input payloads match across machines. Container timestamps and container SHA-256 values may differ; each archive's manifest records its own values.
+
+Cumulative Mac mini measurements
+The baseline is the original A/B series; the final column combines the final stage's median for H and stage 4 for I. Every individual stage used alternating binaries.
+archive       baseline       final      change
+text.7z        184.931      170.333       7.89% less time
+text.zip       232.875      195.796      15.92% less time
+color.7z      5873.238     5569.464       5.17% less time
+color.zip     5285.860     4941.207       6.52% less time
+jpeg.7z        974.711      888.130       8.88% less time
+jpeg.zip       870.799      840.493       3.48% less time
+
+M4 Max: original/final direct comparison, three alternating rounds
+archive       baseline       final      change
+text.7z        185.504      170.098       8.30% less time
+text.zip       235.889      199.152      15.57% less time
+color.7z      6817.878     6530.736       4.21% less time
+color.zip     6130.307     5736.085       6.43% less time
+jpeg.7z       1176.791     1082.952       7.97% less time
+jpeg.zip      1060.755     1024.351       3.43% less time
+Raw results: kaito-ppmd-context-final-max-20261104.{txt,jsonl}.
+
+Candidate stages
+1. PPMd7Model: retain one validated maximum-context header for symbol selection, and read the checked inline binary state once. H text improved from 184.931 to 171.579 ms; the other five cases did not regress. Raw results: kaito-ppmd-context-once-mini-20261104.{txt,jsonl}.
+2. PPMdVarIModel: equivalent context/state-span validation reuse, including the SEE estimator. Against stage 1, text.zip 234.194 -> 195.930 ms, color.zip 5282.347 -> 5111.598 ms, jpeg.zip 865.842 -> 857.698 ms. The four PPMdDifferentialTests passed, including 38 generated archives, random/corrupt streams and exact returned-prefix/error comparisons. Raw results: kaito-ppmd-context-hi-mini-20261104.{txt,jsonl}.
+3. PPMd7Model: reuse the validated multi-state context/count in escape decoding and SEE estimation; reuse the selected state and searched suffix-state block in updateModel. Against stage 2, text.7z 171.133 -> 170.964 ms, color.7z 5827.552 -> 5632.954 ms, jpeg.7z 978.243 -> 887.269 ms. Raw results: kaito-ppmd-context-reuse-mini-20261104.{txt,jsonl}.
+4. PPMdVarIModel: pass the checked selected state to updateModel, reuse the searched suffix block and allocator-returned state storage while preserving enlarged-span validation. Against stage 3, text.zip 194.322 -> 195.796 ms, color.zip 5084.698 -> 4941.207 ms, jpeg.zip 857.344 -> 840.493 ms. Text is a small regression against stage 3 but remains substantially faster than the original baseline. The four PPMdDifferentialTests passed again in 158.406 seconds. Raw results: kaito-ppmd-context-update-mini-20261104.{txt,jsonl}.
+5. PPMd7Model: pass the already checked state count through the update loop to appendState and reuse fixed-offset fields only while their context proof remains valid. Against stage 4, text.7z 170.728 -> 170.333 ms, color.7z 5620.862 -> 5569.464 ms, jpeg.7z 894.910 -> 888.130 ms. Raw results: kaito-ppmd-context-append-mini-20261104.{txt,jsonl}.
+
+Verification completed so far
+- Both machines improved in every workload.
+- Public API: 496 outcomes from each independently linked executable were byte-identical, including successful output, returned prefixes, SHA-256 and exact reflected errors. Both files have SHA-256 2299b4c36740b698863cb88a59a58bdd725050c8cf9790ba3dfc98c4917f0ab5. Raw files: kaito-ppmd-outcomes-{baseline,candidate}-20261104.jsonl; log: kaito-ppmd-outcomes-mini-20261104.txt.
+- Final PPMdDifferentialTests: 4 tests, 0 failures in 158.406 seconds, including 38 generated H/I archives and corrupt-input/batch-size comparisons.
+- AddressSanitizer: 40 PPMd tests, 1 skipped, 0 failures in 509.073 seconds; no sanitizer findings. Log: kaito-ppmd-asan-mini-20261104.txt.
+- Full KaitoKit suite: 2,098 tests, 64 skipped, 0 failures in 1,380.578 seconds. KaitoKitCompatTests: 34 tests, 0 failures in 2.222 seconds. Log: kaito-codec-final-full-mini-20261104.txt.
+- Adopted in KaitoKit. No commit, push, or release was performed.

@@ -1,0 +1,13 @@
+Deflate64 primary Huffman lookup 11-bit experiment (2026-11-04)
+
+Candidate
+- Increase Deflate64HuffmanDecoder.primaryBits from 9 to 11 for literal/dynamic alphabets. Fixed special-purpose 7-bit tables were unchanged.
+
+Validation
+- Deflate64DifferentialTests: 4 tests, 1 skipped, 0 failures.
+- Baseline table: 3742.32 MiB/s; candidate table: 3693.84 MiB/s in the initial pair.
+- Eight alternating runs: baseline median 3787.815 MiB/s, candidate median 3773.945 MiB/s, candidate/baseline 0.99634 (0.37% slower).
+- Logs: Results/kaito-deflate64-primary11-before-max-20261104.txt, Results/kaito-deflate64-primary11-after-max-20261104.txt, Results/kaito-deflate64-primary11-ab-max-20261104.txt.
+
+Decision
+- No improvement was measured. The change was reverted to primaryBits=9.

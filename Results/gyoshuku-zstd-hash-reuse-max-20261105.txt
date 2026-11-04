@@ -1,0 +1,239 @@
+Fetching https://github.com/shunnag/KaitoKit.git from cache
+Fetched https://github.com/shunnag/KaitoKit.git from cache (0.45s)
+Computing version for https://github.com/shunnag/KaitoKit.git
+Computed https://github.com/shunnag/KaitoKit.git at 0.21.0 (0.90s)
+Creating working copy for https://github.com/shunnag/KaitoKit.git
+Working copy of https://github.com/shunnag/KaitoKit.git resolved at 0.21.0
+Building for debugging...
+[Planning deferred tasks]
+[34 / 66]
+[35 / 67] KaitoKit
+[44 / 126]
+[47 / 126]
+[54 / 126]
+[58 / 126]
+[64 / 126]
+[67 / 126]
+[73 / 126]
+[75 / 126]
+[76 / 126]
+[82 / 126] KaitoKit
+[85 / 126] KaitoKit
+[92 / 126] KaitoKit
+[93 / 126] KaitoKit-product
+[94 / 126] KaitoKit-product
+[95 / 126] KaitoKit-product
+[97 / 126] KaitoKit
+[100 / 126] KaitoKit
+[100 / 126] GyoshukuKit
+[101 / 127]
+[104 / 145] GyoshukuKit
+[105 / 145] KaitoKit
+[107 / 145] GyoshukuKit
+[114 / 145] GyoshukuKit
+[117 / 145] GyoshukuKit
+[120 / 145] GyoshukuKit
+[121 / 145] GyoshukuKit
+[122 / 145] GyoshukuKit
+[123 / 145] GyoshukuKit
+[124 / 145] GyoshukuKit
+[125 / 145] GyoshukuKit
+[126 / 145] GyoshukuKit
+[127 / 145] GyoshukuKit
+[127 / 145]
+[129 / 145] GyoshukuKit
+[135 / 146] GyoshukuKitTests-product
+[144 / 193]
+[146 / 193]
+[154 / 193]
+[157 / 193]
+[160 / 193]
+[161 / 193]
+[164 / 193]
+[165 / 193]
+[170 / 193] GyoshukuKitTests-product
+[173 / 193] GyoshukuKitTests-product
+[179 / 193] GyoshukuKitTests-product
+[181 / 193] GyoshukuKitTests-product
+[182 / 193] GyoshukuKitTests-product
+[183 / 193] GyoshukuKitTests-product
+[185 / 193] GyoshukuKitTests-product
+[186 / 193] GyoshukuKitTests-product
+[187 / 193] AllIncludingTests
+[187 / 193] GyoshukuKitTests-product
+[189 / 193] GyoshukuKitTests-product
+Build complete! (31.12秒)
+Test Suite 'Selected tests' started at 2026-11-05 04:09:36.882.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 04:09:36.883.
+Test Suite 'CompressedTarZstdTests' started at 2026-11-05 04:09:36.883.
+Test Case '-[GyoshukuKitTests.CompressedTarZstdTests testLevelsOneThreeAndNineteenWithRealTools]' started.
+Test Case '-[GyoshukuKitTests.CompressedTarZstdTests testLevelsOneThreeAndNineteenWithRealTools]' passed (2.312 seconds).
+Test Case '-[GyoshukuKitTests.CompressedTarZstdTests testRewriterAddDeleteRenameAndUpdaterRefusal]' started.
+Test Case '-[GyoshukuKitTests.CompressedTarZstdTests testRewriterAddDeleteRenameAndUpdaterRefusal]' passed (0.152 seconds).
+Test Case '-[GyoshukuKitTests.CompressedTarZstdTests testTwentyMiBAndMemberBoundariesWithFourThreads]' started.
+Test Case '-[GyoshukuKitTests.CompressedTarZstdTests testTwentyMiBAndMemberBoundariesWithFourThreads]' passed (3.034 seconds).
+Test Suite 'CompressedTarZstdTests' passed at 2026-11-05 04:09:42.381.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 5.498 (5.498) seconds
+Test Suite 'ReviewFixZstdBudgetTests' started at 2026-11-05 04:09:42.381.
+Test Case '-[GyoshukuKitTests.ReviewFixZstdBudgetTests testSpeedPriorityFallsBackToSingleFrameForItemAndBatch]' started.
+Test Case '-[GyoshukuKitTests.ReviewFixZstdBudgetTests testSpeedPriorityFallsBackToSingleFrameForItemAndBatch]' passed (5.358 seconds).
+Test Suite 'ReviewFixZstdBudgetTests' passed at 2026-11-05 04:09:47.740.
+	 Executed 1 test, with 0 failures (0 unexpected) in 5.358 (5.358) seconds
+Test Suite 'SpeedPriorityTests' started at 2026-11-05 04:09:47.740.
+Test Case '-[GyoshukuKitTests.SpeedPriorityTests testSpeedZstdZIP64ReservesEachFrameHeader]' started.
+Test Case '-[GyoshukuKitTests.SpeedPriorityTests testSpeedZstdZIP64ReservesEachFrameHeader]' passed (0.001 seconds).
+Test Case '-[GyoshukuKitTests.SpeedPriorityTests testZstdFrameThresholdAndLargeWindow]' started.
+Test Case '-[GyoshukuKitTests.SpeedPriorityTests testZstdFrameThresholdAndLargeWindow]' passed (1.439 seconds).
+Test Suite 'SpeedPriorityTests' passed at 2026-11-05 04:09:49.180.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 1.440 (1.440) seconds
+Test Suite 'ZipConcatenatedZstdProbeTests' started at 2026-11-05 04:09:49.180.
+Test Case '-[GyoshukuKitTests.ZipConcatenatedZstdProbeTests testIndependentReaders]' started.
+/private/tmp/gyoshuku-zstd-hash-reuse-max-20261105/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.ZipConcatenatedZstdProbeTests testIndependentReaders] : Test skipped - Set GYOSHUKU_MULTICORE_BENCHMARK=1 to run ZipConcatenatedZstdProbeTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.ZipConcatenatedZstdProbeTests testIndependentReaders]' skipped (0.001 seconds).
+Test Case '-[GyoshukuKitTests.ZipConcatenatedZstdProbeTests testLargeMemberFrameResetSize]' started.
+/private/tmp/gyoshuku-zstd-hash-reuse-max-20261105/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.ZipConcatenatedZstdProbeTests testLargeMemberFrameResetSize] : Test skipped - Set GYOSHUKU_MULTICORE_BENCHMARK=1 to run ZipConcatenatedZstdProbeTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.ZipConcatenatedZstdProbeTests testLargeMemberFrameResetSize]' skipped (0.000 seconds).
+Test Suite 'ZipConcatenatedZstdProbeTests' passed at 2026-11-05 04:09:49.181.
+	 Executed 2 tests, with 2 tests skipped and 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'ZipZstdWriterTests' started at 2026-11-05 04:09:49.181.
+Test Case '-[GyoshukuKitTests.ZipZstdWriterTests testLargeEntryStaysOneFrameAndThreadIndependent]' started.
+REFERENCE 1832BECF-E47B-4814-85C2-E5B7D91C6555/7zz-t: exit 0; Size:       9437313 | Compressed: 444
+REFERENCE 1832BECF-E47B-4814-85C2-E5B7D91C6555/7zz-l: exit 0; Volume Index = 0 | Offset = 0
+REFERENCE 1832BECF-E47B-4814-85C2-E5B7D91C6555/7zz-x: exit 0; Size:       9437313 | Compressed: 444
+REFERENCE B10536C2-B368-43C8-AFD0-475551D9321B/7zz-t: exit 0; Size:       9437313 | Compressed: 444
+REFERENCE B10536C2-B368-43C8-AFD0-475551D9321B/7zz-l: exit 0; Volume Index = 0 | Offset = 0
+REFERENCE B10536C2-B368-43C8-AFD0-475551D9321B/7zz-x: exit 0; Size:       9437313 | Compressed: 444
+Test Case '-[GyoshukuKitTests.ZipZstdWriterTests testLargeEntryStaysOneFrameAndThreadIndependent]' passed (2.031 seconds).
+Test Case '-[GyoshukuKitTests.ZipZstdWriterTests testLevelsAESAndZipCryptoWithSevenZipAndRawFrameOracle]' started.
+REFERENCE AEE9275A-C8B5-4404-948B-6B1DDAEAC57A/7zz-t: exit 0; Size:       1310721 | Compressed: 430061
+REFERENCE AEE9275A-C8B5-4404-948B-6B1DDAEAC57A/7zz-l: exit 0; Volume Index = 0 | Offset = 167572
+REFERENCE AEE9275A-C8B5-4404-948B-6B1DDAEAC57A/7zz-x: exit 0; Size:       1310721 | Compressed: 430061
+REFERENCE A4802FAD-25E1-45D2-8917-E5613A262D28/7zz-t: exit 0; Size:       1310721 | Compressed: 430261
+REFERENCE A4802FAD-25E1-45D2-8917-E5613A262D28/7zz-l: exit 0; Volume Index = 0 | Offset = 167689
+REFERENCE A4802FAD-25E1-45D2-8917-E5613A262D28/7zz-x: exit 0; Size:       1310721 | Compressed: 430261
+REFERENCE 1347C12D-EA5A-4448-95E5-686924A65C86/7zz-t: exit 0; Size:       1310721 | Compressed: 430109
+REFERENCE 1347C12D-EA5A-4448-95E5-686924A65C86/7zz-l: exit 0; Volume Index = 0 | Offset = 167608
+REFERENCE 1347C12D-EA5A-4448-95E5-686924A65C86/7zz-x: exit 0; Size:       1310721 | Compressed: 430109
+REFERENCE 27F0C31B-0F46-4533-8179-1FD3C15D6CCC/7zz-t: exit 0; Size:       1310721 | Compressed: 463942
+REFERENCE 27F0C31B-0F46-4533-8179-1FD3C15D6CCC/7zz-l: exit 0; Volume Index = 0 | Offset = 201453
+REFERENCE 27F0C31B-0F46-4533-8179-1FD3C15D6CCC/7zz-x: exit 0; Size:       1310721 | Compressed: 463942
+REFERENCE 65D8E49B-BE81-4387-8751-31431EEC468F/7zz-t: exit 0; Size:       1310721 | Compressed: 464142
+REFERENCE 65D8E49B-BE81-4387-8751-31431EEC468F/7zz-l: exit 0; Volume Index = 0 | Offset = 201570
+REFERENCE 65D8E49B-BE81-4387-8751-31431EEC468F/7zz-x: exit 0; Size:       1310721 | Compressed: 464142
+REFERENCE B3C238F2-FBF6-4975-A18E-7B26E3ACC729/7zz-t: exit 0; Size:       1310721 | Compressed: 463990
+REFERENCE B3C238F2-FBF6-4975-A18E-7B26E3ACC729/7zz-l: exit 0; Volume Index = 0 | Offset = 201489
+REFERENCE B3C238F2-FBF6-4975-A18E-7B26E3ACC729/7zz-x: exit 0; Size:       1310721 | Compressed: 463990
+REFERENCE 0B442C48-67F4-44F1-A11A-966C431833BE/7zz-t: exit 0; Size:       1310721 | Compressed: 412767
+REFERENCE 0B442C48-67F4-44F1-A11A-966C431833BE/7zz-l: exit 0; Volume Index = 0 | Offset = 150278
+REFERENCE 0B442C48-67F4-44F1-A11A-966C431833BE/7zz-x: exit 0; Size:       1310721 | Compressed: 412767
+REFERENCE EF49A6AA-1813-4A79-B9AD-CE97A5081649/7zz-t: exit 0; Size:       1310721 | Compressed: 412967
+REFERENCE EF49A6AA-1813-4A79-B9AD-CE97A5081649/7zz-l: exit 0; Volume Index = 0 | Offset = 150395
+REFERENCE EF49A6AA-1813-4A79-B9AD-CE97A5081649/7zz-x: exit 0; Size:       1310721 | Compressed: 412967
+REFERENCE 0E7C4A3F-C806-4333-AB35-EC9A8CD32E47/7zz-t: exit 0; Size:       1310721 | Compressed: 412815
+REFERENCE 0E7C4A3F-C806-4333-AB35-EC9A8CD32E47/7zz-l: exit 0; Volume Index = 0 | Offset = 150314
+REFERENCE 0E7C4A3F-C806-4333-AB35-EC9A8CD32E47/7zz-x: exit 0; Size:       1310721 | Compressed: 412815
+Test Case '-[GyoshukuKitTests.ZipZstdWriterTests testLevelsAESAndZipCryptoWithSevenZipAndRawFrameOracle]' passed (9.032 seconds).
+Test Case '-[GyoshukuKitTests.ZipZstdWriterTests testUpdaterBatchAdditionsAndRewriterWithEncryption]' started.
+REFERENCE D0A07E04-7065-4CB0-BA26-07054AEFE33B/7zz-t: exit 0; Size:       27 | Compressed: 276
+REFERENCE D0A07E04-7065-4CB0-BA26-07054AEFE33B/7zz-l: exit 0; Volume Index = 0 | Offset = 56
+REFERENCE D0A07E04-7065-4CB0-BA26-07054AEFE33B/7zz-x: exit 0; Size:       27 | Compressed: 276
+REFERENCE A760A3C4-DE0A-4933-9C97-A92819422AAA/7zz-t: exit 0; Size:       20 | Compressed: 284
+REFERENCE A760A3C4-DE0A-4933-9C97-A92819422AAA/7zz-l: exit 0; Volume Index = 0 | Offset = 82
+REFERENCE A760A3C4-DE0A-4933-9C97-A92819422AAA/7zz-x: exit 0; Size:       20 | Compressed: 284
+REFERENCE 46151B71-4720-4391-8166-00ED356A5673/7zz-t: exit 0; Size:       27 | Compressed: 326
+REFERENCE 46151B71-4720-4391-8166-00ED356A5673/7zz-l: exit 0; Volume Index = 0 | Offset = 56
+REFERENCE 46151B71-4720-4391-8166-00ED356A5673/7zz-x: exit 0; Size:       27 | Compressed: 326
+REFERENCE 60794537-6F78-453E-8BC9-B56EEB99259F/7zz-t: exit 0; Size:       20 | Compressed: 384
+REFERENCE 60794537-6F78-453E-8BC9-B56EEB99259F/7zz-l: exit 0; Volume Index = 0 | Offset = 121
+REFERENCE 60794537-6F78-453E-8BC9-B56EEB99259F/7zz-x: exit 0; Size:       20 | Compressed: 384
+REFERENCE 148BB134-65B4-4C91-AE63-3D1D1BE6A069/7zz-t: exit 0; Size:       27 | Compressed: 288
+REFERENCE 148BB134-65B4-4C91-AE63-3D1D1BE6A069/7zz-l: exit 0; Volume Index = 0 | Offset = 56
+REFERENCE 148BB134-65B4-4C91-AE63-3D1D1BE6A069/7zz-x: exit 0; Size:       27 | Compressed: 288
+REFERENCE AFA50B97-5796-4E97-B299-AB9A07F4049F/7zz-t: exit 0; Size:       20 | Compressed: 308
+REFERENCE AFA50B97-5796-4E97-B299-AB9A07F4049F/7zz-l: exit 0; Volume Index = 0 | Offset = 94
+REFERENCE AFA50B97-5796-4E97-B299-AB9A07F4049F/7zz-x: exit 0; Size:       20 | Compressed: 308
+Test Case '-[GyoshukuKitTests.ZipZstdWriterTests testUpdaterBatchAdditionsAndRewriterWithEncryption]' passed (1.293 seconds).
+Test Case '-[GyoshukuKitTests.ZipZstdWriterTests testZIP64ReservationIncludesFrameOverheadAndVersion]' started.
+Test Case '-[GyoshukuKitTests.ZipZstdWriterTests testZIP64ReservationIncludesFrameOverheadAndVersion]' passed (0.001 seconds).
+Test Suite 'ZipZstdWriterTests' passed at 2026-11-05 04:10:01.537.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 12.356 (12.357) seconds
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-05 04:10:01.537.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+/private/tmp/gyoshuku-zstd-hash-reuse-max-20261105/Tests/GyoshukuKitTests/Compression/Zstd/ZstdEncoderBenchmarkTests.swift:11: error: -[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark] : failed - Run ZstdEncoderBenchmarkTests with -c release
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' failed (0.433 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' failed at 2026-11-05 04:10:01.971.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.433 (0.433) seconds
+Test Suite 'ZstdEncoderTests' started at 2026-11-05 04:10:01.971.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testBitAccumulatorBoundariesAndReservedOutput]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testBitAccumulatorBoundariesAndReservedOutput]' passed (0.049 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testCancellationMakesEncoderTerminal]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testCancellationMakesEncoderTerminal]' passed (0.001 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testConcatenatedIndependentFramesAndInputPartitionDeterminism]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testConcatenatedIndependentFramesAndInputPartitionDeterminism]' passed (0.530 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testEveryLevelAndShortPeriodicInputs]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testEveryLevelAndShortPeriodicInputs]' passed (2.956 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testFastPairTailsAndSkippedRuns]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testFastPairTailsAndSkippedRuns]' passed (6.901 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testFastWriterThreadIdentity]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testFastWriterThreadIdentity]' passed (7.667 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testHeadersContentSizeAndTerminalErrors]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testHeadersContentSizeAndTerminalErrors]' passed (1.781 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testHuffmanOneAndFourStreamsWithDirectAndFSEWeights]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testHuffmanOneAndFourStreamsWithDirectAndFSEWeights]' passed (2.289 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testMatchRowsAndTreePreserveCandidatesAfterRebase]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testMatchRowsAndTreePreserveCandidatesAfterRebase]' passed (2.342 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testOptimalTreeBlockTailWithLongText]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testOptimalTreeBlockTailWithLongText]' passed (2.268 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testOptimalTreeBlockTailWithLongTextFullSize]' started.
+/private/tmp/gyoshuku-zstd-hash-reuse-max-20261105/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.ZstdEncoderTests testOptimalTreeBlockTailWithLongTextFullSize] : Test skipped - Set GYOSHUKU_LARGE_ENCODER_TESTS=1 to run ZstdEncoderTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testOptimalTreeBlockTailWithLongTextFullSize]' skipped (0.000 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testReusedLiteralHistogramTransitions]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testReusedLiteralHistogramTransitions]' passed (0.726 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testSequenceCountOneTwoThreeByteHeadersAndRLETables]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testSequenceCountOneTwoThreeByteHeadersAndRLETables]' passed (0.879 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testSequenceLengthCodesRepeatRulesAndFSETables]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testSequenceLengthCodesRepeatRulesAndFSETables]' passed (0.152 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testSequenceReservationWithWideOffsetAndExtraBits]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testSequenceReservationWithWideOffsetAndExtraBits]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testSmallAndRLEAtAllRequestedLevels]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testSmallAndRLEAtAllRequestedLevels]' passed (1.771 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testTextAndRandomWithOddPiecesAtAllRequestedLevels]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testTextAndRandomWithOddPiecesAtAllRequestedLevels]' passed (2.116 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testTextAndRandomWithOddPiecesAtAllRequestedLevelsFullSize]' started.
+/private/tmp/gyoshuku-zstd-hash-reuse-max-20261105/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.ZstdEncoderTests testTextAndRandomWithOddPiecesAtAllRequestedLevelsFullSize] : Test skipped - Set GYOSHUKU_LARGE_ENCODER_TESTS=1 to run ZstdEncoderTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testTextAndRandomWithOddPiecesAtAllRequestedLevelsFullSize]' skipped (0.000 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testTwentyMiBMixedCrossesWindowAndRawRLECompressedTransitions]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testTwentyMiBMixedCrossesWindowAndRawRLECompressedTransitions]' passed (4.250 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testTwentyMiBMixedCrossesWindowAndRawRLECompressedTransitionsFullSize]' started.
+/private/tmp/gyoshuku-zstd-hash-reuse-max-20261105/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.ZstdEncoderTests testTwentyMiBMixedCrossesWindowAndRawRLECompressedTransitionsFullSize] : Test skipped - Set GYOSHUKU_LARGE_ENCODER_TESTS=1 to run ZstdEncoderTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testTwentyMiBMixedCrossesWindowAndRawRLECompressedTransitionsFullSize]' skipped (0.000 seconds).
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testUniformLiteralHistogramUsesRaw]' started.
+Test Case '-[GyoshukuKitTests.ZstdEncoderTests testUniformLiteralHistogramUsesRaw]' passed (0.431 seconds).
+Test Suite 'ZstdEncoderTests' passed at 2026-11-05 04:10:39.079.
+	 Executed 21 tests, with 3 tests skipped and 0 failures (0 unexpected) in 37.107 (37.108) seconds
+Test Suite 'ZstdParallelBenchmarkTests' started at 2026-11-05 04:10:39.079.
+Test Case '-[GyoshukuKitTests.ZstdParallelBenchmarkTests testWritersAtOneFourEightTwelveThreads]' started.
+/private/tmp/gyoshuku-zstd-hash-reuse-max-20261105/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.ZstdParallelBenchmarkTests testWritersAtOneFourEightTwelveThreads] : Test skipped - Set GYOSHUKU_ZSTD_PARALLEL_BENCHMARK=1 to run ZstdParallelBenchmarkTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.ZstdParallelBenchmarkTests testWritersAtOneFourEightTwelveThreads]' skipped (0.000 seconds).
+Test Suite 'ZstdParallelBenchmarkTests' passed at 2026-11-05 04:10:39.080.
+	 Executed 1 test, with 1 test skipped and 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'ZstdWriterConfigurationTests' started at 2026-11-05 04:10:39.080.
+Test Case '-[GyoshukuKitTests.ZstdWriterConfigurationTests testFixedChunksAreBoundedAndThreadIndependent]' started.
+Test Case '-[GyoshukuKitTests.ZstdWriterConfigurationTests testFixedChunksAreBoundedAndThreadIndependent]' passed (1.002 seconds).
+Test Case '-[GyoshukuKitTests.ZstdWriterConfigurationTests testMemoryBudgetReducesThreadsAndRejectsBeforeCreatingOutput]' started.
+Test Case '-[GyoshukuKitTests.ZstdWriterConfigurationTests testMemoryBudgetReducesThreadsAndRejectsBeforeCreatingOutput]' passed (0.001 seconds).
+Test Suite 'ZstdWriterConfigurationTests' passed at 2026-11-05 04:10:40.083.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 1.003 (1.003) seconds
+Test Suite 'ZstdXXH64Tests' started at 2026-11-05 04:10:40.083.
+Test Case '-[GyoshukuKitTests.ZstdXXH64Tests testKnownVectors]' started.
+Test Case '-[GyoshukuKitTests.ZstdXXH64Tests testKnownVectors]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.ZstdXXH64Tests testStreamingStripesSlicesAndSeeds]' started.
+Test Case '-[GyoshukuKitTests.ZstdXXH64Tests testStreamingStripesSlicesAndSeeds]' passed (0.109 seconds).
+Test Suite 'ZstdXXH64Tests' passed at 2026-11-05 04:10:40.192.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.109 (0.110) seconds
+Test Suite 'GyoshukuKitTests.xctest' failed at 2026-11-05 04:10:40.192.
+	 Executed 39 tests, with 6 tests skipped and 1 failure (0 unexpected) in 63.306 (63.309) seconds
+Test Suite 'Selected tests' failed at 2026-11-05 04:10:40.192.
+	 Executed 39 tests, with 6 tests skipped and 1 failure (0 unexpected) in 63.306 (63.310) seconds
+Note: Some test targets reported failures:
+  - GyoshukuKitTests (XCTest)

@@ -1,0 +1,100 @@
+Building for debugging...
+[2 / 28]
+[3 / 29] KaitoKit
+[5 / 31] KaitoKit
+[7 / 33] KaitoKit
+[15 / 38] KaitoKit
+[25 / 34] KaitoKitCompat-product
+[30 / 38] KaitoKitCompatTests-product
+[32 / 38] KaitoKitCompatTests-product
+[34 / 39] KaitoKitTests-product
+[36 / 41] KaitoKitTests-product
+[39 / 41] KaitoKitTests-product
+[40 / 41] KaitoKitTests-product
+[45 / 45] kaito-product
+Build complete! (6.64秒)
+Test Suite 'Selected tests' started at 2026-11-04 23:04:40.708.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 23:04:40.709.
+Test Suite 'RAR5DecoderTests' started at 2026-11-04 23:04:40.709.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testDeferredFailuresKeepExactErrorsAcrossRepeatedReads]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testDeferredFailuresKeepExactErrorsAcrossRepeatedReads]' passed (0.002 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testDeltaFilterOutputResumesAcrossArbitraryBufferSizes]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testDeltaFilterOutputResumesAcrossArbitraryBufferSizes]' passed (0.092 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testDeterministicFilterPayloadMutantsCompleteBoundedly]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testDeterministicFilterPayloadMutantsCompleteBoundedly]' passed (0.018 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testE8FilterOutputResumesAcrossArbitraryBufferSizes]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testE8FilterOutputResumesAcrossArbitraryBufferSizes]' passed (0.116 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testGeneratedMatchStreamHandlesShortSourceAndTinyOutputReads]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testGeneratedMatchStreamHandlesShortSourceAndTinyOutputReads]' passed (0.146 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testGeneratedSolidAndLargeMemberUseReaderThreadBudget]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testGeneratedSolidAndLargeMemberUseReaderThreadBudget]' passed (0.647 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testHuffmanPrimaryRebuildAndLongCodeLogicalEnd]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testHuffmanPrimaryRebuildAndLongCodeLogicalEnd]' passed (0.002 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testKnownOutputAndFullWindowDecodeIdenticallyAtPowerOfTwoBoundaries]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testKnownOutputAndFullWindowDecodeIdenticallyAtPowerOfTwoBoundaries]' passed (0.363 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testLiteralBlocksStreamThroughOneByteReadsAndReuseTables]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testLiteralBlocksStreamThroughOneByteReadsAndReuseTables]' passed (0.002 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testMalformedAndUnsupportedFilterParametersAreRejected]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testMalformedAndUnsupportedFilterParametersAreRejected]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testMalformedBlockHeadersAndTablesAreRejected]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testMalformedBlockHeadersAndTablesAreRejected]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testManyTinyNonSolidEntriesWithLargeDeclaredDictionaries]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testManyTinyNonSolidEntriesWithLargeDeclaredDictionaries]' passed (0.318 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testNonSolidMatchesBeforeOutputKeepTheOriginalError]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testNonSolidMatchesBeforeOutputKeepTheOriginalError]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testParallelBlocksMatchSerialBytesAndDeferredFailures]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testParallelBlocksMatchSerialBytesAndDeferredFailures]' passed (7.066 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testParallelBudgetAndSingleThreadDoNotSubmitLeaves]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testParallelBudgetAndSingleThreadDoNotSubmitLeaves]' passed (0.210 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testParallelMatchesAndSolidContinuation]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testParallelMatchesAndSolidContinuation]' passed (0.372 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testPendingMatchesWrapAndPreserveSolidHistory]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testPendingMatchesWrapAndPreserveSolidHistory]' passed (0.997 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testSolidStateCarriesDictionaryTablesDistancesAndLastLength]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testSolidStateCarriesDictionaryTablesDistancesAndLastLength]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testSourceFailuresAndInvalidCountsAreThrownWithoutAborting]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testSourceFailuresAndInvalidCountsAreThrownWithoutAborting]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testTinyEntryStillChecksDeclaredDictionaryLimitAndGrammar]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testTinyEntryStillChecksDeclaredDictionaryLimitAndGrammar]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testUnknownSizeFutureFilterFailsTruncatedAfterRawStreamEnds]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testUnknownSizeFutureFilterFailsTruncatedAfterRawStreamEnds]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.RAR5DecoderTests testVersionOneTablesAndRoundedDictionary]' started.
+Test Case '-[KaitoKitTests.RAR5DecoderTests testVersionOneTablesAndRoundedDictionary]' passed (0.194 seconds).
+Test Suite 'RAR5DecoderTests' passed at 2026-11-04 23:04:51.261.
+	 Executed 22 tests, with 0 failures (0 unexpected) in 10.550 (10.551) seconds
+Test Suite 'RAR5HuffmanTableTests' started at 2026-11-04 23:04:51.261.
+Test Case '-[KaitoKitTests.RAR5HuffmanTableTests testBuildAndDecodeMatchOriginalForRandomLengthSets]' started.
+Test Case '-[KaitoKitTests.RAR5HuffmanTableTests testBuildAndDecodeMatchOriginalForRandomLengthSets]' passed (1.275 seconds).
+Test Suite 'RAR5HuffmanTableTests' passed at 2026-11-04 23:04:52.535.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.275 (1.275) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 23:04:52.536.
+	 Executed 23 tests, with 0 failures (0 unexpected) in 11.825 (11.826) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:04:52.536.
+	 Executed 23 tests, with 0 failures (0 unexpected) in 11.825 (11.827) seconds
+Test Suite 'Selected tests' started at 2026-11-04 23:04:52.609.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-04 23:04:52.610.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-04 23:04:52.610.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:04:52.610.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Building for production...
+[2 / 9]
+[3 / 10] KaitoKit
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar-primary/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[5 / 11] KaitoKit
+[11 / 14] kaito-product
+[13 / 14] kaito-product
+[14 / 14] kaito-product
+Build complete! (62.38秒)
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar5-text.rar	baseline	20.591000	5	16777216	4	20.628000,20.434000,20.989000,20.554000
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar5-text.rar	candidate	24.106500	5	16777216	4	24.121000,24.187000,24.092000,24.084000
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar5-color.rar	baseline	198.391000	5	37748898	4	198.581000,198.169000,198.201000,199.134000
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar5-color.rar	candidate	223.110500	5	37748898	4	223.160000,223.061000,224.010000,222.877000

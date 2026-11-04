@@ -1,0 +1,36 @@
+Building for production...
+[1 / 6]
+[2 / 5] GyoshukuKit
+[3 / 6] GyoshukuKit
+[10 / 11] GyoshukuKitTests-product
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/GyoshukuKit/Tests/GyoshukuKitTests/Probes/LZ4FrameEncoderBenchmarkTests.swift:21:17: [1;33mwarning: [1;39mimmutable value 'iteration' was never used; consider replacing with '_' or removing it[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/no-usage\NoUsage]8;;\]
+[0;36m19 |[0;0m             var reference: Data?
+[0;36m20 |[0;0m             var durations: [Double] = []
+[0;36m21 |[0;0m             for iteration in 0..<repeats {
+   [0;36m|[0;0m                 `- [1;33mwarning: [1;39mimmutable value 'iteration' was never used; consider replacing with '_' or removing it[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/no-usage\NoUsage]8;;\]
+[0;36m22 |[0;0m                 let encoder = try LZ4FrameEncoder(contentSize: UInt64(input.count), blockChecksums: true, threads: 1)
+[0;36m23 |[0;0m                 var encoded = Data()
+
+[#NoUsage]: <https://docs.swift.org/compiler/documentation/diagnostics/no-usage>
+[11 / 12] GyoshukuKitTests-product
+[15 / 19] GyoshukuKitTests-product
+[17 / 19] GyoshukuKitTests-product
+Build complete! (90.27秒)
+Test Suite 'Selected tests' started at 2026-11-04 23:18:20.373.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:18:20.373.
+Test Suite 'LZWStreamEncoderBenchmarkTests' started at 2026-11-04 23:18:20.373.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' started.
+LZW-BENCH	corpus	maxbits	bytes	best_s	best_MBps	median_s	median_MBps
+LZW-BENCH	text	12	959960	0.026640	157.443	0.026828	156.340
+LZW-BENCH	text	16	948871	0.036348	115.393	0.036643	114.465
+LZW-BENCH	binary	12	2540751	0.035957	114.834	0.035978	114.767
+LZW-BENCH	binary	16	2081725	0.037428	110.320	0.037475	110.182
+LZW-BENCH	random	12	5913669	0.050356	83.293	0.050841	82.498
+LZW-BENCH	random	16	5194055	0.053486	78.419	0.053649	78.181
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' passed (1.965 seconds).
+Test Suite 'LZWStreamEncoderBenchmarkTests' passed at 2026-11-04 23:18:22.338.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.965 (1.965) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:18:22.338.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.965 (1.965) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:18:22.338.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.965 (1.966) seconds

@@ -1,0 +1,12 @@
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+workloads/larc-lz1-text.lzh	baseline	85.317500	50	16777216	4	86.086000,85.181000,85.454000,84.792000
+workloads/larc-lz1-text.lzh	candidate	84.774000	50	16777216	4	83.950000,84.650000,87.586000,84.898000
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+workloads/larc-lz1-color.lzh	baseline	1434.640500	10	37748898	4	1448.271000,1438.084000,1423.091000,1431.197000
+workloads/larc-lz1-color.lzh	candidate	1411.836000	10	37748898	4	1414.195000,1410.271000,1413.401000,1408.256000
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+workloads/larc-lz2-text.lzh	baseline	85.732000	50	16777216	4	85.765000,85.699000,84.871000,85.880000
+workloads/larc-lz2-text.lzh	candidate	85.140000	50	16777216	4	84.716000,84.575000,85.946000,85.564000
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+workloads/larc-lz2-color.lzh	baseline	1435.919000	10	37748898	4	1446.814000,1423.693000,1448.595000,1425.024000
+workloads/larc-lz2-color.lzh	candidate	1409.398500	10	37748898	4	1406.883000,1413.741000,1410.874000,1407.923000

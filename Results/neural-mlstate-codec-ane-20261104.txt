@@ -1,0 +1,87 @@
+
+case: explicit
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes in: 4194304
+bytes out: 2146672
+ratio: 0.511806; bits/byte: 4.094452
+wall seconds: 14.189035; bytes/s: 295601.773
+predictor seconds: 13.564600; coder seconds: 0.620942; steps: 4096
+predictor ms/step: 3.311670; coder ms/step: 0.151597
+real 14.35
+user 7.10
+sys 2.70
+
+case: stateful
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2146681
+ratio: 0.511809; bits/byte: 4.094469
+wall seconds: 10.546412; bytes/s: 397699.633
+predictor seconds: 9.945825; coder seconds: 0.597482; steps: 4096
+predictor ms/step: 2.428180; coder ms/step: 0.145870
+real 10.61
+user 5.13
+sys 1.92
+
+case: stateful
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2146681
+ratio: 0.511809; bits/byte: 4.094469
+wall seconds: 10.494882; bytes/s: 399652.310
+predictor seconds: 9.890207; coder seconds: 0.601407; steps: 4096
+predictor ms/step: 2.414601; coder ms/step: 0.146828
+real 10.56
+user 5.12
+sys 1.95
+
+case: explicit
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes in: 4194304
+bytes out: 2146672
+ratio: 0.511806; bits/byte: 4.094452
+wall seconds: 13.580424; bytes/s: 308849.272
+predictor seconds: 12.955243; coder seconds: 0.621588; steps: 4096
+predictor ms/step: 3.162901; coder ms/step: 0.151755
+real 13.73
+user 7.05
+sys 2.73
+
+case: explicit
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes in: 4194304
+bytes out: 2146672
+ratio: 0.511806; bits/byte: 4.094452
+wall seconds: 14.005870; bytes/s: 299467.591
+predictor seconds: 13.378014; coder seconds: 0.624256; steps: 4096
+predictor ms/step: 3.266117; coder ms/step: 0.152406
+real 14.15
+user 7.08
+sys 2.70
+
+case: stateful
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2146681
+ratio: 0.511809; bits/byte: 4.094469
+wall seconds: 10.443590; bytes/s: 401615.141
+predictor seconds: 9.835732; coder seconds: 0.604529; steps: 4096
+predictor ms/step: 2.401302; coder ms/step: 0.147590
+real 10.51
+user 5.10
+sys 1.94
+preferred-device histogram: [ANE: 18, n/a: 14]
+bytes in: 2146672
+bytes out: 4194304
+ratio: 0.511806; bits/byte: 4.094452
+wall seconds: 14.098763; bytes/s: 297494.459
+predictor seconds: 13.471645; coder seconds: 0.623822; steps: 4096
+predictor ms/step: 3.288976; coder ms/step: 0.152300
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 2146681
+bytes out: 4194304
+ratio: 0.511809; bits/byte: 4.094469
+wall seconds: 10.373353; bytes/s: 404334.458
+predictor seconds: 9.768767; coder seconds: 0.601743; steps: 4096
+predictor ms/step: 2.384953; coder ms/step: 0.146910
+match: OK (round trips and every range-coded payload byte)

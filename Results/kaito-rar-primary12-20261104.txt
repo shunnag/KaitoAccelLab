@@ -1,0 +1,21 @@
+RAR3 / RAR5 12-bit primary lookup experiment (2026-11-04)
+
+Decision: not adopted. The production trees retain 10-bit primary tables.
+
+Method
+- A separate research clone was used: /tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar-primary. No production source was edited for this experiment.
+- RAR29 uses one shared rar29PrimaryBits = 12 for table construction and cursor peek/fallback, avoiding a width mismatch. RAR5 uses primaryBits = 12 with the existing canonical fallback.
+- RAR 6.24 black-box writer created non-solid -ma4/-ma5, -m3 archives from the fixed 16,777,216-byte text and three BMPs (37,748,898 bytes). No third-party decoder source was read.
+- Scripts/benchmark_kaito_inprocess.py, kaito bench --threads 1, five extractions per timing, four alternating timings per executable on M4 Max. Values are milliseconds; smaller is better.
+
+archive       baseline    12 bit      time ratio
+rar29-text     30.525      31.370       1.0277 (slower)
+rar29-color   220.540     218.038       0.9887 (faster)
+rar5-text      20.5215     21.4635      1.0459 (slower)
+rar5-color    198.6795    200.198       1.0076 (slower)
+
+- RAR4ReaderTests, RAR5HuffmanTableTests and RAR5DecoderTests passed in the research clone.
+- All benchmark byte counts matched between executables.
+- RAR29's small color improvement does not compensate for its text regression. RAR5 regressed in both workloads. A larger primary table is not automatically beneficial: table construction and cache effects matter.
+- Raw test/build/timing log: kaito-rar-primary12-max-20261104.txt. Baseline A/A measurements: kaito-rar-primary-baseline-max-20261104.txt.
+- Mac mini timing was not pursued because this candidate is not an adoption candidate. The research clone remains outside the production repositories.

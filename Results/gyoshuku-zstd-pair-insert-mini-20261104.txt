@@ -1,0 +1,25 @@
+Zstandard paired dictionary insertion experiment (2026-11-04)
+
+Candidate
+- In fast and doubleHash match insertion, load two positions and calculate both hashes before storing them.
+- Preserve the original insertion sequence and head/tag/short store order, including collisions. Keep a scalar tail for the final position.
+- A temporary benchmark-only filter selected levels 1 and 3; default test behavior was restored after the experiment.
+
+Validation
+- Local debug ZstdEncoderTests: 21 tests, 3 skipped, 0 failures.
+- The six initial level 1/3 frames were byte-identical to the original baseline.
+- Five alternating before/after xctest runs: Results/gyoshuku-zstd-pair-insert-ab-mini-20261104.txt
+- All 30 frame pairs (3 corpora x levels 1/3 x 5 rounds) were byte-identical according to cmp.
+
+Median of five alternating Mac mini runs
+level, corpus, baseline_MBps, candidate_MBps, speedup
+1, text, 370.569, 371.091, 1.001409
+1, binary, 328.363, 327.475, 0.997296
+1, mixed, 630.577, 627.848, 0.995672
+3, text, 311.156, 310.645, 0.998358
+3, binary, 214.747, 213.957, 0.996321
+3, mixed, 415.870, 417.866, 1.004800
+
+Decision
+- All differences were within about 0.5%, with no consistent improvement by level or corpus.
+- Not adopted. The parser experiment and temporary benchmark filters were reverted.

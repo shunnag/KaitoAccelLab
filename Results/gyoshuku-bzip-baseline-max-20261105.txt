@@ -1,0 +1,156 @@
+Fetching https://github.com/shunnag/KaitoKit.git
+[1/8454] Fetching kaitokit
+Fetched https://github.com/shunnag/KaitoKit.git (1.71s)
+Computing version for https://github.com/shunnag/KaitoKit.git
+Computed https://github.com/shunnag/KaitoKit.git at 0.21.0 (2.22s)
+Creating working copy for https://github.com/shunnag/KaitoKit.git
+Working copy of https://github.com/shunnag/KaitoKit.git resolved at 0.21.0
+Building for debugging...
+[Planning deferred tasks]
+[34 / 66]
+[35 / 67] KaitoKit
+[45 / 126]
+[47 / 126]
+[54 / 126]
+[58 / 126]
+[64 / 126]
+[67 / 126]
+[73 / 126]
+[75 / 126]
+[76 / 126]
+[82 / 126] KaitoKit
+[91 / 126] KaitoKit
+[92 / 126] KaitoKit-product
+[93 / 126] KaitoKit-product
+[96 / 126] KaitoKit
+[97 / 126] KaitoKit
+[99 / 126] KaitoKit
+[100 / 126] KaitoKit
+[100 / 126] GyoshukuKit
+[101 / 127]
+[104 / 145] GyoshukuKit
+[104 / 145] KaitoKit
+[106 / 145] GyoshukuKit
+[108 / 145] GyoshukuKit
+[115 / 145] GyoshukuKit
+[118 / 145] KaitoKit
+[119 / 145] GyoshukuKit
+[120 / 145] GyoshukuKitTests-product
+[123 / 145] GyoshukuKit
+[124 / 145] GyoshukuKit
+[127 / 145] GyoshukuKit
+[129 / 145] GyoshukuKit
+[135 / 146] GyoshukuKitTests-product
+[144 / 193]
+[151 / 193]
+[155 / 193]
+[159 / 193]
+[161 / 193]
+[164 / 193]
+[165 / 193]
+[170 / 193] GyoshukuKitTests-product
+[173 / 193] GyoshukuKitTests-product
+[178 / 193] GyoshukuKitTests-product
+[179 / 193] GyoshukuKitTests-product
+[181 / 193] GyoshukuKitTests-product
+[183 / 193] GyoshukuKitTests-product
+[184 / 193] GyoshukuKitTests-product
+[185 / 193] GyoshukuKitTests-product
+[186 / 193] GyoshukuKitTests-product
+[187 / 193] GyoshukuKitTests-product
+[187 / 193] AllIncludingTests
+[187 / 193] GyoshukuKitTests-product
+[189 / 193] GyoshukuKitTests-product
+Build complete! (30.62秒)
+Test Suite 'Selected tests' started at 2026-11-05 02:49:52.044.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 02:49:52.045.
+Test Suite 'Bzip2SpliceTests' started at 2026-11-05 02:49:52.045.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testAllEightEOSPaddingCandidates]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testAllEightEOSPaddingCandidates]' passed (0.001 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testBulkPayloadAtEveryBitOffsetMatchesBitByBitReference]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testBulkPayloadAtEveryBitOffsetMatchesBitByBitReference]' passed (1.553 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testEmptyOneByteAndEOSCandidateValidation]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testEmptyOneByteAndEOSCandidateValidation]' passed (0.014 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testFixedMemoryReservations]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testFixedMemoryReservations]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testForcedCutsDecodeAsExactlyOneStream]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testForcedCutsDecodeAsExactlyOneStream]' passed (0.080 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeIdentityAcrossTheRealInputCap]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeIdentityAcrossTheRealInputCap]' passed (1.719 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeSeparateFinishMatchesWholeInputAtExactBlockTail]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeSeparateFinishMatchesWholeInputAtExactBlockTail]' passed (1.726 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testManyThreadsKeepSizeBasedChunkCountAndIdentity]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testManyThreadsKeepSizeBasedChunkCountAndIdentity]' passed (2.200 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testOddReadsAndMultiBlockChunksKeepIdentity]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testOddReadsAndMultiBlockChunksKeepIdentity]' passed (1.131 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRandomTextAndExactBlockIdentityAtLevels1And5And9]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRandomTextAndExactBlockIdentityAtLevels1And5And9]' passed (3.739 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize]' started.
+/private/tmp/gyoshuku-bzip-max-20261105/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize] : Test skipped - Set GYOSHUKU_LARGE_ENCODER_TESTS=1 to run Bzip2SpliceTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize]' skipped (0.001 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsNearEveryPredictedBoundary]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsNearEveryPredictedBoundary]' passed (1.105 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testScannerCarriesPendingRunAndCountsFinalBlock]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testScannerCarriesPendingRunAndCountsFinalBlock]' passed (0.294 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testSizeBasedChunkWidthsAndEstimatedCounts]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testSizeBasedChunkWidthsAndEstimatedCounts]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testUnknownSizeStreamingIdentityAcrossThreadsAndReadSizes]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testUnknownSizeStreamingIdentityAcrossThreadsAndReadSizes]' passed (1.548 seconds).
+Test Suite 'Bzip2SpliceTests' passed at 2026-11-05 02:50:07.157.
+	 Executed 15 tests, with 1 test skipped and 0 failures (0 unexpected) in 15.112 (15.113) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 02:50:07.157.
+	 Executed 15 tests, with 1 test skipped and 0 failures (0 unexpected) in 15.112 (15.113) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 02:50:07.157.
+	 Executed 15 tests, with 1 test skipped and 0 failures (0 unexpected) in 15.112 (15.113) seconds
+Building for production...
+[Planning deferred tasks]
+[26 / 53] KaitoKit
+[36 / 96]
+[39 / 96]
+[46 / 96]
+[50 / 96]
+[56 / 96]
+[59 / 96]
+[65 / 96]
+[67 / 96]
+[68 / 96]
+[70 / 96] KaitoKit
+[77 / 97] GyoshukuKit
+[80 / 99] GyoshukuKit
+[90 / 100] GyoshukuKitTests-product
+[99 / 131]
+[104 / 131]
+[111 / 131]
+[114 / 131]
+[117 / 131]
+[120 / 131]
+[121 / 131]
+[122 / 131] GyoshukuKitTests-product
+[127 / 131] GyoshukuKitTests-product
+[129 / 131] GyoshukuKitTests-product
+Build complete! (171.38秒)
+Test Suite 'Selected tests' started at 2026-11-05 02:53:00.760.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 02:53:00.761.
+Test Suite 'Bzip2BlockScannerBenchmarkTests' started at 2026-11-05 02:53:00.761.
+Test Case '-[GyoshukuKitTests.Bzip2BlockScannerBenchmarkTests testThroughput]' started.
+BZIP2-SCAN	corpus	level	blocks	best_s	best_MBps	median_s	median_MBps
+BZIP2-SCAN	text	1	42	0.003417250	1227.392	0.003439375	1219.496
+BZIP2-SCAN	text	9	5	0.003249958	1290.572	0.003433875	1221.449
+BZIP2-SCAN	alternating	1	42	0.003211333	1306.094	0.003232542	1297.525
+BZIP2-SCAN	alternating	9	5	0.002130750	1968.464	0.002145875	1954.589
+BZIP2-SCAN	runs127	1	2	0.002376958	1764.568	0.002427125	1728.096
+BZIP2-SCAN	runs127	9	1	0.002397167	1749.692	0.002405917	1743.329
+BZIP2-SCAN	repeated	1	1	0.002745500	1527.701	0.002763500	1517.751
+BZIP2-SCAN	repeated	9	1	0.002735583	1533.239	0.002754833	1522.526
+BZIP2-SCAN	random	1	42	0.003139792	1335.854	0.003292000	1274.090
+BZIP2-SCAN	random	9	5	0.003278542	1279.320	0.003293208	1273.622
+Test Case '-[GyoshukuKitTests.Bzip2BlockScannerBenchmarkTests testThroughput]' passed (0.628 seconds).
+Test Suite 'Bzip2BlockScannerBenchmarkTests' passed at 2026-11-05 02:53:01.389.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.628 (0.628) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 02:53:01.389.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.628 (0.628) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 02:53:01.389.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.628 (0.629) seconds
+error: Unknown option '--show-bin-path'
+Usage: swift test <options> <subcommand>
+  See 'test -help' for more information.

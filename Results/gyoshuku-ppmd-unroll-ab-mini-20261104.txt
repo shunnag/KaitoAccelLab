@@ -1,0 +1,534 @@
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:22:35.532.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:22:35.532.
+Test Suite 'PPMdEncoderBenchmarkTests' started at 2026-11-04 20:22:35.532.
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+PPMD-BENCH-SOURCE	/usr/lib/dyld	4129088
+PPMD-BENCH-TOOL	7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+PPMD-BENCH	corpus	variant	level	encoder	bytes	MB/s	seconds
+PPMD-BENCH-CORPUS	text	8388608
+PPMD-BENCH	text	H	1	swift	703855	120.777	0.069456
+PPMd oracle: text-H-1, input=8388608, archive=703962
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	H	1	7zz	703855	133.383	0.062891
+PPMD-BENCH-TARGET	text	H	1	speed/7zz=0.905	size-gap=0.000%
+PPMD-BENCH	text	H	6	swift	328737	150.836	0.055614
+PPMd oracle: text-H-6, input=8388608, archive=328844
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	text	H	6	7zz	328737	172.457	0.048642
+PPMD-BENCH-TARGET	text	H	6	speed/7zz=0.875	size-gap=0.000%
+PPMD-BENCH	text	H	9	swift	293408	129.487	0.064784
+PPMd oracle: text-H-9, input=8388608, archive=293515
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	H	9	7zz	293408	132.115	0.063495
+PPMD-BENCH-TARGET	text	H	9	speed/7zz=0.980	size-gap=0.000%
+PPMD-BENCH	text	I	1	swift	704541	113.428	0.073955
+PPMd oracle: text-I-1, input=8388608, archive=704661
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	I	1	7zz	704541	120.788	0.069449
+PPMD-BENCH-TARGET	text	I	1	speed/7zz=0.939	size-gap=0.000%
+PPMD-BENCH	text	I	6	swift	297284	134.498	0.062370
+PPMd oracle: text-I-6, input=8388608, archive=297404
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	text	I	6	7zz	297284	153.274	0.054730
+PPMD-BENCH-TARGET	text	I	6	speed/7zz=0.878	size-gap=0.000%
+PPMD-BENCH	text	I	9	swift	294144	114.327	0.073374
+PPMd oracle: text-I-9, input=8388608, archive=294264
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	I	9	7zz	294144	122.170	0.068664
+PPMD-BENCH-TARGET	text	I	9	speed/7zz=0.936	size-gap=0.000%
+PPMD-BENCH-CORPUS	binary	4129088
+PPMD-BENCH	binary	H	1	swift	1286104	23.239	0.177680
+PPMd oracle: binary-H-1, input=4129088, archive=1286211
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	H	1	7zz	1286104	24.740	0.166898
+PPMD-BENCH-TARGET	binary	H	1	speed/7zz=0.939	size-gap=0.000%
+PPMD-BENCH	binary	H	6	swift	1110800	19.581	0.210877
+PPMd oracle: binary-H-6, input=4129088, archive=1110907
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	H	6	7zz	1110800	20.445	0.201961
+PPMD-BENCH-TARGET	binary	H	6	speed/7zz=0.958	size-gap=0.000%
+PPMD-BENCH	binary	H	9	swift	903341	18.540	0.222710
+PPMd oracle: binary-H-9, input=4129088, archive=903448
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	9	order=16	heapMiB=64	restoration=restart
+PPMD-BENCH	binary	H	9	7zz	1057365	17.205	0.239993
+PPMD-BENCH-TARGET	binary	H	9	speed/7zz=1.078	size-gap=-14.567%
+PPMD-BENCH	binary	I	1	swift	1282658	23.977	0.172209
+PPMd oracle: binary-I-1, input=4129088, archive=1282778
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	I	1	7zz	1282658	24.706	0.167132
+PPMD-BENCH-TARGET	binary	I	1	speed/7zz=0.971	size-gap=0.000%
+PPMD-BENCH	binary	I	6	swift	1134426	18.982	0.217529
+PPMd oracle: binary-I-6, input=4129088, archive=1134546
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	I	6	7zz	1134426	19.340	0.213500
+PPMD-BENCH-TARGET	binary	I	6	speed/7zz=0.981	size-gap=0.000%
+PPMD-BENCH	binary	I	9	swift	900750	18.586	0.222159
+PPMd oracle: binary-I-9, input=4129088, archive=900870
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	9	order=16	heapMiB=64	restoration=restart
+PPMD-BENCH	binary	I	9	7zz	1053508	17.298	0.238699
+PPMD-BENCH-TARGET	binary	I	9	speed/7zz=1.074	size-gap=-14.500%
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (29.390 seconds).
+Test Suite 'PPMdEncoderBenchmarkTests' passed at 2026-11-04 20:23:04.923.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.390 (29.390) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:23:04.923.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.390 (29.390) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:23:04.923.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.390 (29.391) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:23:04.980.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:23:04.980.
+Test Suite 'PPMdEncoderBenchmarkTests' started at 2026-11-04 20:23:04.980.
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+PPMD-BENCH-SOURCE	/usr/lib/dyld	4129088
+PPMD-BENCH-TOOL	7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+PPMD-BENCH	corpus	variant	level	encoder	bytes	MB/s	seconds
+PPMD-BENCH-CORPUS	text	8388608
+PPMD-BENCH	text	H	1	swift	703855	119.774	0.070037
+PPMd oracle: text-H-1, input=8388608, archive=703962
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	H	1	7zz	703855	131.830	0.063632
+PPMD-BENCH-TARGET	text	H	1	speed/7zz=0.909	size-gap=0.000%
+PPMD-BENCH	text	H	6	swift	328737	151.121	0.055509
+PPMd oracle: text-H-6, input=8388608, archive=328844
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	text	H	6	7zz	328737	169.419	0.049514
+PPMD-BENCH-TARGET	text	H	6	speed/7zz=0.892	size-gap=0.000%
+PPMD-BENCH	text	H	9	swift	293408	128.512	0.065275
+PPMd oracle: text-H-9, input=8388608, archive=293515
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	H	9	7zz	293408	130.649	0.064207
+PPMD-BENCH-TARGET	text	H	9	speed/7zz=0.984	size-gap=0.000%
+PPMD-BENCH	text	I	1	swift	704541	112.926	0.074284
+PPMd oracle: text-I-1, input=8388608, archive=704661
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	I	1	7zz	704541	120.416	0.069664
+PPMD-BENCH-TARGET	text	I	1	speed/7zz=0.938	size-gap=0.000%
+PPMD-BENCH	text	I	6	swift	297284	133.918	0.062640
+PPMd oracle: text-I-6, input=8388608, archive=297404
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	text	I	6	7zz	297284	150.807	0.055625
+PPMD-BENCH-TARGET	text	I	6	speed/7zz=0.888	size-gap=0.000%
+PPMD-BENCH	text	I	9	swift	294144	113.291	0.074045
+PPMd oracle: text-I-9, input=8388608, archive=294264
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	I	9	7zz	294144	122.351	0.068562
+PPMD-BENCH-TARGET	text	I	9	speed/7zz=0.926	size-gap=0.000%
+PPMD-BENCH-CORPUS	binary	4129088
+PPMD-BENCH	binary	H	1	swift	1286104	23.830	0.173276
+PPMd oracle: binary-H-1, input=4129088, archive=1286211
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	H	1	7zz	1286104	24.495	0.168566
+PPMD-BENCH-TARGET	binary	H	1	speed/7zz=0.973	size-gap=0.000%
+PPMD-BENCH	binary	H	6	swift	1110800	20.034	0.206101
+PPMd oracle: binary-H-6, input=4129088, archive=1110907
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	H	6	7zz	1110800	20.375	0.202657
+PPMD-BENCH-TARGET	binary	H	6	speed/7zz=0.983	size-gap=0.000%
+PPMD-BENCH	binary	H	9	swift	903341	18.915	0.218294
+PPMd oracle: binary-H-9, input=4129088, archive=903448
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	9	order=16	heapMiB=64	restoration=restart
+PPMD-BENCH	binary	H	9	7zz	1057365	17.096	0.241529
+PPMD-BENCH-TARGET	binary	H	9	speed/7zz=1.106	size-gap=-14.567%
+PPMD-BENCH	binary	I	1	swift	1282658	24.219	0.170486
+PPMd oracle: binary-I-1, input=4129088, archive=1282778
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	I	1	7zz	1282658	24.189	0.170700
+PPMD-BENCH-TARGET	binary	I	1	speed/7zz=1.001	size-gap=0.000%
+PPMD-BENCH	binary	I	6	swift	1134426	19.328	0.213637
+PPMd oracle: binary-I-6, input=4129088, archive=1134546
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	I	6	7zz	1134426	19.355	0.213335
+PPMD-BENCH-TARGET	binary	I	6	speed/7zz=0.999	size-gap=0.000%
+PPMD-BENCH	binary	I	9	swift	900750	18.877	0.218741
+PPMd oracle: binary-I-9, input=4129088, archive=900870
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/1-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	9	order=16	heapMiB=64	restoration=restart
+gyoshuku-lh5-research.Yk6aKe
+PPMD-BENCH	binary	I	9	7zz	1053508	17.121	0.241170
+PPMD-BENCH-TARGET	binary	I	9	speed/7zz=1.103	size-gap=-14.500%
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (29.424 seconds).
+Test Suite 'PPMdEncoderBenchmarkTests' passed at 2026-11-04 20:23:34.404.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.424 (29.424) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:23:34.404.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.424 (29.424) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:23:34.404.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.424 (29.425) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:23:34.461.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:23:34.462.
+Test Suite 'PPMdEncoderBenchmarkTests' started at 2026-11-04 20:23:34.462.
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+PPMD-BENCH-SOURCE	/usr/lib/dyld	4129088
+PPMD-BENCH-TOOL	7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+PPMD-BENCH	corpus	variant	level	encoder	bytes	MB/s	seconds
+PPMD-BENCH-CORPUS	text	8388608
+PPMD-BENCH	text	H	1	swift	703855	119.933	0.069944
+PPMd oracle: text-H-1, input=8388608, archive=703962
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	H	1	7zz	703855	131.864	0.063616
+PPMD-BENCH-TARGET	text	H	1	speed/7zz=0.910	size-gap=0.000%
+PPMD-BENCH	text	H	6	swift	328737	150.112	0.055882
+PPMd oracle: text-H-6, input=8388608, archive=328844
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	text	H	6	7zz	328737	170.808	0.049111
+PPMD-BENCH-TARGET	text	H	6	speed/7zz=0.879	size-gap=0.000%
+PPMD-BENCH	text	H	9	swift	293408	129.085	0.064985
+PPMd oracle: text-H-9, input=8388608, archive=293515
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	H	9	7zz	293408	130.252	0.064403
+PPMD-BENCH-TARGET	text	H	9	speed/7zz=0.991	size-gap=0.000%
+PPMD-BENCH	text	I	1	swift	704541	112.353	0.074663
+PPMd oracle: text-I-1, input=8388608, archive=704661
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	I	1	7zz	704541	119.736	0.070059
+PPMD-BENCH-TARGET	text	I	1	speed/7zz=0.938	size-gap=0.000%
+PPMD-BENCH	text	I	6	swift	297284	134.403	0.062414
+PPMd oracle: text-I-6, input=8388608, archive=297404
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	text	I	6	7zz	297284	151.937	0.055211
+PPMD-BENCH-TARGET	text	I	6	speed/7zz=0.885	size-gap=0.000%
+PPMD-BENCH	text	I	9	swift	294144	113.301	0.074038
+PPMd oracle: text-I-9, input=8388608, archive=294264
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	I	9	7zz	294144	121.488	0.069049
+PPMD-BENCH-TARGET	text	I	9	speed/7zz=0.933	size-gap=0.000%
+PPMD-BENCH-CORPUS	binary	4129088
+PPMD-BENCH	binary	H	1	swift	1286104	22.973	0.179737
+PPMd oracle: binary-H-1, input=4129088, archive=1286211
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	H	1	7zz	1286104	24.511	0.168460
+PPMD-BENCH-TARGET	binary	H	1	speed/7zz=0.937	size-gap=0.000%
+PPMD-BENCH	binary	H	6	swift	1110800	19.515	0.211589
+PPMd oracle: binary-H-6, input=4129088, archive=1110907
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	H	6	7zz	1110800	20.386	0.202543
+PPMD-BENCH-TARGET	binary	H	6	speed/7zz=0.957	size-gap=0.000%
+PPMD-BENCH	binary	H	9	swift	903341	18.463	0.223642
+PPMd oracle: binary-H-9, input=4129088, archive=903448
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	9	order=16	heapMiB=64	restoration=restart
+PPMD-BENCH	binary	H	9	7zz	1057365	17.158	0.240649
+PPMD-BENCH-TARGET	binary	H	9	speed/7zz=1.076	size-gap=-14.567%
+PPMD-BENCH	binary	I	1	swift	1282658	23.901	0.172760
+PPMd oracle: binary-I-1, input=4129088, archive=1282778
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	I	1	7zz	1282658	24.633	0.167622
+PPMD-BENCH-TARGET	binary	I	1	speed/7zz=0.970	size-gap=0.000%
+PPMD-BENCH	binary	I	6	swift	1134426	18.624	0.221704
+PPMd oracle: binary-I-6, input=4129088, archive=1134546
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	I	6	7zz	1134426	19.156	0.215547
+PPMD-BENCH-TARGET	binary	I	6	speed/7zz=0.972	size-gap=0.000%
+PPMD-BENCH	binary	I	9	swift	900750	18.403	0.224375
+PPMd oracle: binary-I-9, input=4129088, archive=900870
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-baseline/ppmd-encoder-benchmark/binary.bin
+Release
+PPMD-BENCH-ACTUAL	binary	I	9	order=16	heapMiB=64	restoration=restart
+PPMD-BENCH	binary	I	9	7zz	1053508	16.986	0.243087
+PPMD-BENCH-TARGET	binary	I	9	speed/7zz=1.083	size-gap=-14.500%
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (29.701 seconds).
+Test Suite 'PPMdEncoderBenchmarkTests' passed at 2026-11-04 20:24:04.163.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.701 (29.701) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:24:04.163.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.701 (29.701) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:24:04.163.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.701 (29.702) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:24:04.220.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:24:04.221.
+Test Suite 'PPMdEncoderBenchmarkTests' started at 2026-11-04 20:24:04.221.
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+PPMD-BENCH-SOURCE	/usr/lib/dyld	4129088
+PPMD-BENCH-TOOL	7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+PPMD-BENCH	corpus	variant	level	encoder	bytes	MB/s	seconds
+PPMD-BENCH-CORPUS	text	8388608
+PPMD-BENCH	text	H	1	swift	703855	118.969	0.070511
+PPMd oracle: text-H-1, input=8388608, archive=703962
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	H	1	7zz	703855	130.828	0.064119
+PPMD-BENCH-TARGET	text	H	1	speed/7zz=0.909	size-gap=0.000%
+PPMD-BENCH	text	H	6	swift	328737	149.826	0.055989
+PPMd oracle: text-H-6, input=8388608, archive=328844
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	text	H	6	7zz	328737	169.992	0.049347
+PPMD-BENCH-TARGET	text	H	6	speed/7zz=0.881	size-gap=0.000%
+PPMD-BENCH	text	H	9	swift	293408	129.528	0.064763
+PPMd oracle: text-H-9, input=8388608, archive=293515
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	H	9	7zz	293408	130.020	0.064518
+PPMD-BENCH-TARGET	text	H	9	speed/7zz=0.996	size-gap=0.000%
+PPMD-BENCH	text	I	1	swift	704541	111.904	0.074963
+PPMd oracle: text-I-1, input=8388608, archive=704661
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	I	1	7zz	704541	120.043	0.069880
+PPMD-BENCH-TARGET	text	I	1	speed/7zz=0.932	size-gap=0.000%
+PPMD-BENCH	text	I	6	swift	297284	134.161	0.062527
+PPMd oracle: text-I-6, input=8388608, archive=297404
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	text	I	6	7zz	297284	153.147	0.054775
+PPMD-BENCH-TARGET	text	I	6	speed/7zz=0.876	size-gap=0.000%
+PPMD-BENCH	text	I	9	swift	294144	112.837	0.074342
+PPMd oracle: text-I-9, input=8388608, archive=294264
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	I	9	7zz	294144	120.828	0.069426
+PPMD-BENCH-TARGET	text	I	9	speed/7zz=0.934	size-gap=0.000%
+PPMD-BENCH-CORPUS	binary	4129088
+PPMD-BENCH	binary	H	1	swift	1286104	23.531	0.175473
+PPMd oracle: binary-H-1, input=4129088, archive=1286211
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	H	1	7zz	1286104	24.411	0.169148
+PPMD-BENCH-TARGET	binary	H	1	speed/7zz=0.964	size-gap=0.000%
+PPMD-BENCH	binary	H	6	swift	1110800	19.604	0.210623
+PPMd oracle: binary-H-6, input=4129088, archive=1110907
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	H	6	7zz	1110800	20.374	0.202668
+PPMD-BENCH-TARGET	binary	H	6	speed/7zz=0.962	size-gap=0.000%
+PPMD-BENCH	binary	H	9	swift	903341	18.431	0.224034
+PPMd oracle: binary-H-9, input=4129088, archive=903448
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	9	order=16	heapMiB=64	restoration=restart
+PPMD-BENCH	binary	H	9	7zz	1057365	17.028	0.242489
+PPMD-BENCH-TARGET	binary	H	9	speed/7zz=1.082	size-gap=-14.567%
+PPMD-BENCH	binary	I	1	swift	1282658	24.340	0.169640
+PPMd oracle: binary-I-1, input=4129088, archive=1282778
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	I	1	7zz	1282658	24.632	0.167631
+PPMD-BENCH-TARGET	binary	I	1	speed/7zz=0.988	size-gap=0.000%
+PPMD-BENCH	binary	I	6	swift	1134426	19.094	0.216252
+PPMd oracle: binary-I-6, input=4129088, archive=1134546
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	I	6	7zz	1134426	19.351	0.213382
+PPMD-BENCH-TARGET	binary	I	6	speed/7zz=0.987	size-gap=0.000%
+PPMD-BENCH	binary	I	9	swift	900750	18.724	0.220526
+PPMd oracle: binary-I-9, input=4129088, archive=900870
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/2-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	9	order=16	heapMiB=64	restoration=restart
+PPMD-BENCH	binary	I	9	7zz	1053508	17.210	0.239923
+PPMD-BENCH-TARGET	binary	I	9	speed/7zz=1.088	size-gap=-14.500%
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (29.353 seconds).
+Test Suite 'PPMdEncoderBenchmarkTests' passed at 2026-11-04 20:24:33.574.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.353 (29.353) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:24:33.574.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.353 (29.353) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:24:33.574.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.353 (29.354) seconds
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:24:33.631.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:24:33.632.
+Test Suite 'PPMdEncoderBenchmarkTests' started at 2026-11-04 20:24:33.632.
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+PPMD-BENCH-SOURCE	/usr/lib/dyld	4129088
+PPMD-BENCH-TOOL	7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+PPMD-BENCH	corpus	variant	level	encoder	bytes	MB/s	seconds
+PPMD-BENCH-CORPUS	text	8388608
+PPMD-BENCH	text	H	1	swift	703855	119.269	0.070333
+PPMd oracle: text-H-1, input=8388608, archive=703962
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	H	1	7zz	703855	131.445	0.063819
+PPMD-BENCH-TARGET	text	H	1	speed/7zz=0.907	size-gap=0.000%
+PPMD-BENCH	text	H	6	swift	328737	148.963	0.056313
+PPMd oracle: text-H-6, input=8388608, archive=328844
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	text	H	6	7zz	328737	169.824	0.049396
+PPMD-BENCH-TARGET	text	H	6	speed/7zz=0.877	size-gap=0.000%
+PPMD-BENCH	text	H	9	swift	293408	128.390	0.065337
+PPMd oracle: text-H-9, input=8388608, archive=293515
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	H	9	7zz	293408	130.177	0.064440
+PPMD-BENCH-TARGET	text	H	9	speed/7zz=0.986	size-gap=0.000%
+PPMD-BENCH	text	I	1	swift	704541	112.871	0.074320
+PPMd oracle: text-I-1, input=8388608, archive=704661
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	I	1	7zz	704541	119.520	0.070186
+PPMD-BENCH-TARGET	text	I	1	speed/7zz=0.944	size-gap=0.000%
+PPMD-BENCH	text	I	6	swift	297284	131.639	0.063724
+PPMd oracle: text-I-6, input=8388608, archive=297404
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	text	I	6	7zz	297284	152.530	0.054996
+PPMD-BENCH-TARGET	text	I	6	speed/7zz=0.863	size-gap=0.000%
+PPMD-BENCH	text	I	9	swift	294144	112.582	0.074511
+PPMd oracle: text-I-9, input=8388608, archive=294264
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	I	9	7zz	294144	120.533	0.069596
+PPMD-BENCH-TARGET	text	I	9	speed/7zz=0.934	size-gap=0.000%
+PPMD-BENCH-CORPUS	binary	4129088
+PPMD-BENCH	binary	H	1	swift	1286104	23.028	0.179305
+PPMd oracle: binary-H-1, input=4129088, archive=1286211
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	H	1	7zz	1286104	24.343	0.169623
+PPMD-BENCH-TARGET	binary	H	1	speed/7zz=0.946	size-gap=0.000%
+PPMD-BENCH	binary	H	6	swift	1110800	19.371	0.213154
+PPMd oracle: binary-H-6, input=4129088, archive=1110907
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	H	6	7zz	1110800	20.383	0.202571
+PPMD-BENCH-TARGET	binary	H	6	speed/7zz=0.950	size-gap=0.000%
+PPMD-BENCH	binary	H	9	swift	903341	18.436	0.223971
+PPMd oracle: binary-H-9, input=4129088, archive=903448
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	9	order=16	heapMiB=64	restoration=restart
+PPMD-BENCH	binary	H	9	7zz	1057365	17.306	0.238587
+PPMD-BENCH-TARGET	binary	H	9	speed/7zz=1.065	size-gap=-14.567%
+PPMD-BENCH	binary	I	1	swift	1282658	23.709	0.174154
+PPMd oracle: binary-I-1, input=4129088, archive=1282778
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	I	1	7zz	1282658	24.603	0.167828
+PPMD-BENCH-TARGET	binary	I	1	speed/7zz=0.964	size-gap=0.000%
+PPMD-BENCH	binary	I	6	swift	1134426	18.798	0.219658
+PPMd oracle: binary-I-6, input=4129088, archive=1134546
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	I	6	7zz	1134426	19.463	0.212153
+PPMD-BENCH-TARGET	binary	I	6	speed/7zz=0.966	size-gap=0.000%
+PPMD-BENCH	binary	I	9	swift	900750	18.286	0.225802
+PPMd oracle: binary-I-9, input=4129088, archive=900870
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-baseline/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	9	order=16	heapMiB=64	restoration=restart
+PPMD-BENCH	binary	I	9	7zz	1053508	17.016	0.242660
+PPMD-BENCH-TARGET	binary	I	9	speed/7zz=1.075	size-gap=-14.500%
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (29.444 seconds).
+Test Suite 'PPMdEncoderBenchmarkTests' passed at 2026-11-04 20:25:03.076.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.444 (29.444) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:25:03.076.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.444 (29.444) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:25:03.076.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.444 (29.445) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:25:03.133.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:25:03.133.
+Test Suite 'PPMdEncoderBenchmarkTests' started at 2026-11-04 20:25:03.133.
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+PPMD-BENCH-SOURCE	/usr/lib/dyld	4129088
+PPMD-BENCH-TOOL	7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+PPMD-BENCH	corpus	variant	level	encoder	bytes	MB/s	seconds
+PPMD-BENCH-CORPUS	text	8388608
+PPMD-BENCH	text	H	1	swift	703855	120.226	0.069774
+PPMd oracle: text-H-1, input=8388608, archive=703962
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	H	1	7zz	703855	130.304	0.064377
+PPMD-BENCH-TARGET	text	H	1	speed/7zz=0.923	size-gap=0.000%
+PPMD-BENCH	text	H	6	swift	328737	150.287	0.055817
+PPMd oracle: text-H-6, input=8388608, archive=328844
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	text	H	6	7zz	328737	169.061	0.049619
+PPMD-BENCH-TARGET	text	H	6	speed/7zz=0.889	size-gap=0.000%
+PPMD-BENCH	text	H	9	swift	293408	127.669	0.065706
+PPMd oracle: text-H-9, input=8388608, archive=293515
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	H	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	H	9	7zz	293408	129.908	0.064574
+PPMD-BENCH-TARGET	text	H	9	speed/7zz=0.983	size-gap=0.000%
+PPMD-BENCH	text	I	1	swift	704541	112.292	0.074703
+PPMd oracle: text-I-1, input=8388608, archive=704661
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	text	I	1	7zz	704541	120.089	0.069853
+PPMD-BENCH-TARGET	text	I	1	speed/7zz=0.935	size-gap=0.000%
+PPMD-BENCH	text	I	6	swift	297284	133.592	0.062793
+PPMd oracle: text-I-6, input=8388608, archive=297404
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	text	I	6	7zz	297284	152.066	0.055164
+PPMD-BENCH-TARGET	text	I	6	speed/7zz=0.879	size-gap=0.000%
+PPMD-BENCH	text	I	9	swift	294144	111.899	0.074966
+PPMd oracle: text-I-9, input=8388608, archive=294264
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/text.bin
+PPMD-BENCH-ACTUAL	text	I	9	order=16	heapMiB=128	restoration=restart
+PPMD-BENCH	text	I	9	7zz	294144	121.070	0.069287
+PPMD-BENCH-TARGET	text	I	9	speed/7zz=0.924	size-gap=0.000%
+PPMD-BENCH-CORPUS	binary	4129088
+PPMD-BENCH	binary	H	1	swift	1286104	23.797	0.173515
+PPMd oracle: binary-H-1, input=4129088, archive=1286211
+PPMD-BENCH-PARAMETERS	H	1	a -t7z -m0=PPMd:o=3:mem=1m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary-H-1-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	H	1	7zz	1286104	24.438	0.168959
+PPMD-BENCH-TARGET	binary	H	1	speed/7zz=0.974	size-gap=0.000%
+PPMD-BENCH	binary	H	6	swift	1110800	20.175	0.204662
+PPMd oracle: binary-H-6, input=4129088, archive=1110907
+PPMD-BENCH-PARAMETERS	H	6	a -t7z -m0=PPMd:o=6:mem=16m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary-H-6-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	6	order=6	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	H	6	7zz	1110800	20.084	0.205588
+PPMD-BENCH-TARGET	binary	H	6	speed/7zz=1.005	size-gap=0.000%
+PPMD-BENCH	binary	H	9	swift	903341	18.734	0.220410
+PPMd oracle: binary-H-9, input=4129088, archive=903448
+PPMD-BENCH-PARAMETERS	H	9	a -t7z -m0=PPMd:o=16:mem=192m -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary-H-9-reference.7z /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	H	9	order=16	heapMiB=64	restoration=restart
+PPMD-BENCH	binary	H	9	7zz	1057365	17.296	0.238724
+PPMD-BENCH-TARGET	binary	H	9	speed/7zz=1.083	size-gap=-14.567%
+PPMD-BENCH	binary	I	1	swift	1282658	24.187	0.170712
+PPMd oracle: binary-I-1, input=4129088, archive=1282778
+PPMD-BENCH-PARAMETERS	I	1	a -tzip -mm=PPMd:o=3:mem=1m:a=0 -mx=1 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary-I-1-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	1	order=3	heapMiB=1	restoration=restart
+PPMD-BENCH	binary	I	1	7zz	1282658	24.596	0.167877
+PPMD-BENCH-TARGET	binary	I	1	speed/7zz=0.983	size-gap=0.000%
+PPMD-BENCH	binary	I	6	swift	1134426	19.335	0.213555
+PPMd oracle: binary-I-6, input=4129088, archive=1134546
+PPMD-BENCH-PARAMETERS	I	6	a -tzip -mm=PPMd:o=8:mem=16m:a=0 -mx=6 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary-I-6-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	6	order=8	heapMiB=16	restoration=restart
+PPMD-BENCH	binary	I	6	7zz	1134426	19.199	0.215069
+PPMD-BENCH-TARGET	binary	I	6	speed/7zz=1.007	size-gap=0.000%
+PPMD-BENCH	binary	I	9	swift	900750	18.903	0.218435
+PPMd oracle: binary-I-9, input=4129088, archive=900870
+PPMD-BENCH-PARAMETERS	I	9	a -tzip -mm=PPMd:o=16:mem=192m:a=0 -mx=9 -mmt=1 /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary-I-9-reference.zip /tmp/gyoshuku-lh5-match8.lxWyjp/ab-ppmd/3-candidate/ppmd-encoder-benchmark/binary.bin
+PPMD-BENCH-ACTUAL	binary	I	9	order=16	heapMiB=64	restoration=restart
+PPMD-BENCH	binary	I	9	7zz	1053508	17.193	0.240158
+PPMD-BENCH-TARGET	binary	I	9	speed/7zz=1.099	size-gap=-14.500%
+Test Case '-[GyoshukuKitTests.PPMdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (29.445 seconds).
+Test Suite 'PPMdEncoderBenchmarkTests' passed at 2026-11-04 20:25:32.578.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.445 (29.445) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:25:32.578.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.445 (29.445) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:25:32.578.
+	 Executed 1 test, with 0 failures (0 unexpected) in 29.445 (29.445) seconds

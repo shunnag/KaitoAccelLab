@@ -1,0 +1,300 @@
+gyoshuku-lh5-match8.lxWyjp
+Test Suite 'Selected tests' started at 2026-11-04 20:47:30.804.
+Test Suite 'baseline-lz4.xctest' started at 2026-11-04 20:47:30.805.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:30.806.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017496	958.894	0.017878	938.428
+LZ4-BENCH	random	16777271	0.010147	1653.389	0.010219	1641.847
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.313 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:31.119.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.313 (0.314) seconds
+Test Suite 'baseline-lz4.xctest' passed at 2026-11-04 20:47:31.119.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.313 (0.314) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:31.119.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.313 (0.316) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:47:31.175.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:47:31.175.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:31.175.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017388	964.894	0.017749	945.273
+gyoshuku-lh5-match8.lxWyjp
+LZ4-BENCH	random	16777271	0.009909	1693.108	0.010069	1666.176
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.289 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:31.465.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.289 (0.290) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:47:31.465.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.289 (0.290) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:31.465.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.289 (0.290) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:31.520.
+Test Suite 'baseline-lz4.xctest' started at 2026-11-04 20:47:31.521.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:31.521.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017543	956.362	0.017663	949.846
+LZ4-BENCH	random	16777271	0.010017	1674.930	0.010156	1651.890
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.290 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:31.811.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+Test Suite 'baseline-lz4.xctest' passed at 2026-11-04 20:47:31.811.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:31.811.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.291) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:31.865.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:47:31.866.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:31.866.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+Release
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+gyoshuku-lh5-match8.lxWyjp
+LZ4-BENCH	text	7051351	0.017305	969.475	0.017353	966.829
+LZ4-BENCH	random	16777271	0.009995	1678.491	0.010191	1646.271
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.288 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:32.154.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.288) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:47:32.154.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.288) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:32.154.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.288) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:32.209.
+Test Suite 'baseline-lz4.xctest' started at 2026-11-04 20:47:32.209.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:32.209.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017469	960.399	0.017659	950.044
+Release
+gyoshuku-lh5-match8.lxWyjp
+LZ4-BENCH	random	16777271	0.009959	1684.699	0.010143	1654.130
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.289 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:32.499.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.289 (0.289) seconds
+Test Suite 'baseline-lz4.xctest' passed at 2026-11-04 20:47:32.499.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.289 (0.289) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:32.499.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.289 (0.290) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:32.554.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:47:32.555.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:32.555.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017255	972.336	0.017363	966.235
+LZ4-BENCH	random	16777271	0.010048	1669.679	0.010175	1648.846
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.290 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:32.844.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:47:32.844.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:32.844.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:32.899.
+Test Suite 'baseline-lz4.xctest' started at 2026-11-04 20:47:32.899.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:32.899.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+Release
+LZ4-BENCH	text	7051351	0.017638	951.177	0.018079	928.012
+LZ4-BENCH	random	16777271	0.009954	1685.510	0.010143	1654.028
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.291 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:33.190.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.291) seconds
+Test Suite 'baseline-lz4.xctest' passed at 2026-11-04 20:47:33.190.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.291) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:33.190.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.292) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:33.245.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:47:33.246.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:33.246.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017593	953.630	0.017829	941.001
+gyoshuku-lh5-match8.lxWyjp
+Release
+LZ4-BENCH	random	16777271	0.009853	1702.752	0.010060	1667.653
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.290 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:33.536.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:47:33.536.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:33.536.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.291) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:33.591.
+Test Suite 'baseline-lz4.xctest' started at 2026-11-04 20:47:33.591.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:33.591.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017457	961.076	0.017658	950.138
+LZ4-BENCH	random	16777271	0.010023	1673.941	0.010081	1664.255
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.289 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:33.880.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.289 (0.289) seconds
+Test Suite 'baseline-lz4.xctest' passed at 2026-11-04 20:47:33.880.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.289 (0.289) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:33.880.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.289 (0.290) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:33.935.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:47:33.936.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:33.936.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+gyoshuku-lh5-match8.lxWyjp
+LZ4-BENCH	text	7051351	0.017751	945.122	0.017895	937.537
+LZ4-BENCH	random	16777271	0.009916	1691.884	0.009985	1680.172
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.291 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:34.227.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.291) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:47:34.227.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.291) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:34.227.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.291) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:34.282.
+Test Suite 'baseline-lz4.xctest' started at 2026-11-04 20:47:34.283.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:34.283.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017521	957.572	0.017745	945.486
+LZ4-BENCH	random	16777271	0.009914	1692.318	0.010187	1647.005
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.291 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:34.574.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.291) seconds
+Test Suite 'baseline-lz4.xctest' passed at 2026-11-04 20:47:34.574.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.291) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:34.574.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.292) seconds
+Release
+gyoshuku-lh5-match8.lxWyjp
+Test Suite 'Selected tests' started at 2026-11-04 20:47:34.630.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:47:34.631.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:34.631.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017664	949.813	0.017870	938.861
+LZ4-BENCH	random	16777271	0.009942	1687.545	0.010122	1657.473
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.291 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:34.922.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.291) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:47:34.922.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.291) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:34.922.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.291 (0.292) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:34.977.
+Test Suite 'baseline-lz4.xctest' started at 2026-11-04 20:47:34.977.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:34.977.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+Release
+LZ4-BENCH	text	7051351	0.017694	948.202	0.017852	939.782
+LZ4-BENCH	random	16777271	0.009920	1691.195	0.010032	1672.328
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.292 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:35.269.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.292 (0.292) seconds
+Test Suite 'baseline-lz4.xctest' passed at 2026-11-04 20:47:35.269.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.292 (0.292) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:35.269.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.292 (0.292) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:35.324.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:47:35.324.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:35.324.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017308	969.361	0.017415	963.382
+LZ4-BENCH	random	16777271	0.010015	1675.209	0.010094	1662.091
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.288 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:35.613.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.289) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:47:35.613.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.289) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:35.613.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.289) seconds
+gyoshuku-lh5-match8.lxWyjp
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:47:35.669.
+Test Suite 'baseline-lz4.xctest' started at 2026-11-04 20:47:35.669.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:35.669.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017986	932.774	0.018218	920.931
+LZ4-BENCH	random	16777271	0.009989	1679.625	0.010045	1670.275
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.293 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:35.962.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.293 (0.293) seconds
+Test Suite 'baseline-lz4.xctest' passed at 2026-11-04 20:47:35.962.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.293 (0.293) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:35.962.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.293 (0.294) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:36.017.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:47:36.018.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:36.018.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+gyoshuku-lh5-match8.lxWyjp
+LZ4-BENCH	text	7051351	0.017252	972.451	0.017412	963.546
+LZ4-BENCH	random	16777271	0.010032	1672.412	0.010144	1653.858
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.288 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:36.306.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.288) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:47:36.306.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.288) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:36.306.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.289) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:36.361.
+Test Suite 'baseline-lz4.xctest' started at 2026-11-04 20:47:36.361.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:36.361.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017520	957.581	0.017705	947.622
+LZ4-BENCH	random	16777271	0.009904	1693.991	0.010124	1657.098
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.292 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:36.654.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.292 (0.292) seconds
+Test Suite 'baseline-lz4.xctest' passed at 2026-11-04 20:47:36.654.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.292 (0.292) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:36.654.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.292 (0.293) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:47:36.710.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:47:36.710.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:36.710.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017357	966.597	0.017456	961.089
+LZ4-BENCH	random	16777271	0.010055	1668.510	0.010142	1654.265
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.290 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:37.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:47:37.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:37.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+gyoshuku-lh5-match8.lxWyjp
+Test Suite 'Selected tests' started at 2026-11-04 20:47:37.056.
+Test Suite 'baseline-lz4.xctest' started at 2026-11-04 20:47:37.056.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:37.056.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+Release
+LZ4-BENCH	text	7051351	0.017763	944.528	0.018171	923.288
+LZ4-BENCH	random	16777271	0.009859	1701.752	0.010059	1667.923
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.290 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:37.346.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+Test Suite 'baseline-lz4.xctest' passed at 2026-11-04 20:47:37.346.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.290) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:37.347.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.290 (0.291) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:47:37.402.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:47:37.402.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:47:37.402.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017295	970.076	0.017372	965.746
+LZ4-BENCH	random	16777271	0.010108	1659.844	0.010158	1651.578
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.288 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:47:37.691.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.289) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:47:37.691.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.289) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:47:37.691.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.288 (0.289) seconds

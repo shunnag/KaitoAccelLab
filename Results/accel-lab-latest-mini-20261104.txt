@@ -1,0 +1,236 @@
+Building for debugging...
+[1 / 3]
+[2 / 4] AccelLab
+[5 / 7] AccelLab
+/private/tmp/kaito-accel-stateful.Zl4inx/KaitoAccelLab/Sources/AccelLab/Neural/CoreMLTensor.swift:2:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+  [0;36m1 |[0;0m internal import CoreML
+  [0;36m2 |[0;0m public import Foundation
+    [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+  [0;36m3 |[0;0m 
+  [0;36m4 |[0;0m internal enum CoreMLTensor {
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[12 / 12] accel-lab-product
+[13 / 18] AccelLabTests-product
+[15 / 20] AccelLabTests-product
+[20 / 24] AccelLabTests-product
+Build complete! (1.56秒)
+Test Suite 'All tests' started at 2026-11-04 15:50:45.487.
+Test Suite 'AccelLabTests.xctest' started at 2026-11-04 15:50:45.488.
+Test Suite 'BaselineTests' started at 2026-11-04 15:50:45.488.
+Test Case '-[AccelLabTests.BaselineTests testBaselineThroughputAndCompressionRoundTrips]' started.
+Test Case '-[AccelLabTests.BaselineTests testBaselineThroughputAndCompressionRoundTrips]' passed (2.042 seconds).
+Test Suite 'BaselineTests' passed at 2026-11-04 15:50:47.530.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.042 (2.042) seconds
+Test Suite 'BlockDescLayoutTests' started at 2026-11-04 15:50:47.530.
+Test Case '-[AccelLabTests.BlockDescLayoutTests testMetalDescriptorLayout]' started.
+Test Case '-[AccelLabTests.BlockDescLayoutTests testMetalDescriptorLayout]' passed (0.000 seconds).
+Test Suite 'BlockDescLayoutTests' passed at 2026-11-04 15:50:47.530.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'BytePredictorTests' started at 2026-11-04 15:50:47.530.
+Test Case '-[AccelLabTests.BytePredictorTests testContextPaddingRingWrapAndStrides]' started.
+Test Case '-[AccelLabTests.BytePredictorTests testContextPaddingRingWrapAndStrides]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.BytePredictorTests testOrderOneUsesPreviousBytePerBlock]' started.
+Test Case '-[AccelLabTests.BytePredictorTests testOrderOneUsesPreviousBytePerBlock]' passed (0.001 seconds).
+Test Case '-[AccelLabTests.BytePredictorTests testOrderZeroCountsAreIndependentAndReset]' started.
+Test Case '-[AccelLabTests.BytePredictorTests testOrderZeroCountsAreIndependentAndReset]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.BytePredictorTests testPredictorLifecycleAndObservationCounts]' started.
+Test Case '-[AccelLabTests.BytePredictorTests testPredictorLifecycleAndObservationCounts]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.BytePredictorTests testRecurrentOneHotInitialStateAndObservations]' started.
+Test Case '-[AccelLabTests.BytePredictorTests testRecurrentOneHotInitialStateAndObservations]' passed (0.000 seconds).
+Test Suite 'BytePredictorTests' passed at 2026-11-04 15:50:47.532.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'CoreMLRecurrentPredictorTests' started at 2026-11-04 15:50:47.532.
+Test Case '-[AccelLabTests.CoreMLRecurrentPredictorTests testInt8StatefulRoundTripAndReset]' started.
+Test Case '-[AccelLabTests.CoreMLRecurrentPredictorTests testInt8StatefulRoundTripAndReset]' passed (0.980 seconds).
+Test Case '-[AccelLabTests.CoreMLRecurrentPredictorTests testStatefulPredictionsMatchExplicitStateAndReset]' started.
+Test Case '-[AccelLabTests.CoreMLRecurrentPredictorTests testStatefulPredictionsMatchExplicitStateAndReset]' passed (2.230 seconds).
+Test Suite 'CoreMLRecurrentPredictorTests' passed at 2026-11-04 15:50:50.742.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 3.210 (3.210) seconds
+Test Suite 'CoreMLTensorTests' started at 2026-11-04 15:50:50.742.
+Test Case '-[AccelLabTests.CoreMLTensorTests testHalfPrecisionProbabilityRowsAndHiddenStateCopy]' started.
+Test Case '-[AccelLabTests.CoreMLTensorTests testHalfPrecisionProbabilityRowsAndHiddenStateCopy]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.CoreMLTensorTests testOutputValidationWithoutModelInference]' started.
+Test Case '-[AccelLabTests.CoreMLTensorTests testOutputValidationWithoutModelInference]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.CoreMLTensorTests testPointerCopiesRespectStridesAndPadding]' started.
+Test Case '-[AccelLabTests.CoreMLTensorTests testPointerCopiesRespectStridesAndPadding]' passed (0.001 seconds).
+Test Suite 'CoreMLTensorTests' passed at 2026-11-04 15:50:50.743.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'DemoRoundTripTests' started at 2026-11-04 15:50:50.743.
+Test Case '-[AccelLabTests.DemoRoundTripTests testContainerHeaderAndMalformedInputs]' started.
+Test Case '-[AccelLabTests.DemoRoundTripTests testContainerHeaderAndMalformedInputs]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.DemoRoundTripTests testEmptyDirectoryRoundTrip]' started.
+Test Case '-[AccelLabTests.DemoRoundTripTests testEmptyDirectoryRoundTrip]' passed (0.005 seconds).
+Test Case '-[AccelLabTests.DemoRoundTripTests testLZ4CPURoundTrip]' started.
+Test Case '-[AccelLabTests.DemoRoundTripTests testLZ4CPURoundTrip]' passed (0.036 seconds).
+Test Case '-[AccelLabTests.DemoRoundTripTests testOrderOneRoundTrip]' started.
+Test Case '-[AccelLabTests.DemoRoundTripTests testOrderOneRoundTrip]' passed (26.594 seconds).
+Test Case '-[AccelLabTests.DemoRoundTripTests testSkipsSymlinksAndOutputInsideInput]' started.
+Test Case '-[AccelLabTests.DemoRoundTripTests testSkipsSymlinksAndOutputInsideInput]' passed (0.003 seconds).
+Test Case '-[AccelLabTests.DemoRoundTripTests testTemporaryTarRemovedOnCompressionAndWriteErrors]' started.
+Test Case '-[AccelLabTests.DemoRoundTripTests testTemporaryTarRemovedOnCompressionAndWriteErrors]' passed (0.001 seconds).
+Test Case '-[AccelLabTests.DemoRoundTripTests testWrongMethodDoesNotCreateExtractionDirectory]' started.
+Test Case '-[AccelLabTests.DemoRoundTripTests testWrongMethodDoesNotCreateExtractionDirectory]' passed (0.000 seconds).
+Test Suite 'DemoRoundTripTests' passed at 2026-11-04 15:51:17.383.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 26.640 (26.640) seconds
+Test Suite 'FrequencyQuantizerTests' started at 2026-11-04 15:51:17.383.
+Test Case '-[AccelLabTests.FrequencyQuantizerTests testExcessIsRemovedFromLargestSymbolsWithoutReordering]' started.
+Test Case '-[AccelLabTests.FrequencyQuantizerTests testExcessIsRemovedFromLargestSymbolsWithoutReordering]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.FrequencyQuantizerTests testOrderingForDistinctValuesAndExtremeScales]' started.
+Test Case '-[AccelLabTests.FrequencyQuantizerTests testOrderingForDistinctValuesAndExtremeScales]' passed (0.001 seconds).
+Test Case '-[AccelLabTests.FrequencyQuantizerTests testReservedMinimumAndRemainderForPeakedRows]' started.
+Test Case '-[AccelLabTests.FrequencyQuantizerTests testReservedMinimumAndRemainderForPeakedRows]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.FrequencyQuantizerTests testTotalMinimumAndDeterminism]' started.
+Test Case '-[AccelLabTests.FrequencyQuantizerTests testTotalMinimumAndDeterminism]' passed (0.007 seconds).
+Test Case '-[AccelLabTests.FrequencyQuantizerTests testZerosNaNsAndNonFiniteValues]' started.
+Test Case '-[AccelLabTests.FrequencyQuantizerTests testZerosNaNsAndNonFiniteValues]' passed (0.000 seconds).
+Test Suite 'FrequencyQuantizerTests' passed at 2026-11-04 15:51:17.392.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.008 (0.009) seconds
+Test Suite 'LZ4BlockDecoderTests' started at 2026-11-04 15:51:17.392.
+Test Case '-[AccelLabTests.LZ4BlockDecoderTests testAppleEncodedRandomAndRepetitiveBlocks]' started.
+Test Case '-[AccelLabTests.LZ4BlockDecoderTests testAppleEncodedRandomAndRepetitiveBlocks]' passed (0.014 seconds).
+Test Case '-[AccelLabTests.LZ4BlockDecoderTests testOutputBoundsAndEmptyBlock]' started.
+Test Case '-[AccelLabTests.LZ4BlockDecoderTests testOutputBoundsAndEmptyBlock]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4BlockDecoderTests testOverlappingMatches]' started.
+Test Case '-[AccelLabTests.LZ4BlockDecoderTests testOverlappingMatches]' passed (0.007 seconds).
+Test Case '-[AccelLabTests.LZ4BlockDecoderTests testTruncatedInputAndInvalidOffsetsThrow]' started.
+Test Case '-[AccelLabTests.LZ4BlockDecoderTests testTruncatedInputAndInvalidOffsetsThrow]' passed (0.000 seconds).
+Test Suite 'LZ4BlockDecoderTests' passed at 2026-11-04 15:51:17.412.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.021 (0.021) seconds
+Test Suite 'LZ4FrameDecoderTests' started at 2026-11-04 15:51:17.412.
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testAllBlockSizesAndPartialFinalBlock]' started.
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testAllBlockSizesAndPartialFinalBlock]' passed (0.059 seconds).
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testEmptyFramesAndZeroLengthBlocks]' started.
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testEmptyFramesAndZeroLengthBlocks]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testInvalidArgumentsAndUnsupportedFrames]' started.
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testInvalidArgumentsAndUnsupportedFrames]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testPreallocatedStaticAndDynamicDecodingReusesDestination]' started.
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testPreallocatedStaticAndDynamicDecodingReusesDestination]' passed (0.098 seconds).
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testPrecomputedSizeAndDestinationValidation]' started.
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testPrecomputedSizeAndDestinationValidation]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testThreeMiBFrameWithOneAndSixteenLanes]' started.
+Test Case '-[AccelLabTests.LZ4FrameDecoderTests testThreeMiBFrameWithOneAndSixteenLanes]' passed (0.501 seconds).
+Test Suite 'LZ4FrameDecoderTests' passed at 2026-11-04 15:51:18.071.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.659 (0.659) seconds
+Test Suite 'LZ4FrameEncoderTests' started at 2026-11-04 15:51:18.071.
+Test Case '-[AccelLabTests.LZ4FrameEncoderTests testArbitraryBlockSizesChooseSmallestDescriptor]' started.
+Test Case '-[AccelLabTests.LZ4FrameEncoderTests testArbitraryBlockSizesChooseSmallestDescriptor]' passed (0.065 seconds).
+Test Case '-[AccelLabTests.LZ4FrameEncoderTests testEmptyHeaderChecksumAndBlockSizeRange]' started.
+Test Case '-[AccelLabTests.LZ4FrameEncoderTests testEmptyHeaderChecksumAndBlockSizeRange]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4FrameEncoderTests testFileEncoderReportsSizesAndBlockCount]' started.
+Test Case '-[AccelLabTests.LZ4FrameEncoderTests testFileEncoderReportsSizesAndBlockCount]' passed (0.004 seconds).
+Test Case '-[AccelLabTests.LZ4FrameEncoderTests testIncompressibleBlocksAreStoredAndSmallTailIsPreserved]' started.
+Test Case '-[AccelLabTests.LZ4FrameEncoderTests testIncompressibleBlocksAreStoredAndSmallTailIsPreserved]' passed (0.003 seconds).
+Test Suite 'LZ4FrameEncoderTests' passed at 2026-11-04 15:51:18.144.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.072 (0.072) seconds
+Test Suite 'LZ4FrameTests' started at 2026-11-04 15:51:18.144.
+Test Case '-[AccelLabTests.LZ4FrameTests testAllBlockSizeCodesAndDictionaryParsing]' started.
+Test Case '-[AccelLabTests.LZ4FrameTests testAllBlockSizeCodesAndDictionaryParsing]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4FrameTests testBlockTableWithOptionalSizesAndChecksums]' started.
+Test Case '-[AccelLabTests.LZ4FrameTests testBlockTableWithOptionalSizesAndChecksums]' passed (0.011 seconds).
+Test Case '-[AccelLabTests.LZ4FrameTests testDecodedSizeValidation]' started.
+Test Case '-[AccelLabTests.LZ4FrameTests testDecodedSizeValidation]' passed (0.005 seconds).
+Test Case '-[AccelLabTests.LZ4FrameTests testEveryTruncatedPrefixThrows]' started.
+Test Case '-[AccelLabTests.LZ4FrameTests testEveryTruncatedPrefixThrows]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4FrameTests testMalformedHeadersAndBlockSizes]' started.
+Test Case '-[AccelLabTests.LZ4FrameTests testMalformedHeadersAndBlockSizes]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4FrameTests testParallelAndSerialSizesAgreeOnMultipleBlocks]' started.
+Test Case '-[AccelLabTests.LZ4FrameTests testParallelAndSerialSizesAgreeOnMultipleBlocks]' passed (0.279 seconds).
+Test Case '-[AccelLabTests.LZ4FrameTests testParallelScanPreservesSerialErrorOrderAndSizeValidation]' started.
+Test Case '-[AccelLabTests.LZ4FrameTests testParallelScanPreservesSerialErrorOrderAndSizeValidation]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4FrameTests testUniformAssumptionDoesNotScanCompressedSequences]' started.
+Test Case '-[AccelLabTests.LZ4FrameTests testUniformAssumptionDoesNotScanCompressedSequences]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4FrameTests testUniformSizesRequireContentSizeAndRejectImpossibleLayouts]' started.
+Test Case '-[AccelLabTests.LZ4FrameTests testUniformSizesRequireContentSizeAndRejectImpossibleLayouts]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4FrameTests testUniformSizesRoundUpAndUseFinalRemainder]' started.
+Test Case '-[AccelLabTests.LZ4FrameTests testUniformSizesRoundUpAndUseFinalRemainder]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.LZ4FrameTests testWrongUniformAssumptionFailsCPUVerification]' started.
+Test Case '-[AccelLabTests.LZ4FrameTests testWrongUniformAssumptionFailsCPUVerification]' passed (0.000 seconds).
+Test Suite 'LZ4FrameTests' passed at 2026-11-04 15:51:18.440.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.296 (0.296) seconds
+Test Suite 'LZ4MetalDecoderTests' started at 2026-11-04 15:51:18.440.
+Test Case '-[AccelLabTests.LZ4MetalDecoderTests testOverlappingMatchesAndEmptyFrame]' started.
+Test Case '-[AccelLabTests.LZ4MetalDecoderTests testOverlappingMatchesAndEmptyFrame]' passed (0.007 seconds).
+Test Case '-[AccelLabTests.LZ4MetalDecoderTests testThreeMiBFrameBothVariants]' started.
+Test Case '-[AccelLabTests.LZ4MetalDecoderTests testThreeMiBFrameBothVariants]' passed (0.566 seconds).
+Test Suite 'LZ4MetalDecoderTests' passed at 2026-11-04 15:51:19.013.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.573 (0.573) seconds
+Test Suite 'MetalProbeTests' started at 2026-11-04 15:51:19.013.
+Test Case '-[AccelLabTests.MetalProbeTests testRuntimeCompiledKernelComputesExpectedSum]' started.
+Test Case '-[AccelLabTests.MetalProbeTests testRuntimeCompiledKernelComputesExpectedSum]' passed (0.003 seconds).
+Test Suite 'MetalProbeTests' passed at 2026-11-04 15:51:19.016.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'NeuralBlockCodecTests' started at 2026-11-04 15:51:19.016.
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testHeaderLayoutUTF8AndDeterministicReset]' started.
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testHeaderLayoutUTF8AndDeterministicReset]' passed (0.130 seconds).
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testInvalidHeadersAndOptionsThrow]' started.
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testInvalidHeadersAndOptionsThrow]' passed (0.001 seconds).
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testLockStepAndZeroObservationsForEndedBlocks]' started.
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testLockStepAndZeroObservationsForEndedBlocks]' passed (0.001 seconds).
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testParallelDecoderPropagatesLaneFailureBeforeObservation]' started.
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testParallelDecoderPropagatesLaneFailureBeforeObservation]' passed (0.001 seconds).
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testRoundTripsWithAllCPUReferences]' started.
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testRoundTripsWithAllCPUReferences]' passed (6.856 seconds).
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testSerialAndParallelBytesMatch]' started.
+Test Case '-[AccelLabTests.NeuralBlockCodecTests testSerialAndParallelBytesMatch]' passed (2.779 seconds).
+Test Suite 'NeuralBlockCodecTests' passed at 2026-11-04 15:51:28.785.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 9.768 (9.768) seconds
+Test Suite 'RangeCoderTests' started at 2026-11-04 15:51:28.785.
+Test Case '-[AccelLabTests.RangeCoderTests testChangingDistributionsAndCarryPropagation]' started.
+Test Case '-[AccelLabTests.RangeCoderTests testChangingDistributionsAndCarryPropagation]' passed (0.014 seconds).
+Test Case '-[AccelLabTests.RangeCoderTests testEmptyInputAndZeroPadding]' started.
+Test Case '-[AccelLabTests.RangeCoderTests testEmptyInputAndZeroPadding]' passed (0.000 seconds).
+Test Case '-[AccelLabTests.RangeCoderTests testFixedSkewedDistributionsAndRandomStreams]' started.
+Test Case '-[AccelLabTests.RangeCoderTests testFixedSkewedDistributionsAndRandomStreams]' passed (0.018 seconds).
+Test Case '-[AccelLabTests.RangeCoderTests testUniformKnownBytes]' started.
+Test Case '-[AccelLabTests.RangeCoderTests testUniformKnownBytes]' passed (0.000 seconds).
+Test Suite 'RangeCoderTests' passed at 2026-11-04 15:51:28.817.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.032 (0.033) seconds
+Test Suite 'AccelLabTests.xctest' passed at 2026-11-04 15:51:28.817.
+	 Executed 62 tests, with 0 failures (0 unexpected) in 43.327 (43.329) seconds
+Test Suite 'All tests' passed at 2026-11-04 15:51:28.817.
+	 Executed 62 tests, with 0 failures (0 unexpected) in 43.327 (43.330) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.
+Building for production...
+[4 / 16]
+[5 / 17] KaitoKit
+[7 / 18] KaitoKit
+/Users/nagash/Github/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[10 / 20] GyoshukuKit
+[12 / 21] GyoshukuKit
+[15 / 23] AccelLab
+[17 / 24] AccelLab
+/private/tmp/kaito-accel-stateful.Zl4inx/KaitoAccelLab/Sources/AccelLab/Neural/CoreMLComputePlanSummary.swift:2:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m internal import CoreML
+ [0;36m2 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m3 |[0;0m 
+ [0;36m4 |[0;0m internal enum CoreMLComputePlanSummary {
+
+/private/tmp/kaito-accel-stateful.Zl4inx/KaitoAccelLab/Sources/AccelLab/Neural/CoreMLTensor.swift:2:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+  [0;36m1 |[0;0m internal import CoreML
+  [0;36m2 |[0;0m public import Foundation
+    [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+  [0;36m3 |[0;0m 
+  [0;36m4 |[0;0m internal enum CoreMLTensor {
+
+/private/tmp/kaito-accel-stateful.Zl4inx/KaitoAccelLab/Sources/AccelLab/Neural/NeuralBlockCodec.swift:2:8: [1;33mwarning: [1;39mpublic import of 'Dispatch' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+  [0;36m1 |[0;0m public import Foundation
+  [0;36m2 |[0;0m public import Dispatch
+    [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Dispatch' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+  [0;36m3 |[0;0m 
+  [0;36m4 |[0;0m /// 各バイト位置で全ブロックを一括予測し、独立した range coder に渡す。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[22 / 23] accel-lab-product
+[23 / 23] accel-lab-product
+Build complete! (83.64秒)

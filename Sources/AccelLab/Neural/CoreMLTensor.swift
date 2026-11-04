@@ -32,6 +32,14 @@ internal enum CoreMLTensor {
         }
     }
 
+    static func validate(_ constraint: MLStateConstraint, batch: Int, width: Int, name: String) throws {
+        _ = try PredictorValidation.elementCount(blockCount: batch, width: width)
+        guard constraint.dataType == .float16,
+              constraint.bufferShape == [batch, width] || constraint.bufferShape == [1, batch, width] else {
+            throw NeuralCodecError("Core ML state \(name) must have fp16 shape [\(batch), \(width)]; model shape is \(constraint.bufferShape)")
+        }
+    }
+
     static func make(batch: Int, width: Int) throws -> MLMultiArray {
         let array = try MLMultiArray(shape: [NSNumber(value: batch), NSNumber(value: width)], dataType: .float16)
         array.withUnsafeMutableBytes { bytes, _ in

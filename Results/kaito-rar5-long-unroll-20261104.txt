@@ -1,0 +1,23 @@
+RAR5 long-code fallback unrolling (2026-11-04)
+
+Decision: not adopted. No production source was changed for this experiment.
+
+Candidate
+- Restore the rejected 12-bit experiment to the production 10-bit primary table, then replace the existing canonical loop for lengths 11...15 with five explicit conditional blocks.
+- Table sizes, canonical ranges, symbol selection, truncation behavior and bit-position updates remain unchanged.
+- Research clone: /tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar-primary.
+
+Validation
+- RAR5DecoderTests and RAR5HuffmanTableTests: 23 tests, 0 failures.
+- The table test compares every 15-bit prefix, logical truncation, unaligned reads and rebuilds against KaitoKit's independent frozen implementation.
+- All benchmark byte counts matched.
+
+Performance on M4 Max
+- Same RAR5 -m3 text/color archives as kaito-rar-primary12-20261104.txt.
+- kaito bench --threads 1, five extractions per timing, four alternating timings per executable. Milliseconds; smaller is better.
+
+archive       baseline    unrolled    time ratio
+rar5-text      20.591      24.1065     1.1707 (slower)
+rar5-color    198.391     223.1105     1.1245 (slower)
+
+The explicit paths increase code size and branches without improving the long-code workload. The compiler's existing loop is substantially faster in both cases. No Mac mini timing or integration was pursued because the regression is large and consistent across all eight samples. Raw log: kaito-rar5-long-unroll-max-20261104.txt.

@@ -1,0 +1,26 @@
+RAR3 filter global-data bulk consume (2026-11-05)
+
+Candidate
+- Replace the global-data loop, which discarded each result of cursor.read(8), with one checked cursor.consume(globalLength * 8).
+- RAR3MemoryBitCursor.consume validates count >= 0 and count <= remaining bits and throws the same malformed/truncated error before advancing. The stored global length is bounded to 0x1FC0, so multiplication cannot overflow.
+- No payload grammar, filter scheduling or output behavior changes. The working-tree integration is in RAR3FilterToken.swift and RAR29R1Tests.swift.
+
+Performance
+- A real RAR29 bitstream built with KaitoKit's test bit writer, with 16 filters and 128 global-data bytes per filter, decoded 1,000 times per run.
+- Baseline and candidate use separate XCTest bundles and alternate runs. The baseline contains the original loop.
+- Baseline: 24.070, 24.558, 23.652 ms (median 24.070).
+- Candidate: 18.434, 18.620, 18.830, 18.525 ms (median of the three alternating candidate runs: 18.620).
+- About 22.6% less time, or 1.29x the throughput, on M4 Max.
+- This measures global-data-heavy decoding; it is not a claim of the same improvement for every RAR3 archive.
+
+Correctness
+- Global data lengths 0, 1, 17, 128 and the maximum 0x1FC0 were decoded from actual RAR29 streams and produced exactly the same output as streams without global data.
+- Truncated global-data streams were rejected, including 1, 9 and 33 removed bytes.
+- The 16-bit payload-length form used for the maximum case is covered, not just short payloads.
+- RAR29R1Tests plus AddressSanitizer: 8 tests, 0 failures and no sanitizer findings on M4 Max.
+- Raw logs: kaito-rar3-global-before-max-20261105.txt, kaito-rar3-global-ab-max-20261105.txt, kaito-rar3-global-asan-max-20261105.txt.
+
+Status
+- The production source and regression test are integrated. Mac mini's RAR29R1Tests and ASan also passed all 8 tests with no findings. Log: kaito-rar3-global-asan-mini-20261105.txt.
+- The earlier complete suite passed 2,098 tests (60 skipped) before this RAR3-specific integration; the new global-data regression test covers this change on both machines.
+- Adopted in KaitoKit. No commit, push or release was performed.

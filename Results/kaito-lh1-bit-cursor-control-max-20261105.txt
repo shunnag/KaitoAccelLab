@@ -1,0 +1,111 @@
+Building for debugging...
+[Pre-planning 1 / 241]
+[Planning deferred tasks]
+[4 / 9]
+[5 / 10] KaitoKit
+[8 / 13] KaitoKit
+[8 / 14] KaitoKit
+[9 / 14] KaitoKit
+[12 / 14] KaitoKit
+[16 / 22] KaitoKitCompat
+[22 / 26] KaitoKitCompat
+[24 / 25] KaitoKitDynamic-product
+[32 / 42] kaito-product
+[38 / 68] kaito-product
+[41 / 68] kaito-product
+[44 / 68] KaitoKitCompatTests-product
+[46 / 68] KaitoKitCompatTests-product
+[51 / 85] KaitoKitTests-product
+[53 / 86] KaitoKitCompatTests-product
+[55 / 86] kaito-product
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-larc-bits/Tests/KaitoKitTests/SevenZip/SevenZipFolderPrefetchTests.swift:370:17: warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+368 |         let holder = Mutex<Task<Void, any Error>?>(nil)
+369 |         let task = Task.detached {
+370 |             try await LeafDecodePool.$testingSubmission.withValue({ holder.withLock { $0?.cancel() } }) {
+    |                 `- warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+371 |                 let reader = try SevenZipReader(source: DataByteSource(archive), options: ReaderOptions(decodeThreads: 16))
+372 |                 for entry in reader.entries { _ = try reader.stream(for: entry, limits: ReadLimits()).readAll() }
+
+[#UnnecessaryEffectMarker]: <https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker>
+[56 / 86] KaitoKitTests-product
+[58 / 86] KaitoKitTests-product
+[61 / 88] KaitoKitTests-product
+[63 / 88] KaitoKitTests-product
+[66 / 88] KaitoKitTests-product
+[68 / 88] KaitoKitTests-product
+[70 / 88] KaitoKitTests-product
+[71 / 88] KaitoKitTests-product
+[73 / 88] KaitoKitCompatTests-product
+[74 / 88] KaitoKitCompatTests-product
+[75 / 88] KaitoKitCompatTests-product
+[76 / 88] kaito-product
+[78 / 88] KaitoKitCompatTests-product
+[79 / 88] KaitoKitCompatTests-product
+[80 / 88] KaitoKitCompatTests-product
+[81 / 88] KaitoKitCompatTests-product
+[82 / 88] KaitoKitCompatTests-product
+[84 / 88] KaitoKitCompatTests-product
+[86 / 89] KaitoKitTests-product
+[87 / 89] KaitoKitTests-product
+[88 / 89] KaitoKitTests-product
+[93 / 93] kaito-product
+Build complete! (17.90秒)
+Test Suite 'Selected tests' started at 2026-11-05 02:18:31.288.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 02:18:31.288.
+Test Suite 'LHLegacyDecoderTests' started at 2026-11-05 02:18:31.288.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testHandcraftedLegacyArchiveAgainstLhasa]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testHandcraftedLegacyArchiveAgainstLhasa]' passed (0.215 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLegacyDecodersRejectTruncationOvershootAndLimits]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLegacyDecodersRejectTruncationOvershootAndLimits]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZ5FlagOrderMatchAndFixedWindowSeed]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZ5FlagOrderMatchAndFixedWindowSeed]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZHUFLongOraclePrefixCrossesDictionaryWrap]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZHUFLongOraclePrefixCrossesDictionaryWrap]' passed (0.005 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZHUFZeroAndDeterministicOracleVectors]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZHUFZeroAndDeterministicOracleVectors]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSAbsoluteMatchAndTinyReads]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSAbsoluteMatchAndTinyReads]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSDeterministicLongStreamAndTruncation]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSDeterministicLongStreamAndTruncation]' passed (0.124 seconds).
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSReadsPresetSpaceHistory]' started.
+Test Case '-[KaitoKitTests.LHLegacyDecoderTests testLZSReadsPresetSpaceHistory]' passed (0.000 seconds).
+Test Suite 'LHLegacyDecoderTests' passed at 2026-11-05 02:18:31.636.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.347 (0.348) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 02:18:31.636.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.347 (0.348) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 02:18:31.636.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.347 (0.348) seconds
+Test Suite 'Selected tests' started at 2026-11-05 02:18:31.710.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-05 02:18:31.711.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-05 02:18:31.711.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 02:18:31.711.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Building for production...
+[Planning deferred tasks]
+[15 / 27] KaitoKit
+[25 / 70]
+[28 / 70]
+[35 / 70]
+[39 / 70]
+[45 / 70]
+[48 / 70]
+[54 / 70]
+[56 / 70]
+[57 / 70]
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-larc-bits/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[59 / 70] KaitoKit
+[66 / 71] kaito-product
+[68 / 72] kaito-product
+[70 / 72] kaito-product
+[71 / 72] kaito-product
+Build complete! (65.98秒)
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/tmp/kaito-ppmd-m4max.x26G41/workloads/larc-lz1-text.lzh	baseline	85.037000	50	16777216	4	85.453000,84.728000,84.518000,85.346000
+/tmp/kaito-ppmd-m4max.x26G41/workloads/larc-lz1-text.lzh	candidate	84.127000	50	16777216	4	84.015000,84.891000,84.239000,83.843000

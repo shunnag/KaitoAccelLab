@@ -1,0 +1,19 @@
+Test Suite 'Selected tests' started at 2026-11-05 03:45:09.362.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 03:45:09.363.
+Test Suite 'LZMAEncoderBenchmarkTests' started at 2026-11-05 03:45:09.363.
+Test Case '-[GyoshukuKitTests.LZMAEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZMA-BENCH-RUN	pid=6256	repeats=20
+LZMA-BENCH-SOURCE	/usr/lib/dyld	4129088
+LZMA-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+LZMA-BENCH-CORPUS	text	4194304
+LZMA-BENCH-CORPUS	binary	20688592
+LZMA-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+LZMA-BENCH	text	6	swift	694823	4.025	1.041975
+LZMA-BENCH	binary	6	swift	4614086	5.939	3.483413
+Test Case '-[GyoshukuKitTests.LZMAEncoderBenchmarkTests testSingleThreadBenchmark]' passed (92.798 seconds).
+Test Suite 'LZMAEncoderBenchmarkTests' passed at 2026-11-05 03:46:42.162.
+	 Executed 1 test, with 0 failures (0 unexpected) in 92.798 (92.799) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 03:46:42.162.
+	 Executed 1 test, with 0 failures (0 unexpected) in 92.798 (92.799) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 03:46:42.162.
+	 Executed 1 test, with 0 failures (0 unexpected) in 92.798 (92.799) seconds

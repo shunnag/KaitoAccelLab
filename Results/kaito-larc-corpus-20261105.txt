@@ -1,0 +1,64 @@
+-lzs- text.txt 4194304 1111897 987 555393
+/tmp/kaito-ppmd-m4max.x26G41/larc-real/text-lzs.lzh
+-lz5- text.txt 4194304 1179074 276 554712
+/tmp/kaito-ppmd-m4max.x26G41/larc-real/text-lz5.lzh
+-lzs- page-0.bmp 4194304 4085769 2927702 396052
+-lzs- page-1.bmp 4194304 4085639 2927695 395991
+-lzs- page-2.bmp 4194304 4085498 2927911 395799
+/tmp/kaito-ppmd-m4max.x26G41/larc-real/color-lzs.lzh
+-lz5- page-0.bmp 4194304 4135237 2927603 396086
+-lz5- page-1.bmp 4194304 4135091 2927574 396033
+-lz5- page-2.bmp 4194304 4134899 2927724 395863
+/tmp/kaito-ppmd-m4max.x26G41/larc-real/color-lz5.lzh
+0	4194304	file	-lzs-	plain	text.txt	level=0
+0	4194304	f7525d5677c454cd965799bcf0a2da025da7df40a66523ac0f52d558458b2b57	text.txt
+total	1	af7ffe0630a47b389c0b41662e20e3490dc049ba379eaae8ae991b5e173fbfb3	
+
+text.txt	- Testing  :  ..................................................
+text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooo
+text.txt	- Tested  
+0	4194304	file	-lz5-	plain	text.txt	level=0
+0	4194304	f7525d5677c454cd965799bcf0a2da025da7df40a66523ac0f52d558458b2b57	text.txt
+total	1	af7ffe0630a47b389c0b41662e20e3490dc049ba379eaae8ae991b5e173fbfb3	
+
+text.txt	- Testing  :  .................................................
+text.txt	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooo
+text.txt	- Tested  
+0	4194304	file	-lzs-	plain	page-0.bmp	level=0
+1	4194304	file	-lzs-	plain	page-1.bmp	level=0
+2	4194304	file	-lzs-	plain	page-2.bmp	level=0
+0	4194304	757b5a8d1e8c6e4c4c0574fda16ce508dec6bc47bf6b93ee6fccc9e4cfc8def4	page-0.bmp
+1	4194304	3b458d0a518a58d1fb5cb032d043802c6f01249c426a4dde93122a65cfe0f642	page-1.bmp
+2	4194304	7ba90d6eca295fb4dcbc5cc546117c572d2bde82b7726a8122870f4590a4268d	page-2.bmp
+total	3	7f6d48dac38abb51c48a5b4cd214f13e21b0bb1f9df739e731d0c64ae66db706	
+
+page-0.bmp	- Testing  :  ................................................
+page-0.bmp	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooo
+page-0.bmp	- Tested  
+
+page-1.bmp	- Testing  :  ................................................
+page-1.bmp	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooo
+page-1.bmp	- Tested  
+
+page-2.bmp	- Testing  :  ................................................
+page-2.bmp	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooo
+page-2.bmp	- Tested  
+0	4194304	file	-lz5-	plain	page-0.bmp	level=0
+1	4194304	file	-lz5-	plain	page-1.bmp	level=0
+2	4194304	file	-lz5-	plain	page-2.bmp	level=0
+0	4194304	757b5a8d1e8c6e4c4c0574fda16ce508dec6bc47bf6b93ee6fccc9e4cfc8def4	page-0.bmp
+1	4194304	3b458d0a518a58d1fb5cb032d043802c6f01249c426a4dde93122a65cfe0f642	page-1.bmp
+2	4194304	7ba90d6eca295fb4dcbc5cc546117c572d2bde82b7726a8122870f4590a4268d	page-2.bmp
+total	3	7f6d48dac38abb51c48a5b4cd214f13e21b0bb1f9df739e731d0c64ae66db706	
+
+page-0.bmp	- Testing  :  ...............................................
+page-0.bmp	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooo
+page-0.bmp	- Tested  
+
+page-1.bmp	- Testing  :  ...............................................
+page-1.bmp	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooo
+page-1.bmp	- Tested  
+
+page-2.bmp	- Testing  :  ...............................................
+page-2.bmp	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooo
+page-2.bmp	- Tested  

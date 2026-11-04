@@ -1,0 +1,51 @@
+case: fp16 run=1 wall=10.248561000
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2146681
+ratio: 0.511809; bits/byte: 4.094469
+wall seconds: 10.165785; bytes/s: 412590.277
+predictor seconds: 9.557109; coder seconds: 0.604021; steps: 4096
+predictor ms/step: 2.333279; coder ms/step: 0.147466
+case: int8 run=2 wall=9.730236417
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2147763
+ratio: 0.512067; bits/byte: 4.096533
+wall seconds: 9.657771; bytes/s: 434293.166
+predictor seconds: 9.059490; coder seconds: 0.594435; steps: 4096
+predictor ms/step: 2.211790; coder ms/step: 0.145126
+case: int8 run=3 wall=9.842644416
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2147763
+ratio: 0.512067; bits/byte: 4.096533
+wall seconds: 9.772830; bytes/s: 429180.077
+predictor seconds: 9.171288; coder seconds: 0.597585; steps: 4096
+predictor ms/step: 2.239084; coder ms/step: 0.145895
+case: fp16 run=4 wall=10.660377292
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2146681
+ratio: 0.511809; bits/byte: 4.094469
+wall seconds: 10.591161; bytes/s: 396019.292
+predictor seconds: 9.986376; coder seconds: 0.600734; steps: 4096
+predictor ms/step: 2.438080; coder ms/step: 0.146664
+case: fp16 run=5 wall=10.560677750
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2146681
+ratio: 0.511809; bits/byte: 4.094469
+wall seconds: 10.492457; bytes/s: 399744.705
+predictor seconds: 9.886426; coder seconds: 0.601866; steps: 4096
+predictor ms/step: 2.413678; coder ms/step: 0.146940
+case: int8 run=6 wall=10.077817167
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2147763
+ratio: 0.512067; bits/byte: 4.096533
+wall seconds: 10.006829; bytes/s: 419144.184
+predictor seconds: 9.386860; coder seconds: 0.615928; steps: 4096
+predictor ms/step: 2.291714; coder ms/step: 0.150373
+name	median_s	MB_per_s	rounds
+fp16	10.560677750	0.397162	3
+int8	9.842644416	0.426136	3

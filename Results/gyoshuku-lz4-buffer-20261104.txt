@@ -1,0 +1,24 @@
+LZ4 output-buffer integration experiment (2026-11-04)
+
+Candidate
+- Encode compressed bytes directly into the frame output buffer at offset 4 instead of copying payload into a second Data allocation.
+- Preserve the original stored-block path, payload-only block checksum, and compression-size threshold.
+
+Validation
+- LZ4FrameEncoderTests: 3 tests, 0 failures.
+- AddressSanitizer: 1 test, 0 findings; Results/gyoshuku-lz4-buffer-asan-20261104.txt.
+- All 20 baseline/candidate frame pairs were byte-identical.
+- Logs: Results/gyoshuku-lz4-buffer-ab-mini-20261104.txt, Results/gyoshuku-lz4-buffer-random20-mini-20261104.txt, Results/gyoshuku-lz4-buffer-ab-max-20261104.txt.
+
+Mac mini M4, median of 10 alternating runs
+- text: 956.967 -> 967.979 MB/s (1.0115x).
+- random: 1685.105 -> 1676.850 MB/s (0.9951x).
+- With 20 inner repeats, random was 1679.599 -> 1682.669 MB/s (1.0018x), consistent with neutral.
+
+M4 Max, median of 5 runs with 20 inner repeats
+- text: 869.241 -> 867.830 MB/s (0.9984x).
+- random: 1684.304 -> 1667.142 MB/s (0.9898x).
+
+Decision
+- The small text improvement on Mac mini did not reproduce consistently on M4 Max, and M4 Max stored/random encoding was about 1% slower.
+- Not adopted. LZ4FrameEncoder.encodeBlock was restored. The standalone benchmark and Tests/README entry remain for reproduction.

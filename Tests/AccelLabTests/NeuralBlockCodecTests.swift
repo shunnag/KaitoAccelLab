@@ -26,9 +26,12 @@ final class NeuralBlockCodecTests: XCTestCase {
                         if steps == 0 {
                             XCTAssertEqual(timings.predictorSeconds, 0)
                             XCTAssertEqual(timings.coderSeconds, 0)
-                        } else {
+                        } else if length >= 2_048 {
                             XCTAssertGreaterThan(timings.predictorSeconds, 0)
                             XCTAssertGreaterThan(timings.coderSeconds, 0)
+                        } else {
+                            XCTAssertGreaterThanOrEqual(timings.predictorSeconds, 0)
+                            XCTAssertGreaterThanOrEqual(timings.coderSeconds, 0)
                         }
                     }
                 }

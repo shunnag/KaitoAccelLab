@@ -5,10 +5,11 @@ private import Dispatch
 // 引数なしでは従来どおり probe を実行する。
 let arguments = Array(CommandLine.arguments.dropFirst())
 let usage = """
-Usage: accel-lab probe | baseline [--size MiB] [--rounds N] [--out path]
-       accel-lab lz4-gpu <file.lz4> [--rounds N] [--simdgroups k] [--variant thread|simd|both] [--assume-uniform]
+Usage: accel-lab probe | baseline [--size MiB] [--rounds N] [--out path] [--text path]
+       accel-lab lz4-gpu <file.lz4> [--rounds N] [--simdgroups k] [--variant thread|thread16|simd|simd16|both|all] [--assume-uniform]
        accel-lab lz4-make-frame <in> <out> --block-size <bytes>
        accel-lab neural-encode <in> <out> --blocks N (--order0 | --order1 | --uniform | --mlp <mlmodelc> | --gru <mlmodelc>) [--units ane|cpu|gpu|all]
+       accel-lab neural-predictor-bench <explicit.mlmodelc> <stateful.mlmodelc> [--blocks N] [--steps N] [--rounds N] [--units ane|cpu|gpu|all]
        accel-lab neural-decode <in> <out> (--order0 | --order1 | --uniform | --mlp <mlmodelc> | --gru <mlmodelc>) [--units ane|cpu|gpu|all]
        accel-lab demo-pack <dir> <out> (--neural --blocks N (--gru <mlmodelc> | --mlp <mlmodelc> | --order1) [--units ane|cpu|gpu|all] | --lz4 --block-size <bytes>)
        accel-lab demo-unpack <archive> <dir> [(--gru <mlmodelc> | --mlp <mlmodelc> | --order1) [--units ane|cpu|gpu|all]] [--gpu-variant thread|simd|cpu]
@@ -30,11 +31,12 @@ do {
         var sizeMiB = 256
         var rounds = 5
         var outputPath: String?
+        var textPath: String?
         var seen: Set<String> = []
         var index = 1
         while index < arguments.count {
             let option = arguments[index]
-            guard ["--size", "--rounds", "--out"].contains(option) else {
+            guard ["--size", "--rounds", "--out", "--text"].contains(option) else {
                 throw argumentError("Unknown option: \(option)")
             }
             guard seen.insert(option).inserted else { throw argumentError("Duplicate option: \(option)") }
@@ -49,6 +51,9 @@ do {
             case "--rounds":
                 guard let count = Int(value), count > 0 else { throw argumentError("--rounds must be a positive integer") }
                 rounds = count
+            case "--text":
+                guard !value.isEmpty, !value.hasPrefix("--") else { throw argumentError("Missing path for --text") }
+                textPath = value
             default:
                 guard !value.isEmpty, !value.hasPrefix("--") else { throw argumentError("Missing path for --out") }
                 outputPath = value
@@ -70,7 +75,7 @@ do {
             output = repository.appendingPathComponent("Results/baseline-\(timestamp.string(from: Date())).tsv")
         }
         try FileManager.default.createDirectory(at: output.deletingLastPathComponent(), withIntermediateDirectories: true)
-        let measurements = try Baseline.run(sizeMiB: sizeMiB, rounds: rounds)
+        let measurements = try Baseline.run(sizeMiB: sizeMiB, rounds: rounds, textPath: textPath)
         let locale = Locale(identifier: "en_US_POSIX")
         var rows = ["name\tbytes\tmedian_s\tGB_per_s\tnote"]
         for measurement in measurements {
@@ -116,7 +121,7 @@ do {
             guard index + 1 < arguments.count else { throw argumentError("Missing value for \(option)") }
             if option == "--variant" {
                 guard let selected = LZ4Benchmark.VariantSelection(rawValue: arguments[index + 1]) else {
-                    throw argumentError("--variant must be thread, simd, or both")
+                    throw argumentError("--variant must be thread, thread16, simd, simd16, both, or all")
                 }
                 variant = selected
             } else {
@@ -129,13 +134,15 @@ do {
         }
         try LZ4Benchmark.run(path: arguments[1], rounds: rounds, simdgroups: simdgroups,
                              variant: variant, assumeUniform: assumeUniform)
-    case "neural-encode", "neural-decode", "demo-pack", "demo-unpack":
+    case "neural-encode", "neural-decode", "neural-predictor-bench", "demo-pack", "demo-unpack":
         // 待機するメインスレッドと async 処理の実行スレッドを分離する。
         let semaphore = DispatchSemaphore(value: 0)
         Task.detached {
             do {
                 if arguments[0] == "demo-pack" || arguments[0] == "demo-unpack" {
                     try await DemoCommand.run(arguments: arguments)
+                } else if arguments[0] == "neural-predictor-bench" {
+                    try await NeuralBenchmarkCommand.run(arguments: arguments)
                 } else {
                     try await NeuralCommand.run(arguments: arguments)
                 }

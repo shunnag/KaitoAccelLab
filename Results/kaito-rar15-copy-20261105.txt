@@ -1,0 +1,18 @@
+RAR15 non-overlapping match copy (2026-11-05)
+
+Decision: not adopted. The production decoder keeps the scalar copy loop plus the separately adopted decodeNum/addBits inlining.
+
+Correctness work
+- The fast path copies each match into both the caller buffer and the 64 KiB history ring. Source and destination are split independently at their ring boundaries; non-overlapping matches use memmove for history and memcpy for caller output.
+- The initial implementation omitted history and then split only the source boundary. The actual corpus exposed both issues, and the destination boundary was also split before final evaluation.
+- Final boundary-aware implementation: all 9 RAR15DecoderTests passed, including the full document/audio corpus, solid/multi-volume reads and truncation. AddressSanitizer: 9 tests, 0 failures and no findings.
+
+Performance
+- Both inline decoders are the baseline. Each timing uses 50 in-process extractions and four alternating runs on M4 Max. Values are milliseconds; smaller is better.
+
+variant                 document     audio
+both inline baseline      4.8865       0.7440
+bulk copy for >=16 bytes  4.9690       0.7590
+
+The >=16-byte threshold was about 1.7% slower for document and 2.0% slower for audio. The earlier correct all-match bulk path was also slower. Function-call overhead and copying into two destinations outweigh the reduced loop work for these short RAR15 matches. No production source was changed for this experiment.
+Raw logs: kaito-rar15-copy-boundary-max-20261105.txt and kaito-rar15-copy16-max-20261105.txt.

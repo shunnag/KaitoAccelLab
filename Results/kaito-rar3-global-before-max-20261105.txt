@@ -1,0 +1,34 @@
+Building for production...
+[1 / 6]
+[2 / 5] KaitoKitTests-product
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar15/Tests/KaitoKitTests/SevenZip/SevenZipFolderPrefetchTests.swift:370:17: warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+368 |         let holder = Mutex<Task<Void, any Error>?>(nil)
+369 |         let task = Task.detached {
+370 |             try await LeafDecodePool.$testingSubmission.withValue({ holder.withLock { $0?.cancel() } }) {
+    |                 `- warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+371 |                 let reader = try SevenZipReader(source: DataByteSource(archive), options: ReaderOptions(decodeThreads: 16))
+372 |                 for entry in reader.entries { _ = try reader.stream(for: entry, limits: ReadLimits()).readAll() }
+
+[#UnnecessaryEffectMarker]: <https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker>
+[3 / 6] KaitoKitTests-product
+[5 / 6] KaitoKitTests-product
+[9 / 9] KaitoKitTests-product
+Build complete! (124.38秒)
+Test Suite 'Selected tests' started at 2026-11-05 00:07:11.826.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 00:07:11.826.
+Test Suite 'RAR29R1Tests' started at 2026-11-05 00:07:11.826.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' passed (0.025 seconds).
+Test Suite 'RAR29R1Tests' passed at 2026-11-05 00:07:11.852.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.025 (0.025) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 00:07:11.852.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.025 (0.025) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:07:11.852.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.025 (0.026) seconds
+RAR3-GLOBAL filters=16 bytes=128 decode1000_ms=23.896
+Test Suite 'Selected tests' started at 2026-11-05 00:07:11.923.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-05 00:07:11.923.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-05 00:07:11.923.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:07:11.924.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds

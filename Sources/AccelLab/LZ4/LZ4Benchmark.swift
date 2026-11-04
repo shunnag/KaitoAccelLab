@@ -2,13 +2,16 @@ private import Foundation
 
 package enum LZ4Benchmark {
     package enum VariantSelection: String {
-        case thread, simd, both
+        case thread, thread16, simd, simd16, both, all
 
         fileprivate var variants: [LZ4MetalDecoder.Variant] {
             switch self {
             case .thread: [.threadPerBlock]
+            case .thread16: [.thread16PerBlock]
             case .simd: [.simdPerBlock]
+            case .simd16: [.simd16PerBlock]
             case .both: [.threadPerBlock, .simdPerBlock]
+            case .all: [.threadPerBlock, .thread16PerBlock, .simdPerBlock, .simd16PerBlock]
             }
         }
     }
@@ -109,7 +112,13 @@ package enum LZ4Benchmark {
             note: "once per decoder; input MTLBuffer allocation+copy; input_bytes=\(source.count); bytes=decoded")
         var allMatched = true
         for selected in variant.variants {
-            let name = selected == .threadPerBlock ? "gpu-thread-per-block" : "gpu-simd-per-block"
+            let name: String
+            switch selected {
+            case .threadPerBlock: name = "gpu-thread-per-block"
+            case .thread16PerBlock: name = "gpu-thread16-per-block"
+            case .simdPerBlock: name = "gpu-simd-per-block"
+            case .simd16PerBlock: name = "gpu-simd16-per-block"
+            }
             var gpuTimes: [Double] = []
             var wallTimes: [Double] = []
             for round in 0..<rounds {

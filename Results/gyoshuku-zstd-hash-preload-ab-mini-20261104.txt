@@ -1,0 +1,314 @@
+baseline-hash.xctest
+Test Suite 'Selected tests' started at 2026-11-04 18:47:00.739.
+Test Suite 'baseline-hash.xctest' started at 2026-11-04 18:47:00.741.
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-04 18:47:00.741.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+ZSTD-BENCH-SOURCE	/usr/lib/dyld	4129088
+ZSTD-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+ZSTD-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+ZSTD-BENCH-CORPUS	text	4194304
+ZSTD-BENCH	text	3	swift	933779	319.129	0.013143
+ZSTD-BENCH	text	3	zstd	970449	598.600	0.007007
+ZSTD-BENCH-TARGET	text	3	size-gap=-3.779%	speed/zstd=0.533
+ZSTD-PROFILE	text	3	input+xxh64=0.000260	match+parse=0.009700	literals=0.000224	sequences=0.003134	codes=0.001016	tables=0.000547	bits=0.001543	literal-histogram=0.000008	literal-tables=0.000007	literal-bits=0.000005
+ZSTD-BENCH-CORPUS	binary	20688592
+ZSTD-BENCH	binary	3	swift	7372719	219.818	0.094117
+ZSTD-BENCH	binary	3	zstd	7570254	490.000	0.042222
+ZSTD-BENCH-TARGET	binary	3	size-gap=-2.609%	speed/zstd=0.449
+ZSTD-BENCH-MISS	binary	3	size=false	speed=true
+ZSTD-PROFILE	binary	3	input+xxh64=0.001147	match+parse=0.061910	literals=0.010364	sequences=0.020193	codes=0.008780	tables=0.005375	bits=0.005838	literal-histogram=0.000841	literal-tables=0.002463	literal-bits=0.001605
+ZSTD-BENCH-CORPUS	mixed	16777216
+ZSTD-BENCH	mixed	3	swift	10648501	423.321	0.039632
+ZSTD-BENCH	mixed	3	zstd	10724051	844.700	0.019862
+ZSTD-BENCH-TARGET	mixed	3	size-gap=-0.704%	speed/zstd=0.501
+ZSTD-PROFILE	mixed	3	input+xxh64=0.001058	match+parse=0.029095	literals=0.004181	sequences=0.007299	codes=0.002681	tables=0.001981	bits=0.002560	literal-histogram=0.001795	literal-tables=0.000523	literal-bits=0.000482
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (8.687 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' passed at 2026-11-04 18:47:09.428.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.687 (8.687) seconds
+Test Suite 'baseline-hash.xctest' passed at 2026-11-04 18:47:09.429.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.687 (8.687) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 18:47:09.429.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.687 (8.689) seconds
+GyoshukuKitTests.xctest
+Test Suite 'Selected tests' started at 2026-11-04 18:47:09.483.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 18:47:09.484.
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-04 18:47:09.484.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+ZSTD-BENCH-SOURCE	/usr/lib/dyld	4129088
+ZSTD-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+ZSTD-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+ZSTD-BENCH-CORPUS	text	4194304
+ZSTD-BENCH	text	3	swift	933779	321.191	0.013059
+ZSTD-BENCH	text	3	zstd	970449	592.900	0.007074
+ZSTD-BENCH-TARGET	text	3	size-gap=-3.779%	speed/zstd=0.542
+ZSTD-PROFILE	text	3	input+xxh64=0.000314	match+parse=0.012589	literals=0.000292	sequences=0.004032	codes=0.001306	tables=0.000699	bits=0.001992	literal-histogram=0.000010	literal-tables=0.000010	literal-bits=0.000006
+ZSTD-BENCH-CORPUS	binary	20688592
+ZSTD-BENCH	binary	3	swift	7372719	216.174	0.095704
+ZSTD-BENCH	binary	3	zstd	7570254	500.600	0.041328
+ZSTD-BENCH-TARGET	binary	3	size-gap=-2.609%	speed/zstd=0.432
+ZSTD-BENCH-MISS	binary	3	size=false	speed=true
+ZSTD-PROFILE	binary	3	input+xxh64=0.001174	match+parse=0.064151	literals=0.010619	sequences=0.020674	codes=0.009007	tables=0.005505	bits=0.005957	literal-histogram=0.000865	literal-tables=0.002535	literal-bits=0.001635
+ZSTD-BENCH-CORPUS	mixed	16777216
+ZSTD-BENCH	mixed	3	swift	10648501	416.663	0.040266
+ZSTD-BENCH	mixed	3	zstd	10724051	834.700	0.020100
+ZSTD-BENCH-TARGET	mixed	3	size-gap=-0.704%	speed/zstd=0.499
+ZSTD-BENCH-MISS	mixed	3	size=false	speed=true
+ZSTD-PROFILE	mixed	3	input+xxh64=0.001099	match+parse=0.031257	literals=0.004448	sequences=0.007765	codes=0.002870	tables=0.002091	bits=0.002719	literal-histogram=0.001902	literal-tables=0.000551	literal-bits=0.000513
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (8.729 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' passed at 2026-11-04 18:47:18.213.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.729 (8.729) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 18:47:18.213.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.729 (8.729) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 18:47:18.213.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.729 (8.730) seconds
+baseline-hash.xctest
+Test Suite 'Selected tests' started at 2026-11-04 18:47:18.267.
+Test Suite 'baseline-hash.xctest' started at 2026-11-04 18:47:18.268.
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-04 18:47:18.268.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+ZSTD-BENCH-SOURCE	/usr/lib/dyld	4129088
+ZSTD-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+ZSTD-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+ZSTD-BENCH-CORPUS	text	4194304
+ZSTD-BENCH	text	3	swift	933779	325.311	0.012893
+ZSTD-BENCH	text	3	zstd	970449	589.600	0.007114
+ZSTD-BENCH-TARGET	text	3	size-gap=-3.779%	speed/zstd=0.552
+ZSTD-PROFILE	text	3	input+xxh64=0.000277	match+parse=0.011094	literals=0.000245	sequences=0.003420	codes=0.001100	tables=0.000608	bits=0.001681	literal-histogram=0.000009	literal-tables=0.000009	literal-bits=0.000006
+ZSTD-BENCH-CORPUS	binary	20688592
+ZSTD-BENCH	binary	3	swift	7372719	217.753	0.095009
+ZSTD-BENCH	binary	3	zstd	7570254	494.300	0.041854
+ZSTD-BENCH-TARGET	binary	3	size-gap=-2.609%	speed/zstd=0.441
+ZSTD-BENCH-MISS	binary	3	size=false	speed=true
+ZSTD-PROFILE	binary	3	input+xxh64=0.001165	match+parse=0.062697	literals=0.010528	sequences=0.020442	codes=0.008867	tables=0.005449	bits=0.005923	literal-histogram=0.000855	literal-tables=0.002514	literal-bits=0.001621
+ZSTD-BENCH-CORPUS	mixed	16777216
+ZSTD-BENCH	mixed	3	swift	10648501	419.843	0.039961
+GyoshukuKitTests.xctest
+ZSTD-BENCH	mixed	3	zstd	10724051	837.300	0.020037
+ZSTD-BENCH-TARGET	mixed	3	size-gap=-0.704%	speed/zstd=0.501
+ZSTD-PROFILE	mixed	3	input+xxh64=0.001054	match+parse=0.028838	literals=0.004136	sequences=0.007277	codes=0.002699	tables=0.001974	bits=0.002519	literal-histogram=0.001767	literal-tables=0.000518	literal-bits=0.000487
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (8.633 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' passed at 2026-11-04 18:47:26.901.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.633 (8.633) seconds
+Test Suite 'baseline-hash.xctest' passed at 2026-11-04 18:47:26.901.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.633 (8.633) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 18:47:26.901.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.633 (8.634) seconds
+Test Suite 'Selected tests' started at 2026-11-04 18:47:26.955.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 18:47:26.956.
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-04 18:47:26.956.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+ZSTD-BENCH-SOURCE	/usr/lib/dyld	4129088
+ZSTD-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+ZSTD-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+ZSTD-BENCH-CORPUS	text	4194304
+ZSTD-BENCH	text	3	swift	933779	311.447	0.013467
+ZSTD-BENCH	text	3	zstd	970449	587.900	0.007134
+ZSTD-BENCH-TARGET	text	3	size-gap=-3.779%	speed/zstd=0.530
+ZSTD-PROFILE	text	3	input+xxh64=0.000292	match+parse=0.011638	literals=0.000267	sequences=0.003708	codes=0.001195	tables=0.000651	bits=0.001828	literal-histogram=0.000009	literal-tables=0.000010	literal-bits=0.000005
+ZSTD-BENCH-CORPUS	binary	20688592
+ZSTD-BENCH	binary	3	swift	7372719	214.952	0.096247
+ZSTD-BENCH	binary	3	zstd	7570254	494.200	0.041863
+ZSTD-BENCH-TARGET	binary	3	size-gap=-2.609%	speed/zstd=0.435
+ZSTD-BENCH-MISS	binary	3	size=false	speed=true
+ZSTD-PROFILE	binary	3	input+xxh64=0.001165	match+parse=0.065134	literals=0.010518	sequences=0.020531	codes=0.008960	tables=0.005442	bits=0.005923	literal-histogram=0.000863	literal-tables=0.002527	literal-bits=0.001641
+ZSTD-BENCH-CORPUS	mixed	16777216
+ZSTD-BENCH	mixed	3	swift	10648501	404.488	0.041478
+ZSTD-BENCH	mixed	3	zstd	10724051	826.100	0.020309
+ZSTD-BENCH-TARGET	mixed	3	size-gap=-0.704%	speed/zstd=0.490
+ZSTD-BENCH-MISS	mixed	3	size=false	speed=true
+ZSTD-PROFILE	mixed	3	input+xxh64=0.001059	match+parse=0.029238	literals=0.004148	sequences=0.007240	codes=0.002674	tables=0.001966	bits=0.002520	literal-histogram=0.001786	literal-tables=0.000514	literal-bits=0.000484
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (8.681 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' passed at 2026-11-04 18:47:35.637.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.681 (8.681) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 18:47:35.637.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.681 (8.681) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 18:47:35.637.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.681 (8.682) seconds
+baseline-hash.xctest
+Test Suite 'Selected tests' started at 2026-11-04 18:47:35.691.
+Test Suite 'baseline-hash.xctest' started at 2026-11-04 18:47:35.691.
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-04 18:47:35.691.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+ZSTD-BENCH-SOURCE	/usr/lib/dyld	4129088
+ZSTD-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+ZSTD-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+ZSTD-BENCH-CORPUS	text	4194304
+ZSTD-BENCH	text	3	swift	933779	313.614	0.013374
+ZSTD-BENCH	text	3	zstd	970449	586.100	0.007156
+ZSTD-BENCH-TARGET	text	3	size-gap=-3.779%	speed/zstd=0.535
+ZSTD-PROFILE	text	3	input+xxh64=0.000275	match+parse=0.011034	literals=0.000244	sequences=0.003395	codes=0.001097	tables=0.000591	bits=0.001677	literal-histogram=0.000009	literal-tables=0.000008	literal-bits=0.000005
+ZSTD-BENCH-CORPUS	binary	20688592
+ZSTD-BENCH	binary	3	swift	7372719	211.399	0.097865
+ZSTD-BENCH	binary	3	zstd	7570254	494.900	0.041804
+ZSTD-BENCH-TARGET	binary	3	size-gap=-2.609%	speed/zstd=0.427
+ZSTD-BENCH-MISS	binary	3	size=false	speed=true
+ZSTD-PROFILE	binary	3	input+xxh64=0.001159	match+parse=0.062447	literals=0.010493	sequences=0.020365	codes=0.008842	tables=0.005401	bits=0.005920	literal-histogram=0.000851	literal-tables=0.002496	literal-bits=0.001624
+ZSTD-BENCH-CORPUS	mixed	16777216
+ZSTD-BENCH	mixed	3	swift	10648501	414.769	0.040450
+GyoshukuKitTests.xctest
+ZSTD-BENCH	mixed	3	zstd	10724051	827.900	0.020265
+ZSTD-BENCH-TARGET	mixed	3	size-gap=-0.704%	speed/zstd=0.501
+ZSTD-PROFILE	mixed	3	input+xxh64=0.001071	match+parse=0.028926	literals=0.004284	sequences=0.007459	codes=0.002743	tables=0.002021	bits=0.002617	literal-histogram=0.001838	literal-tables=0.000528	literal-bits=0.000491
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (8.705 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' passed at 2026-11-04 18:47:44.397.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.705 (8.705) seconds
+Test Suite 'baseline-hash.xctest' passed at 2026-11-04 18:47:44.397.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.705 (8.705) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 18:47:44.397.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.705 (8.706) seconds
+Test Suite 'Selected tests' started at 2026-11-04 18:47:44.451.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 18:47:44.451.
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-04 18:47:44.451.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+ZSTD-BENCH-SOURCE	/usr/lib/dyld	4129088
+ZSTD-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+ZSTD-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+ZSTD-BENCH-CORPUS	text	4194304
+ZSTD-BENCH	text	3	swift	933779	314.266	0.013346
+ZSTD-BENCH	text	3	zstd	970449	584.900	0.007171
+ZSTD-BENCH-TARGET	text	3	size-gap=-3.779%	speed/zstd=0.537
+ZSTD-PROFILE	text	3	input+xxh64=0.000285	match+parse=0.011750	literals=0.000260	sequences=0.003612	codes=0.001159	tables=0.000641	bits=0.001779	literal-histogram=0.000009	literal-tables=0.000009	literal-bits=0.000006
+ZSTD-BENCH-CORPUS	binary	20688592
+ZSTD-BENCH	binary	3	swift	7372719	214.248	0.096564
+ZSTD-BENCH	binary	3	zstd	7570254	494.400	0.041846
+ZSTD-BENCH-TARGET	binary	3	size-gap=-2.609%	speed/zstd=0.433
+ZSTD-BENCH-MISS	binary	3	size=false	speed=true
+ZSTD-PROFILE	binary	3	input+xxh64=0.001232	match+parse=0.069909	literals=0.011236	sequences=0.021982	codes=0.009516	tables=0.005894	bits=0.006354	literal-histogram=0.000909	literal-tables=0.002718	literal-bits=0.001739
+ZSTD-BENCH-CORPUS	mixed	16777216
+ZSTD-BENCH	mixed	3	swift	10648501	405.180	0.041407
+baseline-hash.xctest
+ZSTD-BENCH	mixed	3	zstd	10724051	832.900	0.020143
+ZSTD-BENCH-TARGET	mixed	3	size-gap=-0.704%	speed/zstd=0.486
+ZSTD-BENCH-MISS	mixed	3	size=false	speed=true
+ZSTD-PROFILE	mixed	3	input+xxh64=0.001064	match+parse=0.029731	literals=0.004232	sequences=0.007401	codes=0.002745	tables=0.001998	bits=0.002578	literal-histogram=0.001808	literal-tables=0.000523	literal-bits=0.000491
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (8.761 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' passed at 2026-11-04 18:47:53.212.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.761 (8.761) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 18:47:53.212.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.761 (8.761) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 18:47:53.212.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.761 (8.761) seconds
+Test Suite 'Selected tests' started at 2026-11-04 18:47:53.266.
+Test Suite 'baseline-hash.xctest' started at 2026-11-04 18:47:53.266.
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-04 18:47:53.266.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+ZSTD-BENCH-SOURCE	/usr/lib/dyld	4129088
+ZSTD-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+ZSTD-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+ZSTD-BENCH-CORPUS	text	4194304
+ZSTD-BENCH	text	3	swift	933779	310.942	0.013489
+ZSTD-BENCH	text	3	zstd	970449	584.100	0.007181
+ZSTD-BENCH-TARGET	text	3	size-gap=-3.779%	speed/zstd=0.532
+ZSTD-PROFILE	text	3	input+xxh64=0.000289	match+parse=0.010895	literals=0.000253	sequences=0.003500	codes=0.001128	tables=0.000609	bits=0.001733	literal-histogram=0.000009	literal-tables=0.000010	literal-bits=0.000005
+ZSTD-BENCH-CORPUS	binary	20688592
+ZSTD-BENCH	binary	3	swift	7372719	210.699	0.098190
+ZSTD-BENCH	binary	3	zstd	7570254	496.300	0.041686
+ZSTD-BENCH-TARGET	binary	3	size-gap=-2.609%	speed/zstd=0.425
+ZSTD-BENCH-MISS	binary	3	size=false	speed=true
+ZSTD-PROFILE	binary	3	input+xxh64=0.001219	match+parse=0.066344	literals=0.010780	sequences=0.021010	codes=0.009078	tables=0.005607	bits=0.006113	literal-histogram=0.000878	literal-tables=0.002589	literal-bits=0.001687
+ZSTD-BENCH-CORPUS	mixed	16777216
+ZSTD-BENCH	mixed	3	swift	10648501	414.800	0.040447
+ZSTD-BENCH	mixed	3	zstd	10724051	826.100	0.020309
+ZSTD-BENCH-TARGET	mixed	3	size-gap=-0.704%	speed/zstd=0.502
+ZSTD-PROFILE	mixed	3	input+xxh64=0.001093	match+parse=0.030399	literals=0.004361	sequences=0.007575	codes=0.002787	tables=0.002051	bits=0.002655	literal-histogram=0.001861	literal-tables=0.000543	literal-bits=0.000516
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (8.795 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' passed at 2026-11-04 18:48:02.061.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.795 (8.795) seconds
+Test Suite 'baseline-hash.xctest' passed at 2026-11-04 18:48:02.061.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.795 (8.795) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 18:48:02.061.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.795 (8.795) seconds
+GyoshukuKitTests.xctest
+Test Suite 'Selected tests' started at 2026-11-04 18:48:02.115.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 18:48:02.116.
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-04 18:48:02.116.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+ZSTD-BENCH-SOURCE	/usr/lib/dyld	4129088
+ZSTD-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+ZSTD-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+ZSTD-BENCH-CORPUS	text	4194304
+ZSTD-BENCH	text	3	swift	933779	311.879	0.013448
+ZSTD-BENCH	text	3	zstd	970449	583.200	0.007192
+ZSTD-BENCH-TARGET	text	3	size-gap=-3.779%	speed/zstd=0.535
+ZSTD-PROFILE	text	3	input+xxh64=0.000268	match+parse=0.010469	literals=0.000243	sequences=0.003357	codes=0.001079	tables=0.000595	bits=0.001653	literal-histogram=0.000008	literal-tables=0.000011	literal-bits=0.000005
+ZSTD-BENCH-CORPUS	binary	20688592
+ZSTD-BENCH	binary	3	swift	7372719	214.516	0.096443
+ZSTD-BENCH	binary	3	zstd	7570254	490.500	0.042179
+ZSTD-BENCH-TARGET	binary	3	size-gap=-2.609%	speed/zstd=0.437
+ZSTD-BENCH-MISS	binary	3	size=false	speed=true
+ZSTD-PROFILE	binary	3	input+xxh64=0.001181	match+parse=0.064184	literals=0.010620	sequences=0.020785	codes=0.009061	tables=0.005515	bits=0.006004	literal-histogram=0.000863	literal-tables=0.002533	literal-bits=0.001641
+ZSTD-BENCH-CORPUS	mixed	16777216
+ZSTD-BENCH	mixed	3	swift	10648501	411.865	0.040735
+ZSTD-BENCH	mixed	3	zstd	10724051	826.200	0.020306
+ZSTD-BENCH-TARGET	mixed	3	size-gap=-0.704%	speed/zstd=0.499
+ZSTD-BENCH-MISS	mixed	3	size=false	speed=true
+ZSTD-PROFILE	mixed	3	input+xxh64=0.001111	match+parse=0.029638	literals=0.004314	sequences=0.007570	codes=0.002800	tables=0.002015	bits=0.002669	literal-histogram=0.001835	literal-tables=0.000543	literal-bits=0.000500
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (8.751 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' passed at 2026-11-04 18:48:10.867.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.751 (8.751) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 18:48:10.867.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.751 (8.751) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 18:48:10.867.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.751 (8.752) seconds
+baseline-hash.xctest
+Test Suite 'Selected tests' started at 2026-11-04 18:48:10.924.
+Test Suite 'baseline-hash.xctest' started at 2026-11-04 18:48:10.925.
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-04 18:48:10.925.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+ZSTD-BENCH-SOURCE	/usr/lib/dyld	4129088
+ZSTD-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+ZSTD-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+ZSTD-BENCH-CORPUS	text	4194304
+ZSTD-BENCH	text	3	swift	933779	298.241	0.014063
+ZSTD-BENCH	text	3	zstd	970449	581.800	0.007209
+ZSTD-BENCH-TARGET	text	3	size-gap=-3.779%	speed/zstd=0.513
+ZSTD-PROFILE	text	3	input+xxh64=0.000270	match+parse=0.010548	literals=0.000243	sequences=0.003401	codes=0.001091	tables=0.000602	bits=0.001675	literal-histogram=0.000008	literal-tables=0.000009	literal-bits=0.000005
+ZSTD-BENCH-CORPUS	binary	20688592
+ZSTD-BENCH	binary	3	swift	7372719	213.672	0.096824
+ZSTD-BENCH	binary	3	zstd	7570254	493.200	0.041948
+ZSTD-BENCH-TARGET	binary	3	size-gap=-2.609%	speed/zstd=0.433
+ZSTD-BENCH-MISS	binary	3	size=false	speed=true
+ZSTD-PROFILE	binary	3	input+xxh64=0.001210	match+parse=0.066682	literals=0.010860	sequences=0.021199	codes=0.009161	tables=0.005654	bits=0.006171	literal-histogram=0.000883	literal-tables=0.002603	literal-bits=0.001692
+ZSTD-BENCH-CORPUS	mixed	16777216
+ZSTD-BENCH	mixed	3	swift	10648501	416.792	0.040253
+GyoshukuKitTests.xctest
+ZSTD-BENCH	mixed	3	zstd	10724051	796.600	0.021061
+ZSTD-BENCH-TARGET	mixed	3	size-gap=-0.704%	speed/zstd=0.523
+ZSTD-PROFILE	mixed	3	input+xxh64=0.001052	match+parse=0.027987	literals=0.004032	sequences=0.007028	codes=0.002575	tables=0.001915	bits=0.002460	literal-histogram=0.001725	literal-tables=0.000504	literal-bits=0.000475
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (8.728 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' passed at 2026-11-04 18:48:19.653.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.728 (8.728) seconds
+Test Suite 'baseline-hash.xctest' passed at 2026-11-04 18:48:19.653.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.728 (8.728) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 18:48:19.653.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.728 (8.729) seconds
+Test Suite 'Selected tests' started at 2026-11-04 18:48:19.722.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 18:48:19.722.
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-04 18:48:19.722.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+ZSTD-BENCH-SOURCE	/usr/lib/dyld	4129088
+ZSTD-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+ZSTD-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+ZSTD-BENCH-CORPUS	text	4194304
+ZSTD-BENCH	text	3	swift	933779	300.143	0.013974
+ZSTD-BENCH	text	3	zstd	970449	581.400	0.007214
+ZSTD-BENCH-TARGET	text	3	size-gap=-3.779%	speed/zstd=0.516
+ZSTD-PROFILE	text	3	input+xxh64=0.000264	match+parse=0.010225	literals=0.000236	sequences=0.003289	codes=0.001056	tables=0.000578	bits=0.001626	literal-histogram=0.000008	literal-tables=0.000008	literal-bits=0.000005
+ZSTD-BENCH-CORPUS	binary	20688592
+ZSTD-BENCH	binary	3	swift	7372719	209.148	0.098919
+ZSTD-BENCH	binary	3	zstd	7570254	493.300	0.041939
+ZSTD-BENCH-TARGET	binary	3	size-gap=-2.609%	speed/zstd=0.424
+ZSTD-BENCH-MISS	binary	3	size=false	speed=true
+ZSTD-PROFILE	binary	3	input+xxh64=0.001185	match+parse=0.065081	literals=0.010762	sequences=0.021074	codes=0.009165	tables=0.005613	bits=0.006085	literal-histogram=0.000876	literal-tables=0.002587	literal-bits=0.001668
+ZSTD-BENCH-CORPUS	mixed	16777216
+ZSTD-BENCH	mixed	3	swift	10648501	412.299	0.040692
+ZSTD-BENCH	mixed	3	zstd	10724051	822.600	0.020395
+ZSTD-BENCH-TARGET	mixed	3	size-gap=-0.704%	speed/zstd=0.501
+ZSTD-PROFILE	mixed	3	input+xxh64=0.001040	match+parse=0.028466	literals=0.004087	sequences=0.007114	codes=0.002643	tables=0.001908	bits=0.002487	literal-histogram=0.001757	literal-tables=0.000508	literal-bits=0.000470
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (8.714 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' passed at 2026-11-04 18:48:28.436.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.714 (8.714) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 18:48:28.436.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.714 (8.714) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 18:48:28.436.
+	 Executed 1 test, with 0 failures (0 unexpected) in 8.714 (8.714) seconds

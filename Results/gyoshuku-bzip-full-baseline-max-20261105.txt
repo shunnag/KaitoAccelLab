@@ -1,0 +1,28 @@
+Building for production...
+[Planning deferred tasks]
+[7 / 30]
+[8 / 27] GyoshukuKit
+[10 / 28] GyoshukuKit
+[16 / 26] GyoshukuKitTests-product
+[18 / 27] GyoshukuKitTests-product
+[22 / 26] GyoshukuKitTests-product
+[24 / 26] GyoshukuKitTests-product
+Build complete! (98.65秒)
+Test Suite 'Selected tests' started at 2026-11-05 03:09:36.567.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 03:09:36.567.
+Test Suite 'Bzip2EncoderBenchmarkTests' started at 2026-11-05 03:09:36.567.
+Test Case '-[GyoshukuKitTests.Bzip2EncoderBenchmarkTests testThroughput]' started.
+BZIP2-ENC	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+BZIP2-ENC	text	1	608853	0.179009250	23.431	0.179177000	23.409
+BZIP2-ENC	text	9	581720	0.193265083	21.702	0.193288000	21.700
+BZIP2-ENC	runs127	1	3560	0.031435375	133.426	0.031479292	133.240
+BZIP2-ENC	runs127	9	1827	0.033497750	125.212	0.033853167	123.897
+BZIP2-ENC	repeated	1	49	0.026024167	161.170	0.026069458	160.890
+BZIP2-ENC	repeated	9	49	0.025485375	164.577	0.025619500	163.715
+Test Case '-[GyoshukuKitTests.Bzip2EncoderBenchmarkTests testThroughput]' passed (1.973 seconds).
+Test Suite 'Bzip2EncoderBenchmarkTests' passed at 2026-11-05 03:09:38.540.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.973 (1.973) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 03:09:38.540.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.973 (1.973) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 03:09:38.540.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.973 (1.974) seconds

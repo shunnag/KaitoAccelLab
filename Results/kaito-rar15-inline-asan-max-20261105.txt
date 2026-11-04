@@ -1,0 +1,124 @@
+Building for debugging...
+[Pre-planning 1 / 241]
+[Planning deferred tasks]
+[53 / 118]
+[54 / 119] KaitoKit
+[63 / 178]
+[66 / 178]
+[73 / 178]
+[77 / 178]
+[83 / 178]
+[86 / 178]
+[92 / 178]
+[94 / 178]
+[95 / 178]
+[101 / 178] KaitoKit
+[103 / 178] KaitoKit
+[109 / 178] KaitoKit
+[110 / 178] kaito-product
+[111 / 178] kaito-product
+[113 / 178] KaitoKit
+[114 / 178] KaitoKit
+[115 / 178] KaitoKit
+[116 / 178] KaitoKit
+[117 / 178] KaitoKit
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar15/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[119 / 178] KaitoKit
+[124 / 179]
+[126 / 188] kaito-product
+[129 / 188] kaito-product
+[132 / 188] kaito-product
+[133 / 188] kaito-product
+[134 / 188] kaito-product
+[135 / 189]
+[139 / 193] KaitoKitCompat
+[150 / 193]
+[150 / 193] KaitoKitCompat
+[151 / 193] KaitoKit
+[159 / 194] KaitoKitTests-product
+[166 / 195] kaito-product
+[173 / 195] KaitoKitCompatTests-product
+[179 / 242]
+[187 / 259]
+[192 / 259]
+[194 / 259]
+[197 / 259]
+[199 / 259]
+[202 / 259]
+[203 / 259]
+[208 / 259] KaitoKitCompatTests-product
+[220 / 259] KaitoKitTests-product
+[222 / 259] KaitoKitTests-product
+[223 / 259] KaitoKitTests-product
+[225 / 259] KaitoKitTests-product
+[226 / 259] KaitoKitTests-product
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar15/Tests/KaitoKitTests/SevenZip/SevenZipFolderPrefetchTests.swift:370:17: warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+368 |         let holder = Mutex<Task<Void, any Error>?>(nil)
+369 |         let task = Task.detached {
+370 |             try await LeafDecodePool.$testingSubmission.withValue({ holder.withLock { $0?.cancel() } }) {
+    |                 `- warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+371 |                 let reader = try SevenZipReader(source: DataByteSource(archive), options: ReaderOptions(decodeThreads: 16))
+372 |                 for entry in reader.entries { _ = try reader.stream(for: entry, limits: ReadLimits()).readAll() }
+
+[#UnnecessaryEffectMarker]: <https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker>
+[229 / 259] KaitoKitTests-product
+[230 / 259] KaitoKitTests-product
+[231 / 259] KaitoKitTests-product
+[232 / 259] KaitoKitCompatTests-product
+[233 / 259] KaitoKitCompatTests-product
+[234 / 259] KaitoKitCompatTests-product
+[235 / 259] KaitoKitCompatTests-product
+[237 / 259] KaitoKitCompatTests-product
+[238 / 259] KaitoKitCompatTests-product
+[239 / 259] KaitoKitCompatTests-product
+[240 / 259] KaitoKitCompatTests-product
+[241 / 259] KaitoKitCompatTests-product
+[242 / 259] KaitoKitCompatTests-product
+[245 / 259] KaitoKitCompatTests-product
+[247 / 259] KaitoKitCompatTests-product
+[247 / 259] KaitoKitTests-product
+[247 / 259] KaitoKitCompatTests-product
+[249 / 259] KaitoKitCompatTests-product
+[253 / 259] KaitoKitTests-product
+[255 / 259] KaitoKitTests-product
+[257 / 259] KaitoKitTests-product
+Build complete! (40.47秒)
+Test Suite 'Selected tests' started at 2026-11-05 01:18:22.442.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 01:18:22.443.
+Test Suite 'RAR15DecoderTests' started at 2026-11-05 01:18:22.443.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedLiteralAndShortMatchArchive]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedLiteralAndShortMatchArchive]' passed (0.003 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidArchiveSupportsForwardAndBackwardReads]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidArchiveSupportsForwardAndBackwardReads]' passed (0.002 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidMultiVolumeArchiveSupportsForwardAndBackwardReads]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidMultiVolumeArchiveSupportsForwardAndBackwardReads]' passed (0.005 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioAndDocumentCorpusMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioAndDocumentCorpusMatchesUnrarOutput]' passed (0.457 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioDirectDecoderMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioDirectDecoderMatchesUnrarOutput]' passed (0.059 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154LongDocumentDirectDecoderMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154LongDocumentDirectDecoderMatchesUnrarOutput]' passed (0.053 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154NormalArchiveMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154NormalArchiveMatchesUnrarOutput]' passed (0.004 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testSplitAfterAtEndOfVolumeRequiresURLButNotAnEndMarker]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testSplitAfterAtEndOfVolumeRequiresURLButNotAnEndMarker]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testTruncatedPackedInputIsRejected]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testTruncatedPackedInputIsRejected]' passed (0.001 seconds).
+Test Suite 'RAR15DecoderTests' passed at 2026-11-05 01:18:23.030.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.586 (0.587) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 01:18:23.030.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.586 (0.587) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 01:18:23.030.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.586 (0.588) seconds
+Test Suite 'Selected tests' started at 2026-11-05 01:18:23.142.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-05 01:18:23.144.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-05 01:18:23.144.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 01:18:23.144.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds

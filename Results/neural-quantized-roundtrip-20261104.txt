@@ -1,0 +1,39 @@
+
+case: int8
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2147763
+ratio: 0.512067; bits/byte: 4.096533
+wall seconds: 9.228706; bytes/s: 454484.539
+predictor seconds: 8.603367; coder seconds: 0.620800; steps: 4096
+predictor ms/step: 2.100431; coder ms/step: 0.151563
+real 9.76
+user 4.93
+sys 1.98
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 2147763
+bytes out: 4194304
+ratio: 0.512067; bits/byte: 4.096533
+wall seconds: 9.527635; bytes/s: 440225.102
+predictor seconds: 8.922796; coder seconds: 0.601062; steps: 4096
+predictor ms/step: 2.178417; coder ms/step: 0.146744
+
+case: int4
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 4421566
+ratio: 1.054183; bits/byte: 8.433468
+wall seconds: 9.148895; bytes/s: 458449.261
+predictor seconds: 8.548480; coder seconds: 0.595795; steps: 4096
+predictor ms/step: 2.087031; coder ms/step: 0.145458
+real 9.65
+user 4.90
+sys 1.99
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4421566
+bytes out: 4194304
+ratio: 1.054183; bits/byte: 8.433468
+wall seconds: 9.432719; bytes/s: 444654.829
+predictor seconds: 8.811077; coder seconds: 0.617566; steps: 4096
+predictor ms/step: 2.151142; coder ms/step: 0.150773
+match: OK (int8 and int4 round trips)

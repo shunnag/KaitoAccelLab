@@ -1,0 +1,22 @@
+2026-11-05 03:42:14.925 sample[5443:16962199] pid_for_task(1d03) failed with error 5: (os/kern) failure
+Sampling process 0 for 8 seconds with 1 millisecond of run time between samples
+Sampling completed, processing symbols...
+Test Suite 'Selected tests' started at 2026-11-05 03:42:14.953.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 03:42:14.954.
+Test Suite 'LZMAEncoderBenchmarkTests' started at 2026-11-05 03:42:14.954.
+Test Case '-[GyoshukuKitTests.LZMAEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZMA-BENCH-RUN	pid=5442	repeats=10
+LZMA-BENCH-SOURCE	/usr/lib/dyld	4129088
+LZMA-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+LZMA-BENCH-CORPUS	text	4194304
+LZMA-BENCH-CORPUS	binary	20688592
+LZMA-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+LZMA-BENCH	text	6	swift	694823	3.976	1.054990
+LZMA-BENCH	binary	6	swift	4614086	5.951	3.476332
+Test Case '-[GyoshukuKitTests.LZMAEncoderBenchmarkTests testSingleThreadBenchmark]' passed (46.097 seconds).
+Test Suite 'LZMAEncoderBenchmarkTests' passed at 2026-11-05 03:43:01.051.
+	 Executed 1 test, with 0 failures (0 unexpected) in 46.097 (46.097) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 03:43:01.051.
+	 Executed 1 test, with 0 failures (0 unexpected) in 46.097 (46.097) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 03:43:01.051.
+	 Executed 1 test, with 0 failures (0 unexpected) in 46.097 (46.098) seconds

@@ -1,0 +1,20 @@
+Building for production...
+[2 / 5] GyoshukuKit
+[3 / 6] GyoshukuKit
+[9 / 9] GyoshukuKitTests-product
+[11 / 13] GyoshukuKitTests-product
+Build complete! (28.42秒)
+Test Suite 'Selected tests' started at 2026-11-04 20:46:44.970.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:46:44.971.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:46:44.971.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017560	955.411	0.017768	944.255
+LZ4-BENCH	random	16777271	0.010261	1635.027	0.010346	1621.548
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.295 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:46:45.265.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.295 (0.295) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:46:45.265.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.295 (0.295) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:46:45.265.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.295 (0.295) seconds

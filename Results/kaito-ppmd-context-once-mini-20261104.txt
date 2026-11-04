@@ -1,0 +1,20 @@
+Building for production...
+[2 / 9]
+[3 / 10] KaitoKit
+[5 / 11] KaitoKit
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[9 / 10] kaito-product
+[10 / 10] kaito-product
+Build complete! (54.18秒)
+text.7z {'before': 184.93137500000012, 'after': 171.57891699999993, '7zz': 146.82149999999993}
+text.zip {'before': 232.87533400000004, 'after': 234.51412499999958, '7zz': 161.5522500000006}
+color.7z {'before': 5873.2383750000035, 'after': 5849.77125, '7zz': 3234.652167}
+color.zip {'before': 5285.860249999985, 'after': 5275.353917000019, '7zz': 3198.7085000000093}
+jpeg.7z {'before': 974.7110000000134, 'after': 968.827540999996, '7zz': 697.8738340000064}
+jpeg.zip {'before': 870.7991670000013, 'after': 864.2571249999946, '7zz': 676.6793339999992}

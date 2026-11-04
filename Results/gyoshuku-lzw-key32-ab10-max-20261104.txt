@@ -1,0 +1,108 @@
+Test Suite 'Selected tests' started at 2026-11-04 23:23:54.399.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:23:54.399.
+Test Suite 'LZWStreamEncoderBenchmarkTests' started at 2026-11-04 23:23:54.399.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' started.
+LZW-BENCH	corpus	maxbits	bytes	best_s	best_MBps	median_s	median_MBps
+LZW-BENCH	text	12	959960	0.027259	153.868	0.027591	152.015
+LZW-BENCH	text	16	948871	0.041136	101.962	0.042009	99.843
+LZW-BENCH	binary	12	2540751	0.037405	110.389	0.037704	109.514
+LZW-BENCH	binary	16	2081725	0.041951	98.427	0.042328	97.549
+LZW-BENCH	random	12	5913669	0.052424	80.007	0.053120	78.959
+LZW-BENCH	random	16	5194055	0.058824	71.303	0.059899	70.023
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' passed (3.394 seconds).
+Test Suite 'LZWStreamEncoderBenchmarkTests' passed at 2026-11-04 23:23:57.794.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.394 (3.395) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:23:57.794.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.394 (3.395) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:23:57.794.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.394 (3.395) seconds
+Test Suite 'Selected tests' started at 2026-11-04 23:23:57.854.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:23:57.855.
+Test Suite 'LZWStreamEncoderBenchmarkTests' started at 2026-11-04 23:23:57.855.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' started.
+LZW-BENCH	corpus	maxbits	bytes	best_s	best_MBps	median_s	median_MBps
+LZW-BENCH	text	12	959960	0.026854	156.187	0.027276	153.771
+LZW-BENCH	text	16	948871	0.041188	101.832	0.041773	100.407
+LZW-BENCH	binary	12	2540751	0.036835	112.096	0.037237	110.886
+LZW-BENCH	binary	16	2081725	0.041728	98.953	0.042286	97.646
+LZW-BENCH	random	12	5913669	0.051729	81.083	0.052753	79.509
+LZW-BENCH	random	16	5194055	0.058630	71.539	0.059058	71.020
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' passed (3.380 seconds).
+Test Suite 'LZWStreamEncoderBenchmarkTests' passed at 2026-11-04 23:24:01.235.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.380 (3.380) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:24:01.235.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.380 (3.380) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:24:01.235.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.380 (3.381) seconds
+Test Suite 'Selected tests' started at 2026-11-04 23:24:01.294.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:24:01.294.
+Test Suite 'LZWStreamEncoderBenchmarkTests' started at 2026-11-04 23:24:01.294.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' started.
+LZW-BENCH	corpus	maxbits	bytes	best_s	best_MBps	median_s	median_MBps
+LZW-BENCH	text	12	959960	0.027016	155.254	0.027281	153.744
+LZW-BENCH	text	16	948871	0.041016	102.261	0.042384	98.960
+LZW-BENCH	binary	12	2540751	0.036964	111.707	0.037493	110.131
+LZW-BENCH	binary	16	2081725	0.041453	99.609	0.042149	97.965
+LZW-BENCH	random	12	5913669	0.052035	80.605	0.052632	79.691
+LZW-BENCH	random	16	5194055	0.058147	72.133	0.059396	70.616
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' passed (3.388 seconds).
+Test Suite 'LZWStreamEncoderBenchmarkTests' passed at 2026-11-04 23:24:04.683.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.388 (3.389) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:24:04.683.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.388 (3.389) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:24:04.683.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.388 (3.389) seconds
+Test Suite 'Selected tests' started at 2026-11-04 23:24:04.742.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:24:04.743.
+Test Suite 'LZWStreamEncoderBenchmarkTests' started at 2026-11-04 23:24:04.743.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' started.
+LZW-BENCH	corpus	maxbits	bytes	best_s	best_MBps	median_s	median_MBps
+LZW-BENCH	text	12	959960	0.027216	154.114	0.027641	151.740
+LZW-BENCH	text	16	948871	0.041886	100.136	0.042347	99.047
+LZW-BENCH	binary	12	2540751	0.037653	109.663	0.038391	107.554
+LZW-BENCH	binary	16	2081725	0.041487	99.528	0.042349	97.501
+LZW-BENCH	random	12	5913669	0.052722	79.555	0.053209	78.827
+LZW-BENCH	random	16	5194055	0.059189	70.863	0.059821	70.114
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' passed (3.412 seconds).
+Test Suite 'LZWStreamEncoderBenchmarkTests' passed at 2026-11-04 23:24:08.155.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.412 (3.412) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:24:08.155.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.412 (3.412) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:24:08.155.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.412 (3.413) seconds
+Test Suite 'Selected tests' started at 2026-11-04 23:24:08.213.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:24:08.214.
+Test Suite 'LZWStreamEncoderBenchmarkTests' started at 2026-11-04 23:24:08.214.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' started.
+LZW-BENCH	corpus	maxbits	bytes	best_s	best_MBps	median_s	median_MBps
+LZW-BENCH	text	12	959960	0.027420	152.963	0.027823	150.752
+LZW-BENCH	text	16	948871	0.041951	99.982	0.042399	98.925
+LZW-BENCH	binary	12	2540751	0.037457	110.236	0.037947	108.813
+LZW-BENCH	binary	16	2081725	0.041301	99.976	0.042328	97.550
+LZW-BENCH	random	12	5913669	0.052613	79.720	0.053133	78.940
+LZW-BENCH	random	16	5194055	0.059282	70.752	0.059827	70.108
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' passed (3.407 seconds).
+Test Suite 'LZWStreamEncoderBenchmarkTests' passed at 2026-11-04 23:24:11.621.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.407 (3.407) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:24:11.622.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.407 (3.407) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:24:11.622.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.407 (3.408) seconds
+Test Suite 'Selected tests' started at 2026-11-04 23:24:11.681.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:24:11.682.
+Test Suite 'LZWStreamEncoderBenchmarkTests' started at 2026-11-04 23:24:11.682.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' started.
+LZW-BENCH	corpus	maxbits	bytes	best_s	best_MBps	median_s	median_MBps
+LZW-BENCH	text	12	959960	0.026917	155.822	0.027241	153.968
+LZW-BENCH	text	16	948871	0.041449	101.191	0.042215	99.356
+LZW-BENCH	binary	12	2540751	0.036683	112.561	0.037195	111.012
+LZW-BENCH	binary	16	2081725	0.041484	99.534	0.041982	98.354
+LZW-BENCH	random	12	5913669	0.052185	80.374	0.052674	79.628
+LZW-BENCH	random	16	5194055	0.058537	71.652	0.059278	70.757
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' passed (3.386 seconds).
+Test Suite 'LZWStreamEncoderBenchmarkTests' passed at 2026-11-04 23:24:15.068.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.386 (3.387) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:24:15.068.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.386 (3.387) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:24:15.068.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.386 (3.387) seconds

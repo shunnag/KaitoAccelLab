@@ -1,0 +1,47 @@
+Building for production...
+[Planning deferred tasks]
+[1 / 4]
+[2 / 7] KaitoKit
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[3 / 8] KaitoKit
+[8 / 11] GyoshukuKit
+[9 / 12] GyoshukuKit
+[15 / 15] GyoshukuKit-product
+[20 / 30] GyoshukuKitTests-product
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/GyoshukuKit/Tests/GyoshukuKitTests/Probes/LZ4FrameEncoderBenchmarkTests.swift:21:17: [1;33mwarning: [1;39mimmutable value 'iteration' was never used; consider replacing with '_' or removing it[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/no-usage\NoUsage]8;;\]
+[0;36m19 |[0;0m             var reference: Data?
+[0;36m20 |[0;0m             var durations: [Double] = []
+[0;36m21 |[0;0m             for iteration in 0..<repeats {
+   [0;36m|[0;0m                 `- [1;33mwarning: [1;39mimmutable value 'iteration' was never used; consider replacing with '_' or removing it[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/no-usage\NoUsage]8;;\]
+[0;36m22 |[0;0m                 let encoder = try LZ4FrameEncoder(contentSize: UInt64(input.count), blockChecksums: true, threads: 1)
+[0;36m23 |[0;0m                 var encoded = Data()
+
+[#NoUsage]: <https://docs.swift.org/compiler/documentation/diagnostics/no-usage>
+[22 / 31] GyoshukuKitTests-product
+[26 / 30] GyoshukuKitTests-product
+[28 / 30] GyoshukuKitTests-product
+Build complete! (147.84秒)
+Test Suite 'Selected tests' started at 2026-11-04 23:14:38.994.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:14:38.995.
+Test Suite 'LZWStreamEncoderBenchmarkTests' started at 2026-11-04 23:14:38.995.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' started.
+LZW-BENCH	corpus	maxbits	bytes	best_s	best_MBps	median_s	median_MBps
+LZW-BENCH	text	12	959960	0.027155	154.460	0.027263	153.845
+LZW-BENCH	text	16	948871	0.036752	114.124	0.039714	105.614
+LZW-BENCH	binary	12	2540751	0.037508	110.085	0.037692	109.549
+LZW-BENCH	binary	16	2081725	0.038773	106.495	0.038793	106.438
+LZW-BENCH	random	12	5913669	0.053124	78.953	0.053163	78.895
+LZW-BENCH	random	16	5194055	0.056424	74.335	0.056498	74.238
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' passed (2.020 seconds).
+Test Suite 'LZWStreamEncoderBenchmarkTests' passed at 2026-11-04 23:14:41.016.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.020 (2.021) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:14:41.016.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.020 (2.021) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:14:41.016.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.020 (2.021) seconds
