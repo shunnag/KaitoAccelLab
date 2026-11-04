@@ -1,0 +1,35 @@
+RAR2 / RAR4 unpack-version 20 short-code lookup (2026-11-04)
+
+Candidate
+- RAR20HuffmanTable adds a 1,024-entry UInt32 primary lookup for codes of 1...10 bits. Records are (bitCount << 16) | (symbol + 1), with zero reserved for a long/invalid prefix.
+- Long and invalid codes retain the original canonical 1...15-bit decoding loop. Table build still accepts the same incomplete trees and rejects oversubscription before publishing new canonical arrays.
+- The primary table is allocated once per table and released in deinit. Canonical-code bounds limit every write to the 1,024 entries; only the unused suffix is cleared on rebuild.
+- MSBFirstBitReader.peekPadded refills without setting overrun for lookahead padding. The actual symbol-width consume retains the original truncation behavior. Empty input and truncated long codes are covered by the new regression test.
+- No third-party decoder source or disassembly was used. Inputs are the project's own RAR 2.50 fixtures and format notes.
+
+Performance corpus and method
+- The four checked-in, project-created RAR 2.50 fixtures: autorej, audio, biglz, solid. Their .b64 contents were decoded to .rar in temporary directories.
+- Scripts/benchmark_kaito_inprocess.py, kaito bench --threads 1, 200 extractions per timing, four alternating timings per executable. Archive-open time is excluded; actual entry reads, table construction, model updates and CRC checks are included.
+- This is a four-fixture benchmark, not a claim about every RAR2 workload. No new large RAR2 corpus was generated in this pass.
+
+Original vs final raw-pointer candidate (milliseconds; smaller is better)
+fixture       mini before  mini final   Max before   Max final
+autorej          0.026       0.027        0.026       0.027
+audio            0.5775      0.5400       0.6135      0.5690
+biglz            2.8005      1.6495       3.0260      1.7160
+solid            0.2915      0.2915       0.3080      0.3010
+
+- biglz: about 1.70x on Mac mini and 1.76x on M4 Max.
+- audio: about 6.9% and 7.3% less time.
+- solid: unchanged on Mac mini, about 2.3% less time on M4 Max.
+- autorej differs by 0.001 ms on both machines; it is dominated by small-fixture overhead.
+- Raw results: kaito-rar20-primary-all-{mini,max}-20261104.txt.
+- The intermediate array table was also faster than the original, but raw pointers saved another roughly 10% on biglz. Array-stage logs: kaito-rar20-primary-{mini,max}-20261104.txt and kaito-rar20-primary-array-max-20261104.txt.
+
+Verification completed
+- RAR20DecoderTests: 6 tests, 0 failures, including LZ, audio, solid, version 26, small buffers, truncated packed input, long-code and empty-input lookup behavior.
+- Public API: 264 outcomes from each independently linked executable were byte-identical, including returned byte counts, SHA-256, returned prefixes and exact reflected errors. Both files have SHA-256 b46da79cf44c59b62769297f0f25668f85d18f2f6d5033e2260b0e202a2ac9ac. Raw files: kaito-rar20-outcomes-{baseline,candidate}-20261104.jsonl.
+- AddressSanitizer: 8 tests, 0 failures and no sanitizer findings. This includes the RAR20 tests and MSBFirstBitReader tests.
+- Verification log: kaito-rar20-verification-mini-20261104.txt.
+- Full KaitoKit suite: 2,098 tests, 64 skipped, 0 failures in 1,380.578 seconds. KaitoKitCompatTests: 34 tests, 0 failures in 2.222 seconds. Log: kaito-codec-final-full-mini-20261104.txt.
+- Adopted in KaitoKit. No commit, push, or release was performed.

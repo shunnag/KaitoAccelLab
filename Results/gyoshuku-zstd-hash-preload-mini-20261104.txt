@@ -1,0 +1,21 @@
+Zstandard doubleHash candidate preload experiment (2026-11-04)
+
+Candidate
+- In ZstdParser.doubleMatch, load both valid short-hash and long-hash candidates' 8-byte history differences before extending the short candidate.
+- Preserve table updates, match selection, niceLength handling, and invalid-distance rejection. The long load is speculative when the short match reaches niceLength.
+
+Validation
+- Local debug ZstdEncoderTests: 21 tests, 3 skipped, 0 failures.
+- Initial level 3 logs: Results/gyoshuku-zstd-hash-preload-before-mini-20261104.txt and Results/gyoshuku-zstd-hash-preload-after-mini-20261104.txt.
+- Five alternating before/after runs used preserved xctest bundles, without recompilation between runs. Full log: Results/gyoshuku-zstd-hash-preload-ab-mini-20261104.txt.
+- All 15 pairs of level 3 frames (3 corpora x 5 rounds) were byte-identical according to cmp.
+
+Median of five alternating Mac mini level 3 runs
+corpus, baseline_MBps, candidate_MBps, speedup
+text, 313.614, 311.879, 0.994468
+binary, 213.672, 214.516, 1.003950
+mixed, 416.792, 411.865, 0.988179
+
+Decision
+- The candidate was 0.55% slower on text and 1.18% slower on mixed, with only a 0.40% improvement on binary. No consistent end-to-end improvement was established.
+- Not adopted. The parser experiment and temporary benchmark-only corpus/level filters were reverted; no production diff remains.

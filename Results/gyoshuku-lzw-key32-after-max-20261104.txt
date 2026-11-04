@@ -1,0 +1,23 @@
+Building for production...
+[1 / 2]
+[2 / 4] GyoshukuKit
+[3 / 5] GyoshukuKit
+Build complete! (31.76秒)
+Test Suite 'Selected tests' started at 2026-11-04 23:17:20.884.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:17:20.885.
+Test Suite 'LZWStreamEncoderBenchmarkTests' started at 2026-11-04 23:17:20.885.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' started.
+LZW-BENCH	corpus	maxbits	bytes	best_s	best_MBps	median_s	median_MBps
+LZW-BENCH	text	12	959960	0.026947	155.648	0.027264	153.842
+LZW-BENCH	text	16	948871	0.042012	99.835	0.042399	98.925
+LZW-BENCH	binary	12	2540751	0.036486	113.170	0.036972	111.682
+LZW-BENCH	binary	16	2081725	0.041540	99.400	0.042040	98.217
+LZW-BENCH	random	12	5913669	0.052830	79.393	0.053225	78.803
+LZW-BENCH	random	16	5194055	0.058518	71.675	0.059443	70.560
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' passed (2.083 seconds).
+Test Suite 'LZWStreamEncoderBenchmarkTests' passed at 2026-11-04 23:17:22.968.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.083 (2.083) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:17:22.968.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.083 (2.083) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:17:22.968.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.083 (2.084) seconds

@@ -1,12 +1,15 @@
 """再帰型 byte 予測 model（GRU 1 層）を torch(MPS) で学習し、Core ML(mlprogram, fp16, 固定 batch) に変換する。
-Core ML model の入出力: x_onehot [B,256] fp16（直前の byte の one-hot、先頭では全 0）、h_in [B,H] fp16 →
-probabilities [B,256] fp16、h_out [B,H] fp16。状態はテンソルとして往復させる（MLState を使わず、どの batch 形状でも
-同じ重みを固定 batch で書き出せる）。
-使い方: train_gru_predictor.py <corpus> <out-prefix> [steps] [hidden] [seq] [batch-shapes 例 1024,4096]
+通常版の入出力: x_onehot [B,256] fp16、h_in [B,H] fp16 → probabilities [B,256] fp16、h_out [B,H] fp16。
+--stateful 版は同じ重みで x_onehot → probabilities とし、h は Core ML の MLState に保持する。
+--stateful-select 版は h を [1,B,H] にして一行だけを選択更新する。--stateful-direct は graph pass で全要素の
+slice_update を直接の状態更新に置き換える。direct は現行 ANE では実行できず、CPU / GPU 向けの実験である。
+使い方: train_gru_predictor.py <corpus> <out-prefix> [steps] [hidden] [seq] [batch-shapes 例 1024,4096] [--stateful | --stateful-select | --stateful-direct]
 steps に 0 を渡すと学習せず <out-prefix>.pt を読んで Core ML への書き出しだけを行う。
 """
 import sys, time, numpy as np, torch, torch.nn as nn
 import coremltools as ct
+from coremltools.converters.mil.mil.passes.graph_pass import AbstractGraphPass
+from coremltools.converters.mil.mil.passes.pass_registry import register_pass
 
 corpus_path, prefix = sys.argv[1], sys.argv[2]
 steps = int(sys.argv[3]) if len(sys.argv) > 3 else 3000
@@ -54,6 +57,52 @@ class Cell(nn.Module):
         h_out = (1.0 - z) * n + z * h_in
         return torch.softmax(self.out(h_out), dim=-1), h_out
 
+@register_pass(namespace="common")
+class direct_state_update(AbstractGraphPass):
+    """この exporter の全要素 slice_update を直接の状態更新へ置き換える。"""
+    def apply(self, prog):
+        replacements = 0
+        for function in prog.functions.values():
+            for op in list(function.operations):
+                if op.op_type != "coreml_update_state" or op.value.op is None:
+                    continue
+                update = op.value.op
+                if update.op_type != "slice_update" or update.inputs["x"].op.op_type != "read_state":
+                    continue
+                value = update.inputs["update"]
+                if value.sym_type != op.value.sym_type:
+                    continue
+                if function.try_replace_uses_of_var_after_op(
+                    anchor_op=update, old_var=update.outputs[0], new_var=value,
+                ):
+                    function.remove_ops([update])
+                    replacements += 1
+        if replacements != 1:
+            raise RuntimeError(f"expected one full state slice update, got {replacements}")
+
+class StatefulCell(nn.Module):
+    """書き出し用: GRU の hidden state を Core ML の state として登録する。"""
+    def __init__(self, cell: Cell, batch: int, width: int, select: bool = False):
+        super().__init__()
+        self.cell = cell
+        self.select = select
+        shape = (1, batch, width) if select else (batch, width)
+        self.register_buffer("hidden_state", torch.zeros(shape))
+    def forward(self, x_onehot):
+        if self.select:
+            probabilities, h_out = self.cell(x_onehot, self.hidden_state[0])
+            self.hidden_state[0] = h_out
+        else:
+            probabilities, h_out = self.cell(x_onehot, self.hidden_state)
+            self.hidden_state[:, :] = h_out
+        return probabilities
+
+if len(sys.argv) > 8 or (len(sys.argv) == 8 and sys.argv[7] not in ("--stateful", "--stateful-select", "--stateful-direct")):
+    raise SystemExit("unknown arguments; use --stateful, --stateful-select, or --stateful-direct")
+stateful = len(sys.argv) == 8
+select_state = stateful and sys.argv[7] == "--stateful-select"
+direct_state = stateful and sys.argv[7] == "--stateful-direct"
+
 def batch_from(arr, size, rng):
     idx = rng.integers(0, len(arr) - seq - 1, size)
     ys = np.stack([arr[i:i + seq] for i in idx]).astype(np.int64)      # 予測対象 [B, T]
@@ -87,13 +136,37 @@ if steps > 0:
     torch.save(model.state_dict(), prefix + ".pt")
 cell = Cell(model).eval()
 for b in shapes:
-    traced = torch.jit.trace(cell, (torch.zeros(b, 256), torch.zeros(b, hidden)))
-    mlmodel = ct.convert(traced, convert_to="mlprogram", compute_units=ct.ComputeUnit.CPU_AND_NE,
-                         minimum_deployment_target=ct.target.macOS15, compute_precision=ct.precision.FLOAT16,
-                         inputs=[ct.TensorType(name="x_onehot", shape=(b, 256), dtype=np.float16),
-                                 ct.TensorType(name="h_in", shape=(b, hidden), dtype=np.float16)],
-                         outputs=[ct.TensorType(name="probabilities", dtype=np.float16),
-                                  ct.TensorType(name="h_out", dtype=np.float16)])
-    out = f"{prefix}-b{b}.mlpackage"
+    if stateful:
+        traced = torch.jit.trace(StatefulCell(cell, b, hidden, select=select_state).eval(),
+                                 torch.zeros(b, 256), check_trace=False)
+        state_shape = (1, b, hidden) if select_state else (b, hidden)
+        pipeline = ct.PassPipeline.DEFAULT
+        if direct_state:
+            pipeline.append_pass("common::direct_state_update")
+        mlmodel = ct.convert(traced, convert_to="mlprogram", compute_units=ct.ComputeUnit.CPU_AND_NE,
+                             minimum_deployment_target=ct.target.macOS15, compute_precision=ct.precision.FLOAT16,
+                             inputs=[ct.TensorType(name="x_onehot", shape=(b, 256), dtype=np.float16)],
+                             outputs=[ct.TensorType(name="probabilities", dtype=np.float16)],
+                             states=[ct.StateType(wrapped_type=ct.TensorType(shape=state_shape, dtype=np.float16),
+                                                  name="hidden_state")], pass_pipeline=pipeline)
+    else:
+        traced = torch.jit.trace(cell, (torch.zeros(b, 256), torch.zeros(b, hidden)))
+        mlmodel = ct.convert(traced, convert_to="mlprogram", compute_units=ct.ComputeUnit.CPU_AND_NE,
+                             minimum_deployment_target=ct.target.macOS15, compute_precision=ct.precision.FLOAT16,
+                             inputs=[ct.TensorType(name="x_onehot", shape=(b, 256), dtype=np.float16),
+                                     ct.TensorType(name="h_in", shape=(b, hidden), dtype=np.float16)],
+                             outputs=[ct.TensorType(name="probabilities", dtype=np.float16),
+                                      ct.TensorType(name="h_out", dtype=np.float16)])
+    suffix = "-stateful-direct" if direct_state else "-stateful-select" if select_state else "-stateful" if stateful else ""
+    out = f"{prefix}-b{b}{suffix}.mlpackage"
     mlmodel.save(out)
+    if stateful:
+        probe = ct.models.MLModel(out, compute_units=ct.ComputeUnit.CPU_ONLY)
+        state = probe.make_state()
+        if np.any(state.read_state("hidden_state")):
+            raise RuntimeError("new MLState is not initialized to zero")
+        probe.predict({"x_onehot": np.zeros((b, 256), dtype=np.float16)}, state=state)
+        if not np.any(state.read_state("hidden_state")):
+            raise RuntimeError("stateful export did not update hidden_state")
+        print("state update: OK", flush=True)
     print("saved", out, flush=True)

@@ -1,0 +1,46 @@
+LH5 dictionary pointer conversion (2026-11-04)
+
+Production candidate
+- Allocate heads and previous once for the entire LH5Encoder.write operation as UnsafeMutablePointer<Int>.
+- Pass UnsafePointer<Int> to findMatch, removing Swift array management and bounds checks from the chain walk.
+- Preserve input access, chain order, match comparison, output bytes, and all public behavior.
+
+Reproduction
+GYOSHUKU_LH5_BENCHMARK=1 swift test -c release -j 4 -Xswiftc -enable-testing --filter LH5EncoderBenchmarkTests/testSingleThreadBenchmark
+The benchmark covers 4 MiB text, /usr/lib/dyld, and deterministic 4 MiB random data at levels 1/6/9. See Tests/README.md in GyoshukuKit.
+
+Mac mini M4: median best MB/s of five alternating baseline/candidate benchmark processes
+corpus, level, baseline, candidate, speedup
+text, 1, 132.942, 150.081, 1.128921
+text, 6, 79.996, 93.016, 1.162758
+text, 9, 44.512, 50.983, 1.145377
+binary, 1, 113.785, 119.763, 1.052538
+binary, 6, 90.459, 99.369, 1.098498
+binary, 9, 36.289, 43.236, 1.191435
+random, 1, 83.634, 84.617, 1.011754
+random, 6, 83.749, 85.732, 1.023678
+random, 9, 84.776, 85.296, 1.006134
+
+M4 Max: one baseline/candidate pair using the same bundles, best MB/s
+corpus, level, baseline, candidate, speedup
+text, 1, 135.420, 143.249, 1.057812
+text, 6, 78.814, 88.592, 1.124064
+text, 9, 43.037, 47.905, 1.113115
+binary, 1, 109.734, 115.240, 1.050176
+binary, 6, 87.283, 93.896, 1.075535
+binary, 9, 34.649, 41.205, 1.189206
+random, 1, 82.064, 84.469, 1.029306
+random, 6, 82.841, 84.424, 1.019109
+random, 9, 82.880, 84.271, 1.016783
+
+Validation completed
+- All 45 baseline/candidate frame pairs from the five Mac mini rounds were byte-identical.
+- All 9 M4 Max frame pairs were byte-identical.
+- LH5EncoderTests: 7 tests, 0 failures, including independent lha-unix / lhasa / 7zz decoders.
+- Mac mini LHA integration: LH5EncoderTests 7, LHACompressionMethodTests 8, LHAStreamSpliceTests 2, LHAWriterParallelTests 6; all 23 passed.
+- AddressSanitizer: maximum-length/full-window and multiple-block tests, 2 tests, 0 findings.
+- Initial logs: Results/gyoshuku-lh5-pointer-before-mini-20261104.txt and Results/gyoshuku-lh5-pointer-after-mini-20261104.txt
+- Alternating log: Results/gyoshuku-lh5-pointer-ab-mini-20261104.txt
+- ASan log: Results/gyoshuku-lh5-pointer-asan-20261104.txt
+- Full GyoshukuKit suite on Mac mini: 944 tests, 51 skipped, 0 failures. Log: Results/gyoshuku-lh5-pointer-full-mini-20261104.txt
+- Remote source: /tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit

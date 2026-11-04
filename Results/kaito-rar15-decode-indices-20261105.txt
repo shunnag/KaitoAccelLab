@@ -1,0 +1,19 @@
+RAR15 decodeNum lookup-table experiment (2026-11-05)
+
+Decision: not adopted. The production decoder retains its short linear threshold scan. The separately adopted consume-only addBits remains unchanged.
+
+Candidates and correctness
+- A 16-entry lookup was incorrect because dec thresholds are not aligned to 4096. It was replaced by a 2,048-entry-per-table lookup keyed by num >> 5, which matches every 32-unit dec threshold.
+- decHf1 and decHf2 both have 8 entries, so a dec.count-only table overwrote decHf1. The final experiment uses dec[0] << 4 | dec.count as the key, making all seven tables distinct.
+- After those corrections, all 9 RAR15DecoderTests passed, including every byte of the document/audio corpus, solid and multi-volume reads and truncation errors.
+
+Performance on M4 Max
+- Same RAR 1.54 document/audio archives as kaito-rar15-consume-20261104.txt.
+- kaito bench --threads 1, 50 extractions per timing, four alternating timings per executable. Values are milliseconds; smaller is better.
+
+archive   consume baseline   index table   time ratio
+doc        5.7225            6.1500       1.0747 (slower)
+audio      0.9345            1.0700       1.1450 (slower)
+
+The dictionary lookup, optional handling, larger static tables and table-selection overhead cost more than the short threshold loop saves. The final table is not adopted, and no production source was changed for this experiment.
+Raw log: kaito-rar15-decode-indices-max-20261105.txt.

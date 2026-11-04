@@ -1,0 +1,33 @@
+GyoshukuKit LZMA BT4 bucket-parallel Metal research (2026-11-04)
+
+Research source: Research/LZMABucketMetal/
+- LZMABucketMetalEncoder.swift -> Sources/GyoshukuKit/Compression/LZMA/
+- LZMABucketMetalKernels.swift -> Sources/GyoshukuKit/Compression/LZMA/
+- LZMABucketMetalTests.swift -> Tests/GyoshukuKitTests/Compression/
+The experiment requires .linkedFramework("Metal") on the main and test targets.
+
+Method
+- Group positions by the existing HASH4 bucket. One Metal thread processes each bucket in position order.
+- Save H2/H3 heads before constructing buckets. The first H4 candidate is the head at that bucket's first occurrence; later waves inherit the previous position in that bucket.
+- Serialize dictionary cycles and use two son/tree buffers. A future position must not overwrite a previous-cycle node that another bucket still references. Select the buffer from the candidate's cycle.
+- Emit the same two short-distance records and increasing BT candidates as LZMAMatchFinder with extendMatches=false and recordShortMatches=false.
+
+Correctness
+- M4 Max debug: 6 tests passed, benchmark skipped normally.
+- 64 KiB text, 20,000-byte text with a 4,096-byte dictionary, short inputs of 0/1/3/4/7/64 bytes, 600 prefixes, CPU bucket-order candidate comparison, and an intermediate tree trace passed.
+- Both release benchmarks also compared every candidate, count, hash, and final son state on 4 MiB text.
+
+Commands
+GYOSHUKU_LZMA_GPU_BENCHMARK=1 swift test -c release -j 4 -Xswiftc -enable-testing --filter LZMABucketMetalTests/testLargeBenchmark
+Remote source directory on Mac mini: /tmp/gyoshuku-lzma-gpu.Ic2O1q/GyoshukuKit
+
+Best-of-3 measurements on 4 MiB LZMAEncoderCorpus.text, preset 6, 4 MiB dictionary
+machine, bucket_s, gpu_s, gpu_wall_s, cpu_finder_s, finder_speedup, full_cpu_encode_s
+M4 Max, 0.109419041, 0.45662900002207607, 0.7417936666752212, 0.8296852916828357, 1.1184852728677932, 1.1338231249828823
+Mac mini M4, 0.104901666, 0.45702387497294694, 0.8453529583639465, 0.5540947916451842, 0.6554596942767567, 0.8508177916519344
+
+Scope and decision
+- gpu_wall includes CPU bucket construction, buffer setup, GPU work, and copying GPU results to Swift arrays. It excludes Metal library/pipeline initialization and LZMA parsing/range encoding.
+- cpu_finder_s runs the existing Swift finder over every position with the same extendMatches=false and recordShortMatches=false settings. full_cpu_encode_s is supplied only for context; it is not an end-to-end GPU result.
+- M4 Max showed a local 1.118x finder-only improvement, but Mac mini M4 took 1.526x as long as its CPU finder (0.655x speed). The GPU-only wall also did not beat Mac mini's full CPU encode.
+- Not adopted in GyoshukuKit. The experimental source and Metal links were removed from the production repository and archived in KaitoAccelLab.

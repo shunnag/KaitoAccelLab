@@ -1,0 +1,198 @@
+Building for debugging...
+[1 / 23] GyoshukuKit
+[4 / 38]
+[5 / 39] KaitoKit
+[12 / 39] KaitoKit
+[13 / 39] KaitoKit
+[16 / 42] GyoshukuKit
+[19 / 45] GyoshukuKit
+[24 / 42] GyoshukuKit
+[29 / 40] GyoshukuKit-product
+[29 / 40] GyoshukuKitTests-product
+[34 / 47] GyoshukuKitTests-product
+[36 / 47] GyoshukuKitTests-product
+[43 / 47] GyoshukuKitTests-product
+Build complete! (4.51秒)
+Test Suite 'Selected tests' started at 2026-11-04 20:19:01.034.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:19:01.035.
+Test Suite 'LH5EncoderTests' started at 2026-11-04 20:19:01.035.
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testMaximumLengthAndFullWindowDistance]' started.
+LHA DECODER lha-maximum-match/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****   28449  29.4% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file    28449  29.4% Nov  4 11:19
+
+LHA DECODER lha-maximum-match/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****    8340   28449  29.4% -lh5- bb63 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file     8340   28449  29.4%            2026-11-04 11:19:01
+
+LHA DECODER lha-maximum-match/lha-t: exit 0
+encoded.bin	- Testing  :  ....encoded.bin	- Testing  :  ooooencoded.bin	- Tested  
+
+LHA DECODER lha-maximum-match/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:16 OPEN_MAX:1048575, ASM
+
+Scanning the drive for archives:
+1 file, 8398 bytes (9 KiB)
+
+Testing archive: /Users/nagash/Github/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+--
+Path = /Users/nagash/Github/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+Type = Lzh
+Physical Size = 8398
+
+Everything is Ok
+
+Size:       28449
+Compressed: 8398
+
+LHA DECODER lha-maximum-match/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:16 OPEN_MAX:1048575, ASM
+
+Scanning the drive for archives:
+1 file, 8398 bytes (9 KiB)
+
+Listing archive: /Users/nagash/Github/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+
+--
+Path = /Users/nagash/Github/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+Type = Lzh
+Physical Size = 8398
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 28449
+Packed Size = 8340
+Modified = 2023-11-14 22:13:21
+CRC = 0000BB63
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-maximum-match/lha-x: exit 0
+/Users/nagash/Github/GyoshukuKit/.build/verification/lha-maximum-match/lha-extracted/encoded.bin	- Melting  :  ..../Users/nagash/Github/GyoshukuKit/.build/verification/lha-maximum-match/lha-extracted/encoded.bin	- Melting  :  oooo/Users/nagash/Github/GyoshukuKit/.build/verification/lha-maximum-match/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-maximum-match/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:16 OPEN_MAX:1048575, ASM
+
+Scanning the drive for archives:
+1 file, 8398 bytes (9 KiB)
+
+Extracting archive: /Users/nagash/Github/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+--
+Path = /Users/nagash/Github/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+Type = Lzh
+Physical Size = 8398
+
+Everything is Ok
+
+Size:       28449
+Compressed: 8398
+
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testMaximumLengthAndFullWindowDistance]' passed (0.596 seconds).
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testMultipleBlocksWithoutBitAlignmentOrDictionaryReset]' started.
+LHA DECODER lha-multiple-blocks/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****  400000  66.1% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file   400000  66.1% Nov  4 11:19
+
+LHA DECODER lha-multiple-blocks/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****  264385  400000  66.1% -lh5- 2fd6 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file   264385  400000  66.1%            2026-11-04 11:19:04
+
+LHA DECODER lha-multiple-blocks/lha-t: exit 0
+encoded.bin	- Testing  :  .................................................encoded.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooencoded.bin	- Tested  
+
+LHA DECODER lha-multiple-blocks/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:16 OPEN_MAX:1048575, ASM
+
+Scanning the drive for archives:
+1 file, 264443 bytes (259 KiB)
+
+Testing archive: /Users/nagash/Github/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+--
+Path = /Users/nagash/Github/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+Type = Lzh
+Physical Size = 264443
+
+Everything is Ok
+
+Size:       400000
+Compressed: 264443
+
+LHA DECODER lha-multiple-blocks/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:16 OPEN_MAX:1048575, ASM
+
+Scanning the drive for archives:
+1 file, 264443 bytes (259 KiB)
+
+Listing archive: /Users/nagash/Github/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+
+--
+Path = /Users/nagash/Github/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+Type = Lzh
+Physical Size = 264443
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 400000
+Packed Size = 264385
+Modified = 2023-11-14 22:13:21
+CRC = 00002FD6
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-multiple-blocks/lha-x: exit 0
+/Users/nagash/Github/GyoshukuKit/.build/verification/lha-multiple-blocks/lha-extracted/encoded.bin	- Melting  :  ................................................./Users/nagash/Github/GyoshukuKit/.build/verification/lha-multiple-blocks/lha-extracted/encoded.bin	- Melting  :  ooooooooooooooooooooooooooooooooooooooooooooooooo/Users/nagash/Github/GyoshukuKit/.build/verification/lha-multiple-blocks/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-multiple-blocks/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:16 OPEN_MAX:1048575, ASM
+
+Scanning the drive for archives:
+1 file, 264443 bytes (259 KiB)
+
+Extracting archive: /Users/nagash/Github/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+--
+Path = /Users/nagash/Github/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+Type = Lzh
+Physical Size = 264443
+
+Everything is Ok
+
+Size:       400000
+Compressed: 264443
+
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testMultipleBlocksWithoutBitAlignmentOrDictionaryReset]' passed (3.098 seconds).
+Test Suite 'LH5EncoderTests' passed at 2026-11-04 20:19:04.730.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 3.694 (3.695) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:19:04.730.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 3.694 (3.695) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:19:04.730.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 3.694 (3.696) seconds

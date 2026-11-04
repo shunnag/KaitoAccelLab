@@ -1,0 +1,67 @@
+Building for debugging...
+[3 / 29] KaitoKit
+[5 / 31] KaitoKit
+[9 / 36] KaitoKit
+[10 / 36] KaitoKit
+[17 / 39] KaitoKit
+[27 / 37] KaitoKitCompat-product
+[32 / 39] KaitoKitCompatTests-product
+[34 / 40] KaitoKitTests-product
+[36 / 42] KaitoKitTests-product
+[40 / 42] KaitoKitTests-product
+[45 / 45] kaito-product
+Build complete! (6.61秒)
+Test Suite 'Selected tests' started at 2026-11-05 01:14:44.778.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 01:14:44.779.
+Test Suite 'RAR15DecoderTests' started at 2026-11-05 01:14:44.779.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedLiteralAndShortMatchArchive]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedLiteralAndShortMatchArchive]' passed (0.003 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidArchiveSupportsForwardAndBackwardReads]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidArchiveSupportsForwardAndBackwardReads]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidMultiVolumeArchiveSupportsForwardAndBackwardReads]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidMultiVolumeArchiveSupportsForwardAndBackwardReads]' passed (0.004 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioAndDocumentCorpusMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioAndDocumentCorpusMatchesUnrarOutput]' passed (0.266 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioDirectDecoderMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioDirectDecoderMatchesUnrarOutput]' passed (0.032 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154LongDocumentDirectDecoderMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154LongDocumentDirectDecoderMatchesUnrarOutput]' passed (0.031 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154NormalArchiveMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154NormalArchiveMatchesUnrarOutput]' passed (0.002 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testSplitAfterAtEndOfVolumeRequiresURLButNotAnEndMarker]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testSplitAfterAtEndOfVolumeRequiresURLButNotAnEndMarker]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testTruncatedPackedInputIsRejected]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testTruncatedPackedInputIsRejected]' passed (0.001 seconds).
+Test Suite 'RAR15DecoderTests' passed at 2026-11-05 01:14:45.119.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.340 (0.340) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 01:14:45.119.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.340 (0.340) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 01:14:45.119.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.340 (0.341) seconds
+Test Suite 'Selected tests' started at 2026-11-05 01:14:45.195.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-05 01:14:45.196.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-05 01:14:45.196.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 01:14:45.196.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Building for production...
+[2 / 9]
+[3 / 10] KaitoKit
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar15/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[5 / 11] KaitoKit
+[11 / 14] kaito-product
+[13 / 14] kaito-product
+[14 / 14] kaito-product
+Build complete! (61.74秒)
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/Users/nagash/Github/KaitoKit/inbox/rar15/doc_154_best.rar	baseline	5.010500	50	502961	4	5.013000,5.054000,5.008000,4.989000
+/Users/nagash/Github/KaitoKit/inbox/rar15/doc_154_best.rar	candidate	4.874000	50	502961	4	4.849000,4.899000,4.816000,4.905000
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/Users/nagash/Github/KaitoKit/inbox/rar15/audio_win_names_unpack15.rar	baseline	0.785000	50	56571	4	0.808000,0.784000,0.784000,0.786000
+/Users/nagash/Github/KaitoKit/inbox/rar15/audio_win_names_unpack15.rar	candidate	0.747000	50	56571	4	0.750000,0.753000,0.744000,0.734000

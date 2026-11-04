@@ -1,0 +1,32 @@
+RAR15 consume-only bit advancement (2026-11-04)
+
+Candidate
+- RAR15Decoder.addBits previously called bits.read(count) and discarded its value.
+- Replace it with bits.consume(count), preserving the packed-bit budget check, actual bit count, alignment and overrun behavior while avoiding an unused peek/return and one duplicate bit-count validation.
+- No other RAR decoder or format behavior is changed. The production change is one line in RAR15Decoder.swift.
+
+Corpus and method
+- The project's existing RAR 1.54 corpus in KaitoKit/inbox/rar15, including the 17-file doc_154_best.rar and audio_win_names_unpack15.rar.
+- Independently built tracked-source baseline and one-line candidate; no third-party decoder source or disassembly was used.
+- Scripts/benchmark_kaito_inprocess.py, kaito bench --threads 1, 50 extractions per timing, four alternating timings per executable. Archive-open time is excluded; entry decoding and CRC verification are included.
+
+M4 Max results (milliseconds; smaller is better)
+archive       baseline    candidate   time saved
+doc            6.0985      5.6735      about 7.0%
+audio          1.0415      0.9260      about 11.1%
+
+Validation completed
+- Baseline and candidate RAR15DecoderTests: 9 tests, 0 failures on M4 Max, including every expected byte in the external document/audio corpus, direct 97-byte reads, solid and multi-volume reads and truncation errors.
+- Benchmark byte counts matched: 502,961 document bytes and 56,571 audio bytes per extraction.
+- AddressSanitizer on M4 Max: 9 tests, 0 failures and no sanitizer findings.
+- Raw logs: kaito-rar15-consume-{before,after,asan}-max-20261104.txt.
+
+Verified on Mac mini
+- Candidate RAR15DecoderTests: 9 tests, 0 failures, including the external document/audio corpus.
+- AddressSanitizer: 9 tests, 0 failures and no sanitizer findings.
+- Full KaitoKit suite: 2,098 tests, 60 skipped, 0 failures in 1,428.292 seconds. KaitoKitCompatTests: 34 tests, 0 failures in 2.110 seconds. Log: kaito-rar15-full-mini-20261105.txt.
+
+Mac mini A/B and adoption
+- Independent baseline/candidate timing: document 6.0840 -> 5.6260 ms (about 7.5% less time); audio 1.0165 -> 0.8755 ms (about 13.9% less time). Byte counts matched in every run.
+- Raw measurements: kaito-rar15-consume-mini-20261105.txt. The preliminary same-binary A/A was discarded and is not used.
+- Adopted in KaitoKit. No commit, push or release was performed.

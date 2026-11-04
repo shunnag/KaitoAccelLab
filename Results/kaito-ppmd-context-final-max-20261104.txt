@@ -1,0 +1,22 @@
+Building for production...
+[Planning deferred tasks]
+[1 / 5]
+[2 / 6] KaitoKit
+/Users/nagash/Github/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[4 / 7] KaitoKit
+[11 / 14] kaito-product
+[13 / 14] kaito-product
+[14 / 14] kaito-product
+Build complete! (64.94秒)
+text.7z {'before': 185.50424999557436, 'after': 170.09824997512624, '7zz': 144.48904199525714}
+text.zip {'before': 235.8886250294745, 'after': 199.15200001560152, '7zz': 168.292541988194}
+color.7z {'before': 6817.877832974773, 'after': 6530.735750042368, '7zz': 3934.5736249815673}
+color.zip {'before': 6130.3069579880685, 'after': 5736.08541599242, '7zz': 3953.614290978294}
+jpeg.7z {'before': 1176.7910409835167, 'after': 1082.952041993849, '7zz': 878.2362079946324}
+jpeg.zip {'before': 1060.755499987863, 'after': 1024.3510419968516, '7zz': 864.2957909614779}

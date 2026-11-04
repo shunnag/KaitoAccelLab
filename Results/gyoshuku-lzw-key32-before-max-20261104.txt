@@ -1,0 +1,51 @@
+Building for production...
+[Planning 126 / 127]
+[Planning deferred tasks]
+[33 / 60]
+[34 / 61] KaitoKit
+[45 / 104]
+[54 / 104]
+[58 / 104]
+[64 / 104]
+[67 / 104]
+[73 / 104]
+[75 / 104]
+[76 / 104]
+/Users/nagash/Github/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[78 / 104] KaitoKit
+[85 / 105] GyoshukuKit
+[88 / 107] GyoshukuKit
+[98 / 108] GyoshukuKitTests-product
+[118 / 139]
+[120 / 139]
+[125 / 139]
+[128 / 139]
+[129 / 139]
+[130 / 139] GyoshukuKitTests-product
+[135 / 139] GyoshukuKitTests-product
+[137 / 139] GyoshukuKitTests-product
+Build complete! (175.50秒)
+Test Suite 'Selected tests' started at 2026-11-04 23:19:45.799.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:19:45.800.
+Test Suite 'LZWStreamEncoderBenchmarkTests' started at 2026-11-04 23:19:45.800.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' started.
+LZW-BENCH	corpus	maxbits	bytes	best_s	best_MBps	median_s	median_MBps
+LZW-BENCH	text	12	959960	0.027332	153.456	0.027565	152.161
+LZW-BENCH	text	16	948871	0.041520	101.019	0.042110	99.603
+LZW-BENCH	binary	12	2540751	0.037550	109.963	0.037712	109.490
+LZW-BENCH	binary	16	2081725	0.041907	98.531	0.042040	98.218
+LZW-BENCH	random	12	5913669	0.052701	79.587	0.052839	79.379
+LZW-BENCH	random	16	5194055	0.058961	71.137	0.059285	70.749
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderBenchmarkTests testDictionaryThroughput]' passed (2.096 seconds).
+Test Suite 'LZWStreamEncoderBenchmarkTests' passed at 2026-11-04 23:19:47.897.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.096 (2.097) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:19:47.897.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.096 (2.097) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:19:47.897.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.096 (2.097) seconds

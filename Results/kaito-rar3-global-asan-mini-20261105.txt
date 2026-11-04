@@ -1,0 +1,162 @@
+Building for debugging...
+[1 / 1]
+[2 / 23] KaitoKit
+[4 / 25] KaitoKit
+[11 / 34] KaitoKit
+[15 / 33] KaitoKit
+[21 / 31] KaitoKitCompat-product
+[24 / 32] KaitoKitCompatTests-product
+[26 / 33] KaitoKitCompatTests-product
+[28 / 34] KaitoKitCompatTests-product
+[28 / 34] KaitoKitTests-product
+[30 / 36] KaitoKitTests-product
+[35 / 39] KaitoKitTests-product
+[36 / 38] KaitoKitTests-product
+[41 / 41] kaito-product
+Build complete! (7.88秒)
+Test Suite 'Selected tests' started at 2026-11-05 00:23:57.936.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 00:23:57.937.
+Test Suite 'RAR29R1Tests' started at 2026-11-05 00:23:57.937.
+Test Case '-[KaitoKitTests.RAR29R1Tests testAudioReusedWorkAreaAcrossPredictorUpdatesAndChannels]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testAudioReusedWorkAreaAcrossPredictorUpdatesAndChannels]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' passed (0.040 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildClearsFallbackWidthForShortOnlyTree]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildClearsFallbackWidthForShortOnlyTree]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildShrinksFallbackAndClearsInvalidPrefixes]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildShrinksFallbackAndClearsInvalidPrefixes]' passed (0.002 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testMatchStraddlingFilterCaptureEndPreservesRawSuffixAndHistory]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testMatchStraddlingFilterCaptureEndPreservesRawSuffixAndHistory]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testRetainedWindowSizesAndDeclaredDictionaryLimit]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testRetainedWindowSizesAndDeclaredDictionaryLimit]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testRGBReusedDirtyWorkAreaPreservesZeroDependentWidths]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testRGBReusedDirtyWorkAreaPreservesZeroDependentWidths]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testStackedFiltersBulkMatchesAndReusedBuffersResume]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testStackedFiltersBulkMatchesAndReusedBuffersResume]' passed (0.002 seconds).
+Test Suite 'RAR29R1Tests' passed at 2026-11-05 00:23:57.985.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.048 (0.048) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 00:23:57.985.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.048 (0.048) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:23:57.985.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.048 (0.050) seconds
+Test Suite 'Selected tests' started at 2026-11-05 00:23:58.051.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-05 00:23:58.052.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-05 00:23:58.052.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:23:58.052.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Building for debugging...
+[Pre-planning 1 / 241]
+[Planning deferred tasks]
+[53 / 118]
+[54 / 119] KaitoKit
+[64 / 175]
+[69 / 175]
+[77 / 175]
+[83 / 175]
+[86 / 175]
+[92 / 175]
+[93 / 175]
+[94 / 175]
+[95 / 175]
+[101 / 175] KaitoKit
+[103 / 175] KaitoKit
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[109 / 175] KaitoKit
+[111 / 175] KaitoKit
+[112 / 175] KaitoKit
+[113 / 175] KaitoKit
+[115 / 175] KaitoKit
+[116 / 175] KaitoKit
+[120 / 175]
+[121 / 176]
+[123 / 185] kaito-product
+[125 / 185] kaito-product
+[126 / 185] kaito-product
+[127 / 185] kaito-product
+[129 / 185] kaito-product
+[131 / 185] kaito-product
+[132 / 186] kaito-product
+[133 / 186] KaitoKitCompat
+[137 / 190] KaitoKitCompat
+[147 / 190] KaitoKitCompat
+[148 / 190] KaitoKit
+[150 / 190] KaitoKit
+[164 / 192] KaitoKitCompatTests-product
+[168 / 192]
+[170 / 192] KaitoKitCompatTests-product
+[177 / 233]
+[184 / 246]
+[188 / 246]
+[192 / 246]
+[195 / 246]
+[196 / 246]
+[199 / 246]
+[200 / 246]
+[205 / 246] KaitoKitTests-product
+[217 / 246] KaitoKitTests-product
+[219 / 246] KaitoKitTests-product
+[220 / 246] KaitoKitTests-product
+[221 / 246] KaitoKitTests-product
+[222 / 246] KaitoKitTests-product
+[223 / 246] KaitoKitTests-product
+[224 / 246] KaitoKitTests-product
+[226 / 246] KaitoKitCompatTests-product
+[227 / 246] KaitoKitCompatTests-product
+[228 / 246] KaitoKitTests-product
+[229 / 246] KaitoKitCompatTests-product
+[231 / 246] KaitoKitCompatTests-product
+[232 / 246] KaitoKitCompatTests-product
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/KaitoKit/Tests/KaitoKitTests/SevenZip/SevenZipFolderPrefetchTests.swift:370:17: [1;33mwarning: [1;39mno 'async' operations occur within 'await' expression[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker\UnnecessaryEffectMarker]8;;\]
+[0;36m368 |[0;0m         let holder = Mutex<Task<Void, any Error>?>(nil)
+[0;36m369 |[0;0m         let task = Task.detached {
+[0;36m370 |[0;0m             try await LeafDecodePool.$testingSubmission.withValue({ holder.withLock { $0?.cancel() } }) {
+    [0;36m|[0;0m                 `- [1;33mwarning: [1;39mno 'async' operations occur within 'await' expression[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker\UnnecessaryEffectMarker]8;;\]
+[0;36m371 |[0;0m                 let reader = try SevenZipReader(source: DataByteSource(archive), options: ReaderOptions(decodeThreads: 16))
+[0;36m372 |[0;0m                 for entry in reader.entries { _ = try reader.stream(for: entry, limits: ReadLimits()).readAll() }
+
+[#UnnecessaryEffectMarker]: <https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker>
+[234 / 246] KaitoKitCompatTests-product
+[236 / 246] KaitoKitCompatTests-product
+[240 / 246] KaitoKitCompatTests-product
+[240 / 246] KaitoKitTests-product
+[242 / 246] KaitoKitTests-product
+[244 / 246] KaitoKitTests-product
+Build complete! (45.39秒)
+Test Suite 'Selected tests' started at 2026-11-05 00:24:46.103.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 00:24:46.104.
+Test Suite 'RAR29R1Tests' started at 2026-11-05 00:24:46.104.
+Test Case '-[KaitoKitTests.RAR29R1Tests testAudioReusedWorkAreaAcrossPredictorUpdatesAndChannels]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testAudioReusedWorkAreaAcrossPredictorUpdatesAndChannels]' passed (0.002 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' passed (0.072 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildClearsFallbackWidthForShortOnlyTree]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildClearsFallbackWidthForShortOnlyTree]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildShrinksFallbackAndClearsInvalidPrefixes]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildShrinksFallbackAndClearsInvalidPrefixes]' passed (0.006 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testMatchStraddlingFilterCaptureEndPreservesRawSuffixAndHistory]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testMatchStraddlingFilterCaptureEndPreservesRawSuffixAndHistory]' passed (0.004 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testRetainedWindowSizesAndDeclaredDictionaryLimit]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testRetainedWindowSizesAndDeclaredDictionaryLimit]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testRGBReusedDirtyWorkAreaPreservesZeroDependentWidths]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testRGBReusedDirtyWorkAreaPreservesZeroDependentWidths]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testStackedFiltersBulkMatchesAndReusedBuffersResume]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testStackedFiltersBulkMatchesAndReusedBuffersResume]' passed (0.005 seconds).
+Test Suite 'RAR29R1Tests' passed at 2026-11-05 00:24:46.194.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.090 (0.091) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 00:24:46.194.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.090 (0.091) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:24:46.194.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.090 (0.092) seconds
+Test Suite 'Selected tests' started at 2026-11-05 00:24:46.296.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-05 00:24:46.297.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-05 00:24:46.297.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:24:46.297.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds

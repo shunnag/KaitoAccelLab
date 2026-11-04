@@ -1,0 +1,49 @@
+PPMd state search unroll and threshold experiments (2026-11-04)
+
+Candidates
+- Unroll PPMdEncodingModel.find to inspect two states per iteration.
+- Threshold variant keeps the original loop for contexts with at most 3 states and unrolls larger contexts.
+
+Validation
+- PPMdEncoderTests: 8 tests, 2 skipped, 0 failures.
+- All 12 baseline/candidate output sizes were identical and the benchmark's independent oracles passed.
+- M4 Max logs: Results/gyoshuku-ppmd-unroll-max-20261104.txt and Results/gyoshuku-ppmd-unroll-additional-max-20261104.txt.
+- Mac mini logs: Results/gyoshuku-ppmd-unroll-ab-mini-20261104.txt and Results/gyoshuku-ppmd-threshold-ab-mini-20261104.txt.
+
+Mac mini unroll: median best MB/s of three alternating baseline/unroll runs
+corpus, variant, level, baseline, unroll, speedup
+text, H, 1, 119.933, 119.774, 0.998674
+text, H, 6, 150.112, 150.287, 1.001166
+text, H, 9, 129.085, 128.512, 0.995561
+text, I, 1, 112.871, 112.292, 0.994870
+text, I, 6, 134.403, 133.918, 0.996391
+text, I, 9, 113.301, 112.837, 0.995905
+binary, H, 1, 23.028, 23.797, 1.033394
+binary, H, 6, 19.515, 20.034, 1.026595
+binary, H, 9, 18.463, 18.734, 1.014678
+binary, I, 1, 23.901, 24.219, 1.013305
+binary, I, 6, 18.798, 19.328, 1.028194
+binary, I, 9, 18.403, 18.877, 1.025757
+
+Mac mini threshold: median best MB/s of three alternating baseline/threshold runs
+corpus, variant, level, baseline, threshold, speedup
+text, H, 1, 120.219, 119.712, 0.995783
+text, H, 6, 150.144, 148.215, 0.987152
+text, H, 9, 128.808, 129.701, 1.006933
+text, I, 1, 113.111, 113.301, 1.001680
+text, I, 6, 135.165, 134.876, 0.997862
+text, I, 9, 113.631, 113.541, 0.999208
+binary, H, 1, 23.329, 23.726, 1.017017
+binary, H, 6, 19.749, 19.977, 1.011545
+binary, H, 9, 18.584, 18.940, 1.019156
+binary, I, 1, 23.772, 24.280, 1.021370
+binary, I, 6, 18.832, 19.247, 1.022037
+binary, I, 9, 18.642, 18.814, 1.009226
+
+M4 Max unroll, median of three runs
+- Binary improved 1.8-2.8%; text was within about 0.5% in either direction.
+- Examples: binary H6 16.264 -> 16.711 MB/s (1.027x), binary I6 15.916 -> 16.350 MB/s (1.027x).
+
+Decision
+- Both variants helped binary but were not consistently faster on text. The threshold also reduced text H6 by 1.3%.
+- Neither variant was adopted. PPMdModel.find was restored to the original implementation.

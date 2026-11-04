@@ -1,0 +1,18 @@
+explicit: preferred-device histogram: [ANE: 18, n/a: 14]
+stateful: preferred-device histogram: [ANE: 21, n/a: 20]
+match: OK (every fp16-derived Float probability, warmup)
+match: OK (every fp16-derived Float probability, all rounds)
+name	block_count	steps	median_s	MB_per_s	ms_per_step
+explicit-A/A-1	4096	128	0.935112004	0.561	7.305563
+explicit-A/A-2	4096	128	0.941139123	0.557	7.352649
+explicit	4096	128	0.953236463	0.550	7.447160
+MLState	4096	128	0.816212370	0.642	6.376659
+explicit: preferred-device histogram: [GPU: 18, n/a: 14]
+stateful: preferred-device histogram: [GPU: 21, n/a: 20]
+match: OK (every fp16-derived Float probability, warmup)
+match: OK (every fp16-derived Float probability, all rounds)
+name	block_count	steps	median_s	MB_per_s	ms_per_step
+explicit-A/A-1	4096	128	1.040370711	0.504	8.127896
+explicit-A/A-2	4096	128	0.883819956	0.593	6.904843
+explicit	4096	128	0.993208211	0.528	7.759439
+MLState	4096	128	0.746083040	0.703	5.828774

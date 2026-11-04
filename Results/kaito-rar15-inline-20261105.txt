@@ -1,0 +1,31 @@
+RAR15 decodeNum / addBits inlining (2026-11-05)
+
+Candidate
+- Add @inline(__always) only to RAR15Decoder.decodeNum and addBits. getBits was already inlined by the optimizer.
+- The threshold loop, packed-bit accounting, range checks and exact errors are unchanged.
+- Generated-code inspection of the candidate found no decodeNum, getBits or addBits outline symbols; the baseline had an outlined decodeNum, and the first stage left addBits outlined.
+
+Measurements
+- Same RAR 1.54 document/audio archives as the consume experiment.
+- kaito bench --threads 1, 50 extractions per timing, four alternating timings per executable.
+- Stage 1 is decodeNum inline; stage 2 also inlines addBits.
+
+M4 Max
+stage                    document     audio
+baseline                   5.7425 ms   0.9390 ms
+decodeNum inline           5.0890 ms   0.8080 ms
+decodeNum + addBits inline 4.8740 ms   0.7470 ms
+
+Mac mini
+baseline                   6.0515 ms   1.0155 ms
+decodeNum + addBits inline 4.7730 ms   0.7305 ms
+
+The final/original time reduction is about 15.1% for document and 20.4% for audio on M4 Max, and about 21.1% / 28.1% on Mac mini. The independent addBits stage improved a further 2.7% / 4.8% over decodeNum alone.
+
+Validation
+- RAR15DecoderTests: 9 tests, 0 failures at every stage and on both machines, including all external document/audio bytes, solid/multi-volume reads and truncation.
+- AddressSanitizer on M4 Max: 9 tests, 0 failures and no findings.
+- Raw logs: kaito-rar15-inline-decodeNum-max-20261105.txt, kaito-rar15-inline-addBits-max-20261105.txt, kaito-rar15-inline-mini-20261105.txt, kaito-rar15-inline-asan-max-20261105.txt.
+- Mac mini's ASan: 9 tests, 0 failures and no findings.
+- Full KaitoKit suite: 2,099 tests, 60 skipped, 0 failures in 1,411.891 seconds. KaitoKitCompatTests: 34 tests, 0 failures in 2.091 seconds. Log: kaito-rar15-inline-full-mini-20261105.txt.
+- Adopted in KaitoKit. No commit, push or release was performed.

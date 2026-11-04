@@ -1,0 +1,17 @@
+RAR15 consume-only bit advancement: Mac mini A/B (2026-11-05)
+
+Baseline: /tmp/kaito-ppmd-corpus.wfvs1C/KaitoKit-baseline/.build/release/kaito
+Candidate: /tmp/kaito-rar15-consume.G7xoO8/.build/release/kaito
+Method: Scripts/benchmark_kaito_inprocess.py, kaito bench --threads 1, 50 extractions per timing, four alternating timings per executable. The preliminary same-binary A/A is discarded; only this independent baseline/candidate comparison is used.
+
+Document (17 files, 502,961 bytes per extraction)
+baseline median: 6.084000 ms (6.069000, 6.094000, 6.074000, 6.129000)
+candidate median: 5.626000 ms (5.615000, 5.573000, 5.637000, 5.648000)
+time saved: about 7.5%
+
+Audio (56,571 bytes per extraction)
+baseline median: 1.016500 ms (1.009000, 1.014000, 1.019000, 1.027000)
+candidate median: 0.875500 ms (0.870000, 0.878000, 0.873000, 0.891000)
+time saved: about 13.9%
+
+Byte counts matched in every run. Full-suite and ASan results are in kaito-rar15-full-mini-20261105.txt.

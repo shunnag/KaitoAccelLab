@@ -1,0 +1,23 @@
+Zstandard doubleHash repeat preload experiment (2026-11-04)
+
+Candidate
+- In ZstdParser.fastRepeats, calculate the three independent 8-byte history differences before extending any matching repeat.
+- Preserve duplicate-repeat suppression, comparison order, strict longest-match selection, and the initial-history path.
+- No other codec or level was changed.
+
+Validation
+- Local debug ZstdEncoderTests: 21 tests, 3 skipped, 0 failures.
+- Mac mini release before/after: all 12 generated frames (text/binary/mixed at levels 1/3/9/19) were byte-identical according to cmp.
+- Full before log: Results/gyoshuku-zstd-repeat-preload-before-mini-20261104.txt
+- Full after log: Results/gyoshuku-zstd-repeat-preload-after-mini-20261104.txt
+- Remote directory: /tmp/gyoshuku-zstd-research.qAa6f4/GyoshukuKit
+
+Level 3 Mac mini results
+corpus, before_s, after_s, before_MBps, after_MBps, speedup
+text, 0.014037, 0.013490, 298.797, 310.925, 1.040573
+binary, 0.097554, 0.098145, 212.074, 210.795, 0.993970
+mixed, 0.040478, 0.041239, 414.474, 406.831, 0.981555
+
+Decision
+- Text improved about 4.1%, but binary and mixed regressed slightly. Unchanged levels also varied by several percent, so a consistent end-to-end improvement was not established.
+- Not adopted. The experimental source change was individually reverted; GyoshukuKit has no remaining diff for this experiment.

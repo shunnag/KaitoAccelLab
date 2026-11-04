@@ -1,0 +1,21 @@
+CAB LZX 12-bit fast Huffman lookup (2026-11-04)
+
+Candidate
+- Increase LZXHuffmanTable.fastBits from 10 to 12, reducing canonical-tree fallback while retaining the same validation and output.
+
+Corpus
+- Official 7-Zip 25.01 MSI: https://www.7-zip.org/a/7z2501-x64.msi
+- Extract product.cab from the CFB container, including the MSI packed-name mapping. The stream is LZX:21 with 106 files and 5,882,101 uncompressed bytes.
+- cabextract verified all 106 files. Baseline/candidate kaito sha output was identical.
+
+Performance
+- Mac mini baseline median: 30.762 ms; candidate median: 28.757 ms; candidate/baseline 0.9348 (about 6.5% faster), 15 alternating rounds with 5 inner repetitions.
+- M4 Max baseline median: 30.642 ms; candidate median: 28.673 ms; candidate/baseline 0.9357 (about 6.4% faster), 5 alternating rounds with 5 inner repetitions.
+- Logs: Results/kaito-lzx-fast12-ab-mini-20261104.txt and Results/kaito-lzx-fast12-ab-max-20261104.txt.
+
+Validation
+- CabLZXTests: 17 tests, 1 skipped, 0 failures.
+- AddressSanitizer: CabLZXTests passed with no findings; Results/kaito-lzx-fast12-asan-20261104.txt.
+- Full KaitoKit suite: 2,097 tests, 64 skipped, 0 failures in 1,419.091 seconds.
+- KaitoKitCompatTests: 34 tests, 0 failures in 2.166 seconds.
+- Log: Results/kaito-lzx-fast12-full-mini-20261104.txt.

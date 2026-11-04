@@ -1,0 +1,55 @@
+Building for debugging...
+[2 / 22] KaitoKit
+[3 / 29] KaitoKit
+[6 / 32] KaitoKit
+[8 / 34] KaitoKit
+[15 / 38] KaitoKit
+[20 / 34] KaitoKit-product
+[24 / 34] KaitoKitDynamic-product
+[30 / 36] KaitoKitCompatTests-product
+[32 / 37] KaitoKitTests-product
+[35 / 40] KaitoKitTests-product
+[39 / 40] KaitoKitTests-product
+[44 / 44] kaito-product
+Build complete! (5.75秒)
+Test Suite 'Selected tests' started at 2026-11-04 21:45:53.346.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 21:45:53.347.
+Test Suite 'PPMdDifferentialTests' started at 2026-11-04 21:45:53.347.
+Test Case '-[KaitoKitTests.PPMdDifferentialTests testCorruptionPreservesReturnedPrefixAcrossBatchSizes]' started.
+Test Case '-[KaitoKitTests.PPMdDifferentialTests testCorruptionPreservesReturnedPrefixAcrossBatchSizes]' passed (18.596 seconds).
+Test Case '-[KaitoKitTests.PPMdDifferentialTests testExistingStreamsAndCorruptionMatchFrozenDecoder]' started.
+Test Case '-[KaitoKitTests.PPMdDifferentialTests testExistingStreamsAndCorruptionMatchFrozenDecoder]' passed (62.303 seconds).
+Test Case '-[KaitoKitTests.PPMdDifferentialTests testGeneratedOrdersMemoryAndStructuredInputsMatchFrozenDecoder]' started.
+Test Case '-[KaitoKitTests.PPMdDifferentialTests testGeneratedOrdersMemoryAndStructuredInputsMatchFrozenDecoder]' passed (78.019 seconds).
+Test Case '-[KaitoKitTests.PPMdDifferentialTests testRandomRangeStreamsMatchFrozenDecoder]' started.
+Test Case '-[KaitoKitTests.PPMdDifferentialTests testRandomRangeStreamsMatchFrozenDecoder]' passed (0.392 seconds).
+Test Suite 'PPMdDifferentialTests' passed at 2026-11-04 21:48:32.657.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 159.310 (159.310) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 21:48:32.657.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 159.310 (159.311) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:48:32.657.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 159.310 (159.311) seconds
+PPMd differential: 38 generated archives plus fixture and random corruption cases
+Test Suite 'Selected tests' started at 2026-11-04 21:48:32.723.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-04 21:48:32.723.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-04 21:48:32.723.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:48:32.723.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Building for production...
+[3 / 10] KaitoKit
+[5 / 11] KaitoKit
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[11 / 14] kaito-product
+[13 / 14] kaito-product
+[14 / 14] kaito-product
+Build complete! (54.92秒)
+text.zip {'before': 234.19441600000025, 'after': 195.9302909999998, '7zz': 159.98812500000003}
+color.zip {'before': 5282.347125000001, 'after': 5111.597917000001, '7zz': 3167.092791999998}
+jpeg.zip {'before': 865.8417090000086, 'after': 857.6982080000022, '7zz': 672.6818340000023}

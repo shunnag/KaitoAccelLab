@@ -47,7 +47,8 @@ final class LZ4MetalDecoderTests: XCTestCase {
     func testOverlappingMatchesAndEmptyFrame() throws {
         guard let device = MTLCreateSystemDefaultDevice() else { throw XCTSkip("Metal device unavailable") }
         let decoder = try LZ4MetalDecoder(device: device)
-        let samples = [1, 2, 3, 7, 31, 32, 33].map { LZ4TestSupport.overlap(offset: $0, matchLength: 1_029) }
+        let offsets = [1, 2, 3, 7, 15, 16, 17, 31, 32, 33, 63, 64, 65, 255, 256, 511, 512, 513]
+        let samples = offsets.map { LZ4TestSupport.overlap(offset: $0, matchLength: 1_029) }
         let source = Data(LZ4TestSupport.frame(blocks: samples.map { ($0.compressed, false) }))
         let frame = try LZ4Frame(source)
         let expected = samples.flatMap(\.decoded)

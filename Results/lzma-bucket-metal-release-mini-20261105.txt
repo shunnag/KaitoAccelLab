@@ -1,0 +1,68 @@
+Building for production...
+[Planning deferred tasks]
+[33 / 60]
+[34 / 61] KaitoKit
+[45 / 104]
+[50 / 104]
+[58 / 104]
+[64 / 104]
+[67 / 104]
+[73 / 104]
+[75 / 104]
+[76 / 104]
+/private/tmp/kaito-release-lab-final-20261105/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[78 / 104] KaitoKit
+[85 / 105] GyoshukuKit
+[89 / 109]
+[90 / 109] GyoshukuKit
+[100 / 110] GyoshukuKitTests-product
+[109 / 139]
+[115 / 139]
+[121 / 139]
+[124 / 139]
+[125 / 139]
+[128 / 139]
+[129 / 139]
+/private/var/folders/y4/4p8h7ffj4sn9vhnt4vlcl61w0000gn/T/kaito-lzma-metal.bwP64K/GyoshukuKit/Tests/GyoshukuKitTests/Probes/LZ4FrameEncoderBenchmarkTests.swift:21:17: [1;33mwarning: [1;39mimmutable value 'iteration' was never used; consider replacing with '_' or removing it[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/no-usage\NoUsage]8;;\]
+[0;36m19 |[0;0m             var reference: Data?
+[0;36m20 |[0;0m             var durations: [Double] = []
+[0;36m21 |[0;0m             for iteration in 0..<repeats {
+   [0;36m|[0;0m                 `- [1;33mwarning: [1;39mimmutable value 'iteration' was never used; consider replacing with '_' or removing it[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/no-usage\NoUsage]8;;\]
+[0;36m22 |[0;0m                 let encoder = try LZ4FrameEncoder(contentSize: UInt64(input.count), blockChecksums: true, threads: 1)
+[0;36m23 |[0;0m                 var encoded = Data()
+
+[#NoUsage]: <https://docs.swift.org/compiler/documentation/diagnostics/no-usage>
+[130 / 139] GyoshukuKitTests-product
+[135 / 139] GyoshukuKitTests-product
+[137 / 139] GyoshukuKitTests-product
+Build complete! (166.68秒)
+Test Suite 'Selected tests' started at 2026-11-05 05:50:47.278.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 05:50:47.279.
+Test Suite 'LZMABucketMetalTests' started at 2026-11-05 05:50:47.279.
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testBucketedTreeMatchesSequential]' started.
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testBucketedTreeMatchesSequential]' passed (0.041 seconds).
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testCPUBucketedTreeMatchesSequential]' started.
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testCPUBucketedTreeMatchesSequential]' passed (0.017 seconds).
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testDictionaryWrap]' started.
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testDictionaryWrap]' passed (0.010 seconds).
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testEveryPositionMatchesSequential]' started.
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testEveryPositionMatchesSequential]' passed (0.238 seconds).
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testLargeBenchmark]' started.
+/private/var/folders/y4/4p8h7ffj4sn9vhnt4vlcl61w0000gn/T/kaito-lzma-metal.bwP64K/GyoshukuKit/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.LZMABucketMetalTests testLargeBenchmark] : Test skipped - Set GYOSHUKU_LZMA_GPU_BENCHMARK=1 to run LZMABucketMetalTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testLargeBenchmark]' skipped (0.001 seconds).
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testMetalTraversalBeforeDictionaryWrapFailure]' started.
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testMetalTraversalBeforeDictionaryWrapFailure]' passed (0.005 seconds).
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testShortInputs]' started.
+Test Case '-[GyoshukuKitTests.LZMABucketMetalTests testShortInputs]' passed (0.015 seconds).
+Test Suite 'LZMABucketMetalTests' passed at 2026-11-05 05:50:47.606.
+	 Executed 7 tests, with 1 test skipped and 0 failures (0 unexpected) in 0.327 (0.327) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 05:50:47.606.
+	 Executed 7 tests, with 1 test skipped and 0 failures (0 unexpected) in 0.327 (0.327) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 05:50:47.606.
+	 Executed 7 tests, with 1 test skipped and 0 failures (0 unexpected) in 0.327 (0.328) seconds

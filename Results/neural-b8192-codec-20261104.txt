@@ -1,0 +1,63 @@
+
+case: ane-fp16
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2208368
+ratio: 0.526516; bits/byte: 4.212128
+wall seconds: 6.500393; bytes/s: 645238.497
+predictor seconds: 6.129511; coder seconds: 0.367222; steps: 512
+predictor ms/step: 11.971701; coder ms/step: 0.717230
+real 6.58
+user 3.45
+sys 0.41
+
+case: ane-int8
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2209409
+ratio: 0.526764; bits/byte: 4.214113
+wall seconds: 6.065638; bytes/s: 691486.021
+predictor seconds: 5.694479; coder seconds: 0.367416; steps: 512
+predictor ms/step: 11.122030; coder ms/step: 0.717608
+real 7.97
+user 3.48
+sys 0.42
+
+case: gpu-fp16
+preferred-device histogram: [GPU: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2209093
+ratio: 0.526689; bits/byte: 4.213511
+wall seconds: 9.052628; bytes/s: 463324.477
+predictor seconds: 8.683171; coder seconds: 0.365645; steps: 512
+predictor ms/step: 16.959319; coder ms/step: 0.714150
+real 9.13
+user 3.60
+sys 0.47
+
+case: gpu-int8
+preferred-device histogram: [GPU: 21, n/a: 20]
+bytes in: 4194304
+bytes out: 2210135
+ratio: 0.526937; bits/byte: 4.215498
+wall seconds: 10.989600; bytes/s: 381661.207
+predictor seconds: 10.593598; coder seconds: 0.392283; steps: 512
+predictor ms/step: 20.690621; coder ms/step: 0.766178
+real 11.10
+user 3.87
+sys 0.50
+preferred-device histogram: [ANE: 21, n/a: 20]
+bytes in: 2209409
+bytes out: 4194304
+ratio: 0.526764; bits/byte: 4.214113
+wall seconds: 6.299061; bytes/s: 665861.802
+predictor seconds: 5.895315; coder seconds: 0.400534; steps: 512
+predictor ms/step: 11.514287; coder ms/step: 0.782293
+preferred-device histogram: [GPU: 21, n/a: 20]
+bytes in: 2210135
+bytes out: 4194304
+ratio: 0.526937; bits/byte: 4.215498
+wall seconds: 9.589473; bytes/s: 437386.277
+predictor seconds: 9.201900; coder seconds: 0.384654; steps: 512
+predictor ms/step: 17.972460; coder ms/step: 0.751278
+match: OK (batch 8192 int8 round trips on ANE and GPU)

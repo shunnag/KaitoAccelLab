@@ -1,0 +1,19 @@
+name	bytes	median_s	GB_per_s	note
+crc32-zlib	268435456	0.006332792	42.388169	random; single-thread; crc32=2592826944
+crc32-table	268435456	0.505526083	0.531002	random; single-thread; 8-bit table; crc32=2592826944
+adler32-zlib	268435456	0.012804541	20.964083	random; single-thread; adler32=3245014935
+aes-ctr-commoncrypto	268435456	0.019119042	14.040215	random; single-thread; AES-256; CCCryptorCreateWithMode/Update/Final/Release (CCCrypt has no CTR)
+aes-cbc-decrypt-commoncrypto	268435456	0.016005834	16.771101	random; single-thread; AES-256; CCCrypt; no padding
+sha256-commoncrypto	268435456	0.087487458	3.068274	random; single-thread; SHA-256
+deflate6-zlib-compress	268435456	0.437332167	0.613802	text=generated-English; level=6; single-thread; compressed_bytes=1171605; ratio=0.004365 (compressed/original); bytes=original; round-trip=OK
+inflate-zlib	268435456	0.019533625	13.742224	text=generated-English; level=6; single-thread; compressed_bytes=1171605; ratio=0.004365 (compressed/original); bytes=original; round-trip=OK
+bzip2-compress	268435456	30.485766916	0.008805	text=generated-English; block=900k; single-thread; compressed_bytes=236203; ratio=0.000880 (compressed/original); bytes=original; round-trip=OK
+bzip2-decompress	268435456	1.119567750	0.239767	text=generated-English; block=900k; single-thread; compressed_bytes=236203; ratio=0.000880 (compressed/original); bytes=original; round-trip=OK
+lzfse-compress	268435456	17.856260708	0.015033	text=generated-English; single-thread; compressed_bytes=158726; ratio=0.000591 (compressed/original); bytes=original; round-trip=OK
+lzfse-decompress	268435456	0.006372875	42.121563	text=generated-English; single-thread; compressed_bytes=158726; ratio=0.000591 (compressed/original); bytes=original; round-trip=OK
+lz4-compress	268435456	0.009295917	28.876705	text=generated-English; single-thread; compressed_bytes=2229954; ratio=0.008307 (compressed/original); bytes=original; round-trip=OK
+lz4-decompress	268435456	0.060161834	4.461890	text=generated-English; single-thread; compressed_bytes=2229954; ratio=0.008307 (compressed/original); bytes=original; round-trip=OK
+lzma-compress	268435456	2.331076584	0.115155	text=generated-English; single-thread; compressed_bytes=39420; ratio=0.000147 (compressed/original); bytes=original; round-trip=OK
+lzma-decompress	268435456	0.020764750	12.927459	text=generated-English; single-thread; compressed_bytes=39420; ratio=0.000147 (compressed/original); bytes=original; round-trip=OK
+parallel-crc32-zlib-16	268435456	0.002516583	106.666641	random; 16 equal chunks; crc32_combine included; crc32=2592826944
+memcpy	268435456	0.005810125	46.201322	random; single-thread; bytes=copied bytes (read+write traffic is 2x)

@@ -1,0 +1,139 @@
+Building for debugging...
+[Pre-planning 1 / 241]
+[Planning deferred tasks]
+[18 / 83]
+[19 / 84] KaitoKit
+[24 / 101] KaitoKit
+/Users/nagash/Github/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[26 / 101] KaitoKit
+[33 / 101] KaitoKit
+[34 / 101] KaitoKit
+[35 / 101] KaitoKit
+[36 / 101] KaitoKit
+[37 / 101] KaitoKit
+[39 / 101] kaito-product
+[41 / 110] kaito-product
+[42 / 114] KaitoKitCompat
+[45 / 114] kaito-product
+[53 / 114] kaito-product
+[56 / 114] kaito-product
+[58 / 114] KaitoKitCompat
+[60 / 112] KaitoKitCompat
+[64 / 112] KaitoKit
+[66 / 112]
+[66 / 108] KaitoKit
+[68 / 108] KaitoKit
+[77 / 108] KaitoKitCompatTests-product
+[84 / 125] KaitoKitCompatTests-product
+[87 / 142] KaitoKitCompatTests-product
+[93 / 142] KaitoKitCompatTests-product
+[95 / 142] KaitoKitTests-product
+[97 / 142] KaitoKitTests-product
+[104 / 142] KaitoKitTests-product
+[105 / 142] KaitoKitTests-product
+[106 / 142] KaitoKitTests-product
+[107 / 142] KaitoKitTests-product
+[108 / 142] KaitoKitTests-product
+[109 / 142] KaitoKitTests-product
+[110 / 142] KaitoKitTests-product
+[111 / 142] KaitoKitTests-product
+[112 / 142] KaitoKitTests-product
+/Users/nagash/Github/KaitoKit/Tests/KaitoKitTests/SevenZip/SevenZipFolderPrefetchTests.swift:370:17: warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+368 |         let holder = Mutex<Task<Void, any Error>?>(nil)
+369 |         let task = Task.detached {
+370 |             try await LeafDecodePool.$testingSubmission.withValue({ holder.withLock { $0?.cancel() } }) {
+    |                 `- warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+371 |                 let reader = try SevenZipReader(source: DataByteSource(archive), options: ReaderOptions(decodeThreads: 16))
+372 |                 for entry in reader.entries { _ = try reader.stream(for: entry, limits: ReadLimits()).readAll() }
+
+[#UnnecessaryEffectMarker]: <https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker>
+[113 / 142] KaitoKitCompatTests-product
+[114 / 142] KaitoKitCompatTests-product
+[116 / 142] KaitoKitCompatTests-product
+[118 / 142] KaitoKitCompatTests-product
+[122 / 142] KaitoKitCompatTests-product
+[124 / 142] KaitoKitCompatTests-product
+[130 / 142] KaitoKitCompatTests-product
+[132 / 142] KaitoKitCompatTests-product
+[134 / 140] KaitoKitTests-product
+[136 / 140] KaitoKitTests-product
+[138 / 140] KaitoKitTests-product
+Build complete! (33.40秒)
+Test Suite 'Selected tests' started at 2026-11-04 21:09:34.507.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 21:09:34.508.
+Test Suite 'CabLZXTests' started at 2026-11-04 21:09:34.508.
+Test Case '-[KaitoKitTests.CabLZXTests testBitReaderWordOrderAlignmentAndTruncation]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testBitReaderWordOrderAlignmentAndTruncation]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testContinuedFolderContainedFilesAgainstCabextract]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testContinuedFolderContainedFilesAgainstCabextract]' passed (0.434 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testContinuedFolderReadsContainedFiles]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testContinuedFolderReadsContainedFiles]' passed (0.198 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testExternalCorpusAgainstCabextract]' started.
+/Users/nagash/Github/KaitoKit/Tests/KaitoKitTests/Codecs/CabLZXTests.swift:150: -[KaitoKitTests.CabLZXTests testExternalCorpusAgainstCabextract] : Test skipped - KAITOKIT_CAB_CORPUS is not configured
+Test Case '-[KaitoKitTests.CabLZXTests testExternalCorpusAgainstCabextract]' skipped (0.001 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testFixedFixturesAndReopen]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testFixedFixturesAndReopen]' passed (1.671 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testHuffmanKraftViolationsAndSixteenBitFallback]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testHuffmanKraftViolationsAndSixteenBitFallback]' passed (0.002 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testInvalidBlockTypesSizesAndMissingBlocks]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testInvalidBlockTypesSizesAndMissingBlocks]' passed (0.012 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testLastFrameDamageDoesNotAffectEarlierFiles]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testLastFrameDamageDoesNotAffectEarlierFiles]' passed (0.045 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testMatchesCannotExceedHistoryBlockOrFrame]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testMatchesCannotExceedHistoryBlockOrFrame]' passed (0.053 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testNewStreamsInvalidateOlderStreamsAcrossFolders]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testNewStreamsInvalidateOlderStreamsAcrossFolders]' passed (0.053 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testOnlyConsumedFramesAreChecksummedAndEmptyEntriesConsumeNothing]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testOnlyConsumedFramesAreChecksummedAndEmptyEntriesConsumeNothing]' passed (0.075 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testPretreeRunsCannotOverflowAndCodeNineteenRequiresDelta]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testPretreeRunsCannotOverflowAndCodeNineteenRequiresDelta]' passed (0.004 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testTinyStreamsAndBackwardFilesFirst]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testTinyStreamsAndBackwardFilesFirst]' passed (2.102 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testTruncatedCFDATAAndTwentyFourBitFlipsPerFixture]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testTruncatedCFDATAAndTwentyFourBitFlipsPerFixture]' passed (11.665 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testTwentyGeneratedArchivesAgainstCabextract]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testTwentyGeneratedArchivesAgainstCabextract]' passed (8.978 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testUncompressedOffsetsAndPaddingMustBeValid]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testUncompressedOffsetsAndPaddingMustBeValid]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.CabLZXTests testWindowBitsAndDictionaryLimit]' started.
+Test Case '-[KaitoKitTests.CabLZXTests testWindowBitsAndDictionaryLimit]' passed (0.002 seconds).
+Test Suite 'CabLZXTests' passed at 2026-11-04 21:09:59.805.
+	 Executed 17 tests, with 1 test skipped and 0 failures (0 unexpected) in 25.296 (25.298) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 21:09:59.805.
+	 Executed 17 tests, with 1 test skipped and 0 failures (0 unexpected) in 25.296 (25.298) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:09:59.805.
+	 Executed 17 tests, with 1 test skipped and 0 failures (0 unexpected) in 25.296 (25.299) seconds
+cabextract OK random-00.cab: 6 files, 263077 bytes
+cabextract OK random-01.cab: 15 files, 336084 bytes
+cabextract OK random-02.cab: 10 files, 221080 bytes
+cabextract OK random-03.cab: 5 files, 195222 bytes
+cabextract OK random-04.cab: 15 files, 503582 bytes
+cabextract OK random-05.cab: 5 files, 104084 bytes
+cabextract OK random-06.cab: 15 files, 462806 bytes
+cabextract OK random-07.cab: 5 files, 196127 bytes
+cabextract OK random-08.cab: 15 files, 415179 bytes
+cabextract OK random-09.cab: 15 files, 386908 bytes
+cabextract OK random-10.cab: 10 files, 302767 bytes
+cabextract OK random-11.cab: 10 files, 336360 bytes
+cabextract OK random-12.cab: 10 files, 400735 bytes
+cabextract OK random-13.cab: 15 files, 509297 bytes
+cabextract OK random-14.cab: 5 files, 165724 bytes
+cabextract OK random-15.cab: 15 files, 505638 bytes
+cabextract OK random-16.cab: 10 files, 237301 bytes
+cabextract OK random-17.cab: 5 files, 200197 bytes
+cabextract OK random-18.cab: 15 files, 455940 bytes
+cabextract OK random-19.cab: 15 files, 449490 bytes
+verified 20 archives
+
+Test Suite 'Selected tests' started at 2026-11-04 21:09:59.924.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-04 21:09:59.925.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-04 21:09:59.925.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:09:59.925.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds

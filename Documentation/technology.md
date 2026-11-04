@@ -57,7 +57,7 @@ thread が足りず 6 GB/s、4 KiB block × 65,536 で 24 GB/s。CPU は 16 lane
 
 - Deflate / LZMA / bzip2 の block 内の復号: Huffman・range coder・BWT 逆変換は 1 stream の中で逐次。先行研究（nvCOMP、GDeflate）
   は format 自体を GPU 向けに変えており、既存の書庫には当てはまらない。
-- match 探索（圧縮側）: 本体で自前の encoder は LH5 だけで、zlib / libbz2 / Apple Compression / liblzma は黒箱。
+- match 探索（圧縮側）: GyoshukuKit の LZMA BT4 を HASH4 bucket ごとに Metal で並列化した。候補と木の状態は CPU と一致したが、M4 Max では finder 比 1.118 倍、Mac mini M4 では 0.655 倍で、両機で有利な方式ではなかった（speed-report §9.1）。研究 code は `Research/LZMABucketMetal/` に残し、本体には採用しない。
 - AES / SHA: CPU の暗号命令が 1 core で 14〜18 GB/s。GPU に送る帯域と往復の費用で負ける。
 
 ## 4. NPU で試したこと: 神経 block codec
@@ -70,13 +70,15 @@ model が次の byte の分布 p を出し、range coder が実際の byte x を
 
 ANE で走らせる model は 1 回の推論に 0.1 ms 前後の固定費があるので、1 byte ごとに呼ぶと 10 KB/s にもならない。
 そこで入力を N 個の独立 block に切り、位置 t の予測を全 block まとめて 1 回の推論にする（batch = N）。
-range coder は block ごとに CPU で走る。推論 1 回あたり N byte 進むので、N = 1024〜4096 で MB/s 級になる。
+range coder は block ごとに CPU で走る。推論 1 回あたり N byte 進むので、N = 1024〜8192 で MB/s 級になる。
 
 ### 4.2 model
 
-- 再帰型（GRU 1 層、hidden 1024）。状態 h を MLState ではなく入出力のテンソルとして往復させる。native の `lstm` op は
-  CPU に落ちるが、線形 + 活性で書いた cell は ANE に載る。batch 形状は固定（1024 と 4096 の二つの model を同じ重みから書き出す）。
-- 入力は直前の byte の one-hot [N, 256]（embedding は one-hot と重みの行列積で行う。gather op の ANE 対応は試していない）、出力は softmax [N, 256] と h_out。
+- 再帰型（GRU 1 層、hidden 1024）。2026-09-29 の初期版は状態 h を入出力のテンソルとして往復させた。現行版は明示的な状態と
+  Core ML の `MLState` を自動判別し、[1,N,H] の選択更新や直接状態更新も研究している。native の `lstm` op は
+  CPU に落ちるが、線形 + 活性で書いた cell は ANE に載る。batch 形状は固定で、同じ重みから 1024・4096・8192 を書き出せる。
+- 入力は直前の byte の one-hot [N, 256]（embedding は one-hot と重みの行列積で行う。gather op の ANE 対応は試していない）。
+  明示的な状態版の出力は softmax [N, 256] と h_out、stateful 版は softmax と暗黙の状態更新になる。int8 は重みの保存形式で、計算は fp16。
 
 ### 4.3 何が起きたか（speed-report §5）
 
@@ -100,9 +102,9 @@ fp16 の演算は device ごとに結果が僅かに違う（ANE と CPU で最�
 
 - **今日の M4 Max で、書庫の圧縮・展開に GPU / NPU は使われていない。** Apple の圧縮 library、暗号 library、MTLIO の展開まで含めて CPU で動く。
   CPU 側の基準値が高い（CRC-32 命令、AES 命令、16 core）ので、byte 単位の軽い処理を送る余地はない。
-- **GPU で動くもの**: 独立 block の LZ 復号、histogram、CRC-32 の chunk 計算。正しく動くが、既存の format の block 粒度では CPU 16 lane に負ける。
-  GPU が勝つには format 側の設計（数万の小 block、size 表、GPU 上で使う出力）が要る。これは既存の書庫を読む library の仕事ではない。
+- **GPU で動くもの**: 独立 block の LZ 復号、histogram、CRC-32 の chunk 計算、LZMA BT4 の match 探索。いずれも正しく動くが、既存の format の block 粒度では CPU 16 lane に負け、LZMA 探索も Mac mini M4 の CPU finder に届かない。
+  block 復号で GPU が勝つには format 側の設計（数万の小 block、size 表、GPU 上で使う出力）が要る。これは既存の書庫を読む library の仕事ではない。
 - **NPU で動くもの**: 予測 + 算術符号の予測部分。ANE で符号化・復号ともに往復し、学習 domain では PPMd を超える比を出した。
   速度は 2 桁遅く、domain 外に弱く、符号化と復号の unit を揃える約束が要る。「書庫の圧縮に NPU を使う」なら、対象 domain が決まっていて
   比が最優先で速度を捨てられる用途（特定 domain の log や text の長期保存）に限られる。
-- **本体（KaitoKit / GyoshukuKit）には入れない。** どの経路も CPU より速くならなかった。lab の code と計測は KaitoAccelLab に残す。
+- **GPU / NPU 経路は本体（KaitoKit / GyoshukuKit）に入れない。** 両機で一貫した高速化を確認できたものだけを採用する。今回の GPU / NPU 候補は基準を満たさなかったため、lab の code と計測を KaitoAccelLab に残す。研究から得た CPU 側の改善は、別途両機の速度と全出力を検証したものだけを本体へ採用する。

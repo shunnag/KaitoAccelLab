@@ -1,0 +1,33 @@
+LH5 8-byte match length and early-exit, Mac mini M4 (2026-11-04)
+
+Pointer baseline vs unguarded match8: median best MB/s of five alternating runs
+corpus, level, pointer, match8, speedup
+text, 1, 150.373, 172.038, 1.144075
+text, 6, 93.975, 102.927, 1.095259
+text, 9, 51.054, 59.270, 1.160928
+binary, 1, 119.811, 125.611, 1.048410
+binary, 6, 99.780, 102.846, 1.030728
+binary, 9, 43.418, 45.205, 1.041158
+random, 1, 88.712, 85.260, 0.961088
+random, 6, 88.762, 84.617, 0.953302
+random, 9, 85.236, 85.119, 0.998627
+
+Early4 (return immediately for a length-3 match) vs unguarded match8: median best MB/s of five alternating runs
+corpus, level, match8, early4, speedup
+text, 1, 171.047, 167.443, 0.978930
+text, 6, 103.374, 102.761, 0.994070
+text, 9, 59.804, 57.703, 0.964869
+binary, 1, 126.952, 124.358, 0.979567
+binary, 6, 103.678, 101.518, 0.979166
+binary, 9, 45.675, 44.781, 0.980427
+random, 1, 85.409, 85.965, 1.006510
+random, 6, 85.826, 86.583, 1.008820
+random, 9, 85.033, 86.203, 1.013759
+
+Validation
+- All 45 pointer/match8 pairs and all 45 match8/early4 pairs were byte-identical.
+- Early4 recovered only about 1% on random while losing 2-3.5% on text/binary, and did not restore pointer-level random speed. It was rejected.
+- Full pointer suite: 944 tests, 51 skipped, 0 failures; Results/gyoshuku-lh5-pointer-full-mini-20261104.txt.
+- Logs: Results/gyoshuku-lh5-match8-ab-mini-20261104.txt and Results/gyoshuku-lh5-early4-ab-mini-20261104.txt.
+
+The final adoption decision uses the adaptive variant, which keeps scalar matching until two matches of length 8 or longer have been found.

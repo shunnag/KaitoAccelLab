@@ -1,0 +1,264 @@
+{"buffer":97,"entries":[{"count":2300,"digest":"dfa78453a790fcfd9ccb70b8363b0a6f5376371082a78127d8281ec4fb6156db","index":0}],"mutation":"original","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[{"count":2300,"digest":"dfa78453a790fcfd9ccb70b8363b0a6f5376371082a78127d8281ec4fb6156db","index":0}],"mutation":"original","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-57","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-57","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-57","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-57","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-83","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-83","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-83","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-83","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-28-1","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-28-1","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-28-1","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-28-1","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-28-128","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-28-128","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-28-128","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-28-128","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-1","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-1","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-1","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-1","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-128","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-128","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-128","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-128","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[{"count":2300,"digest":"dfa78453a790fcfd9ccb70b8363b0a6f5376371082a78127d8281ec4fb6156db","index":0}],"mutation":"flip-114-1","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[{"count":2300,"digest":"dfa78453a790fcfd9ccb70b8363b0a6f5376371082a78127d8281ec4fb6156db","index":0}],"mutation":"flip-114-1","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[{"count":2300,"digest":"dfa78453a790fcfd9ccb70b8363b0a6f5376371082a78127d8281ec4fb6156db","index":0}],"mutation":"flip-114-1","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[{"count":2300,"digest":"dfa78453a790fcfd9ccb70b8363b0a6f5376371082a78127d8281ec4fb6156db","index":0}],"mutation":"flip-114-1","path":"autorej.rar.b64"}
+{"buffer":1,"entries":[{"count":2299,"digest":"005a87870f1c2a7027a33ce484866418f41b8df9fbe7154a567b49e334d81e8b","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-114-128","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[{"count":2231,"digest":"bbc1aa4e241dfd28513c88173f8de43f41aad4b11f2ad48a84b33cd6ca4e0e13","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-114-128","path":"autorej.rar.b64"}
+{"buffer":4099,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-114-128","path":"autorej.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-114-128","path":"autorej.rar.b64"}
+{"buffer":97,"entries":[{"count":32768,"digest":"49fdf4ee5a26c05158ed6873c11a97eb5bbc7966b65d1b0b1b3e06f847bc5a77","index":0}],"mutation":"original","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[{"count":32768,"digest":"49fdf4ee5a26c05158ed6873c11a97eb5bbc7966b65d1b0b1b3e06f847bc5a77","index":0}],"mutation":"original","path":"audio.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"audio.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"audio.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"audio.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"audio.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-985","path":"audio.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-985","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-985","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-985","path":"audio.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-1938","path":"audio.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-1938","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-1938","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-1938","path":"audio.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"audio.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"audio.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"audio.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"audio.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"audio.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"audio.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"audio.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"audio.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"audio.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"audio.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"audio.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"audio.rar.b64"}
+{"buffer":1,"entries":[{"count":32767,"digest":"fa0df8890be076c3069f982ddce77c550c13c99188db1deb72f3c925e224571a","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-492-1","path":"audio.rar.b64"}
+{"buffer":97,"entries":[{"count":32689,"digest":"ca350f1edea94fe66f90e69998ed99a6451438ee8673fd93bdeee6018d176b89","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-492-1","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[{"count":28693,"digest":"60eb1e8380fab11fff11174e314769ee743f8509b87c51c51b2a0d42817ff463","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-492-1","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-492-1","path":"audio.rar.b64"}
+{"buffer":1,"entries":[{"count":32767,"digest":"64839aaf0f0e4a90aea42eab984d32171c410d52ab1e214716065868ae967c2a","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-492-128","path":"audio.rar.b64"}
+{"buffer":97,"entries":[{"count":32689,"digest":"11a631609c6c75148203a9b77330a31ff9c57f1a234dccad8c0955975c01131d","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-492-128","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[{"count":28693,"digest":"c676d905c2137e0d720903dc399091c2b7621ca8f44a4b13f1675e55a0599140","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-492-128","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-492-128","path":"audio.rar.b64"}
+{"buffer":1,"entries":[{"count":32767,"digest":"0c6551eadcd441c29ce93a14730730a4e451671cc3f60dac22c226f02c142917","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-985-1","path":"audio.rar.b64"}
+{"buffer":97,"entries":[{"count":32689,"digest":"904b06dffde7e4852f9aba6de1aba697ee3b4745c80cba13e57c7d787f5df305","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-985-1","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[{"count":28693,"digest":"1a85a095248af7f3ca85aa6e4497d0b7b561c8318a885880acad50aa7da328ee","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-985-1","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-985-1","path":"audio.rar.b64"}
+{"buffer":1,"entries":[{"count":32767,"digest":"8282aac5c9726dd7bee1ace080bfa86521b7456682b04ca5cd7264108f563d2e","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-985-128","path":"audio.rar.b64"}
+{"buffer":97,"entries":[{"count":32689,"digest":"34ae9b93057810534ee3b8c50e6eecff50cca36136d5e6df94ad616e6fbd7b59","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-985-128","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[{"count":28693,"digest":"f0cd532fd1271f7b43e40d8e2175b08042a9f179c4177a6cb17f33341cf3cf7c","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-985-128","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-985-128","path":"audio.rar.b64"}
+{"buffer":1,"entries":[{"count":32768,"digest":"49fdf4ee5a26c05158ed6873c11a97eb5bbc7966b65d1b0b1b3e06f847bc5a77","index":0}],"mutation":"flip-1969-1","path":"audio.rar.b64"}
+{"buffer":97,"entries":[{"count":32768,"digest":"49fdf4ee5a26c05158ed6873c11a97eb5bbc7966b65d1b0b1b3e06f847bc5a77","index":0}],"mutation":"flip-1969-1","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[{"count":32768,"digest":"49fdf4ee5a26c05158ed6873c11a97eb5bbc7966b65d1b0b1b3e06f847bc5a77","index":0}],"mutation":"flip-1969-1","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[{"count":32768,"digest":"49fdf4ee5a26c05158ed6873c11a97eb5bbc7966b65d1b0b1b3e06f847bc5a77","index":0}],"mutation":"flip-1969-1","path":"audio.rar.b64"}
+{"buffer":1,"entries":[{"count":32767,"digest":"71d8d33014926352aeb86efa02d924ee24d11b86944cb9a8d63cd05fd34709ac","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-1969-128","path":"audio.rar.b64"}
+{"buffer":97,"entries":[{"count":32689,"digest":"40d480c050d283be2dde2ae2ebecd4b65bd87e421e78d8f78ea1f0cfc46f18f8","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-1969-128","path":"audio.rar.b64"}
+{"buffer":4099,"entries":[{"count":28693,"digest":"f7adc3e3a30aff7f30cb1f71d2c5e77fa00a98896d6be71d71891ac1eb424235","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-1969-128","path":"audio.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-1969-128","path":"audio.rar.b64"}
+{"buffer":97,"entries":[{"count":163840,"digest":"b915c3b0b8335cdb7ee06bb9487ea26a1a338cae4f8fc3208363d99e3938f842","index":0}],"mutation":"original","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[{"count":163840,"digest":"b915c3b0b8335cdb7ee06bb9487ea26a1a338cae4f8fc3208363d99e3938f842","index":0}],"mutation":"original","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-30998","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-30998","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-30998","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-30998","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-61964","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-61964","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-61964","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-61964","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[{"count":163839,"digest":"f72c3ff4abddee8e687ee681c9aa0f430d3adf7a88a7544c18fb1723ff9571a7","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-15499-1","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[{"count":163833,"digest":"1cf83101ac55147389500c30b0069368fab8f6da893a6d68c4ab805eadb97f93","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-15499-1","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[{"count":159861,"digest":"398d2a0dc09bf0b9ad57de46c1571f3e1ec1df34dc36c8fb79f96832aeab4f6d","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-15499-1","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-15499-1","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[{"count":163839,"digest":"6b545bc55df1b5f56ea6e4a380f60bc34d149ce808d78ae1ee7eeb609b4bde35","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-15499-128","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[{"count":163833,"digest":"108a8b4307879c170f7afffa3aa7a6fb4e06e693908193c36d480db35d82303a","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-15499-128","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[{"count":159861,"digest":"98165ab113e68f71299105fe78d65b66b7ded639b9dfad0a635e02f6b55383b9","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-15499-128","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-15499-128","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[{"count":163839,"digest":"071675c4e6628187fe14e874ff76b239ad721ccab85a8f204c073721a1b45be6","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-30998-1","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[{"count":163833,"digest":"b123708d79892820d1171a0f9424cd65c4d7ab54b7ebd24d286d39401a79e5f6","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-30998-1","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[{"count":159861,"digest":"1f3d8270f5ba5d1c118ad0cb9f0a5aa1811cb42868fb4897199f87b698718a1b","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-30998-1","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-30998-1","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[{"count":163839,"digest":"b8655e0884722f0a2880d3000d3ca549aeaeac6e19f847da2078fbd3a3dab041","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-30998-128","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[{"count":163833,"digest":"882f07c58f081b458549f14ccc1131cd8ee095a667e794375263c574dc34e046","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-30998-128","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[{"count":159861,"digest":"b512b2e9845e170445499bd1d6f72cfefe9b58c4507a59aab7e7f43d96072c88","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-30998-128","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-30998-128","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[{"count":163840,"digest":"b915c3b0b8335cdb7ee06bb9487ea26a1a338cae4f8fc3208363d99e3938f842","index":0}],"mutation":"flip-61995-1","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[{"count":163840,"digest":"b915c3b0b8335cdb7ee06bb9487ea26a1a338cae4f8fc3208363d99e3938f842","index":0}],"mutation":"flip-61995-1","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[{"count":163840,"digest":"b915c3b0b8335cdb7ee06bb9487ea26a1a338cae4f8fc3208363d99e3938f842","index":0}],"mutation":"flip-61995-1","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[{"count":163840,"digest":"b915c3b0b8335cdb7ee06bb9487ea26a1a338cae4f8fc3208363d99e3938f842","index":0}],"mutation":"flip-61995-1","path":"biglz.rar.b64"}
+{"buffer":1,"entries":[{"count":163839,"digest":"43b3c3493c767b2242aa3627144e4dd4f2771dd22b008699c2cd53f4a26722c0","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-61995-128","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[{"count":163833,"digest":"07dbb588747fe19394edd24bf291bc19f8aa7f75fc7995df4e429f8bccd8db85","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-61995-128","path":"biglz.rar.b64"}
+{"buffer":4099,"entries":[{"count":159861,"digest":"b74322f2c6b3a6edfe467f8db0268a965d01b5d712f7029d4088cea7ddf6d485","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-61995-128","path":"biglz.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0}],"mutation":"flip-61995-128","path":"biglz.rar.b64"}
+{"buffer":97,"entries":[{"count":16236,"digest":"7e7cba72629554cc5a2bdc021326670a145d60a1af36a48920c475ec735413e4","index":0},{"count":24012,"digest":"3d17d01bfc2e51e8e6a1c7b64a62956f627758be7cdd793c916d93648cb5b226","index":1}],"mutation":"original","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[{"count":16236,"digest":"7e7cba72629554cc5a2bdc021326670a145d60a1af36a48920c475ec735413e4","index":0},{"count":24012,"digest":"3d17d01bfc2e51e8e6a1c7b64a62956f627758be7cdd793c916d93648cb5b226","index":1}],"mutation":"original","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-1","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-7","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-114","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-114","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-114","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-114","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"The archive is truncated","mutation":"truncate-197","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"The archive is truncated","mutation":"truncate-197","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"The archive is truncated","mutation":"truncate-197","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"The archive is truncated","mutation":"truncate-197","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-1","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-32-128","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-1","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-33-128","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-1","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-38-128","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-1","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-1","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-1","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-1","path":"solid.rar.b64"}
+{"buffer":1,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-128","path":"solid.rar.b64"}
+{"buffer":97,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-128","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-128","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[],"error":"Malformed archive: RAR4 header CRC mismatch at offset 20","mutation":"flip-57-128","path":"solid.rar.b64"}
+{"buffer":1,"entries":[{"count":11,"digest":"cd01ddc5e2cbcf16fbecc0534c5a819f809c545045c80c2bf3f959692ac9d85e","error":"Malformed archive: RAR4 repeat match has no previous match","index":0},{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Malformed archive: RAR4 repeat match has no previous match","index":1}],"mutation":"flip-114-1","path":"solid.rar.b64"}
+{"buffer":97,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Malformed archive: RAR4 repeat match has no previous match","index":0},{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Malformed archive: RAR4 repeat match has no previous match","index":1}],"mutation":"flip-114-1","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Malformed archive: RAR4 repeat match has no previous match","index":0},{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Malformed archive: RAR4 repeat match has no previous match","index":1}],"mutation":"flip-114-1","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Malformed archive: RAR4 repeat match has no previous match","index":0},{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Malformed archive: RAR4 repeat match has no previous match","index":1}],"mutation":"flip-114-1","path":"solid.rar.b64"}
+{"buffer":1,"entries":[{"count":16235,"digest":"4b0a5133cd0bbefe25c7bc0edf0397c08f7619329c800f546df4b92dae11db7f","error":"Checksum mismatch for entry 0","index":0},{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":1}],"mutation":"flip-114-128","path":"solid.rar.b64"}
+{"buffer":97,"entries":[{"count":16199,"digest":"ea8007375198ded71ae6bf6c61866c313e1132f933b4b37e9f209557f28a9f40","error":"Checksum mismatch for entry 0","index":0},{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":1}],"mutation":"flip-114-128","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[{"count":12297,"digest":"05fe84cf94c46ab16518408df8a1566ed9620978952ebffb4184e21a96f19cb8","error":"Checksum mismatch for entry 0","index":0},{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":1}],"mutation":"flip-114-128","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":0},{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 0","index":1}],"mutation":"flip-114-128","path":"solid.rar.b64"}
+{"buffer":1,"entries":[{"count":16236,"digest":"7e7cba72629554cc5a2bdc021326670a145d60a1af36a48920c475ec735413e4","index":0},{"count":24012,"digest":"3d17d01bfc2e51e8e6a1c7b64a62956f627758be7cdd793c916d93648cb5b226","index":1}],"mutation":"flip-228-1","path":"solid.rar.b64"}
+{"buffer":97,"entries":[{"count":16236,"digest":"7e7cba72629554cc5a2bdc021326670a145d60a1af36a48920c475ec735413e4","index":0},{"count":24012,"digest":"3d17d01bfc2e51e8e6a1c7b64a62956f627758be7cdd793c916d93648cb5b226","index":1}],"mutation":"flip-228-1","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[{"count":16236,"digest":"7e7cba72629554cc5a2bdc021326670a145d60a1af36a48920c475ec735413e4","index":0},{"count":24012,"digest":"3d17d01bfc2e51e8e6a1c7b64a62956f627758be7cdd793c916d93648cb5b226","index":1}],"mutation":"flip-228-1","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[{"count":16236,"digest":"7e7cba72629554cc5a2bdc021326670a145d60a1af36a48920c475ec735413e4","index":0},{"count":24012,"digest":"3d17d01bfc2e51e8e6a1c7b64a62956f627758be7cdd793c916d93648cb5b226","index":1}],"mutation":"flip-228-1","path":"solid.rar.b64"}
+{"buffer":1,"entries":[{"count":16236,"digest":"7e7cba72629554cc5a2bdc021326670a145d60a1af36a48920c475ec735413e4","index":0},{"count":24011,"digest":"f7c9599ee0a8fa188c7527258b3aff8f84832d6734715b80d534b6383b49d6d7","error":"Checksum mismatch for entry 1","index":1}],"mutation":"flip-228-128","path":"solid.rar.b64"}
+{"buffer":97,"entries":[{"count":16236,"digest":"7e7cba72629554cc5a2bdc021326670a145d60a1af36a48920c475ec735413e4","index":0},{"count":23959,"digest":"ae33f9e2b55ac57c5fa4768acd625a6bd4c91630ce34aa5385ad22aabe564b55","error":"Checksum mismatch for entry 1","index":1}],"mutation":"flip-228-128","path":"solid.rar.b64"}
+{"buffer":4099,"entries":[{"count":16236,"digest":"7e7cba72629554cc5a2bdc021326670a145d60a1af36a48920c475ec735413e4","index":0},{"count":20495,"digest":"a52271321c3bea00a22912f4040f52bc79c31a0e48dcc77a597f970b32b770e6","error":"Checksum mismatch for entry 1","index":1}],"mutation":"flip-228-128","path":"solid.rar.b64"}
+{"buffer":262144,"entries":[{"count":16236,"digest":"7e7cba72629554cc5a2bdc021326670a145d60a1af36a48920c475ec735413e4","index":0},{"count":0,"digest":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","error":"Checksum mismatch for entry 1","index":1}],"mutation":"flip-228-128","path":"solid.rar.b64"}

@@ -1,0 +1,21 @@
+RAR3 memory-cursor direct reads (2026-11-05)
+
+Decision: not adopted. The production RAR3MemoryBitCursor retains its scalar read loop. Only the earlier, separately validated global-data bulk consume remains adopted.
+
+Candidates
+- A 64-bit unaligned load for counts above four bits, with a bounded tail reader and the original scalar path for counts up to four bits.
+- A 16-bit unaligned load only for count == 8 when it is in bounds, retaining the scalar path for all other cases and for a one-byte tail.
+- Both were evaluated in a research clone after the already adopted global-data consume. Neither was integrated into the production source.
+
+Validation
+- RAR29R1Tests and RAR4FilterFixtureTests: 13 tests, 0 failures for each candidate, including real RGB, delta, E8 and audio fixtures and global-data streams through the 0x1FC0 maximum.
+- Benchmark: the actual four RAR4 fixtures, 500 in-process extractions per timing, four alternating timings per executable. Values are milliseconds; smaller is better.
+
+fixture   global-consume baseline   64-bit read   16-bit read
+rgb          0.3365                0.3390        0.3380
+delta        0.1300                0.1300        0.1285
+e8           0.1045                0.1030        0.1035
+audio        0.2820                0.2830        0.2825
+
+The bytecode/parser read is a small part of these complete decode times. The E8 series is slightly faster in both experiments but is within run-to-run variation, while RGB is not improved and delta/audio are essentially unchanged. There is no consistent practical speedup to justify the added code and unsafe-load complexity.
+Raw logs: kaito-rar3-word64-max-20261105.txt and kaito-rar3-word16-max-20261105.txt.

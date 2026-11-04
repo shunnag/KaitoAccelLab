@@ -1,0 +1,150 @@
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.375
+extract-median-ms	30.773
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.358
+extract-median-ms	28.818
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.354
+extract-median-ms	31.096
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.354
+extract-median-ms	28.717
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.369
+extract-median-ms	30.994
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.361
+extract-median-ms	28.739
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.355
+extract-median-ms	30.813
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.379
+extract-median-ms	28.779
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.352
+extract-median-ms	30.596
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.370
+extract-median-ms	28.716
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.363
+extract-median-ms	30.834
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.355
+extract-median-ms	28.700
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.351
+extract-median-ms	30.685
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.359
+extract-median-ms	28.761
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.362
+extract-median-ms	30.524
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.359
+extract-median-ms	28.818
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.352
+extract-median-ms	30.770
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.355
+extract-median-ms	28.652
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.361
+extract-median-ms	30.732
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.368
+extract-median-ms	28.772
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.359
+extract-median-ms	30.755
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.353
+extract-median-ms	28.757
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.377
+extract-median-ms	30.775
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.391
+extract-median-ms	28.695
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.354
+extract-median-ms	30.732
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.373
+extract-median-ms	28.707
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.360
+extract-median-ms	30.762
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.356
+extract-median-ms	28.766
+bytes	5882101
+gyoshuku-lh5-match8.lxWyjp
+reps	5
+open-median-ms	0.354
+extract-median-ms	30.717
+bytes	5882101
+Release
+reps	5
+open-median-ms	0.441
+extract-median-ms	29.565
+bytes	5882101

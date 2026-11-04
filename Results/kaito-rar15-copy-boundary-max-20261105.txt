@@ -1,0 +1,184 @@
+Building for debugging...
+[1 / 26] KaitoKit
+[3 / 29] KaitoKit
+[5 / 31] KaitoKit
+[9 / 28]
+[16 / 20] KaitoKitCompat-product
+[19 / 21] KaitoKitTests-product
+[24 / 24] kaito-product
+Build complete! (3.34秒)
+Test Suite 'Selected tests' started at 2026-11-05 01:44:55.566.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 01:44:55.567.
+Test Suite 'RAR15DecoderTests' started at 2026-11-05 01:44:55.567.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedLiteralAndShortMatchArchive]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedLiteralAndShortMatchArchive]' passed (0.003 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidArchiveSupportsForwardAndBackwardReads]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidArchiveSupportsForwardAndBackwardReads]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidMultiVolumeArchiveSupportsForwardAndBackwardReads]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidMultiVolumeArchiveSupportsForwardAndBackwardReads]' passed (0.004 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioAndDocumentCorpusMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioAndDocumentCorpusMatchesUnrarOutput]' passed (0.190 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioDirectDecoderMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioDirectDecoderMatchesUnrarOutput]' passed (0.026 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154LongDocumentDirectDecoderMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154LongDocumentDirectDecoderMatchesUnrarOutput]' passed (0.022 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154NormalArchiveMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154NormalArchiveMatchesUnrarOutput]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testSplitAfterAtEndOfVolumeRequiresURLButNotAnEndMarker]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testSplitAfterAtEndOfVolumeRequiresURLButNotAnEndMarker]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testTruncatedPackedInputIsRejected]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testTruncatedPackedInputIsRejected]' passed (0.001 seconds).
+Test Suite 'RAR15DecoderTests' passed at 2026-11-05 01:44:55.815.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.247 (0.248) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 01:44:55.815.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.247 (0.248) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 01:44:55.815.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.247 (0.249) seconds
+Test Suite 'Selected tests' started at 2026-11-05 01:44:55.891.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-05 01:44:55.892.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-05 01:44:55.892.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 01:44:55.892.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Building for debugging...
+[Pre-planning 1 / 241]
+[Planning deferred tasks]
+[53 / 118]
+[54 / 119] KaitoKit
+[64 / 178]
+[66 / 178]
+[73 / 178]
+[77 / 178]
+[83 / 178]
+[86 / 178]
+[92 / 178]
+[94 / 178]
+[95 / 178]
+[101 / 178] KaitoKit
+[109 / 178] KaitoKit
+[110 / 178] KaitoKit
+[111 / 178] KaitoKit
+[112 / 178] KaitoKit
+[114 / 178] KaitoKit
+[115 / 178] KaitoKit
+[116 / 178] KaitoKit
+[117 / 178] KaitoKit
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar15/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[118 / 178] KaitoKit
+[119 / 178] KaitoKit
+[119 / 178]
+[124 / 179]
+[126 / 188] KaitoKit
+[129 / 188] kaito-product
+[130 / 188] kaito-product
+[132 / 188] kaito-product
+[134 / 188]
+[136 / 189] KaitoKitCompat
+[140 / 193] KaitoKitCompat
+[150 / 193] KaitoKitCompat
+[151 / 193] KaitoKit
+[158 / 194] KaitoKitTests-product
+[166 / 195] kaito-product
+[173 / 195] KaitoKitCompatTests-product
+[180 / 242]
+[186 / 259]
+[189 / 259]
+[195 / 259]
+[199 / 259]
+[202 / 259]
+[203 / 259]
+[208 / 259] KaitoKitCompatTests-product
+[220 / 259] KaitoKitTests-product
+[222 / 259] KaitoKitTests-product
+[223 / 259] KaitoKitTests-product
+[225 / 259] KaitoKitTests-product
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar15/Tests/KaitoKitTests/SevenZip/SevenZipFolderPrefetchTests.swift:370:17: warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+368 |         let holder = Mutex<Task<Void, any Error>?>(nil)
+369 |         let task = Task.detached {
+370 |             try await LeafDecodePool.$testingSubmission.withValue({ holder.withLock { $0?.cancel() } }) {
+    |                 `- warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+371 |                 let reader = try SevenZipReader(source: DataByteSource(archive), options: ReaderOptions(decodeThreads: 16))
+372 |                 for entry in reader.entries { _ = try reader.stream(for: entry, limits: ReadLimits()).readAll() }
+
+[#UnnecessaryEffectMarker]: <https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker>
+[226 / 259] KaitoKitTests-product
+[227 / 259] KaitoKitTests-product
+[228 / 259] KaitoKitTests-product
+[229 / 259] KaitoKitTests-product
+[231 / 259] KaitoKitTests-product
+[232 / 259] KaitoKitCompatTests-product
+[233 / 259] KaitoKitCompatTests-product
+[234 / 259] KaitoKitCompatTests-product
+[235 / 259] KaitoKitCompatTests-product
+[236 / 259] KaitoKitCompatTests-product
+[237 / 259] KaitoKitCompatTests-product
+[238 / 259] KaitoKitCompatTests-product
+[239 / 259] KaitoKitCompatTests-product
+[243 / 259] KaitoKitCompatTests-product
+[246 / 259] KaitoKitCompatTests-product
+[247 / 259] KaitoKitCompatTests-product
+[248 / 259] KaitoKitCompatTests-product
+[249 / 259] KaitoKitCompatTests-product
+[253 / 259] KaitoKitTests-product
+[255 / 259] KaitoKitTests-product
+[257 / 259] KaitoKitTests-product
+Build complete! (38.09秒)
+Test Suite 'Selected tests' started at 2026-11-05 01:45:36.432.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 01:45:36.433.
+Test Suite 'RAR15DecoderTests' started at 2026-11-05 01:45:36.433.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedLiteralAndShortMatchArchive]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedLiteralAndShortMatchArchive]' passed (0.003 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidArchiveSupportsForwardAndBackwardReads]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidArchiveSupportsForwardAndBackwardReads]' passed (0.002 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidMultiVolumeArchiveSupportsForwardAndBackwardReads]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testGeneratedSolidMultiVolumeArchiveSupportsForwardAndBackwardReads]' passed (0.006 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioAndDocumentCorpusMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioAndDocumentCorpusMatchesUnrarOutput]' passed (0.312 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioDirectDecoderMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154AudioDirectDecoderMatchesUnrarOutput]' passed (0.048 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154LongDocumentDirectDecoderMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154LongDocumentDirectDecoderMatchesUnrarOutput]' passed (0.035 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154NormalArchiveMatchesUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testRAR154NormalArchiveMatchesUnrarOutput]' passed (0.003 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testSplitAfterAtEndOfVolumeRequiresURLButNotAnEndMarker]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testSplitAfterAtEndOfVolumeRequiresURLButNotAnEndMarker]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR15DecoderTests testTruncatedPackedInputIsRejected]' started.
+Test Case '-[KaitoKitTests.RAR15DecoderTests testTruncatedPackedInputIsRejected]' passed (0.001 seconds).
+Test Suite 'RAR15DecoderTests' passed at 2026-11-05 01:45:36.845.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.411 (0.412) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 01:45:36.845.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.411 (0.412) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 01:45:36.845.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.411 (0.413) seconds
+Test Suite 'Selected tests' started at 2026-11-05 01:45:36.961.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-05 01:45:36.962.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-05 01:45:36.962.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 01:45:36.962.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Building for production...
+[3 / 10] KaitoKit
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar15/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[5 / 11] KaitoKit
+[12 / 15] kaito-product
+[14 / 15] kaito-product
+[15 / 15] kaito-product
+Build complete! (65.06秒)
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/Users/nagash/Github/KaitoKit/inbox/rar15/doc_154_best.rar	baseline	4.892500	50	502961	4	4.900000,4.890000,4.895000,4.815000
+/Users/nagash/Github/KaitoKit/inbox/rar15/doc_154_best.rar	candidate	4.954500	50	502961	4	4.948000,4.910000,4.981000,4.961000
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/Users/nagash/Github/KaitoKit/inbox/rar15/audio_win_names_unpack15.rar	baseline	0.744500	50	56571	4	0.747000,0.742000,0.752000,0.738000
+/Users/nagash/Github/KaitoKit/inbox/rar15/audio_win_names_unpack15.rar	candidate	0.768000	50	56571	4	0.775000,0.759000,0.764000,0.772000

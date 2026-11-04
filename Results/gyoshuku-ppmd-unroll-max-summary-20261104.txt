@@ -1,0 +1,28 @@
+PPMd state search two-at-a-time experiment, M4 Max (2026-11-04)
+
+Candidate
+- Unroll PPMdEncodingModel.find to inspect two STATE entries per loop iteration.
+- Preserve state order, first single-symbol context handling, and output bytes.
+
+Validation
+- PPMdEncoderTests: 8 tests, 2 skipped, 0 failures.
+- Full benchmark log: Results/gyoshuku-ppmd-unroll-max-20261104.txt.
+- All 12 baseline/candidate encoded sizes were identical.
+
+corpus, variant, level, baseline_MBps, candidate_MBps, speedup
+text, H, 1, 113.435, 112.389, 0.990779
+text, H, 6, 142.876, 143.312, 1.003052
+text, H, 9, 114.547, 114.463, 0.999267
+text, I, 1, 106.410, 106.305, 0.999013
+text, I, 6, 126.125, 125.719, 0.996781
+text, I, 9, 97.466, 96.537, 0.990468
+binary, H, 1, 21.335, 21.848, 1.024045
+binary, H, 6, 16.293, 16.617, 1.019886
+binary, H, 9, 14.550, 14.769, 1.015052
+binary, I, 1, 21.930, 22.626, 1.031737
+binary, I, 6, 15.946, 16.350, 1.025336
+binary, I, 9, 14.785, 14.914, 1.008725
+
+Decision pending
+- Binary improved 1-3%, but text was neutral or about 1% slower.
+- Require an alternating Mac mini result before adopting or rejecting this candidate.

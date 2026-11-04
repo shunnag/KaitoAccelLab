@@ -1,0 +1,41 @@
+Building for production...
+[Planning deferred tasks]
+[2 / 7] KaitoKit
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[3 / 8] KaitoKit
+[6 / 9] GyoshukuKit
+[7 / 10] GyoshukuKit
+[16 / 26] GyoshukuKitTests-product
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/GyoshukuKit/Tests/GyoshukuKitTests/Probes/LZ4FrameEncoderBenchmarkTests.swift:21:17: [1;33mwarning: [1;39mimmutable value 'iteration' was never used; consider replacing with '_' or removing it[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/no-usage\NoUsage]8;;\]
+[0;36m19 |[0;0m             var reference: Data?
+[0;36m20 |[0;0m             var durations: [Double] = []
+[0;36m21 |[0;0m             for iteration in 0..<repeats {
+   [0;36m|[0;0m                 `- [1;33mwarning: [1;39mimmutable value 'iteration' was never used; consider replacing with '_' or removing it[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/no-usage\NoUsage]8;;\]
+[0;36m22 |[0;0m                 let encoder = try LZ4FrameEncoder(contentSize: UInt64(input.count), blockChecksums: true, threads: 1)
+[0;36m23 |[0;0m                 var encoded = Data()
+
+[#NoUsage]: <https://docs.swift.org/compiler/documentation/diagnostics/no-usage>
+[18 / 27] GyoshukuKitTests-product
+[22 / 26] GyoshukuKitTests-product
+[24 / 26] GyoshukuKitTests-product
+Build complete! (138.43秒)
+Test Suite 'Selected tests' started at 2026-11-04 20:44:49.953.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:44:49.953.
+Test Suite 'LZ4FrameEncoderBenchmarkTests' started at 2026-11-04 20:44:49.953.
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZ4-BENCH	corpus	bytes	best_s	best_MBps	median_s	median_MBps
+LZ4-BENCH	text	7051351	0.017867	938.995	0.018224	920.630
+LZ4-BENCH	random	16777271	0.010063	1667.246	0.010206	1643.892
+Test Case '-[GyoshukuKitTests.LZ4FrameEncoderBenchmarkTests testSingleThreadBenchmark]' passed (0.297 seconds).
+Test Suite 'LZ4FrameEncoderBenchmarkTests' passed at 2026-11-04 20:44:50.250.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.297 (0.297) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:44:50.250.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.297 (0.297) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:44:50.250.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.297 (0.297) seconds

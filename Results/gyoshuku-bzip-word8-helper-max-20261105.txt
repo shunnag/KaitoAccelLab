@@ -1,0 +1,137 @@
+Building for debugging...
+[Planning deferred tasks]
+[6 / 29]
+[7 / 30] KaitoKit
+[10 / 26] KaitoKit
+[10 / 25] GyoshukuKit
+[13 / 28] GyoshukuKit
+[22 / 30] GyoshukuKitTests-product
+[27 / 47] GyoshukuKitTests-product
+[29 / 44] GyoshukuKitTests-product
+[31 / 44] GyoshukuKitTests-product
+[34 / 44] GyoshukuKitTests-product
+[35 / 44] GyoshukuKitTests-product
+[36 / 44] GyoshukuKitTests-product
+[37 / 44] GyoshukuKitTests-product
+[38 / 44] GyoshukuKitTests-product
+[39 / 44] GyoshukuKitTests-product
+[40 / 44] GyoshukuKitTests-product
+[41 / 44] GyoshukuKitTests-product
+[43 / 44] GyoshukuKitTests-product
+Build complete! (10.35秒)
+Test Suite 'Selected tests' started at 2026-11-05 03:01:31.900.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 03:01:31.901.
+Test Suite 'Bzip2SpliceTests' started at 2026-11-05 03:01:31.901.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testAllEightEOSPaddingCandidates]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testAllEightEOSPaddingCandidates]' passed (0.001 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testBulkPayloadAtEveryBitOffsetMatchesBitByBitReference]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testBulkPayloadAtEveryBitOffsetMatchesBitByBitReference]' passed (1.560 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testEmptyOneByteAndEOSCandidateValidation]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testEmptyOneByteAndEOSCandidateValidation]' passed (0.014 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testFixedMemoryReservations]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testFixedMemoryReservations]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testForcedCutsDecodeAsExactlyOneStream]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testForcedCutsDecodeAsExactlyOneStream]' passed (0.075 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeIdentityAcrossTheRealInputCap]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeIdentityAcrossTheRealInputCap]' passed (1.064 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeSeparateFinishMatchesWholeInputAtExactBlockTail]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeSeparateFinishMatchesWholeInputAtExactBlockTail]' passed (1.735 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testManyThreadsKeepSizeBasedChunkCountAndIdentity]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testManyThreadsKeepSizeBasedChunkCountAndIdentity]' passed (2.209 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testOddReadsAndMultiBlockChunksKeepIdentity]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testOddReadsAndMultiBlockChunksKeepIdentity]' passed (1.130 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRandomTextAndExactBlockIdentityAtLevels1And5And9]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRandomTextAndExactBlockIdentityAtLevels1And5And9]' passed (3.755 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize]' started.
+/private/tmp/gyoshuku-bzip-max-20261105/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize] : Test skipped - Set GYOSHUKU_LARGE_ENCODER_TESTS=1 to run Bzip2SpliceTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize]' skipped (0.001 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsNearEveryPredictedBoundary]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsNearEveryPredictedBoundary]' passed (1.113 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testScannerCarriesPendingRunAndCountsFinalBlock]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testScannerCarriesPendingRunAndCountsFinalBlock]' passed (0.296 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testSizeBasedChunkWidthsAndEstimatedCounts]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testSizeBasedChunkWidthsAndEstimatedCounts]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testUnknownSizeStreamingIdentityAcrossThreadsAndReadSizes]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testUnknownSizeStreamingIdentityAcrossThreadsAndReadSizes]' passed (1.257 seconds).
+Test Suite 'Bzip2SpliceTests' passed at 2026-11-05 03:01:46.110.
+	 Executed 15 tests, with 1 test skipped and 0 failures (0 unexpected) in 14.208 (14.209) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 03:01:46.110.
+	 Executed 15 tests, with 1 test skipped and 0 failures (0 unexpected) in 14.208 (14.209) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 03:01:46.110.
+	 Executed 15 tests, with 1 test skipped and 0 failures (0 unexpected) in 14.208 (14.210) seconds
+Building for production...
+[Planning deferred tasks]
+[6 / 21]
+[7 / 22] KaitoKit
+[9 / 23] KaitoKit
+[12 / 20] GyoshukuKit
+[14 / 21] GyoshukuKit
+[20 / 27] GyoshukuKitTests-product
+[22 / 28] GyoshukuKitTests-product
+[25 / 26] GyoshukuKitTests-product
+[28 / 28] GyoshukuKitTests-product
+Build complete! (159.28秒)
+Test Suite 'Selected tests' started at 2026-11-05 03:04:26.522.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 03:04:26.523.
+Test Suite 'Bzip2BlockScannerBenchmarkTests' started at 2026-11-05 03:04:26.523.
+Test Case '-[GyoshukuKitTests.Bzip2BlockScannerBenchmarkTests testThroughput]' started.
+BZIP2-SCAN	corpus	level	blocks	best_s	best_MBps	median_s	median_MBps
+BZIP2-SCAN	text	1	42	0.003500083	1198.344	0.003526583	1189.339
+BZIP2-SCAN	text	9	5	0.003446917	1216.828	0.003515667	1193.032
+BZIP2-SCAN	alternating	1	42	0.003169417	1323.368	0.003219583	1302.747
+BZIP2-SCAN	alternating	9	5	0.003199042	1311.113	0.003234500	1296.740
+BZIP2-SCAN	runs127	1	2	0.001586208	2644.233	0.001598042	2624.652
+BZIP2-SCAN	runs127	9	1	0.001485042	2824.368	0.001590958	2636.338
+BZIP2-SCAN	repeated	1	1	0.001572708	2666.931	0.001607417	2609.345
+BZIP2-SCAN	repeated	9	1	0.001592083	2634.475	0.001621750	2586.283
+BZIP2-SCAN	random	1	42	0.003217417	1303.625	0.003339917	1255.811
+BZIP2-SCAN	random	9	5	0.003214667	1304.740	0.003378833	1241.347
+Test Case '-[GyoshukuKitTests.Bzip2BlockScannerBenchmarkTests testThroughput]' passed (0.575 seconds).
+Test Suite 'Bzip2BlockScannerBenchmarkTests' passed at 2026-11-05 03:04:27.098.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.575 (0.575) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 03:04:27.098.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.575 (0.575) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 03:04:27.098.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.575 (0.576) seconds
+condition	name	best_s	median_s	rounds	best_samples_s	median_samples_s
+BZIP2-SCAN	alternating	1	42	baseline	0.002617375	0.003208875	4	0.002148208,0.002075417,0.003086542,0.003198875	0.003202000,0.003215958,0.003207792,0.003209958
+BZIP2-SCAN	alternating	1	42	candidate	0.003143083	0.003210333	4	0.003171833,0.003112250,0.003179542,0.003114333	0.003210208,0.003210458,0.003215708,0.003209708
+BZIP2-SCAN	alternating	9	5	baseline	0.002561833	0.003204625	4	0.002130708,0.002121208,0.003095958,0.002992958	0.002147458,0.003202917,0.003206333,0.003211875
+BZIP2-SCAN	alternating	9	5	candidate	0.003190791	0.003216188	4	0.003199625,0.003113875,0.003181958,0.003203250	0.003209375,0.003220208,0.003212625,0.003219750
+BZIP2-SCAN	random	1	42	baseline	0.003227375	0.003299020	4	0.003183500,0.003156000,0.003271250,0.003301000	0.003268208,0.003299833,0.003298208,0.003313000
+BZIP2-SCAN	random	1	42	candidate	0.003260396	0.003321938	4	0.003305667,0.003210792,0.003215125,0.003306542	0.003325708,0.003314000,0.003318167,0.003326125
+BZIP2-SCAN	random	9	5	baseline	0.003255375	0.003284041	4	0.003132542,0.003239667,0.003271083,0.003271917	0.003299500,0.003284250,0.003282958,0.003283833
+BZIP2-SCAN	random	9	5	candidate	0.003280875	0.003322480	4	0.003289250,0.003215042,0.003272500,0.003304750	0.003326583,0.003311375,0.003319542,0.003325417
+BZIP2-SCAN	repeated	1	1	baseline	0.002275875	0.002383771	4	0.002267917,0.002283833,0.002246000,0.002736667	0.002471458,0.002296083,0.002270458,0.002750875
+BZIP2-SCAN	repeated	1	1	candidate	0.001598125	0.001605187	4	0.001598542,0.001493958,0.001601708,0.001597708	0.001604417,0.001602667,0.001605958,0.001610000
+BZIP2-SCAN	repeated	9	1	baseline	0.002245271	0.002520104	4	0.002207375,0.002289125,0.002229000,0.002261542	0.002277375,0.002304750,0.002759667,0.002735458
+BZIP2-SCAN	repeated	9	1	candidate	0.001589000	0.001603521	4	0.001597125,0.001533958,0.001597250,0.001580875	0.001603750,0.001601208,0.001604417,0.001603292
+BZIP2-SCAN	runs127	1	2	baseline	0.002699375	0.002821292	4	0.002343333,0.002702250,0.002815417,0.002696500	0.002424958,0.002819542,0.002833250,0.002823042
+BZIP2-SCAN	runs127	1	2	candidate	0.001563020	0.001589375	4	0.001569958,0.001586500,0.001556083,0.001425417	0.001586375,0.001593750,0.001586917,0.001591833
+BZIP2-SCAN	runs127	9	1	baseline	0.002371230	0.002443041	4	0.002347292,0.002333250,0.002395167,0.002438792	0.002423000,0.002445083,0.002441000,0.002828583
+BZIP2-SCAN	runs127	9	1	candidate	0.001564730	0.001591396	4	0.001542917,0.001586542,0.001515750,0.001587458	0.001587625,0.001589375,0.001593417,0.001596458
+BZIP2-SCAN	text	1	42	baseline	0.003357271	0.003431729	4	0.003314208,0.003422083,0.003323750,0.003390792	0.003430000,0.003447875,0.003422958,0.003433458
+BZIP2-SCAN	text	1	42	candidate	0.003454000	0.003516209	4	0.003500750,0.003361042,0.003407917,0.003500083	0.003526958,0.003514792,0.003517625,0.003512417
+BZIP2-SCAN	text	9	5	baseline	0.003377563	0.003433562	4	0.003342583,0.003412542,0.003221292,0.003418750	0.003438833,0.003439167,0.003427375,0.003428292
+BZIP2-SCAN	text	9	5	candidate	0.003406604	0.003520438	4	0.003378833,0.003405833,0.003457375,0.003407375	0.003527125,0.003517583,0.003514417,0.003523292
+condition	name	best_s	median_s	rounds	best_samples_s	median_samples_s
+BZIP2-SCAN	alternating	1	42	baseline	0.003199354	0.003214000	4	0.003199333,0.003199375,0.003199625,0.003149708	0.003215083,0.003207208,0.003212917,0.003228625
+BZIP2-SCAN	alternating	1	42	candidate	0.003111958	0.003216792	4	0.003095042,0.003199000,0.003112083,0.003111833	0.003205292,0.003225417,0.003228750,0.003208167
+BZIP2-SCAN	alternating	9	5	baseline	0.003141500	0.003212083	4	0.003114250,0.003199583,0.003133708,0.003149292	0.003206708,0.003211250,0.003212917,0.003214375
+BZIP2-SCAN	alternating	9	5	candidate	0.003183000	0.003216438	4	0.003199458,0.003167333,0.003112042,0.003198667	0.003206208,0.003211167,0.003221708,0.003222833
+BZIP2-SCAN	random	1	42	baseline	0.003250542	0.003315437	4	0.003166958,0.003254542,0.003307583,0.003246542	0.003307583,0.003311125,0.003323875,0.003319750
+BZIP2-SCAN	random	1	42	candidate	0.003306062	0.003330062	4	0.003305250,0.003292083,0.003306875,0.003308083	0.003327083,0.003331167,0.003331500,0.003328958
+BZIP2-SCAN	random	9	5	baseline	0.003302688	0.003320480	4	0.003301750,0.003303333,0.003306667,0.003302042	0.003309542,0.003316542,0.003326500,0.003324417
+BZIP2-SCAN	random	9	5	candidate	0.003254646	0.003327020	4	0.003306542,0.003203708,0.003294250,0.003215042	0.003327333,0.003317208,0.003330333,0.003326708
+BZIP2-SCAN	repeated	1	1	baseline	0.001591458	0.001601604	4	0.001596333,0.001597000,0.001431458,0.001586583	0.001601208,0.001599667,0.001608792,0.001602000
+BZIP2-SCAN	repeated	1	1	candidate	0.001571770	0.001604125	4	0.001598083,0.001545458,0.001600333,0.001439875	0.001602583,0.001599417,0.001623000,0.001605667
+BZIP2-SCAN	repeated	9	1	baseline	0.001596584	0.001606167	4	0.001596417,0.001590667,0.001599958,0.001596750	0.001598583,0.001606458,0.001605875,0.001609750
+BZIP2-SCAN	repeated	9	1	candidate	0.001589104	0.001603021	4	0.001580958,0.001598000,0.001597250,0.001517958	0.001598583,0.001602583,0.001606083,0.001603458
+BZIP2-SCAN	runs127	1	2	baseline	0.001544062	0.001582333	4	0.001577750,0.001552958,0.001519083,0.001535167	0.001578292,0.001583167,0.001581500,0.001585875
+BZIP2-SCAN	runs127	1	2	candidate	0.001534979	0.001594750	4	0.001586208,0.001418958,0.001483750,0.001587000	0.001596000,0.001590375,0.001593500,0.001609167
+BZIP2-SCAN	runs127	9	1	baseline	0.001578229	0.001583313	4	0.001578083,0.001578375,0.001578708,0.001570167	0.001582250,0.001584375,0.001581917,0.001594292
+BZIP2-SCAN	runs127	9	1	candidate	0.001543438	0.001595334	4	0.001586042,0.001400917,0.001543958,0.001542917	0.001595000,0.001595667,0.001596083,0.001586875
+BZIP2-SCAN	text	1	42	baseline	0.003449125	0.003504541	4	0.003426958,0.003471292,0.003486500,0.003377208	0.003502333,0.003506750,0.003515667,0.003485667
+BZIP2-SCAN	text	1	42	candidate	0.003379729	0.003521708	4	0.003381500,0.003303708,0.003377958,0.003503000	0.003518333,0.003525083,0.003510208,0.003532042
+BZIP2-SCAN	text	9	5	baseline	0.003470167	0.003497458	4	0.003467042,0.003423875,0.003479500,0.003473292	0.003502792,0.003492125,0.003490792,0.003518333
+BZIP2-SCAN	text	9	5	candidate	0.003405958	0.003514667	4	0.003406125,0.003309292,0.003443875,0.003405792	0.003511500,0.003514500,0.003526500,0.003514833

@@ -1,0 +1,83 @@
+Building for debugging...
+[Planning deferred tasks]
+[9 / 43]
+[10 / 44] KaitoKit
+[15 / 57] KaitoKit
+[17 / 61] KaitoKit
+[20 / 61] KaitoKit
+[21 / 61] KaitoKit
+[22 / 63] KaitoKit
+[24 / 70] KaitoKit
+[27 / 70] KaitoKit
+[29 / 70] KaitoKit
+[31 / 70] KaitoKit
+[33 / 69] KaitoKit
+[40 / 71] KaitoKit
+[43 / 71] KaitoKit
+[44 / 72] KaitoKit
+[46 / 72] KaitoKit
+[50 / 89] KaitoKit
+[52 / 89] GyoshukuKit
+[54 / 88] GyoshukuKit
+[60 / 88] GyoshukuKitTests-product
+[61 / 88] GyoshukuKitTests-product
+[64 / 88] GyoshukuKit
+[65 / 88] GyoshukuKit
+[66 / 88] GyoshukuKit
+[67 / 88] GyoshukuKit
+[68 / 88]
+[68 / 86] GyoshukuKit
+[73 / 84] GyoshukuKitTests-product
+[77 / 101] GyoshukuKitTests-product
+[79 / 101] GyoshukuKitTests-product
+[80 / 101] GyoshukuKitTests-product
+[82 / 101] GyoshukuKitTests-product
+[84 / 101] GyoshukuKitTests-product
+[91 / 101] GyoshukuKitTests-product
+[92 / 101] GyoshukuKitTests-product
+[94 / 101] GyoshukuKitTests-product
+[95 / 101] GyoshukuKitTests-product
+[95 / 101] AllIncludingTests
+[95 / 101] GyoshukuKitTests-product
+[97 / 101] GyoshukuKitTests-product
+[99 / 101] GyoshukuKitTests-product
+Build complete! (17.12秒)
+Test Suite 'Selected tests' started at 2026-11-05 03:36:53.365.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 03:36:53.366.
+Test Suite 'Bzip2SpliceTests' started at 2026-11-05 03:36:53.366.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testAllEightEOSPaddingCandidates]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testAllEightEOSPaddingCandidates]' passed (0.002 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testBulkPayloadAtEveryBitOffsetMatchesBitByBitReference]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testBulkPayloadAtEveryBitOffsetMatchesBitByBitReference]' passed (4.360 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testEmptyOneByteAndEOSCandidateValidation]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testEmptyOneByteAndEOSCandidateValidation]' passed (0.080 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testFixedMemoryReservations]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testFixedMemoryReservations]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testForcedCutsDecodeAsExactlyOneStream]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testForcedCutsDecodeAsExactlyOneStream]' passed (0.112 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeIdentityAcrossTheRealInputCap]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeIdentityAcrossTheRealInputCap]' passed (1.278 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeSeparateFinishMatchesWholeInputAtExactBlockTail]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeSeparateFinishMatchesWholeInputAtExactBlockTail]' passed (2.522 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testManyThreadsKeepSizeBasedChunkCountAndIdentity]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testManyThreadsKeepSizeBasedChunkCountAndIdentity]' passed (3.005 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testOddReadsAndMultiBlockChunksKeepIdentity]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testOddReadsAndMultiBlockChunksKeepIdentity]' passed (1.811 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRandomTextAndExactBlockIdentityAtLevels1And5And9]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRandomTextAndExactBlockIdentityAtLevels1And5And9]' passed (4.843 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize]' passed (56.474 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsNearEveryPredictedBoundary]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsNearEveryPredictedBoundary]' passed (2.093 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testScannerCarriesPendingRunAndCountsFinalBlock]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testScannerCarriesPendingRunAndCountsFinalBlock]' passed (0.951 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testSizeBasedChunkWidthsAndEstimatedCounts]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testSizeBasedChunkWidthsAndEstimatedCounts]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testUnknownSizeStreamingIdentityAcrossThreadsAndReadSizes]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testUnknownSizeStreamingIdentityAcrossThreadsAndReadSizes]' passed (1.584 seconds).
+Test Suite 'Bzip2SpliceTests' passed at 2026-11-05 03:38:12.483.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 79.115 (79.117) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 03:38:12.484.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 79.115 (79.117) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 03:38:12.484.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 79.115 (79.118) seconds

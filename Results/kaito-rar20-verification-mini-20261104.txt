@@ -1,0 +1,57 @@
+outcomes 264
+outcomes 264
+b46da79cf44c59b62769297f0f25668f85d18f2f6d5033e2260b0e202a2ac9ac  /tmp/kaito-ppmd-corpus.wfvs1C/rar20-outcomes-baseline.jsonl
+b46da79cf44c59b62769297f0f25668f85d18f2f6d5033e2260b0e202a2ac9ac  /tmp/kaito-ppmd-corpus.wfvs1C/rar20-outcomes-candidate.jsonl
+Building for debugging...
+[1 / 5]
+[2 / 6] KaitoKit
+[6 / 10] KaitoKit
+[9 / 16] KaitoKit
+[11 / 17] KaitoKit
+[12 / 17] KaitoKit
+[13 / 17] KaitoKit
+[16 / 18] KaitoKit
+[21 / 27] KaitoKitCompat
+[24 / 25] KaitoKitDynamic-product
+[30 / 41] kaito-product
+[35 / 42] kaito-product
+[36 / 43] KaitoKitCompatTests-product
+[38 / 44] KaitoKitTests-product
+[43 / 49] KaitoKitTests-product
+[49 / 51] KaitoKitTests-product
+[51 / 51] KaitoKitTests-product
+Build complete! (6.38秒)
+Test Suite 'Selected tests' started at 2026-11-04 22:32:33.242.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 22:32:33.243.
+Test Suite 'CoreInfrastructureTests' started at 2026-11-04 22:32:33.243.
+Test Case '-[KaitoKitTests.CoreInfrastructureTests testMSBFirstBitReaderBorrowedRawStorageMatchesArrayStorage]' started.
+Test Case '-[KaitoKitTests.CoreInfrastructureTests testMSBFirstBitReaderBorrowedRawStorageMatchesArrayStorage]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.CoreInfrastructureTests testMSBFirstBitReaderHandVectorsAndAlignment]' started.
+Test Case '-[KaitoKitTests.CoreInfrastructureTests testMSBFirstBitReaderHandVectorsAndAlignment]' passed (0.000 seconds).
+Test Suite 'CoreInfrastructureTests' passed at 2026-11-04 22:32:33.244.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'RAR20DecoderTests' started at 2026-11-04 22:32:33.244.
+Test Case '-[KaitoKitTests.RAR20DecoderTests testHuffmanLookupRetainsLongCodesAndTruncation]' started.
+Test Case '-[KaitoKitTests.RAR20DecoderTests testHuffmanLookupRetainsLongCodesAndTruncation]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.RAR20DecoderTests testLongLZStreamResumesMatchesAcrossSmallBuffers]' started.
+Test Case '-[KaitoKitTests.RAR20DecoderTests testLongLZStreamResumesMatchesAcrossSmallBuffers]' passed (0.053 seconds).
+Test Case '-[KaitoKitTests.RAR20DecoderTests testRAR250PlainLZArchivesMatchUnrarOutput]' started.
+Test Case '-[KaitoKitTests.RAR20DecoderTests testRAR250PlainLZArchivesMatchUnrarOutput]' passed (0.077 seconds).
+Test Case '-[KaitoKitTests.RAR20DecoderTests testRAR250SolidArchiveSupportsForwardAndBackwardReads]' started.
+Test Case '-[KaitoKitTests.RAR20DecoderTests testRAR250SolidArchiveSupportsForwardAndBackwardReads]' passed (0.041 seconds).
+Test Case '-[KaitoKitTests.RAR20DecoderTests testTruncatedPackedInputIsRejected]' started.
+Test Case '-[KaitoKitTests.RAR20DecoderTests testTruncatedPackedInputIsRejected]' passed (0.003 seconds).
+Test Case '-[KaitoKitTests.RAR20DecoderTests testVersion26DeclarationUsesTheSameDecoder]' started.
+Test Case '-[KaitoKitTests.RAR20DecoderTests testVersion26DeclarationUsesTheSameDecoder]' passed (0.002 seconds).
+Test Suite 'RAR20DecoderTests' passed at 2026-11-04 22:32:33.421.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.177 (0.177) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 22:32:33.421.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.177 (0.178) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 22:32:33.421.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.177 (0.179) seconds
+Test Suite 'Selected tests' started at 2026-11-04 22:32:33.515.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-04 22:32:33.516.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-04 22:32:33.516.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 22:32:33.516.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds

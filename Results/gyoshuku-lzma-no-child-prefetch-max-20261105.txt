@@ -1,0 +1,131 @@
+Fetching https://github.com/shunnag/KaitoKit.git from cache
+Fetched https://github.com/shunnag/KaitoKit.git from cache (0.44s)
+Computing version for https://github.com/shunnag/KaitoKit.git
+Computed https://github.com/shunnag/KaitoKit.git at 0.21.0 (0.89s)
+Creating working copy for https://github.com/shunnag/KaitoKit.git
+Working copy of https://github.com/shunnag/KaitoKit.git resolved at 0.21.0
+Building for debugging...
+[Planning deferred tasks]
+[34 / 66]
+[35 / 67] KaitoKit
+[44 / 126]
+[47 / 126]
+[54 / 126]
+[58 / 126]
+[64 / 126]
+[67 / 126]
+[73 / 126]
+[75 / 126]
+[76 / 126]
+[82 / 126] KaitoKit
+[90 / 126] KaitoKit
+[91 / 126] KaitoKit
+[92 / 126] KaitoKit
+[93 / 126] KaitoKit-product
+[94 / 126] KaitoKit-product
+[96 / 126] KaitoKit
+[98 / 126] KaitoKit
+[99 / 126] KaitoKit
+[100 / 126] KaitoKit
+[100 / 126] GyoshukuKit
+[101 / 127]
+[105 / 145] GyoshukuKit
+[106 / 145] KaitoKit
+[108 / 145] GyoshukuKit
+[115 / 145] GyoshukuKit
+[117 / 145] GyoshukuKit
+[119 / 145] GyoshukuKit
+[120 / 145] GyoshukuKitTests-product
+[123 / 145] GyoshukuKit
+[124 / 145] GyoshukuKit
+[126 / 145] GyoshukuKit
+[127 / 145] GyoshukuKit
+[127 / 145]
+[129 / 145] GyoshukuKit
+[135 / 146] GyoshukuKitTests-product
+[143 / 193]
+[147 / 193]
+[152 / 193]
+[157 / 193]
+[161 / 193]
+[164 / 193]
+[165 / 193]
+[170 / 193] GyoshukuKitTests-product
+[173 / 193] GyoshukuKitTests-product
+[180 / 193] GyoshukuKitTests-product
+[181 / 193] GyoshukuKitTests-product
+[182 / 193] GyoshukuKitTests-product
+[183 / 193] GyoshukuKitTests-product
+[184 / 193] GyoshukuKitTests-product
+[186 / 193] GyoshukuKitTests-product
+[187 / 193] GyoshukuKitTests-product
+[189 / 193] GyoshukuKitTests-product
+Build complete! (32.31秒)
+Test Suite 'Selected tests' started at 2026-11-05 03:51:31.911.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 03:51:31.912.
+Test Suite 'LZMAPairedFinderTests' started at 2026-11-05 03:51:31.912.
+Test Case '-[GyoshukuKitTests.LZMAPairedFinderTests testHashChainPresetsNeverPair]' started.
+Test Case '-[GyoshukuKitTests.LZMAPairedFinderTests testHashChainPresetsNeverPair]' passed (0.001 seconds).
+Test Case '-[GyoshukuKitTests.LZMAPairedFinderTests testLZMA2ChunkBoundaryWithPairedWalk]' started.
+Test Case '-[GyoshukuKitTests.LZMAPairedFinderTests testLZMA2ChunkBoundaryWithPairedWalk]' passed (3.382 seconds).
+Test Case '-[GyoshukuKitTests.LZMAPairedFinderTests testPairedTreeWalkMatchesSequentialCandidatesAndTables]' started.
+Test Case '-[GyoshukuKitTests.LZMAPairedFinderTests testPairedTreeWalkMatchesSequentialCandidatesAndTables]' passed (3.441 seconds).
+Test Case '-[GyoshukuKitTests.LZMAPairedFinderTests testPairedWalkCacheKeepsStreamsIdenticalAcrossPushWidths]' started.
+Test Case '-[GyoshukuKitTests.LZMAPairedFinderTests testPairedWalkCacheKeepsStreamsIdenticalAcrossPushWidths]' passed (15.451 seconds).
+Test Suite 'LZMAPairedFinderTests' passed at 2026-11-05 03:51:54.188.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 22.276 (22.276) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 03:51:54.188.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 22.276 (22.276) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 03:51:54.188.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 22.276 (22.277) seconds
+Building for production...
+[Planning deferred tasks]
+[26 / 53] KaitoKit
+[36 / 96]
+[39 / 96]
+[46 / 96]
+[50 / 96]
+[56 / 96]
+[59 / 96]
+[65 / 96]
+[67 / 96]
+[68 / 96]
+[70 / 96] KaitoKit
+[77 / 97] GyoshukuKit
+[80 / 99] GyoshukuKit
+[90 / 100] GyoshukuKitTests-product
+[99 / 131]
+[106 / 131]
+[112 / 131]
+[116 / 131]
+[117 / 131]
+[120 / 131]
+[121 / 131]
+[122 / 131] GyoshukuKitTests-product
+[127 / 131] GyoshukuKitTests-product
+[129 / 131] GyoshukuKitTests-product
+Build complete! (171.17秒)
+Test Suite 'Selected tests' started at 2026-11-05 03:54:46.711.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 03:54:46.712.
+Test Suite 'LZMAEncoderBenchmarkTests' started at 2026-11-05 03:54:46.712.
+Test Case '-[GyoshukuKitTests.LZMAEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LZMA-BENCH-RUN	pid=8651	repeats=3
+LZMA-BENCH-SOURCE	/usr/lib/dyld	4129088
+LZMA-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+LZMA-BENCH-CORPUS	text	4194304
+LZMA-BENCH-CORPUS	binary	20688592
+LZMA-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+LZMA-BENCH	text	6	swift	694823	3.775	1.111031
+LZMA-BENCH	binary	6	swift	4614086	5.831	3.548255
+Test Case '-[GyoshukuKitTests.LZMAEncoderBenchmarkTests testSingleThreadBenchmark]' passed (14.097 seconds).
+Test Suite 'LZMAEncoderBenchmarkTests' passed at 2026-11-05 03:55:00.809.
+	 Executed 1 test, with 0 failures (0 unexpected) in 14.097 (14.097) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 03:55:00.809.
+	 Executed 1 test, with 0 failures (0 unexpected) in 14.097 (14.097) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 03:55:00.809.
+	 Executed 1 test, with 0 failures (0 unexpected) in 14.097 (14.098) seconds
+condition	name	best_s	median_s	rounds	best_samples_s	median_samples_s
+LZMA-BENCH	binary	6	swift	4614086	baseline	3.481162500	3.481162500	4	3.480792000,3.497388000,3.459150000,3.481533000	3.480792000,3.497388000,3.459150000,3.481533000
+LZMA-BENCH	binary	6	swift	4614086	candidate	3.476764000	3.476764000	4	3.491384000,3.479549000,3.433486000,3.473979000	3.491384000,3.479549000,3.433486000,3.473979000
+LZMA-BENCH	text	6	swift	694823	baseline	1.053608000	1.053608000	4	1.058567000,1.055650000,1.047317000,1.051566000	1.058567000,1.055650000,1.047317000,1.051566000
+LZMA-BENCH	text	6	swift	694823	candidate	1.077888500	1.077888500	4	1.090778000,1.083585000,1.063753000,1.072192000	1.090778000,1.083585000,1.063753000,1.072192000

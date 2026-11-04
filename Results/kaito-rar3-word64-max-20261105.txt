@@ -1,0 +1,81 @@
+Building for debugging...
+[2 / 3] KaitoKit
+[4 / 5] KaitoKit
+[7 / 11] KaitoKit
+[10 / 12] KaitoKitTests-product
+[13 / 14] KaitoKitCompatTests-product
+[18 / 19] KaitoKitDynamic-product
+[22 / 23] kaito-product
+Build complete! (4.07秒)
+Test Suite 'Selected tests' started at 2026-11-05 00:34:54.406.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-05 00:34:54.407.
+Test Suite 'RAR29R1Tests' started at 2026-11-05 00:34:54.407.
+Test Case '-[KaitoKitTests.RAR29R1Tests testAudioReusedWorkAreaAcrossPredictorUpdatesAndChannels]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testAudioReusedWorkAreaAcrossPredictorUpdatesAndChannels]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testGlobalDataSkipAndThroughputWhenEnabled]' passed (0.041 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildClearsFallbackWidthForShortOnlyTree]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildClearsFallbackWidthForShortOnlyTree]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildShrinksFallbackAndClearsInvalidPrefixes]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testHuffmanRebuildShrinksFallbackAndClearsInvalidPrefixes]' passed (0.003 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testMatchStraddlingFilterCaptureEndPreservesRawSuffixAndHistory]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testMatchStraddlingFilterCaptureEndPreservesRawSuffixAndHistory]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testRetainedWindowSizesAndDeclaredDictionaryLimit]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testRetainedWindowSizesAndDeclaredDictionaryLimit]' passed (0.000 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testRGBReusedDirtyWorkAreaPreservesZeroDependentWidths]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testRGBReusedDirtyWorkAreaPreservesZeroDependentWidths]' passed (0.001 seconds).
+Test Case '-[KaitoKitTests.RAR29R1Tests testStackedFiltersBulkMatchesAndReusedBuffersResume]' started.
+Test Case '-[KaitoKitTests.RAR29R1Tests testStackedFiltersBulkMatchesAndReusedBuffersResume]' passed (0.001 seconds).
+Test Suite 'RAR29R1Tests' passed at 2026-11-05 00:34:54.456.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.049 (0.049) seconds
+Test Suite 'RAR4FilterFixtureTests' started at 2026-11-05 00:34:54.456.
+Test Case '-[KaitoKitTests.RAR4FilterFixtureTests testAudioFixtureContainsAudioFilterAndMatchesInputSHA256]' started.
+Test Case '-[KaitoKitTests.RAR4FilterFixtureTests testAudioFixtureContainsAudioFilterAndMatchesInputSHA256]' passed (0.013 seconds).
+Test Case '-[KaitoKitTests.RAR4FilterFixtureTests testDeltaFixtureContainsDeltaFilterAndMatchesInputSHA256]' started.
+Test Case '-[KaitoKitTests.RAR4FilterFixtureTests testDeltaFixtureContainsDeltaFilterAndMatchesInputSHA256]' passed (0.004 seconds).
+Test Case '-[KaitoKitTests.RAR4FilterFixtureTests testE8FixtureContainsE8FilterAndMatchesInputSHA256]' started.
+Test Case '-[KaitoKitTests.RAR4FilterFixtureTests testE8FixtureContainsE8FilterAndMatchesInputSHA256]' passed (0.004 seconds).
+Test Case '-[KaitoKitTests.RAR4FilterFixtureTests testRGBFixtureContainsRGBFilterAndMatchesInputSHA256]' started.
+Test Case '-[KaitoKitTests.RAR4FilterFixtureTests testRGBFixtureContainsRGBFilterAndMatchesInputSHA256]' passed (0.009 seconds).
+Test Case '-[KaitoKitTests.RAR4FilterFixtureTests testSolidPPMdFixtureContinuesModelAndMatchesEveryInputSHA256]' started.
+Test Case '-[KaitoKitTests.RAR4FilterFixtureTests testSolidPPMdFixtureContinuesModelAndMatchesEveryInputSHA256]' passed (0.020 seconds).
+Test Suite 'RAR4FilterFixtureTests' passed at 2026-11-05 00:34:54.506.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.050 (0.050) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-05 00:34:54.506.
+	 Executed 13 tests, with 0 failures (0 unexpected) in 0.098 (0.099) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:34:54.506.
+	 Executed 13 tests, with 0 failures (0 unexpected) in 0.098 (0.100) seconds
+Test Suite 'Selected tests' started at 2026-11-05 00:34:54.582.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-05 00:34:54.583.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-05 00:34:54.583.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 00:34:54.583.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Building for production...
+[2 / 9]
+[3 / 10] KaitoKit
+/private/tmp/kaito-ppmd-m4max.x26G41/KaitoKit-rar15/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[5 / 11] KaitoKit
+[11 / 14] kaito-product
+[12 / 15] kaito-product
+[14 / 15] kaito-product
+[15 / 15] kaito-product
+Build complete! (66.68秒)
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar4-rgb.rar	baseline	0.336500	500	49206	4	0.340000,0.335000,0.336000,0.337000
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar4-rgb.rar	candidate	0.339000	500	49206	4	0.339000,0.339000,0.340000,0.336000
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar4-delta.rar	baseline	0.130000	500	32812	4	0.133000,0.129000,0.128000,0.131000
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar4-delta.rar	candidate	0.130000	500	32812	4	0.130000,0.130000,0.130000,0.128000
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar4-e8.rar	baseline	0.104500	500	49152	4	0.105000,0.104000,0.104000,0.108000
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar4-e8.rar	candidate	0.103000	500	49152	4	0.103000,0.109000,0.103000,0.103000
+archive	name	median_ms	reps	bytes	rounds	samples_ms
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar4-audio.rar	baseline	0.282000	500	32812	4	0.281000,0.280000,0.284000,0.283000
+/tmp/kaito-ppmd-m4max.x26G41/workloads/rar4-audio.rar	candidate	0.283000	500	32812	4	0.284000,0.282000,0.282000,0.284000

@@ -2,7 +2,7 @@ internal import Foundation
 internal import Metal
 
 final class LZ4MetalDecoder {
-    enum Variant: CaseIterable { case threadPerBlock, simdPerBlock }
+    enum Variant: CaseIterable { case threadPerBlock, thread16PerBlock, simdPerBlock, simd16PerBlock }
 
     struct Result {
         let outputBuffer: any MTLBuffer
@@ -35,8 +35,7 @@ final class LZ4MetalDecoder {
     private static let simdWidth = 32
     private let device: any MTLDevice
     private let queue: any MTLCommandQueue
-    private let threadPipeline: any MTLComputePipelineState
-    private let simdPipeline: any MTLComputePipelineState
+    private let pipelines: [Variant: any MTLComputePipelineState]
     private var prepared: Prepared?
     private var variantBuffers: [Variant: Buffers] = [:]
     private var singleBlockBuffers: [Int: Buffers] = [:]
@@ -46,14 +45,24 @@ final class LZ4MetalDecoder {
         guard let device else { throw LZ4Error.metalUnavailable }
         self.device = device
         let library = try device.makeLibrary(source: LZ4MetalKernels.source, options: nil)
-        guard let thread = library.makeFunction(name: "lz4_decode_thread_per_block"),
-              let simd = library.makeFunction(name: "lz4_decode_simd_per_block"),
-              let queue = device.makeCommandQueue() else {
-            throw LZ4Error.metalFailure("Could not create functions or command queue")
+        guard let queue = device.makeCommandQueue() else {
+            throw LZ4Error.metalFailure("Could not create command queue")
         }
         self.queue = queue
-        threadPipeline = try device.makeComputePipelineState(function: thread)
-        simdPipeline = try device.makeComputePipelineState(function: simd)
+        let functions: [(Variant, String)] = [
+            (.threadPerBlock, "lz4_decode_thread_per_block"),
+            (.thread16PerBlock, "lz4_decode_thread16_per_block"),
+            (.simdPerBlock, "lz4_decode_simd_per_block"),
+            (.simd16PerBlock, "lz4_decode_simd16_per_block"),
+        ]
+        var pipelines: [Variant: any MTLComputePipelineState] = [:]
+        for (variant, name) in functions {
+            guard let function = library.makeFunction(name: name) else {
+                throw LZ4Error.metalFailure("Could not create function \(name)")
+            }
+            pipelines[variant] = try device.makeComputePipelineState(function: function)
+        }
+        self.pipelines = pipelines
     }
 
     func decode(
@@ -105,11 +114,11 @@ final class LZ4MetalDecoder {
 
     private func validate(variant: Variant, groups: Int) throws {
         guard groups > 0 else { throw LZ4Error.invalidArgument("simdgroups must be positive") }
-        if variant == .simdPerBlock {
-            guard simdPipeline.threadExecutionWidth == Self.simdWidth,
-                  groups <= simdPipeline.maxTotalThreadsPerThreadgroup / Self.simdWidth else {
-                throw LZ4Error.invalidArgument("Unsupported SIMD width or simdgroups per threadgroup")
-            }
+        if variant == .threadPerBlock || variant == .thread16PerBlock { return }
+        let pipeline = pipelines[variant]!
+        guard pipeline.threadExecutionWidth == Self.simdWidth,
+              groups <= pipeline.maxTotalThreadsPerThreadgroup / Self.simdWidth else {
+            throw LZ4Error.invalidArgument("Unsupported SIMD width or simdgroups per threadgroup")
         }
     }
 
@@ -183,7 +192,7 @@ final class LZ4MetalDecoder {
         guard let command = queue.makeCommandBuffer(), let encoder = command.makeComputeCommandEncoder() else {
             throw LZ4Error.metalFailure("Could not create command buffer or encoder")
         }
-        let pipeline = variant == .threadPerBlock ? threadPipeline : simdPipeline
+        let pipeline = pipelines[variant]!
         encoder.setComputePipelineState(pipeline)
         encoder.setBuffer(buffers.input, offset: 0, index: 0)
         encoder.setBuffer(buffers.descriptors, offset: 0, index: 1)
@@ -191,7 +200,7 @@ final class LZ4MetalDecoder {
         encoder.setBuffer(buffers.status, offset: 0, index: 3)
         var count = UInt32(buffers.blockCount)
         encoder.setBytes(&count, length: MemoryLayout<UInt32>.size, index: 4)
-        if variant == .threadPerBlock {
+        if variant == .threadPerBlock || variant == .thread16PerBlock {
             let width = min(buffers.blockCount, pipeline.maxTotalThreadsPerThreadgroup)
             encoder.dispatchThreads(MTLSize(width: buffers.blockCount, height: 1, depth: 1),
                                     threadsPerThreadgroup: MTLSize(width: width, height: 1, depth: 1))

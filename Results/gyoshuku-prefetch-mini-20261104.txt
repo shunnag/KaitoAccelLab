@@ -1,0 +1,104 @@
+Building for production...
+[Planning deferred tasks]
+[37 / 67]
+[40 / 68] CPrefetch
+[41 / 68] KaitoKit
+[52 / 111]
+[61 / 111]
+[65 / 111]
+[71 / 111]
+[74 / 111]
+[80 / 111]
+[82 / 111]
+[83 / 111]
+/private/tmp/gyoshuku-codec-research.A5CNA4/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[85 / 111] KaitoKit
+[92 / 112] GyoshukuKit
+[96 / 115] GyoshukuKit
+[106 / 116] GyoshukuKitTests-product
+[121 / 147]
+[127 / 147]
+[131 / 147]
+[133 / 147]
+[136 / 147]
+[137 / 147]
+[138 / 147] GyoshukuKitTests-product
+[143 / 147] GyoshukuKitTests-product
+[145 / 147] GyoshukuKitTests-product
+Build complete! (162.15秒)
+Test Suite 'Selected tests' started at 2026-11-04 16:30:41.881.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 16:30:41.881.
+Test Suite 'LZMAMatchFinderProbeTests' started at 2026-11-04 16:30:41.881.
+Test Case '-[GyoshukuKitTests.LZMAMatchFinderProbeTests testFinderFraction]' started.
+LZMA-FINDER-PROBE	{"checksum":"3004811118290","corpus":"text","dictionary_bytes":4194304,"f":0.69358329839742316,"finder_seconds":0.62443370799999998,"full_seconds":0.90030095799999998,"input_bytes":4194304,"level":6,"matches":19315185,"output_bytes":694706,"repeats":3,"source":"LZMAEncoderCorpus.text","truncated":false}
+LZMA-FINDER-PROBE	{"checksum":"14179375312099","corpus":"binary","dictionary_bytes":8388608,"f":0.64501927211491139,"finder_seconds":2.7656642910000002,"full_seconds":4.2877235000000002,"input_bytes":26983712,"level":6,"matches":59458014,"output_bytes":5692194,"repeats":3,"source":"\/tmp\/gyoshuku-codec-research.A5CNA4\/GyoshukuKit-prefetch\/.build\/out\/Products\/Release\/GyoshukuKitTests.xctest\/Contents\/MacOS\/GyoshukuKitTests","truncated":false}
+LZMA-FINDER-PROBE	{"checksum":"96390877909","corpus":"random","dictionary_bytes":8388608,"f":0.45641746132898831,"finder_seconds":1.0808188750000001,"full_seconds":2.3680489169999999,"input_bytes":16777216,"level":6,"matches":350714,"output_bytes":17005443,"repeats":3,"source":"xorshift64star:D137923A6E259B41","truncated":false}
+Test Case '-[GyoshukuKitTests.LZMAMatchFinderProbeTests testFinderFraction]' passed (36.506 seconds).
+Test Suite 'LZMAMatchFinderProbeTests' passed at 2026-11-04 16:31:18.388.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.506 (36.506) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 16:31:18.388.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.506 (36.506) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 16:31:18.388.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.506 (36.507) seconds
+Test Suite 'Selected tests' started at 2026-11-04 16:31:18.508.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 16:31:18.509.
+Test Suite 'LZMAMatchFinderProbeTests' started at 2026-11-04 16:31:18.509.
+Test Case '-[GyoshukuKitTests.LZMAMatchFinderProbeTests testFinderFraction]' started.
+LZMA-FINDER-PROBE	{"checksum":"3004811118290","corpus":"text","dictionary_bytes":4194304,"f":0.69868823993503182,"finder_seconds":0.60252291599999996,"full_seconds":0.86236304200000002,"input_bytes":4194304,"level":6,"matches":19315185,"output_bytes":694706,"repeats":3,"source":"LZMAEncoderCorpus.text","truncated":false}
+LZMA-FINDER-PROBE	{"checksum":"14202342543704","corpus":"binary","dictionary_bytes":8388608,"f":0.64083136097842897,"finder_seconds":2.7082594160000002,"full_seconds":4.2261655420000004,"input_bytes":26974448,"level":6,"matches":59444409,"output_bytes":5694817,"repeats":3,"source":"\/tmp\/gyoshuku-codec-research.A5CNA4\/GyoshukuKit\/.build\/out\/Products\/Release\/GyoshukuKitTests.xctest\/Contents\/MacOS\/GyoshukuKitTests","truncated":false}
+LZMA-FINDER-PROBE	{"checksum":"96390877909","corpus":"random","dictionary_bytes":8388608,"f":0.41478510159789184,"finder_seconds":1.000564791,"full_seconds":2.4122486250000001,"input_bytes":16777216,"level":6,"matches":350714,"output_bytes":17005443,"repeats":3,"source":"xorshift64star:D137923A6E259B41","truncated":false}
+Test Case '-[GyoshukuKitTests.LZMAMatchFinderProbeTests testFinderFraction]' passed (35.647 seconds).
+Test Suite 'LZMAMatchFinderProbeTests' passed at 2026-11-04 16:31:54.156.
+	 Executed 1 test, with 0 failures (0 unexpected) in 35.647 (35.648) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 16:31:54.156.
+	 Executed 1 test, with 0 failures (0 unexpected) in 35.647 (35.648) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 16:31:54.156.
+	 Executed 1 test, with 0 failures (0 unexpected) in 35.647 (35.648) seconds
+Test Suite 'Selected tests' started at 2026-11-04 16:31:54.215.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 16:31:54.216.
+Test Suite 'LZMAMatchFinderProbeTests' started at 2026-11-04 16:31:54.216.
+Test Case '-[GyoshukuKitTests.LZMAMatchFinderProbeTests testFinderFraction]' started.
+LZMA-FINDER-PROBE	{"checksum":"3004811118290","corpus":"text","dictionary_bytes":4194304,"f":0.69615900433637656,"finder_seconds":0.630558375,"full_seconds":0.90576774999999998,"input_bytes":4194304,"level":6,"matches":19315185,"output_bytes":694706,"repeats":3,"source":"LZMAEncoderCorpus.text","truncated":false}
+LZMA-FINDER-PROBE	{"checksum":"14179375312099","corpus":"binary","dictionary_bytes":8388608,"f":0.64762927335624298,"finder_seconds":2.758896333,"full_seconds":4.25999325,"input_bytes":26983712,"level":6,"matches":59458014,"output_bytes":5692194,"repeats":3,"source":"\/tmp\/gyoshuku-codec-research.A5CNA4\/GyoshukuKit-prefetch\/.build\/out\/Products\/Release\/GyoshukuKitTests.xctest\/Contents\/MacOS\/GyoshukuKitTests","truncated":false}
+LZMA-FINDER-PROBE	{"checksum":"96390877909","corpus":"random","dictionary_bytes":8388608,"f":0.45771490224576172,"finder_seconds":1.081302958,"full_seconds":2.362394042,"input_bytes":16777216,"level":6,"matches":350714,"output_bytes":17005443,"repeats":3,"source":"xorshift64star:D137923A6E259B41","truncated":false}
+Test Case '-[GyoshukuKitTests.LZMAMatchFinderProbeTests testFinderFraction]' passed (36.330 seconds).
+Test Suite 'LZMAMatchFinderProbeTests' passed at 2026-11-04 16:32:30.546.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.330 (36.330) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 16:32:30.546.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.330 (36.330) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 16:32:30.546.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.330 (36.331) seconds
+Test Suite 'Selected tests' started at 2026-11-04 16:32:30.604.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 16:32:30.604.
+Test Suite 'LZMAMatchFinderProbeTests' started at 2026-11-04 16:32:30.604.
+Test Case '-[GyoshukuKitTests.LZMAMatchFinderProbeTests testFinderFraction]' started.
+LZMA-FINDER-PROBE	{"checksum":"3004811118290","corpus":"text","dictionary_bytes":4194304,"f":0.69139481103428491,"finder_seconds":0.60380191599999999,"full_seconds":0.87330987500000001,"input_bytes":4194304,"level":6,"matches":19315185,"output_bytes":694706,"repeats":3,"source":"LZMAEncoderCorpus.text","truncated":false}
+LZMA-FINDER-PROBE	{"checksum":"14202342543704","corpus":"binary","dictionary_bytes":8388608,"f":0.64242209611896994,"finder_seconds":2.711111292,"full_seconds":4.2201401670000003,"input_bytes":26974448,"level":6,"matches":59444409,"output_bytes":5694817,"repeats":3,"source":"\/tmp\/gyoshuku-codec-research.A5CNA4\/GyoshukuKit\/.build\/out\/Products\/Release\/GyoshukuKitTests.xctest\/Contents\/MacOS\/GyoshukuKitTests","truncated":false}
+LZMA-FINDER-PROBE	{"checksum":"96390877909","corpus":"random","dictionary_bytes":8388608,"f":0.416129377389096,"finder_seconds":0.99755345799999995,"full_seconds":2.3972194999999998,"input_bytes":16777216,"level":6,"matches":350714,"output_bytes":17005443,"repeats":3,"source":"xorshift64star:D137923A6E259B41","truncated":false}
+Test Case '-[GyoshukuKitTests.LZMAMatchFinderProbeTests testFinderFraction]' passed (35.641 seconds).
+Test Suite 'LZMAMatchFinderProbeTests' passed at 2026-11-04 16:33:06.245.
+	 Executed 1 test, with 0 failures (0 unexpected) in 35.641 (35.641) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 16:33:06.245.
+	 Executed 1 test, with 0 failures (0 unexpected) in 35.641 (35.641) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 16:33:06.245.
+	 Executed 1 test, with 0 failures (0 unexpected) in 35.641 (35.641) seconds
+Test Suite 'Selected tests' started at 2026-11-04 16:33:06.302.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 16:33:06.303.
+Test Suite 'LZMAMatchFinderProbeTests' started at 2026-11-04 16:33:06.303.
+Test Case '-[GyoshukuKitTests.LZMAMatchFinderProbeTests testFinderFraction]' started.
+LZMA-FINDER-PROBE	{"checksum":"3004811118290","corpus":"text","dictionary_bytes":4194304,"f":0.71673508836340316,"finder_seconds":0.65011229199999998,"full_seconds":0.907046833,"input_bytes":4194304,"level":6,"matches":19315185,"output_bytes":694706,"repeats":3,"source":"LZMAEncoderCorpus.text","truncated":false}
+LZMA-FINDER-PROBE	{"checksum":"14179375312099","corpus":"binary","dictionary_bytes":8388608,"f":0.64210513083069809,"finder_seconds":2.7545314580000002,"full_seconds":4.2898449579999998,"input_bytes":26983712,"level":6,"matches":59458014,"output_bytes":5692194,"repeats":3,"source":"\/tmp\/gyoshuku-codec-research.A5CNA4\/GyoshukuKit-prefetch\/.build\/out\/Products\/Release\/GyoshukuKitTests.xctest\/Contents\/MacOS\/GyoshukuKitTests","truncated":false}
+LZMA-FINDER-PROBE	{"checksum":"96390877909","corpus":"random","dictionary_bytes":8388608,"f":0.45717513420369221,"finder_seconds":1.0751048750000001,"full_seconds":2.3516258749999999,"input_bytes":16777216,"level":6,"matches":350714,"output_bytes":17005443,"repeats":3,"source":"xorshift64star:D137923A6E259B41","truncated":false}
+Test Case '-[GyoshukuKitTests.LZMAMatchFinderProbeTests testFinderFraction]' passed (36.372 seconds).
+Test Suite 'LZMAMatchFinderProbeTests' passed at 2026-11-04 16:33:42.675.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.372 (36.372) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 16:33:42.675.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.372 (36.372) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 16:33:42.675.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.372 (36.372) seconds

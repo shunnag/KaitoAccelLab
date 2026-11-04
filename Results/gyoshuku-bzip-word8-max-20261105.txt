@@ -1,0 +1,104 @@
+Building for debugging...
+[3 / 20]
+[4 / 21] KaitoKit
+[7 / 23] KaitoKit
+[7 / 22] GyoshukuKit
+[9 / 24] GyoshukuKit
+[16 / 17] GyoshukuKitTests-product
+Build complete! (2.32秒)
+Test Suite 'Selected tests' started at 2026-11-05 02:54:54.593.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 02:54:54.594.
+Test Suite 'Bzip2SpliceTests' started at 2026-11-05 02:54:54.594.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testAllEightEOSPaddingCandidates]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testAllEightEOSPaddingCandidates]' passed (0.001 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testBulkPayloadAtEveryBitOffsetMatchesBitByBitReference]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testBulkPayloadAtEveryBitOffsetMatchesBitByBitReference]' passed (1.569 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testEmptyOneByteAndEOSCandidateValidation]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testEmptyOneByteAndEOSCandidateValidation]' passed (0.014 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testFixedMemoryReservations]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testFixedMemoryReservations]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testForcedCutsDecodeAsExactlyOneStream]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testForcedCutsDecodeAsExactlyOneStream]' passed (0.076 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeIdentityAcrossTheRealInputCap]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeIdentityAcrossTheRealInputCap]' passed (1.068 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeSeparateFinishMatchesWholeInputAtExactBlockTail]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testKnownSizeSeparateFinishMatchesWholeInputAtExactBlockTail]' passed (1.727 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testManyThreadsKeepSizeBasedChunkCountAndIdentity]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testManyThreadsKeepSizeBasedChunkCountAndIdentity]' passed (2.214 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testOddReadsAndMultiBlockChunksKeepIdentity]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testOddReadsAndMultiBlockChunksKeepIdentity]' passed (1.135 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRandomTextAndExactBlockIdentityAtLevels1And5And9]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRandomTextAndExactBlockIdentityAtLevels1And5And9]' passed (3.763 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize]' started.
+/private/tmp/gyoshuku-bzip-max-20261105/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize] : Test skipped - Set GYOSHUKU_LARGE_ENCODER_TESTS=1 to run Bzip2SpliceTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsAtAllLevelsAndOffsetsFullSize]' skipped (0.001 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsNearEveryPredictedBoundary]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testRunsNearEveryPredictedBoundary]' passed (1.119 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testScannerCarriesPendingRunAndCountsFinalBlock]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testScannerCarriesPendingRunAndCountsFinalBlock]' passed (0.298 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testSizeBasedChunkWidthsAndEstimatedCounts]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testSizeBasedChunkWidthsAndEstimatedCounts]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testUnknownSizeStreamingIdentityAcrossThreadsAndReadSizes]' started.
+Test Case '-[GyoshukuKitTests.Bzip2SpliceTests testUnknownSizeStreamingIdentityAcrossThreadsAndReadSizes]' passed (1.264 seconds).
+Test Suite 'Bzip2SpliceTests' passed at 2026-11-05 02:55:08.843.
+	 Executed 15 tests, with 1 test skipped and 0 failures (0 unexpected) in 14.248 (14.249) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 02:55:08.843.
+	 Executed 15 tests, with 1 test skipped and 0 failures (0 unexpected) in 14.248 (14.250) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 02:55:08.843.
+	 Executed 15 tests, with 1 test skipped and 0 failures (0 unexpected) in 14.248 (14.250) seconds
+Building for production...
+[3 / 13]
+[4 / 14] KaitoKit
+[6 / 15] KaitoKit
+[9 / 17] GyoshukuKit
+[11 / 18] GyoshukuKit
+[16 / 17] GyoshukuKitTests-product
+[18 / 18] GyoshukuKitTests-product
+Build complete! (93.85秒)
+Test Suite 'Selected tests' started at 2026-11-05 02:56:43.819.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-05 02:56:43.819.
+Test Suite 'Bzip2BlockScannerBenchmarkTests' started at 2026-11-05 02:56:43.819.
+Test Case '-[GyoshukuKitTests.Bzip2BlockScannerBenchmarkTests testThroughput]' started.
+BZIP2-SCAN	corpus	level	blocks	best_s	best_MBps	median_s	median_MBps
+BZIP2-SCAN	text	1	42	0.003329292	1259.819	0.003444167	1217.799
+BZIP2-SCAN	text	9	5	0.003395000	1235.436	0.003510250	1194.873
+BZIP2-SCAN	alternating	1	42	0.003026958	1385.650	0.003207958	1307.468
+BZIP2-SCAN	alternating	9	5	0.003198833	1311.198	0.003205042	1308.658
+BZIP2-SCAN	runs127	1	2	0.001577458	2658.900	0.001581125	2652.734
+BZIP2-SCAN	runs127	9	1	0.001454875	2882.931	0.001581750	2651.686
+BZIP2-SCAN	repeated	1	1	0.001596458	2627.256	0.001600250	2621.030
+BZIP2-SCAN	repeated	9	1	0.001400792	2994.238	0.001598250	2624.310
+BZIP2-SCAN	random	1	42	0.003215333	1304.469	0.003333292	1258.307
+BZIP2-SCAN	random	9	5	0.003192292	1313.885	0.003337708	1256.642
+Test Case '-[GyoshukuKitTests.Bzip2BlockScannerBenchmarkTests testThroughput]' passed (0.567 seconds).
+Test Suite 'Bzip2BlockScannerBenchmarkTests' passed at 2026-11-05 02:56:44.387.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.567 (0.568) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-05 02:56:44.387.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.567 (0.568) seconds
+Test Suite 'Selected tests' passed at 2026-11-05 02:56:44.387.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.567 (0.568) seconds
+Traceback (most recent call last):
+  File "/Users/nagash/Github/KaitoAccelLab/Scripts/benchmark_gyoshuku_probe.py", line 51, in <module>
+    result = measure(name)
+  File "/Users/nagash/Github/KaitoAccelLab/Scripts/benchmark_gyoshuku_probe.py", line 26, in measure
+    result = subprocess.run(
+        [executables[name], args.test],
+    ...<3 lines>...
+        stderr=subprocess.STDOUT,
+    )
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/subprocess.py", line 669, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/subprocess.py", line 1213, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/subprocess.py", line 2156, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+OSError: [Errno 8] Exec format error: '/tmp/gyoshuku-bzip-baseline-20261105.xctest/Contents/MacOS/GyoshukuKitTests'

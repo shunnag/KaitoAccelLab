@@ -1,0 +1,198 @@
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:16:45.143.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:16:45.144.
+Test Suite 'LH5EncoderBenchmarkTests' started at 2026-11-04 20:16:45.144.
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LH5-BENCH	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+LH5-BENCH	text	1	1013738	0.027775	151.010	0.027810	150.820
+LH5-BENCH	text	6	993973	0.044271	94.742	0.045928	91.323
+LH5-BENCH	text	9	990926	0.081219	51.642	0.081612	51.393
+LH5-BENCH	binary	1	1450488	0.034152	120.904	0.034205	120.718
+LH5-BENCH	binary	6	1441575	0.040277	102.516	0.040949	100.836
+LH5-BENCH	binary	9	1421143	0.094690	43.606	0.095587	43.197
+LH5-BENCH	random	1	4201082	0.047249	88.770	0.049227	85.204
+LH5-BENCH	random	6	4201082	0.047180	88.900	0.048704	86.119
+gyoshuku-lh5-match8.lxWyjp
+LH5-BENCH	random	9	4201082	0.048631	86.248	0.048829	85.899
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' passed (3.400 seconds).
+Test Suite 'LH5EncoderBenchmarkTests' passed at 2026-11-04 20:16:48.544.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.400 (3.401) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:16:48.544.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.400 (3.401) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:16:48.545.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.400 (3.401) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:16:48.600.
+Test Suite 'match8-lh5.xctest' started at 2026-11-04 20:16:48.600.
+Test Suite 'LH5EncoderBenchmarkTests' started at 2026-11-04 20:16:48.600.
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LH5-BENCH	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+LH5-BENCH	text	1	1013738	0.024757	169.419	0.024918	168.326
+LH5-BENCH	text	6	993973	0.039762	105.487	0.040354	103.937
+LH5-BENCH	text	9	990926	0.070086	59.845	0.070809	59.234
+LH5-BENCH	binary	1	1450488	0.032734	126.142	0.032734	126.140
+LH5-BENCH	binary	6	1441575	0.040055	103.085	0.040220	102.663
+LH5-BENCH	binary	9	1421143	0.089779	45.992	0.090156	45.799
+LH5-BENCH	random	1	4201082	0.049587	84.585	0.050190	83.569
+LH5-BENCH	random	6	4201082	0.049358	84.977	0.049799	84.225
+Release
+LH5-BENCH	random	9	4201082	0.049358	84.978	0.049548	84.652
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' passed (3.441 seconds).
+Test Suite 'LH5EncoderBenchmarkTests' passed at 2026-11-04 20:16:52.041.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.441 (3.441) seconds
+Test Suite 'match8-lh5.xctest' passed at 2026-11-04 20:16:52.041.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.441 (3.441) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:16:52.041.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.441 (3.441) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:16:52.282.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:16:52.283.
+Test Suite 'LH5EncoderBenchmarkTests' started at 2026-11-04 20:16:52.283.
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LH5-BENCH	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+LH5-BENCH	text	1	1013738	0.024435	171.650	0.024931	168.236
+LH5-BENCH	text	6	993973	0.040037	104.761	0.040114	104.560
+LH5-BENCH	text	9	990926	0.070092	59.840	0.070207	59.742
+LH5-BENCH	binary	1	1450488	0.032567	126.786	0.032598	126.668
+LH5-BENCH	binary	6	1441575	0.039271	105.143	0.039766	103.836
+LH5-BENCH	binary	9	1421143	0.090956	45.397	0.092263	44.753
+LH5-BENCH	random	1	4201082	0.048719	86.092	0.049100	85.424
+LH5-BENCH	random	6	4201082	0.048132	87.141	0.048828	85.900
+gyoshuku-lh5-research.Yk6aKe
+LH5-BENCH	random	9	4201082	0.047610	88.098	0.048388	86.681
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' passed (3.380 seconds).
+Test Suite 'LH5EncoderBenchmarkTests' passed at 2026-11-04 20:16:55.663.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.380 (3.380) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:16:55.663.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.380 (3.380) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:16:55.663.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.380 (3.381) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:16:55.718.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:16:55.719.
+Test Suite 'LH5EncoderBenchmarkTests' started at 2026-11-04 20:16:55.719.
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LH5-BENCH	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+LH5-BENCH	text	1	1013738	0.027706	151.388	0.027945	150.093
+LH5-BENCH	text	6	993973	0.044476	94.304	0.044975	93.258
+LH5-BENCH	text	9	990926	0.081869	51.232	0.082259	50.989
+LH5-BENCH	binary	1	1450488	0.035098	117.645	0.035191	117.332
+LH5-BENCH	binary	6	1441575	0.041279	100.028	0.041486	99.530
+LH5-BENCH	binary	9	1421143	0.095110	43.414	0.095241	43.354
+LH5-BENCH	random	1	4201082	0.049556	84.638	0.049564	84.625
+LH5-BENCH	random	6	4201082	0.049086	85.449	0.049234	85.192
+gyoshuku-lh5-match8.lxWyjp
+LH5-BENCH	random	9	4201082	0.048626	86.256	0.049179	85.287
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' passed (3.489 seconds).
+Test Suite 'LH5EncoderBenchmarkTests' passed at 2026-11-04 20:16:59.207.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.489 (3.489) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:16:59.207.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.489 (3.489) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:16:59.207.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.489 (3.489) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:16:59.262.
+Test Suite 'match8-lh5.xctest' started at 2026-11-04 20:16:59.263.
+Test Suite 'LH5EncoderBenchmarkTests' started at 2026-11-04 20:16:59.263.
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LH5-BENCH	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+LH5-BENCH	text	1	1013738	0.024282	172.730	0.024981	167.901
+LH5-BENCH	text	6	993973	0.040408	103.798	0.040424	103.757
+LH5-BENCH	text	9	990926	0.071030	59.050	0.071083	59.006
+LH5-BENCH	binary	1	1450488	0.032517	126.983	0.032566	126.790
+LH5-BENCH	binary	6	1441575	0.039798	103.751	0.040971	100.782
+LH5-BENCH	binary	9	1421143	0.091115	45.317	0.091610	45.072
+LH5-BENCH	random	1	4201082	0.049216	85.222	0.050234	83.496
+LH5-BENCH	random	6	4201082	0.049466	84.792	0.050341	83.318
+LH5-BENCH	random	9	4201082	0.049869	84.106	0.050158	83.621
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' passed (3.369 seconds).
+Test Suite 'LH5EncoderBenchmarkTests' passed at 2026-11-04 20:17:02.632.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.369 (3.370) seconds
+Test Suite 'match8-lh5.xctest' passed at 2026-11-04 20:17:02.632.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.369 (3.370) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:17:02.632.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.369 (3.370) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:17:02.689.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:17:02.689.
+Test Suite 'LH5EncoderBenchmarkTests' started at 2026-11-04 20:17:02.689.
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LH5-BENCH	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+LH5-BENCH	text	1	1013738	0.025029	167.579	0.025137	166.856
+LH5-BENCH	text	6	993973	0.041774	100.404	0.041797	100.349
+LH5-BENCH	text	9	990926	0.070860	59.191	0.071281	58.842
+LH5-BENCH	binary	1	1450488	0.032497	127.063	0.032943	125.340
+LH5-BENCH	binary	6	1441575	0.039348	104.938	0.039913	103.453
+LH5-BENCH	binary	9	1421143	0.090413	45.669	0.090848	45.450
+LH5-BENCH	random	1	4201082	0.048734	86.065	0.050008	83.873
+LH5-BENCH	random	6	4201082	0.048900	85.773	0.048943	85.698
+gyoshuku-lh5-research.Yk6aKe
+LH5-BENCH	random	9	4201082	0.049124	85.381	0.049152	85.333
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' passed (3.449 seconds).
+Test Suite 'LH5EncoderBenchmarkTests' passed at 2026-11-04 20:17:06.139.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.449 (3.450) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:17:06.139.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.449 (3.450) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:17:06.139.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.449 (3.450) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:17:06.195.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:17:06.195.
+Test Suite 'LH5EncoderBenchmarkTests' started at 2026-11-04 20:17:06.195.
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LH5-BENCH	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+LH5-BENCH	text	1	1013738	0.028541	146.957	0.028656	146.366
+LH5-BENCH	text	6	993973	0.045478	92.228	0.045513	92.157
+LH5-BENCH	text	9	990926	0.083283	50.362	0.083369	50.310
+LH5-BENCH	binary	1	1450488	0.034208	120.704	0.034384	120.088
+LH5-BENCH	binary	6	1441575	0.041744	98.914	0.042573	96.989
+LH5-BENCH	binary	9	1421143	0.095184	43.380	0.096132	42.952
+LH5-BENCH	random	1	4201082	0.049780	84.258	0.050191	83.567
+LH5-BENCH	random	6	4201082	0.049430	84.854	0.049842	84.151
+gyoshuku-lh5-match8.lxWyjp
+LH5-BENCH	random	9	4201082	0.049797	84.228	0.049934	83.997
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' passed (3.547 seconds).
+Test Suite 'LH5EncoderBenchmarkTests' passed at 2026-11-04 20:17:09.743.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.547 (3.547) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:17:09.743.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.547 (3.547) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:17:09.743.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.547 (3.548) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:17:09.798.
+Test Suite 'match8-lh5.xctest' started at 2026-11-04 20:17:09.799.
+Test Suite 'LH5EncoderBenchmarkTests' started at 2026-11-04 20:17:09.799.
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LH5-BENCH	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+LH5-BENCH	text	1	1013738	0.024548	170.862	0.024747	169.488
+LH5-BENCH	text	6	993973	0.040299	104.079	0.040435	103.728
+LH5-BENCH	text	9	990926	0.070694	59.330	0.070835	59.213
+LH5-BENCH	binary	1	1450488	0.033420	123.550	0.033491	123.290
+LH5-BENCH	binary	6	1441575	0.040616	101.662	0.041167	100.300
+LH5-BENCH	binary	9	1421143	0.090624	45.563	0.091987	44.888
+LH5-BENCH	random	1	4201082	0.050194	83.563	0.050489	83.074
+LH5-BENCH	random	6	4201082	0.049906	84.044	0.049927	84.009
+Release
+LH5-BENCH	random	9	4201082	0.049602	84.560	0.050001	83.884
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' passed (3.406 seconds).
+Test Suite 'LH5EncoderBenchmarkTests' passed at 2026-11-04 20:17:13.205.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.406 (3.406) seconds
+Test Suite 'match8-lh5.xctest' passed at 2026-11-04 20:17:13.205.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.406 (3.406) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:17:13.205.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.406 (3.406) seconds
+Test Suite 'Selected tests' started at 2026-11-04 20:17:13.260.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:17:13.260.
+Test Suite 'LH5EncoderBenchmarkTests' started at 2026-11-04 20:17:13.260.
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' started.
+LH5-BENCH	corpus	level	bytes	best_s	best_MBps	median_s	median_MBps
+LH5-BENCH	text	1	1013738	0.025118	166.983	0.025196	166.466
+LH5-BENCH	text	6	993973	0.040965	102.389	0.041107	102.034
+LH5-BENCH	text	9	990926	0.071396	58.747	0.072774	57.635
+LH5-BENCH	binary	1	1450488	0.033177	124.458	0.033263	124.135
+LH5-BENCH	binary	6	1441575	0.040083	103.013	0.040654	101.566
+LH5-BENCH	binary	9	1421143	0.090752	45.499	0.090976	45.387
+LH5-BENCH	random	1	4201082	0.049519	84.701	0.049598	84.566
+LH5-BENCH	random	6	4201082	0.049064	85.487	0.049648	84.481
+LH5-BENCH	random	9	4201082	0.049011	85.578	0.049229	85.200
+Test Case '-[GyoshukuKitTests.LH5EncoderBenchmarkTests testSingleThreadBenchmark]' passed (3.455 seconds).
+Test Suite 'LH5EncoderBenchmarkTests' passed at 2026-11-04 20:17:16.716.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.455 (3.455) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:17:16.716.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.455 (3.455) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:17:16.716.
+	 Executed 1 test, with 0 failures (0 unexpected) in 3.455 (3.456) seconds

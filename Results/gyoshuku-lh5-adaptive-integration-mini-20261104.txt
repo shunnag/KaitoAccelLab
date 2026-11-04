@@ -1,0 +1,3786 @@
+Building for debugging...
+[1 / 5]
+[2 / 6] GyoshukuKit
+[3 / 7] GyoshukuKit
+[8 / 11] GyoshukuKit
+[11 / 14] GyoshukuKit
+[14 / 18] GyoshukuKitTests-product
+[19 / 25] GyoshukuKitTests-product
+[21 / 25] GyoshukuKitTests-product
+[23 / 25] GyoshukuKitTests-product
+Build complete! (4.75秒)
+Test Suite 'Selected tests' started at 2026-11-04 20:19:02.169.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:19:02.170.
+Test Suite 'LH5EncoderTests' started at 2026-11-04 20:19:02.170.
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testCommandLengthZeroRunBoundaries]' started.
+LHA DECODER lha-zero-run-1/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       4 200.0% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file        4 200.0% Nov  4 11:19
+
+LHA DECODER lha-zero-run-1/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****       8       4 200.0% -lh5- 0120 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file        8       4 200.0%            2026-11-04 11:19:02
+
+LHA DECODER lha-zero-run-1/lha-t: exit 0
+encoded.bin	- Testing  :  .encoded.bin	- Testing  :  oencoded.bin	- Tested  
+
+LHA DECODER lha-zero-run-1/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-1/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-1/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+Everything is Ok
+
+Size:       4
+Compressed: 66
+
+LHA DECODER lha-zero-run-1/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-1/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-1/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 4
+Packed Size = 8
+Modified = 2023-11-14 22:13:21
+CRC = 00000120
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-zero-run-1/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-1/lha-extracted/encoded.bin	- Melting  :  ./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-1/lha-extracted/encoded.bin	- Melting  :  o/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-1/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-zero-run-1/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-1/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-1/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+Everything is Ok
+
+Size:       4
+Compressed: 66
+
+LHA DECODER lha-zero-run-2/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       4 200.0% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file        4 200.0% Nov  4 11:19
+
+LHA DECODER lha-zero-run-2/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****       8       4 200.0% -lh5- 01b0 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file        8       4 200.0%            2026-11-04 11:19:02
+
+LHA DECODER lha-zero-run-2/lha-t: exit 0
+encoded.bin	- Testing  :  .encoded.bin	- Testing  :  oencoded.bin	- Tested  
+
+LHA DECODER lha-zero-run-2/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-2/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-2/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+Everything is Ok
+
+Size:       4
+Compressed: 66
+
+LHA DECODER lha-zero-run-2/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-2/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-2/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 4
+Packed Size = 8
+Modified = 2023-11-14 22:13:21
+CRC = 000001B0
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-zero-run-2/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-2/lha-extracted/encoded.bin	- Melting  :  ./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-2/lha-extracted/encoded.bin	- Melting  :  o/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-2/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-zero-run-2/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-2/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-2/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+Everything is Ok
+
+Size:       4
+Compressed: 66
+
+LHA DECODER lha-zero-run-3/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       4 200.0% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file        4 200.0% Nov  4 11:19
+
+LHA DECODER lha-zero-run-3/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****       8       4 200.0% -lh5- 0240 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file        8       4 200.0%            2026-11-04 11:19:03
+
+LHA DECODER lha-zero-run-3/lha-t: exit 0
+encoded.bin	- Testing  :  .encoded.bin	- Testing  :  oencoded.bin	- Tested  
+
+LHA DECODER lha-zero-run-3/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-3/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-3/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+Everything is Ok
+
+Size:       4
+Compressed: 66
+
+LHA DECODER lha-zero-run-3/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-3/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-3/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 4
+Packed Size = 8
+Modified = 2023-11-14 22:13:21
+CRC = 00000240
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-zero-run-3/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-3/lha-extracted/encoded.bin	- Melting  :  ./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-3/lha-extracted/encoded.bin	- Melting  :  o/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-3/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-zero-run-3/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-3/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-3/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+Everything is Ok
+
+Size:       4
+Compressed: 66
+
+LHA DECODER lha-zero-run-18/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       4 200.0% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file        4 200.0% Nov  4 11:19
+
+LHA DECODER lha-zero-run-18/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****       8       4 200.0% -lh5- 08b0 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file        8       4 200.0%            2026-11-04 11:19:03
+
+LHA DECODER lha-zero-run-18/lha-t: exit 0
+encoded.bin	- Testing  :  .encoded.bin	- Testing  :  oencoded.bin	- Tested  
+
+LHA DECODER lha-zero-run-18/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-18/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-18/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+Everything is Ok
+
+Size:       4
+Compressed: 66
+
+LHA DECODER lha-zero-run-18/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-18/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-18/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 4
+Packed Size = 8
+Modified = 2023-11-14 22:13:21
+CRC = 000008B0
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-zero-run-18/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-18/lha-extracted/encoded.bin	- Melting  :  ./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-18/lha-extracted/encoded.bin	- Melting  :  o/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-18/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-zero-run-18/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 66 bytes (1 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-18/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-18/archive.lzh
+Type = Lzh
+Physical Size = 66
+
+Everything is Ok
+
+Size:       4
+Compressed: 66
+
+LHA DECODER lha-zero-run-19/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       4 225.0% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file        4 225.0% Nov  4 11:19
+
+LHA DECODER lha-zero-run-19/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****       9       4 225.0% -lh5- 0b40 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file        9       4 225.0%            2026-11-04 11:19:04
+
+LHA DECODER lha-zero-run-19/lha-t: exit 0
+encoded.bin	- Testing  :  .encoded.bin	- Testing  :  oencoded.bin	- Tested  
+
+LHA DECODER lha-zero-run-19/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 67 bytes (1 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-19/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-19/archive.lzh
+Type = Lzh
+Physical Size = 67
+
+Everything is Ok
+
+Size:       4
+Compressed: 67
+
+LHA DECODER lha-zero-run-19/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 67 bytes (1 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-19/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-19/archive.lzh
+Type = Lzh
+Physical Size = 67
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 4
+Packed Size = 9
+Modified = 2023-11-14 22:13:21
+CRC = 00000B40
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-zero-run-19/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-19/lha-extracted/encoded.bin	- Melting  :  ./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-19/lha-extracted/encoded.bin	- Melting  :  o/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-19/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-zero-run-19/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 67 bytes (1 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-19/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-19/archive.lzh
+Type = Lzh
+Physical Size = 67
+
+Everything is Ok
+
+Size:       4
+Compressed: 67
+
+LHA DECODER lha-zero-run-20/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       4 225.0% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file        4 225.0% Nov  4 11:19
+
+LHA DECODER lha-zero-run-20/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****       9       4 225.0% -lh5- 0bd0 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file        9       4 225.0%            2026-11-04 11:19:04
+
+LHA DECODER lha-zero-run-20/lha-t: exit 0
+encoded.bin	- Testing  :  .encoded.bin	- Testing  :  oencoded.bin	- Tested  
+
+LHA DECODER lha-zero-run-20/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 67 bytes (1 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-20/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-20/archive.lzh
+Type = Lzh
+Physical Size = 67
+
+Everything is Ok
+
+Size:       4
+Compressed: 67
+
+LHA DECODER lha-zero-run-20/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 67 bytes (1 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-20/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-20/archive.lzh
+Type = Lzh
+Physical Size = 67
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 4
+Packed Size = 9
+Modified = 2023-11-14 22:13:21
+CRC = 00000BD0
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-zero-run-20/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-20/lha-extracted/encoded.bin	- Melting  :  ./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-20/lha-extracted/encoded.bin	- Melting  :  o/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-20/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-zero-run-20/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 67 bytes (1 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-20/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-20/archive.lzh
+Type = Lzh
+Physical Size = 67
+
+Everything is Ok
+
+Size:       4
+Compressed: 67
+
+LHA DECODER lha-zero-run-254/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       4 225.0% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file        4 225.0% Nov  4 11:19
+
+LHA DECODER lha-zero-run-254/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****       9       4 225.0% -lh5- 7070 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file        9       4 225.0%            2026-11-04 11:19:05
+
+LHA DECODER lha-zero-run-254/lha-t: exit 0
+encoded.bin	- Testing  :  .encoded.bin	- Testing  :  oencoded.bin	- Tested  
+
+LHA DECODER lha-zero-run-254/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 67 bytes (1 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-254/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-254/archive.lzh
+Type = Lzh
+Physical Size = 67
+
+Everything is Ok
+
+Size:       4
+Compressed: 67
+
+LHA DECODER lha-zero-run-254/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 67 bytes (1 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-254/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-254/archive.lzh
+Type = Lzh
+Physical Size = 67
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 4
+Packed Size = 9
+Modified = 2023-11-14 22:13:21
+CRC = 00007070
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-zero-run-254/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-254/lha-extracted/encoded.bin	- Melting  :  ./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-254/lha-extracted/encoded.bin	- Melting  :  o/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-254/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-zero-run-254/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 67 bytes (1 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-254/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-zero-run-254/archive.lzh
+Type = Lzh
+Physical Size = 67
+
+Everything is Ok
+
+Size:       4
+Compressed: 67
+
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testCommandLengthZeroRunBoundaries]' passed (3.661 seconds).
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testConstantLiteralAndConstantCodeLengthTrees]' started.
+LHA DECODER lha-constant-tree-0/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****    1000   0.7% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file     1000   0.7% Nov  4 11:19
+
+LHA DECODER lha-constant-tree-0/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****       7    1000   0.7% -lh5- c85b 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file        7    1000   0.7%            2026-11-04 11:19:05
+
+LHA DECODER lha-constant-tree-0/lha-t: exit 0
+encoded.bin	- Testing  :  .encoded.bin	- Testing  :  oencoded.bin	- Tested  
+
+LHA DECODER lha-constant-tree-0/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 65 bytes (1 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-0/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-0/archive.lzh
+Type = Lzh
+Physical Size = 65
+
+Everything is Ok
+
+Size:       1000
+Compressed: 65
+
+LHA DECODER lha-constant-tree-0/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 65 bytes (1 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-0/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-0/archive.lzh
+Type = Lzh
+Physical Size = 65
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 1000
+Packed Size = 7
+Modified = 2023-11-14 22:13:21
+CRC = 0000C85B
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-constant-tree-0/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-0/lha-extracted/encoded.bin	- Melting  :  ./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-0/lha-extracted/encoded.bin	- Melting  :  o/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-0/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-constant-tree-0/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 65 bytes (1 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-0/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-0/archive.lzh
+Type = Lzh
+Physical Size = 65
+
+Everything is Ok
+
+Size:       1000
+Compressed: 65
+
+LHA DECODER lha-constant-tree-1/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****    4096 100.2% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file     4096 100.2% Nov  4 11:19
+
+LHA DECODER lha-constant-tree-1/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****    4102    4096 100.2% -lh5- 4525 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file     4102    4096 100.2%            2026-11-04 11:19:06
+
+LHA DECODER lha-constant-tree-1/lha-t: exit 0
+encoded.bin	- Testing  :  .encoded.bin	- Testing  :  oencoded.bin	- Tested  
+
+LHA DECODER lha-constant-tree-1/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 4160 bytes (5 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-1/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-1/archive.lzh
+Type = Lzh
+Physical Size = 4160
+
+Everything is Ok
+
+Size:       4096
+Compressed: 4160
+
+LHA DECODER lha-constant-tree-1/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 4160 bytes (5 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-1/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-1/archive.lzh
+Type = Lzh
+Physical Size = 4160
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 4096
+Packed Size = 4102
+Modified = 2023-11-14 22:13:21
+CRC = 00004525
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-constant-tree-1/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-1/lha-extracted/encoded.bin	- Melting  :  ./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-1/lha-extracted/encoded.bin	- Melting  :  o/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-1/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-constant-tree-1/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 4160 bytes (5 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-1/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-tree-1/archive.lzh
+Type = Lzh
+Physical Size = 4160
+
+Everything is Ok
+
+Size:       4096
+Compressed: 4160
+
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testConstantLiteralAndConstantCodeLengthTrees]' passed (1.097 seconds).
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testLengthLimitedCanonicalHuffmanWithSkewedFrequencies]' started.
+LHA DECODER lha-limited-huffman/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****   28656  32.8% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file    28656  32.8% Nov  4 11:19
+
+LHA DECODER lha-limited-huffman/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****    9398   28656  32.8% -lh5- 16f1 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file     9398   28656  32.8%            2026-11-04 11:19:07
+
+LHA DECODER lha-limited-huffman/lha-t: exit 0
+encoded.bin	- Testing  :  ....encoded.bin	- Testing  :  ooooencoded.bin	- Tested  
+
+LHA DECODER lha-limited-huffman/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9456 bytes (10 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-limited-huffman/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-limited-huffman/archive.lzh
+Type = Lzh
+Physical Size = 9456
+
+Everything is Ok
+
+Size:       28656
+Compressed: 9456
+
+LHA DECODER lha-limited-huffman/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9456 bytes (10 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-limited-huffman/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-limited-huffman/archive.lzh
+Type = Lzh
+Physical Size = 9456
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 28656
+Packed Size = 9398
+Modified = 2023-11-14 22:13:21
+CRC = 000016F1
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-limited-huffman/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-limited-huffman/lha-extracted/encoded.bin	- Melting  :  ..../private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-limited-huffman/lha-extracted/encoded.bin	- Melting  :  oooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-limited-huffman/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-limited-huffman/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9456 bytes (10 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-limited-huffman/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-limited-huffman/archive.lzh
+Type = Lzh
+Physical Size = 9456
+
+Everything is Ok
+
+Size:       28656
+Compressed: 9456
+
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testLengthLimitedCanonicalHuffmanWithSkewedFrequencies]' passed (0.610 seconds).
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testMaximumLengthAndFullWindowDistance]' started.
+LHA DECODER lha-maximum-match/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****   28449  29.4% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file    28449  29.4% Nov  4 11:19
+
+LHA DECODER lha-maximum-match/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****    8340   28449  29.4% -lh5- bb63 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file     8340   28449  29.4%            2026-11-04 11:19:07
+
+LHA DECODER lha-maximum-match/lha-t: exit 0
+encoded.bin	- Testing  :  ....encoded.bin	- Testing  :  ooooencoded.bin	- Tested  
+
+LHA DECODER lha-maximum-match/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8398 bytes (9 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+Type = Lzh
+Physical Size = 8398
+
+Everything is Ok
+
+Size:       28449
+Compressed: 8398
+
+LHA DECODER lha-maximum-match/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8398 bytes (9 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+Type = Lzh
+Physical Size = 8398
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 28449
+Packed Size = 8340
+Modified = 2023-11-14 22:13:21
+CRC = 0000BB63
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-maximum-match/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-maximum-match/lha-extracted/encoded.bin	- Melting  :  ..../private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-maximum-match/lha-extracted/encoded.bin	- Melting  :  oooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-maximum-match/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-maximum-match/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8398 bytes (9 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-maximum-match/archive.lzh
+Type = Lzh
+Physical Size = 8398
+
+Everything is Ok
+
+Size:       28449
+Compressed: 8398
+
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testMaximumLengthAndFullWindowDistance]' passed (0.603 seconds).
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testMultipleBlocksWithoutBitAlignmentOrDictionaryReset]' started.
+LHA DECODER lha-multiple-blocks/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****  400000  66.1% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file   400000  66.1% Nov  4 11:19
+
+LHA DECODER lha-multiple-blocks/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****  264385  400000  66.1% -lh5- 2fd6 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file   264385  400000  66.1%            2026-11-04 11:19:09
+
+LHA DECODER lha-multiple-blocks/lha-t: exit 0
+encoded.bin	- Testing  :  .................................................encoded.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooencoded.bin	- Tested  
+
+LHA DECODER lha-multiple-blocks/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 264443 bytes (259 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+Type = Lzh
+Physical Size = 264443
+
+Everything is Ok
+
+Size:       400000
+Compressed: 264443
+
+LHA DECODER lha-multiple-blocks/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 264443 bytes (259 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+Type = Lzh
+Physical Size = 264443
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 400000
+Packed Size = 264385
+Modified = 2023-11-14 22:13:21
+CRC = 00002FD6
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-multiple-blocks/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-multiple-blocks/lha-extracted/encoded.bin	- Melting  :  ................................................./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-multiple-blocks/lha-extracted/encoded.bin	- Melting  :  ooooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-multiple-blocks/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-multiple-blocks/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 264443 bytes (259 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-multiple-blocks/archive.lzh
+Type = Lzh
+Physical Size = 264443
+
+Everything is Ok
+
+Size:       400000
+Compressed: 264443
+
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testMultipleBlocksWithoutBitAlignmentOrDictionaryReset]' passed (1.463 seconds).
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testRepeatedByteCreatesConstantTreesAfterBlockBoundary]' started.
+LHA DECODER lha-constant-match/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/***** 8491009   0.1% Nov 14  2023 encoded.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file  8491009   0.1% Nov  4 11:19
+
+LHA DECODER lha-constant-match/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+encoded.bin
+-rw-r--r-- *****/*****    4112 8491009   0.1% -lh5- e029 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file     4112 8491009   0.1%            2026-11-04 11:19:14
+
+LHA DECODER lha-constant-match/lha-t: exit 0
+encoded.bin	- Testing  :  ..........................................................encoded.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooencoded.bin	- Tested  
+
+LHA DECODER lha-constant-match/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 4170 bytes (5 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-match/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-match/archive.lzh
+Type = Lzh
+Physical Size = 4170
+
+Everything is Ok
+
+Size:       8491009
+Compressed: 4170
+
+LHA DECODER lha-constant-match/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 4170 bytes (5 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-match/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-match/archive.lzh
+Type = Lzh
+Physical Size = 4170
+
+----------
+Path = encoded.bin
+Folder = -
+Size = 8491009
+Packed Size = 4112
+Modified = 2023-11-14 22:13:21
+CRC = 0000E029
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-constant-match/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-match/lha-extracted/encoded.bin	- Melting  :  ........................................................../private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-match/lha-extracted/encoded.bin	- Melting  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-match/lha-extracted/encoded.bin	- Melted  
+
+LHA DECODER lha-constant-match/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 4170 bytes (5 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-match/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-constant-match/archive.lzh
+Type = Lzh
+Physical Size = 4170
+
+Everything is Ok
+
+Size:       8491009
+Compressed: 4170
+
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testRepeatedByteCreatesConstantTreesAfterBlockBoundary]' passed (5.845 seconds).
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testTenMiBCompressionTimeAndRoundTrip]' started.
+LHA PERFORMANCE: 10 MiB in 2.124815083 seconds, debug build; bound 30 seconds
+LHA DECODER lha-performance/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/***** 10485760  75.9% Nov 14  2023 ten-mib.bin
+---------- ----------- ------- ------ ------------ --------------------
+ Total         1 file  10485760  75.9% Nov  4 11:19
+
+LHA DECODER lha-performance/lha-vv: exit 0
+ PERMSSN    UID  GID    PACKED    SIZE  RATIO METHOD CRC     STAMP            LV
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ten-mib.bin
+-rw-r--r-- *****/***** 7955917 10485760  75.9% -lh5- f8f0 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         1 file  7955917 10485760  75.9%            2026-11-04 11:19:18
+
+LHA DECODER lha-performance/lha-t: exit 0
+ten-mib.bin	- Testing  :  ........................................................ten-mib.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooten-mib.bin	- Tested  
+
+LHA DECODER lha-performance/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 7955975 bytes (7770 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-performance/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-performance/archive.lzh
+Type = Lzh
+Physical Size = 7955975
+
+Everything is Ok
+
+Size:       10485760
+Compressed: 7955975
+
+LHA DECODER lha-performance/7zz-l-slt: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 7955975 bytes (7770 KiB)
+
+Listing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-performance/archive.lzh
+
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-performance/archive.lzh
+Type = Lzh
+Physical Size = 7955975
+
+----------
+Path = ten-mib.bin
+Folder = -
+Size = 10485760
+Packed Size = 7955917
+Modified = 2023-11-14 22:13:21
+CRC = 0000F8F0
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER lha-performance/lha-x: exit 0
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-performance/lha-extracted/ten-mib.bin	- Melting  :  ......................................................../private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-performance/lha-extracted/ten-mib.bin	- Melting  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-performance/lha-extracted/ten-mib.bin	- Melted  
+
+LHA DECODER lha-performance/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 7955975 bytes (7770 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-performance/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-performance/archive.lzh
+Type = Lzh
+Physical Size = 7955975
+
+Everything is Ok
+
+Size:       10485760
+Compressed: 7955975
+
+Test Case '-[GyoshukuKitTests.LH5EncoderTests testTenMiBCompressionTimeAndRoundTrip]' passed (4.343 seconds).
+Test Suite 'LH5EncoderTests' passed at 2026-11-04 20:19:19.794.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 17.623 (17.624) seconds
+Test Suite 'LHACompressionMethodTests' started at 2026-11-04 20:19:19.794.
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testEffortChangesChainSearchAndLazyMatchSelection]' started.
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testEffortChangesChainSearchAndLazyMatchSelection]' passed (0.009 seconds).
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testEmptyArchivesAtAllMethodsAndLevels]' started.
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testEmptyArchivesAtAllMethodsAndLevels]' passed (5.562 seconds).
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testForcedStoreNeverInvokesEncoder]' started.
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testForcedStoreNeverInvokesEncoder]' passed (0.048 seconds).
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testFullDictionaryDistancesAndMaximumMatchAtEachLevel]' started.
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testFullDictionaryDistancesAndMaximumMatchAtEachLevel]' passed (3.308 seconds).
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testLHaForUNIXProducesLH6AndLH7ReadableByKaitoKit]' started.
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testLHaForUNIXProducesLH6AndLH7ReadableByKaitoKit]' passed (0.572 seconds).
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testMethodsLevelsAndParallelHistoriesRoundTripWithIndependentTools]' started.
+LHA DECODER 26CD2505-03C6-4A2A-8CC5-40A4255AF603/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576   0.3% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728 100.0% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913  91.7% Nov  4 11:19
+
+LHA DECODER 26CD2505-03C6-4A2A-8CC5-40A4255AF603/lha-vv: exit 0
+--
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/*****    3131 1048576   0.3% -lh5- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/***** 3145728 3145728 100.0% -lh0- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 11537468 12582913  91.7%            2026-11-04 11:19:36
+
+LHA DECODER 26CD2505-03C6-4A2A-8CC5-40A4255AF603/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ...........................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER 26CD2505-03C6-4A2A-8CC5-40A4255AF603/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 11537921 bytes (12 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-1/26CD2505-03C6-4A2A-8CC5-40A4255AF603/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-1/26CD2505-03C6-4A2A-8CC5-40A4255AF603/archive.lzh
+Type = Lzh
+Physical Size = 11537921
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 11537921
+
+LHA DECODER 26CD2505-03C6-4A2A-8CC5-40A4255AF603/7zz-l-slt: exit 0
+ -lh0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3131
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh5-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER 26CD2505-03C6-4A2A-8CC5-40A4255AF603/lha-x: exit 0
+lh5-1/26CD2505-03C6-4A2A-8CC5-40A4255AF603/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-1/26CD2505-03C6-4A2A-8CC5-40A4255AF603/lha-extracted/distance.bin	- Melting  :  ........................................................./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-1/26CD2505-03C6-4A2A-8CC5-40A4255AF603/lha-extracted/distance.bin	- Melting  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-1/26CD2505-03C6-4A2A-8CC5-40A4255AF603/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER 26CD2505-03C6-4A2A-8CC5-40A4255AF603/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 11537921 bytes (12 MiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-1/26CD2505-03C6-4A2A-8CC5-40A4255AF603/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-1/26CD2505-03C6-4A2A-8CC5-40A4255AF603/archive.lzh
+Type = Lzh
+Physical Size = 11537921
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 11537921
+
+LHA DECODER 26CD2505-03C6-4A2A-8CC5-40A4255AF603/lha-t-all: exit 0
+ing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ...........................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  .???{??.txt	- Testing  :  o???{??.txt	- Tested  
+
+LHA DECODER 26CD2505-03C6-4A2A-8CC5-40A4255AF603/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 11537921 bytes (12 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-1/26CD2505-03C6-4A2A-8CC5-40A4255AF603/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-1/26CD2505-03C6-4A2A-8CC5-40A4255AF603/archive.lzh
+Type = Lzh
+Physical Size = 11537921
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 11537921
+
+LHA DECODER 26CD2505-03C6-4A2A-8CC5-40A4255AF603/7zz-methods: exit 0
+ OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3131
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh5-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 72
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER C0F4C685-2DC8-45D8-A567-A80E0709EC18/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576   0.3% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728 100.0% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913  91.7% Nov  4 11:19
+
+LHA DECODER C0F4C685-2DC8-45D8-A567-A80E0709EC18/lha-vv: exit 0
+--
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/*****    3131 1048576   0.3% -lh5- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/***** 3145728 3145728 100.0% -lh0- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 11537468 12582913  91.7%            2026-11-04 11:19:42
+
+LHA DECODER C0F4C685-2DC8-45D8-A567-A80E0709EC18/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ...........................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER C0F4C685-2DC8-45D8-A567-A80E0709EC18/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 11537921 bytes (12 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-6/C0F4C685-2DC8-45D8-A567-A80E0709EC18/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-6/C0F4C685-2DC8-45D8-A567-A80E0709EC18/archive.lzh
+Type = Lzh
+Physical Size = 11537921
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 11537921
+
+LHA DECODER C0F4C685-2DC8-45D8-A567-A80E0709EC18/7zz-l-slt: exit 0
+ -lh0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3131
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh5-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER C0F4C685-2DC8-45D8-A567-A80E0709EC18/lha-x: exit 0
+lh5-6/C0F4C685-2DC8-45D8-A567-A80E0709EC18/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-6/C0F4C685-2DC8-45D8-A567-A80E0709EC18/lha-extracted/distance.bin	- Melting  :  ........................................................./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-6/C0F4C685-2DC8-45D8-A567-A80E0709EC18/lha-extracted/distance.bin	- Melting  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-6/C0F4C685-2DC8-45D8-A567-A80E0709EC18/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER C0F4C685-2DC8-45D8-A567-A80E0709EC18/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 11537921 bytes (12 MiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-6/C0F4C685-2DC8-45D8-A567-A80E0709EC18/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-6/C0F4C685-2DC8-45D8-A567-A80E0709EC18/archive.lzh
+Type = Lzh
+Physical Size = 11537921
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 11537921
+
+LHA DECODER C0F4C685-2DC8-45D8-A567-A80E0709EC18/lha-t-all: exit 0
+ing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ...........................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  .???{??.txt	- Testing  :  o???{??.txt	- Tested  
+
+LHA DECODER C0F4C685-2DC8-45D8-A567-A80E0709EC18/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 11537921 bytes (12 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-6/C0F4C685-2DC8-45D8-A567-A80E0709EC18/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-6/C0F4C685-2DC8-45D8-A567-A80E0709EC18/archive.lzh
+Type = Lzh
+Physical Size = 11537921
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 11537921
+
+LHA DECODER C0F4C685-2DC8-45D8-A567-A80E0709EC18/7zz-methods: exit 0
+ OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3131
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh5-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 72
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER 0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576   0.3% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728 100.0% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913  91.7% Nov  4 11:19
+
+LHA DECODER 0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/lha-vv: exit 0
+--
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/*****    3131 1048576   0.3% -lh5- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/***** 3145728 3145728 100.0% -lh0- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 11537468 12582913  91.7%            2026-11-04 11:19:49
+
+LHA DECODER 0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ...........................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER 0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 11537921 bytes (12 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-9/0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-9/0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/archive.lzh
+Type = Lzh
+Physical Size = 11537921
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 11537921
+
+LHA DECODER 0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/7zz-l-slt: exit 0
+ -lh0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3131
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh5-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER 0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/lha-x: exit 0
+lh5-9/0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-9/0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/lha-extracted/distance.bin	- Melting  :  ........................................................./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-9/0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/lha-extracted/distance.bin	- Melting  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-9/0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER 0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 11537921 bytes (12 MiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-9/0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-9/0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/archive.lzh
+Type = Lzh
+Physical Size = 11537921
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 11537921
+
+LHA DECODER 0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/lha-t-all: exit 0
+ing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ...........................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  .???{??.txt	- Testing  :  o???{??.txt	- Tested  
+
+LHA DECODER 0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 11537921 bytes (12 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-9/0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh5-9/0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/archive.lzh
+Type = Lzh
+Physical Size = 11537921
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 11537921
+
+LHA DECODER 0E59EBE5-9EB6-4AEE-8814-852474C1CA3F/7zz-methods: exit 0
+ OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3131
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh5-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 72
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh5-
+Host OS = UNIX
+
+
+LHA DECODER 420A268F-E901-418B-80AD-BFDED2AF4F48/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576   0.3% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728  51.1% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913  79.5% Nov  4 11:19
+
+LHA DECODER 420A268F-E901-418B-80AD-BFDED2AF4F48/lha-vv: exit 0
+---
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/*****    3132 1048576   0.3% -lh6- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/***** 1606387 3145728  51.1% -lh6- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 9998128 12582913  79.5%            2026-11-04 11:19:59
+
+LHA DECODER 420A268F-E901-418B-80AD-BFDED2AF4F48/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................................text.txt	- Testing  :  ooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER 420A268F-E901-418B-80AD-BFDED2AF4F48/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9998581 bytes (9765 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-1/420A268F-E901-418B-80AD-BFDED2AF4F48/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-1/420A268F-E901-418B-80AD-BFDED2AF4F48/archive.lzh
+Type = Lzh
+Physical Size = 9998581
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 9998581
+
+LHA DECODER 420A268F-E901-418B-80AD-BFDED2AF4F48/7zz-l-slt: exit 0
+ -lh0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh6-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 1606387
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh6-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER 420A268F-E901-418B-80AD-BFDED2AF4F48/lha-x: exit 0
+cation/lha-method-lh6-1/420A268F-E901-418B-80AD-BFDED2AF4F48/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-1/420A268F-E901-418B-80AD-BFDED2AF4F48/lha-extracted/distance.bin	- Melting  :  ................................................/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-1/420A268F-E901-418B-80AD-BFDED2AF4F48/lha-extracted/distance.bin	- Melting  :  oooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-1/420A268F-E901-418B-80AD-BFDED2AF4F48/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER 420A268F-E901-418B-80AD-BFDED2AF4F48/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9998581 bytes (9765 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-1/420A268F-E901-418B-80AD-BFDED2AF4F48/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-1/420A268F-E901-418B-80AD-BFDED2AF4F48/archive.lzh
+Type = Lzh
+Physical Size = 9998581
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 9998581
+
+LHA DECODER 420A268F-E901-418B-80AD-BFDED2AF4F48/lha-t-all: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................................text.txt	- Testing  :  ooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  .???{??.txt	- Testing  :  o???{??.txt	- Tested  
+
+LHA DECODER 420A268F-E901-418B-80AD-BFDED2AF4F48/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9998581 bytes (9765 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-1/420A268F-E901-418B-80AD-BFDED2AF4F48/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-1/420A268F-E901-418B-80AD-BFDED2AF4F48/archive.lzh
+Type = Lzh
+Physical Size = 9998581
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 9998581
+
+LHA DECODER 420A268F-E901-418B-80AD-BFDED2AF4F48/7zz-methods: exit 0
+ OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh6-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 1606387
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh6-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 72
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh6-
+Host OS = UNIX
+
+
+LHA DECODER 247442B6-18A5-4F46-89CE-B70E7AB1402A/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576   0.3% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728  51.1% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913  79.5% Nov  4 11:20
+
+LHA DECODER 247442B6-18A5-4F46-89CE-B70E7AB1402A/lha-vv: exit 0
+---
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/*****    3132 1048576   0.3% -lh6- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/***** 1606387 3145728  51.1% -lh6- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 9998128 12582913  79.5%            2026-11-04 11:20:13
+
+LHA DECODER 247442B6-18A5-4F46-89CE-B70E7AB1402A/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................................text.txt	- Testing  :  ooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER 247442B6-18A5-4F46-89CE-B70E7AB1402A/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9998581 bytes (9765 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-6/247442B6-18A5-4F46-89CE-B70E7AB1402A/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-6/247442B6-18A5-4F46-89CE-B70E7AB1402A/archive.lzh
+Type = Lzh
+Physical Size = 9998581
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 9998581
+
+LHA DECODER 247442B6-18A5-4F46-89CE-B70E7AB1402A/7zz-l-slt: exit 0
+ -lh0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh6-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 1606387
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh6-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER 247442B6-18A5-4F46-89CE-B70E7AB1402A/lha-x: exit 0
+cation/lha-method-lh6-6/247442B6-18A5-4F46-89CE-B70E7AB1402A/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-6/247442B6-18A5-4F46-89CE-B70E7AB1402A/lha-extracted/distance.bin	- Melting  :  ................................................/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-6/247442B6-18A5-4F46-89CE-B70E7AB1402A/lha-extracted/distance.bin	- Melting  :  oooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-6/247442B6-18A5-4F46-89CE-B70E7AB1402A/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER 247442B6-18A5-4F46-89CE-B70E7AB1402A/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9998581 bytes (9765 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-6/247442B6-18A5-4F46-89CE-B70E7AB1402A/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-6/247442B6-18A5-4F46-89CE-B70E7AB1402A/archive.lzh
+Type = Lzh
+Physical Size = 9998581
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 9998581
+
+LHA DECODER 247442B6-18A5-4F46-89CE-B70E7AB1402A/lha-t-all: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................................text.txt	- Testing  :  ooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  .???{??.txt	- Testing  :  o???{??.txt	- Tested  
+
+LHA DECODER 247442B6-18A5-4F46-89CE-B70E7AB1402A/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9998581 bytes (9765 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-6/247442B6-18A5-4F46-89CE-B70E7AB1402A/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-6/247442B6-18A5-4F46-89CE-B70E7AB1402A/archive.lzh
+Type = Lzh
+Physical Size = 9998581
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 9998581
+
+LHA DECODER 247442B6-18A5-4F46-89CE-B70E7AB1402A/7zz-methods: exit 0
+ OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh6-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 1606387
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh6-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 72
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh6-
+Host OS = UNIX
+
+
+LHA DECODER 1202FE36-B962-4840-9F5A-A06BB4E933EF/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576   0.3% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728  51.1% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913  79.5% Nov  4 11:20
+
+LHA DECODER 1202FE36-B962-4840-9F5A-A06BB4E933EF/lha-vv: exit 0
+---
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/*****    3132 1048576   0.3% -lh6- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/***** 1606387 3145728  51.1% -lh6- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 9998128 12582913  79.5%            2026-11-04 11:20:26
+
+LHA DECODER 1202FE36-B962-4840-9F5A-A06BB4E933EF/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................................text.txt	- Testing  :  ooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER 1202FE36-B962-4840-9F5A-A06BB4E933EF/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9998581 bytes (9765 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-9/1202FE36-B962-4840-9F5A-A06BB4E933EF/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-9/1202FE36-B962-4840-9F5A-A06BB4E933EF/archive.lzh
+Type = Lzh
+Physical Size = 9998581
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 9998581
+
+LHA DECODER 1202FE36-B962-4840-9F5A-A06BB4E933EF/7zz-l-slt: exit 0
+ -lh0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh6-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 1606387
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh6-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER 1202FE36-B962-4840-9F5A-A06BB4E933EF/lha-x: exit 0
+cation/lha-method-lh6-9/1202FE36-B962-4840-9F5A-A06BB4E933EF/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-9/1202FE36-B962-4840-9F5A-A06BB4E933EF/lha-extracted/distance.bin	- Melting  :  ................................................/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-9/1202FE36-B962-4840-9F5A-A06BB4E933EF/lha-extracted/distance.bin	- Melting  :  oooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-9/1202FE36-B962-4840-9F5A-A06BB4E933EF/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER 1202FE36-B962-4840-9F5A-A06BB4E933EF/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9998581 bytes (9765 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-9/1202FE36-B962-4840-9F5A-A06BB4E933EF/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-9/1202FE36-B962-4840-9F5A-A06BB4E933EF/archive.lzh
+Type = Lzh
+Physical Size = 9998581
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 9998581
+
+LHA DECODER 1202FE36-B962-4840-9F5A-A06BB4E933EF/lha-t-all: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................................text.txt	- Testing  :  ooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  .???{??.txt	- Testing  :  o???{??.txt	- Tested  
+
+LHA DECODER 1202FE36-B962-4840-9F5A-A06BB4E933EF/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 9998581 bytes (9765 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-9/1202FE36-B962-4840-9F5A-A06BB4E933EF/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh6-9/1202FE36-B962-4840-9F5A-A06BB4E933EF/archive.lzh
+Type = Lzh
+Physical Size = 9998581
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 9998581
+
+LHA DECODER 1202FE36-B962-4840-9F5A-A06BB4E933EF/7zz-methods: exit 0
+ OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh6-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 1606387
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh6-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 72
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh6-
+Host OS = UNIX
+
+
+LHA DECODER 2C14E29A-0FC7-41A1-81E1-E5886ED935B8/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576   0.3% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728   3.0% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913  67.5% Nov  4 11:20
+
+LHA DECODER 2C14E29A-0FC7-41A1-81E1-E5886ED935B8/lha-vv: exit 0
+---
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/*****    3132 1048576   0.3% -lh7- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/*****   92306 3145728   3.0% -lh7- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 8484047 12582913  67.5%            2026-11-04 11:20:36
+
+LHA DECODER 2C14E29A-0FC7-41A1-81E1-E5886ED935B8/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................text.txt	- Testing  :  ooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER 2C14E29A-0FC7-41A1-81E1-E5886ED935B8/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8484500 bytes (8286 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-1/2C14E29A-0FC7-41A1-81E1-E5886ED935B8/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-1/2C14E29A-0FC7-41A1-81E1-E5886ED935B8/archive.lzh
+Type = Lzh
+Physical Size = 8484500
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 8484500
+
+LHA DECODER 2C14E29A-0FC7-41A1-81E1-E5886ED935B8/7zz-l-slt: exit 0
+ = -lh0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh7-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 92306
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh7-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER 2C14E29A-0FC7-41A1-81E1-E5886ED935B8/lha-x: exit 0
+cation/lha-method-lh7-1/2C14E29A-0FC7-41A1-81E1-E5886ED935B8/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-1/2C14E29A-0FC7-41A1-81E1-E5886ED935B8/lha-extracted/distance.bin	- Melting  :  ................................................/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-1/2C14E29A-0FC7-41A1-81E1-E5886ED935B8/lha-extracted/distance.bin	- Melting  :  oooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-1/2C14E29A-0FC7-41A1-81E1-E5886ED935B8/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER 2C14E29A-0FC7-41A1-81E1-E5886ED935B8/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8484500 bytes (8286 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-1/2C14E29A-0FC7-41A1-81E1-E5886ED935B8/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-1/2C14E29A-0FC7-41A1-81E1-E5886ED935B8/archive.lzh
+Type = Lzh
+Physical Size = 8484500
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 8484500
+
+LHA DECODER 2C14E29A-0FC7-41A1-81E1-E5886ED935B8/lha-t-all: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................text.txt	- Testing  :  ooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  .???{??.txt	- Testing  :  o???{??.txt	- Tested  
+
+LHA DECODER 2C14E29A-0FC7-41A1-81E1-E5886ED935B8/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8484500 bytes (8286 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-1/2C14E29A-0FC7-41A1-81E1-E5886ED935B8/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-1/2C14E29A-0FC7-41A1-81E1-E5886ED935B8/archive.lzh
+Type = Lzh
+Physical Size = 8484500
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 8484500
+
+LHA DECODER 2C14E29A-0FC7-41A1-81E1-E5886ED935B8/7zz-methods: exit 0
+st OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh7-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 92306
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh7-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 72
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh7-
+Host OS = UNIX
+
+
+LHA DECODER 24BB5D2F-15DE-4638-818F-2F038D90440C/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576   0.3% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728   3.0% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913  67.5% Nov  4 11:20
+
+LHA DECODER 24BB5D2F-15DE-4638-818F-2F038D90440C/lha-vv: exit 0
+---
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/*****    3132 1048576   0.3% -lh7- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/*****   92306 3145728   3.0% -lh7- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 8484047 12582913  67.5%            2026-11-04 11:20:42
+
+LHA DECODER 24BB5D2F-15DE-4638-818F-2F038D90440C/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................text.txt	- Testing  :  ooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER 24BB5D2F-15DE-4638-818F-2F038D90440C/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8484500 bytes (8286 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-6/24BB5D2F-15DE-4638-818F-2F038D90440C/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-6/24BB5D2F-15DE-4638-818F-2F038D90440C/archive.lzh
+Type = Lzh
+Physical Size = 8484500
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 8484500
+
+LHA DECODER 24BB5D2F-15DE-4638-818F-2F038D90440C/7zz-l-slt: exit 0
+ = -lh0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh7-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 92306
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh7-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER 24BB5D2F-15DE-4638-818F-2F038D90440C/lha-x: exit 0
+cation/lha-method-lh7-6/24BB5D2F-15DE-4638-818F-2F038D90440C/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-6/24BB5D2F-15DE-4638-818F-2F038D90440C/lha-extracted/distance.bin	- Melting  :  ................................................/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-6/24BB5D2F-15DE-4638-818F-2F038D90440C/lha-extracted/distance.bin	- Melting  :  oooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-6/24BB5D2F-15DE-4638-818F-2F038D90440C/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER 24BB5D2F-15DE-4638-818F-2F038D90440C/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8484500 bytes (8286 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-6/24BB5D2F-15DE-4638-818F-2F038D90440C/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-6/24BB5D2F-15DE-4638-818F-2F038D90440C/archive.lzh
+Type = Lzh
+Physical Size = 8484500
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 8484500
+
+LHA DECODER 24BB5D2F-15DE-4638-818F-2F038D90440C/lha-t-all: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................text.txt	- Testing  :  ooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  .???{??.txt	- Testing  :  o???{??.txt	- Tested  
+
+LHA DECODER 24BB5D2F-15DE-4638-818F-2F038D90440C/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8484500 bytes (8286 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-6/24BB5D2F-15DE-4638-818F-2F038D90440C/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-6/24BB5D2F-15DE-4638-818F-2F038D90440C/archive.lzh
+Type = Lzh
+Physical Size = 8484500
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 8484500
+
+LHA DECODER 24BB5D2F-15DE-4638-818F-2F038D90440C/7zz-methods: exit 0
+st OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh7-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 92306
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh7-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 72
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh7-
+Host OS = UNIX
+
+
+LHA DECODER 1270EDC4-F93D-4AD3-B97D-6237B383B67F/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576   0.3% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728   3.0% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913  67.5% Nov  4 11:20
+
+LHA DECODER 1270EDC4-F93D-4AD3-B97D-6237B383B67F/lha-vv: exit 0
+---
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/*****    3132 1048576   0.3% -lh7- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/*****   92306 3145728   3.0% -lh7- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 8484047 12582913  67.5%            2026-11-04 11:20:48
+
+LHA DECODER 1270EDC4-F93D-4AD3-B97D-6237B383B67F/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................text.txt	- Testing  :  ooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER 1270EDC4-F93D-4AD3-B97D-6237B383B67F/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8484500 bytes (8286 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-9/1270EDC4-F93D-4AD3-B97D-6237B383B67F/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-9/1270EDC4-F93D-4AD3-B97D-6237B383B67F/archive.lzh
+Type = Lzh
+Physical Size = 8484500
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 8484500
+
+LHA DECODER 1270EDC4-F93D-4AD3-B97D-6237B383B67F/7zz-l-slt: exit 0
+ = -lh0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh7-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 92306
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh7-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER 1270EDC4-F93D-4AD3-B97D-6237B383B67F/lha-x: exit 0
+cation/lha-method-lh7-9/1270EDC4-F93D-4AD3-B97D-6237B383B67F/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-9/1270EDC4-F93D-4AD3-B97D-6237B383B67F/lha-extracted/distance.bin	- Melting  :  ................................................/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-9/1270EDC4-F93D-4AD3-B97D-6237B383B67F/lha-extracted/distance.bin	- Melting  :  oooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-9/1270EDC4-F93D-4AD3-B97D-6237B383B67F/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER 1270EDC4-F93D-4AD3-B97D-6237B383B67F/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8484500 bytes (8286 KiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-9/1270EDC4-F93D-4AD3-B97D-6237B383B67F/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-9/1270EDC4-F93D-4AD3-B97D-6237B383B67F/archive.lzh
+Type = Lzh
+Physical Size = 8484500
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 8484500
+
+LHA DECODER 1270EDC4-F93D-4AD3-B97D-6237B383B67F/lha-t-all: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  ................text.txt	- Testing  :  ooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  ................................................distance.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  .???{??.txt	- Testing  :  o???{??.txt	- Tested  
+
+LHA DECODER 1270EDC4-F93D-4AD3-B97D-6237B383B67F/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 8484500 bytes (8286 KiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-9/1270EDC4-F93D-4AD3-B97D-6237B383B67F/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-lh7-9/1270EDC4-F93D-4AD3-B97D-6237B383B67F/archive.lzh
+Type = Lzh
+Physical Size = 8484500
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 8484500
+
+LHA DECODER 1270EDC4-F93D-4AD3-B97D-6237B383B67F/7zz-methods: exit 0
+st OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 3132
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh7-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 92306
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh7-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 72
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh7-
+Host OS = UNIX
+
+
+LHA DECODER 6695EA49-CA36-4A84-82F1-43D142C2BA83/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576 100.0% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728 100.0% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913 100.0% Nov  4 11:20
+
+LHA DECODER 6695EA49-CA36-4A84-82F1-43D142C2BA83/lha-vv: exit 0
+--
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/***** 1048576 1048576 100.0% -lh0- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/***** 3145728 3145728 100.0% -lh0- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 12582913 12582913 100.0%            2026-11-04 11:20:49
+
+LHA DECODER 6695EA49-CA36-4A84-82F1-43D142C2BA83/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  .........................................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER 6695EA49-CA36-4A84-82F1-43D142C2BA83/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 12587390 bytes (13 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-1/6695EA49-CA36-4A84-82F1-43D142C2BA83/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-1/6695EA49-CA36-4A84-82F1-43D142C2BA83/archive.lzh
+Type = Lzh
+Physical Size = 12587390
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 12587390
+
+LHA DECODER 6695EA49-CA36-4A84-82F1-43D142C2BA83/7zz-l-slt: exit 0
+h0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 1048576
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh0-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER 6695EA49-CA36-4A84-82F1-43D142C2BA83/lha-x: exit 0
+5EA49-CA36-4A84-82F1-43D142C2BA83/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-1/6695EA49-CA36-4A84-82F1-43D142C2BA83/lha-extracted/distance.bin	- Melting  :  ........................................................./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-1/6695EA49-CA36-4A84-82F1-43D142C2BA83/lha-extracted/distance.bin	- Melting  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-1/6695EA49-CA36-4A84-82F1-43D142C2BA83/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER 6695EA49-CA36-4A84-82F1-43D142C2BA83/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 12587390 bytes (13 MiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-1/6695EA49-CA36-4A84-82F1-43D142C2BA83/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-1/6695EA49-CA36-4A84-82F1-43D142C2BA83/archive.lzh
+Type = Lzh
+Physical Size = 12587390
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 12587390
+
+LHA DECODER 6695EA49-CA36-4A84-82F1-43D142C2BA83/lha-t-all: exit 0
+	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  .........................................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  ..???{??.txt	- Testing  :  oo???{??.txt	- Tested  
+
+LHA DECODER 6695EA49-CA36-4A84-82F1-43D142C2BA83/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 12587390 bytes (13 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-1/6695EA49-CA36-4A84-82F1-43D142C2BA83/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-1/6695EA49-CA36-4A84-82F1-43D142C2BA83/archive.lzh
+Type = Lzh
+Physical Size = 12587390
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 12587390
+
+LHA DECODER 6695EA49-CA36-4A84-82F1-43D142C2BA83/7zz-methods: exit 0
+ UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 1048576
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh0-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 4096
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh0-
+Host OS = UNIX
+
+
+LHA DECODER 526CD849-C301-438B-8A93-F565015F465C/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576 100.0% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728 100.0% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913 100.0% Nov  4 11:20
+
+LHA DECODER 526CD849-C301-438B-8A93-F565015F465C/lha-vv: exit 0
+--
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/***** 1048576 1048576 100.0% -lh0- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/***** 3145728 3145728 100.0% -lh0- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 12582913 12582913 100.0%            2026-11-04 11:20:50
+
+LHA DECODER 526CD849-C301-438B-8A93-F565015F465C/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  .........................................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER 526CD849-C301-438B-8A93-F565015F465C/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 12587390 bytes (13 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-6/526CD849-C301-438B-8A93-F565015F465C/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-6/526CD849-C301-438B-8A93-F565015F465C/archive.lzh
+Type = Lzh
+Physical Size = 12587390
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 12587390
+
+LHA DECODER 526CD849-C301-438B-8A93-F565015F465C/7zz-l-slt: exit 0
+h0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 1048576
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh0-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER 526CD849-C301-438B-8A93-F565015F465C/lha-x: exit 0
+CD849-C301-438B-8A93-F565015F465C/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-6/526CD849-C301-438B-8A93-F565015F465C/lha-extracted/distance.bin	- Melting  :  ........................................................./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-6/526CD849-C301-438B-8A93-F565015F465C/lha-extracted/distance.bin	- Melting  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-6/526CD849-C301-438B-8A93-F565015F465C/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER 526CD849-C301-438B-8A93-F565015F465C/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 12587390 bytes (13 MiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-6/526CD849-C301-438B-8A93-F565015F465C/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-6/526CD849-C301-438B-8A93-F565015F465C/archive.lzh
+Type = Lzh
+Physical Size = 12587390
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 12587390
+
+LHA DECODER 526CD849-C301-438B-8A93-F565015F465C/lha-t-all: exit 0
+	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  .........................................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  ..???{??.txt	- Testing  :  oo???{??.txt	- Tested  
+
+LHA DECODER 526CD849-C301-438B-8A93-F565015F465C/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 12587390 bytes (13 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-6/526CD849-C301-438B-8A93-F565015F465C/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-6/526CD849-C301-438B-8A93-F565015F465C/archive.lzh
+Type = Lzh
+Physical Size = 12587390
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 12587390
+
+LHA DECODER 526CD849-C301-438B-8A93-F565015F465C/7zz-methods: exit 0
+ UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 1048576
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh0-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 4096
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh0-
+Host OS = UNIX
+
+
+LHA DECODER 1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/lha-l: exit 0
+ PERMSSN    UID  GID      SIZE  RATIO     STAMP           NAME
+---------- ----------- ------- ------ ------------ --------------------
+-rw-r--r-- *****/*****       0 100.0% Nov 14  2023 empty
+-rw-r--r-- *****/*****       1 100.0% Nov 14  2023 one
+-rw-r--r-- *****/***** 1048576 100.0% Nov 14  2023 text.txt
+-rw-r--r-- *****/***** 8388608 100.0% Nov 14  2023 random.bin
+-rw-r--r-- *****/***** 3145728 100.0% Nov 14  2023 distance.bin
+drwxr-xr-x *****/*****       0 ****** Nov 14  2023 folder/
+---------- ----------- ------- ------ ------------ --------------------
+ Total         6 files 12582913 100.0% Nov  4 11:20
+
+LHA DECODER 1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/lha-vv: exit 0
+--
+empty
+-rw-r--r-- *****/*****       0       0 100.0% -lh0- 0000 2023-11-14 22:13:21 [2]
+one
+-rw-r--r-- *****/*****       1       1 100.0% -lh0- 6840 2023-11-14 22:13:21 [2]
+text.txt
+-rw-r--r-- *****/***** 1048576 1048576 100.0% -lh0- 0031 2023-11-14 22:13:21 [2]
+random.bin
+-rw-r--r-- *****/***** 8388608 8388608 100.0% -lh0- deb7 2023-11-14 22:13:21 [2]
+distance.bin
+-rw-r--r-- *****/***** 3145728 3145728 100.0% -lh0- 1728 2023-11-14 22:13:21 [2]
+folder/
+drwxr-xr-x *****/*****       0       0 ****** -lhd- 0000 2023-11-14 22:13:21 [2]
+---------- ----------- ------- ------- ------ ---------- ------------------- ---
+ Total         6 files 12582913 12582913 100.0%            2026-11-04 11:20:51
+
+LHA DECODER 1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/lha-t: exit 0
+empty	- Testing  :  empty	- Testing  :  empty	- Tested  
+one	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  .........................................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+
+LHA DECODER 1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/7zz-t: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 12587390 bytes (13 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-9/1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-9/1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/archive.lzh
+Type = Lzh
+Physical Size = 12587390
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 12587390
+
+LHA DECODER 1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/7zz-l-slt: exit 0
+h0-
+Host OS = UNIX
+
+Path = one
+Folder = -
+Size = 1
+Packed Size = 1
+Modified = 2023-11-14 22:13:21
+CRC = 00006840
+Method = -lh0-
+Host OS = UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 1048576
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh0-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+
+LHA DECODER 1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/lha-x: exit 0
+B75CC-1881-4DBD-9C9B-5C5D86BA3D12/lha-extracted/random.bin	- Melted  
+/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-9/1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/lha-extracted/distance.bin	- Melting  :  ........................................................./private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-9/1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/lha-extracted/distance.bin	- Melting  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooo/private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-9/1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/lha-extracted/distance.bin	- Melted  
+
+LHA DECODER 1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/7zz-x: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 12587390 bytes (13 MiB)
+
+Extracting archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-9/1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-9/1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/archive.lzh
+Type = Lzh
+Physical Size = 12587390
+
+Everything is Ok
+
+Folders: 1
+Files: 5
+Size:       12582913
+Compressed: 12587390
+
+LHA DECODER 1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/lha-t-all: exit 0
+	- Testing  :  .one	- Testing  :  oone	- Tested  
+text.txt	- Testing  :  .........................................................text.txt	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooootext.txt	- Tested  
+random.bin	- Testing  :  ..........................................................random.bin	- Testing  :  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooorandom.bin	- Tested  
+distance.bin	- Testing  :  .........................................................distance.bin	- Testing  :  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooodistance.bin	- Tested  
+???{??.txt	- Testing  :  ..???{??.txt	- Testing  :  oo???{??.txt	- Tested  
+
+LHA DECODER 1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/7zz-t-all: exit 0
+
+7-Zip (z) 26.05 (arm64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:10 OPEN_MAX:6656, ASM
+
+Scanning the drive for archives:
+1 file, 12587390 bytes (13 MiB)
+
+Testing archive: /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-9/1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/archive.lzh
+--
+Path = /private/tmp/gyoshuku-lh5-research.Yk6aKe/GyoshukuKit/.build/verification/lha-method-stored-9/1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/archive.lzh
+Type = Lzh
+Physical Size = 12587390
+
+Everything is Ok
+
+Folders: 1
+Files: 6
+Size:       12587009
+Compressed: 12587390
+
+LHA DECODER 1EFB75CC-1881-4DBD-9C9B-5C5D86BA3D12/7zz-methods: exit 0
+ UNIX
+
+Path = text.txt
+Folder = -
+Size = 1048576
+Packed Size = 1048576
+Modified = 2023-11-14 22:13:21
+CRC = 00000031
+Method = -lh0-
+Host OS = UNIX
+
+Path = random.bin
+Folder = -
+Size = 8388608
+Packed Size = 8388608
+Modified = 2023-11-14 22:13:21
+CRC = 0000DEB7
+Method = -lh0-
+Host OS = UNIX
+
+Path = distance.bin
+Folder = -
+Size = 3145728
+Packed Size = 3145728
+Modified = 2023-11-14 22:13:21
+CRC = 00001728
+Method = -lh0-
+Host OS = UNIX
+
+Path = folder
+Folder = +
+Size = 0
+Packed Size = 0
+Modified = 2023-11-14 22:13:21
+CRC = 00000000
+Method = -lhd-
+Host OS = UNIX
+
+Path = {.txt
+Folder = -
+Size = 4096
+Packed Size = 4096
+Modified = 2023-11-14 22:13:21
+CRC = 000053F4
+Method = -lh0-
+Host OS = UNIX
+
+
+LHA DISTANCE level=1: LH5=3145728, LH6=1606387, LH7=92306 bytes
+LHA DISTANCE level=6: LH5=3145728, LH6=1606387, LH7=92306 bytes
+LHA DISTANCE level=9: LH5=3145728, LH6=1606387, LH7=92306 bytes
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testMethodsLevelsAndParallelHistoriesRoundTripWithIndependentTools]' passed (83.108 seconds).
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testOptionValidationAndPendingInputBounds]' started.
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testOptionValidationAndPendingInputBounds]' passed (0.001 seconds).
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testUpdaterCarriesExistingBytesAndRewriterUsesSelectedMethodAndLevel]' started.
+Test Case '-[GyoshukuKitTests.LHACompressionMethodTests testUpdaterCarriesExistingBytesAndRewriterUsesSelectedMethodAndLevel]' passed (15.615 seconds).
+Test Suite 'LHACompressionMethodTests' passed at 2026-11-04 20:21:08.018.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 108.223 (108.224) seconds
+Test Suite 'LHAStreamSpliceTests' started at 2026-11-04 20:21:08.018.
+Test Case '-[GyoshukuKitTests.LHAStreamSpliceTests testBitSplicingAtEveryStartingAndEndingBitPosition]' started.
+Test Case '-[GyoshukuKitTests.LHAStreamSpliceTests testBitSplicingAtEveryStartingAndEndingBitPosition]' passed (0.010 seconds).
+Test Case '-[GyoshukuKitTests.LHAStreamSpliceTests testLargeMembersMatchS15SerialStreamAtEveryThreadCount]' started.
+Test Case '-[GyoshukuKitTests.LHAStreamSpliceTests testLargeMembersMatchS15SerialStreamAtEveryThreadCount]' passed (37.334 seconds).
+Test Suite 'LHAStreamSpliceTests' passed at 2026-11-04 20:21:45.361.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 37.343 (37.344) seconds
+Test Suite 'LHAWriterParallelTests' started at 2026-11-04 20:21:45.361.
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testCapacityWaitPrecedesInputReadAndCancellationAbandonsPendingMembers]' started.
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testCapacityWaitPrecedesInputReadAndCancellationAbandonsPendingMembers]' passed (0.089 seconds).
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testDirectoriesDoNotRunEncoderAndWorkerCancellationRemovesOutput]' started.
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testDirectoriesDoNotRunEncoderAndWorkerCancellationRemovesOutput]' passed (0.001 seconds).
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testEncoderFailureIsDeferredToAddFinishLargeDrainAndEndMembers]' started.
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testEncoderFailureIsDeferredToAddFinishLargeDrainAndEndMembers]' passed (0.003 seconds).
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testEndMembersRecordsAbsoluteOffsetsWithoutTerminatorOrClose]' started.
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testEndMembersRecordsAbsoluteOffsetsWithoutTerminatorOrClose]' passed (0.161 seconds).
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testInputIsConsumedBeforeDeferredAddReturns]' started.
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testInputIsConsumedBeforeDeferredAddReturns]' passed (0.002 seconds).
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testThreeHundredMembersMatchIndependentSerialReferenceAtEveryThreadCount]' started.
+Test Case '-[GyoshukuKitTests.LHAWriterParallelTests testThreeHundredMembersMatchIndependentSerialReferenceAtEveryThreadCount]' passed (8.869 seconds).
+Test Suite 'LHAWriterParallelTests' passed at 2026-11-04 20:21:54.487.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 9.125 (9.125) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:21:54.487.
+	 Executed 23 tests, with 0 failures (0 unexpected) in 172.314 (172.317) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:21:54.487.
+	 Executed 23 tests, with 0 failures (0 unexpected) in 172.314 (172.317) seconds

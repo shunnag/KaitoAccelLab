@@ -1,0 +1,101 @@
+Building for production...
+[Planning deferred tasks]
+[33 / 60]
+[34 / 61] KaitoKit
+[45 / 104]
+[50 / 104]
+[58 / 104]
+[65 / 104]
+[69 / 104]
+[73 / 104]
+[75 / 104]
+[76 / 104]
+/private/tmp/gyoshuku-zstd-research.qAa6f4/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[78 / 104] KaitoKit
+[85 / 105] GyoshukuKit
+[88 / 107] GyoshukuKit
+[98 / 108] GyoshukuKitTests-product
+[108 / 139]
+[114 / 139]
+[119 / 139]
+[123 / 139]
+[125 / 139]
+[128 / 139]
+[129 / 139]
+[130 / 139] GyoshukuKitTests-product
+[135 / 139] GyoshukuKitTests-product
+[137 / 139] GyoshukuKitTests-product
+Build complete! (155.15秒)
+Test Suite 'Selected tests' started at 2026-11-04 18:30:12.715.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 18:30:12.716.
+Test Suite 'ZstdEncoderBenchmarkTests' started at 2026-11-04 18:30:12.716.
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' started.
+ZSTD-BENCH-SOURCE	/usr/lib/dyld	4129088
+ZSTD-BENCH-SOURCE	/System/Library/Frameworks/CreateML.framework/Versions/A/CreateML	16559504
+ZSTD-BENCH	corpus	level	encoder	bytes	MB/s	seconds
+ZSTD-BENCH-CORPUS	text	4194304
+ZSTD-BENCH	text	1	swift	1007734	364.384	0.011511
+ZSTD-BENCH	text	1	zstd	1022409	595.500	0.007043
+ZSTD-BENCH-TARGET	text	1	size-gap=-1.435%	speed/zstd=0.612
+ZSTD-PROFILE	text	1	input+xxh64=0.000294	match+parse=0.008829	literals=0.000494	sequences=0.004493	codes=0.001787	tables=0.000318	bits=0.002353	literal-histogram=0.000011	literal-tables=0.000095	literal-bits=0.000011
+ZSTD-BENCH	text	3	swift	933779	298.797	0.014037
+ZSTD-BENCH	text	3	zstd	970449	574.800	0.007297
+ZSTD-BENCH-TARGET	text	3	size-gap=-3.779%	speed/zstd=0.520
+ZSTD-PROFILE	text	3	input+xxh64=0.000271	match+parse=0.010881	literals=0.000237	sequences=0.003343	codes=0.001080	tables=0.000576	bits=0.001656	literal-histogram=0.000008	literal-tables=0.000006	literal-bits=0.000004
+ZSTD-BENCH	text	9	swift	786451	40.903	0.102542
+ZSTD-BENCH	text	9	zstd	944619	88.400	0.047447
+ZSTD-BENCH-TARGET	text	9	size-gap=-16.744%	speed/zstd=0.463
+ZSTD-PROFILE	text	9	input+xxh64=0.000254	match+parse=0.100187	literals=0.000452	sequences=0.002413	codes=0.000766	tables=0.000721	bits=0.000895	literal-histogram=0.000020	literal-tables=0.000145	literal-bits=0.000031
+ZSTD-BENCH	text	19	swift	704190	4.511	0.929785
+ZSTD-BENCH	text	19	zstd	692480	4.950	0.847334
+ZSTD-BENCH-TARGET	text	19	size-gap=1.691%	speed/zstd=0.911
+ZSTD-PROFILE	text	19	input+xxh64=0.000273	match+parse=0.920788	literals=0.000197	sequences=0.002390	codes=0.000661	tables=0.000808	bits=0.000879	literal-histogram=0.000018	literal-tables=0.000018	literal-bits=0.000018
+ZSTD-BENCH-CORPUS	binary	20688592
+ZSTD-BENCH	binary	1	swift	8137010	326.059	0.063450
+ZSTD-BENCH	binary	1	zstd	9037527	761.600	0.027165
+ZSTD-BENCH-TARGET	binary	1	size-gap=-9.964%	speed/zstd=0.428
+ZSTD-BENCH-MISS	binary	1	size=false	speed=true
+ZSTD-PROFILE	binary	1	input+xxh64=0.001175	match+parse=0.036694	literals=0.011840	sequences=0.014590	codes=0.006990	tables=0.002244	bits=0.005218	literal-histogram=0.001252	literal-tables=0.002855	literal-bits=0.002332
+ZSTD-BENCH	binary	3	swift	7372719	212.074	0.097554
+ZSTD-BENCH	binary	3	zstd	7570254	495.100	0.041787
+ZSTD-BENCH-TARGET	binary	3	size-gap=-2.609%	speed/zstd=0.428
+ZSTD-BENCH-MISS	binary	3	size=false	speed=true
+ZSTD-PROFILE	binary	3	input+xxh64=0.001192	match+parse=0.065678	literals=0.010692	sequences=0.020942	codes=0.009061	tables=0.005563	bits=0.006110	literal-histogram=0.000874	literal-tables=0.002554	literal-bits=0.001670
+ZSTD-BENCH	binary	9	swift	6935978	38.044	0.543804
+ZSTD-BENCH	binary	9	zstd	6898154	121.500	0.170276
+ZSTD-BENCH-TARGET	binary	9	size-gap=0.548%	speed/zstd=0.313
+ZSTD-PROFILE	binary	9	input+xxh64=0.001360	match+parse=0.548203	literals=0.009877	sequences=0.019024	codes=0.007637	tables=0.005623	bits=0.005463	literal-histogram=0.000815	literal-tables=0.002929	literal-bits=0.001697
+ZSTD-BENCH	binary	19	swift	5339220	6.975	2.966129
+ZSTD-BENCH	binary	19	zstd	5204600	7.690	2.690324
+ZSTD-BENCH-TARGET	binary	19	size-gap=2.587%	speed/zstd=0.907
+ZSTD-PROFILE	binary	19	input+xxh64=0.001583	match+parse=2.935698	literals=0.008964	sequences=0.017782	codes=0.007072	tables=0.005436	bits=0.004987	literal-histogram=0.000672	literal-tables=0.003314	literal-bits=0.001627
+ZSTD-BENCH-CORPUS	mixed	16777216
+ZSTD-BENCH	mixed	1	swift	10796596	629.339	0.026658
+ZSTD-BENCH	mixed	1	zstd	10929511	1212.200	0.013840
+ZSTD-BENCH-TARGET	mixed	1	size-gap=-1.216%	speed/zstd=0.519
+ZSTD-PROFILE	mixed	1	input+xxh64=0.001161	match+parse=0.015766	literals=0.005078	sequences=0.006971	codes=0.002900	tables=0.000935	bits=0.003060	literal-histogram=0.002038	literal-tables=0.000858	literal-bits=0.000667
+ZSTD-BENCH	mixed	3	swift	10648501	414.474	0.040478
+ZSTD-BENCH	mixed	3	zstd	10724051	828.000	0.020262
+ZSTD-BENCH-TARGET	mixed	3	size-gap=-0.704%	speed/zstd=0.501
+ZSTD-PROFILE	mixed	3	input+xxh64=0.001099	match+parse=0.030544	literals=0.004383	sequences=0.007689	codes=0.002833	tables=0.002085	bits=0.002685	literal-histogram=0.001883	literal-tables=0.000544	literal-bits=0.000510
+ZSTD-BENCH	mixed	9	swift	10470952	35.748	0.469318
+ZSTD-BENCH	mixed	9	zstd	10608351	205.500	0.081641
+ZSTD-BENCH-TARGET	mixed	9	size-gap=-1.295%	speed/zstd=0.174
+ZSTD-PROFILE	mixed	9	input+xxh64=0.001239	match+parse=0.536735	literals=0.004673	sequences=0.007248	codes=0.002334	tables=0.002659	bits=0.002102	literal-histogram=0.001823	literal-tables=0.000824	literal-bits=0.000641
+ZSTD-BENCH	mixed	19	swift	10080481	7.585	2.211769
+ZSTD-BENCH	mixed	19	zstd	9958089	9.560	1.754939
+ZSTD-BENCH-TARGET	mixed	19	size-gap=1.229%	speed/zstd=0.793
+ZSTD-PROFILE	mixed	19	input+xxh64=0.001062	match+parse=2.211441	literals=0.004746	sequences=0.006892	codes=0.002005	tables=0.003024	bits=0.001730	literal-histogram=0.001707	literal-tables=0.000950	literal-bits=0.000708
+Test Case '-[GyoshukuKitTests.ZstdEncoderBenchmarkTests testSingleThreadBenchmark]' passed (84.391 seconds).
+Test Suite 'ZstdEncoderBenchmarkTests' passed at 2026-11-04 18:31:37.107.
+	 Executed 1 test, with 0 failures (0 unexpected) in 84.391 (84.391) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 18:31:37.107.
+	 Executed 1 test, with 0 failures (0 unexpected) in 84.391 (84.391) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 18:31:37.107.
+	 Executed 1 test, with 0 failures (0 unexpected) in 84.391 (84.391) seconds

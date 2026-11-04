@@ -1,0 +1,201 @@
+Building for debugging...
+[Planning deferred tasks]
+[27 / 59] KaitoKit
+[37 / 115]
+[42 / 115]
+[50 / 115]
+[57 / 115]
+[61 / 115]
+[65 / 115]
+[67 / 115]
+[68 / 115]
+[74 / 115] KaitoKit
+[76 / 115] KaitoKit
+[82 / 115] KaitoKit
+[83 / 115] KaitoKit-product
+[84 / 115] KaitoKit-product
+[85 / 115] KaitoKit-product
+[87 / 115] KaitoKit
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[88 / 115] KaitoKit
+[89 / 115] KaitoKit
+[89 / 115] GyoshukuKit
+[90 / 116] GyoshukuKit
+[93 / 128] GyoshukuKit
+[94 / 128] GyoshukuKit
+[94 / 128] KaitoKit
+[96 / 128] GyoshukuKit
+[102 / 128] GyoshukuKit
+[103 / 128] GyoshukuKitTests-product
+[104 / 128] GyoshukuKitTests-product
+[106 / 128] GyoshukuKit
+[108 / 128] GyoshukuKit
+[110 / 128] KaitoKit
+[112 / 128] GyoshukuKit
+[118 / 129] GyoshukuKitTests-product
+[129 / 170]
+[135 / 170]
+[139 / 170]
+[144 / 170]
+[147 / 170]
+[148 / 170]
+[153 / 170] GyoshukuKitTests-product
+[157 / 170] GyoshukuKitTests-product
+[162 / 170] GyoshukuKitTests-product
+[164 / 170] AllIncludingTests
+[164 / 170] GyoshukuKitTests-product
+[166 / 170] GyoshukuKitTests-product
+Build complete! (29.43秒)
+Test Suite 'Selected tests' started at 2026-11-04 23:28:15.683.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:28:15.683.
+Test Suite 'FilterSpeedDifferentialTests' started at 2026-11-04 23:28:15.683.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testBCJARM64DenseBLADRPAndOddStartOffsets]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testBCJARM64DenseBLADRPAndOddStartOffsets]' passed (0.351 seconds).
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testBCJX86DenseBranchesAndOddStartOffsets]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testBCJX86DenseBranchesAndOddStartOffsets]' passed (0.271 seconds).
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testDeltaEveryDistanceAndRandomTinyPushes]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testDeltaEveryDistanceAndRandomTinyPushes]' passed (9.371 seconds).
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLH5BitsAppendEveryRemainderAndWordBoundary]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLH5BitsAppendEveryRemainderAndWordBoundary]' passed (0.741 seconds).
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLHACRC16RandomLengthsAlignmentsAndInitialValues]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLHACRC16RandomLengthsAlignmentsAndInitialValues]' passed (0.490 seconds).
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLZWMaxbits12Through16TextRandomAndClearWithPushSplits]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLZWMaxbits12Through16TextRandomAndClearWithPushSplits]' passed (6.048 seconds).
+Test Suite 'FilterSpeedDifferentialTests' passed at 2026-11-04 23:28:32.955.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 17.272 (17.272) seconds
+Test Suite 'LZWStreamEncoderTests' started at 2026-11-04 23:28:32.955.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testEndOfFilePartialGroupsAndBytewiseWrites]' started.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testEndOfFilePartialGroupsAndBytewiseWrites]' passed (2.808 seconds).
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testInvalidMaxbitsAndTerminalStates]' started.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testInvalidMaxbitsAndTerminalStates]' passed (0.000 seconds).
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testVariableWidthsClearAndRealCompressCompatibility]' started.
+LZW_SIZE empty-bits12 swift=3 compress=0 clears=0
+LZW_SIZE one-bits12 swift=5 compress=5 clears=0
+LZW_SIZE zeros-64k-bits12 swift=424 compress=424 clears=0
+LZW_SIZE random-bits12 swift=369462 compress=369462 clears=13
+LZW_SIZE text-bits12 swift=51025 compress=51025 clears=0
+LZW_SIZE clear-bits12 swift=474327 compress=474327 clears=14
+LZW_SIZE empty-bits16 swift=3 compress=0 clears=0
+LZW_SIZE one-bits16 swift=5 compress=5 clears=0
+LZW_SIZE zeros-64k-bits16 swift=424 compress=424 clears=0
+LZW_SIZE random-bits16 swift=334495 compress=347749 clears=0
+LZW_SIZE text-bits16 swift=50441 compress=50441 clears=0
+LZW_SIZE clear-bits16 swift=472903 compress=472903 clears=3
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testVariableWidthsClearAndRealCompressCompatibility]' passed (5.665 seconds).
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testVariableWidthsClearAndRealCompressCompatibilityFullSize]' started.
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/GyoshukuKit/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.LZWStreamEncoderTests testVariableWidthsClearAndRealCompressCompatibilityFullSize] : Test skipped - Set GYOSHUKU_LARGE_ENCODER_TESTS=1 to run LZWStreamEncoderTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testVariableWidthsClearAndRealCompressCompatibilityFullSize]' skipped (0.001 seconds).
+Test Suite 'LZWStreamEncoderTests' passed at 2026-11-04 23:28:41.429.
+	 Executed 4 tests, with 1 test skipped and 0 failures (0 unexpected) in 8.474 (8.474) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:28:41.429.
+	 Executed 10 tests, with 1 test skipped and 0 failures (0 unexpected) in 25.745 (25.746) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:28:41.429.
+	 Executed 10 tests, with 1 test skipped and 0 failures (0 unexpected) in 25.745 (25.746) seconds
+Building for debugging...
+[Planning deferred tasks]
+[35 / 69]
+[36 / 70] KaitoKit
+[45 / 126]
+[51 / 126]
+[59 / 126]
+[65 / 126]
+[68 / 126]
+[74 / 126]
+[75 / 126]
+[76 / 126]
+[77 / 126]
+[83 / 126] KaitoKit
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m1 |[0;0m public import Foundation
+   [0;36m|[0;0m        `- [1;33mwarning: [1;39mpublic import of 'Foundation' was not used in public declarations or inlinable code[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access\UnusedImportAccess]8;;\]
+ [0;36m2 |[0;0m 
+ [0;36m3 |[0;0m /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[86 / 126] KaitoKit
+[92 / 126] KaitoKit
+[93 / 126] KaitoKit-product
+[94 / 126] KaitoKit-product
+[95 / 126] KaitoKit-product
+[97 / 126] KaitoKit
+[98 / 126] KaitoKit
+[98 / 126] GyoshukuKit
+[99 / 127]
+[102 / 139] GyoshukuKit
+[104 / 139] KaitoKit
+[111 / 139] GyoshukuKit
+[113 / 139] GyoshukuKit
+[117 / 139] GyoshukuKit
+[117 / 139] GyoshukuKitTests-product
+[119 / 139] GyoshukuKit
+[119 / 139]
+[121 / 139] GyoshukuKit
+[129 / 140] GyoshukuKitTests-product
+[137 / 181]
+[143 / 181]
+[150 / 181]
+[152 / 181]
+[155 / 181]
+[158 / 181]
+[159 / 181]
+[164 / 181] GyoshukuKitTests-product
+[166 / 181] GyoshukuKitTests-product
+[171 / 181] GyoshukuKitTests-product
+[172 / 181] GyoshukuKitTests-product
+[174 / 181] GyoshukuKitTests-product
+[175 / 181] GyoshukuKitTests-product
+[175 / 181] AllIncludingTests
+[175 / 181] GyoshukuKitTests-product
+[177 / 181] GyoshukuKitTests-product
+Build complete! (34.63秒)
+Test Suite 'Selected tests' started at 2026-11-04 23:29:18.140.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 23:29:18.141.
+Test Suite 'FilterSpeedDifferentialTests' started at 2026-11-04 23:29:18.141.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testBCJARM64DenseBLADRPAndOddStartOffsets]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testBCJARM64DenseBLADRPAndOddStartOffsets]' passed (0.805 seconds).
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testBCJX86DenseBranchesAndOddStartOffsets]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testBCJX86DenseBranchesAndOddStartOffsets]' passed (0.705 seconds).
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testDeltaEveryDistanceAndRandomTinyPushes]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testDeltaEveryDistanceAndRandomTinyPushes]' passed (28.276 seconds).
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLH5BitsAppendEveryRemainderAndWordBoundary]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLH5BitsAppendEveryRemainderAndWordBoundary]' passed (2.110 seconds).
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLHACRC16RandomLengthsAlignmentsAndInitialValues]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLHACRC16RandomLengthsAlignmentsAndInitialValues]' passed (0.649 seconds).
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLZWMaxbits12Through16TextRandomAndClearWithPushSplits]' started.
+Test Case '-[GyoshukuKitTests.FilterSpeedDifferentialTests testLZWMaxbits12Through16TextRandomAndClearWithPushSplits]' passed (12.744 seconds).
+Test Suite 'FilterSpeedDifferentialTests' passed at 2026-11-04 23:30:03.430.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 45.288 (45.289) seconds
+Test Suite 'LZWStreamEncoderTests' started at 2026-11-04 23:30:03.430.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testEndOfFilePartialGroupsAndBytewiseWrites]' started.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testEndOfFilePartialGroupsAndBytewiseWrites]' passed (3.134 seconds).
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testInvalidMaxbitsAndTerminalStates]' started.
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testInvalidMaxbitsAndTerminalStates]' passed (0.001 seconds).
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testVariableWidthsClearAndRealCompressCompatibility]' started.
+LZW_SIZE empty-bits12 swift=3 compress=0 clears=0
+LZW_SIZE one-bits12 swift=5 compress=5 clears=0
+LZW_SIZE zeros-64k-bits12 swift=424 compress=424 clears=0
+LZW_SIZE random-bits12 swift=369462 compress=369462 clears=13
+LZW_SIZE text-bits12 swift=51025 compress=51025 clears=0
+LZW_SIZE clear-bits12 swift=474327 compress=474327 clears=14
+LZW_SIZE empty-bits16 swift=3 compress=0 clears=0
+LZW_SIZE one-bits16 swift=5 compress=5 clears=0
+LZW_SIZE zeros-64k-bits16 swift=424 compress=424 clears=0
+LZW_SIZE random-bits16 swift=334495 compress=347749 clears=0
+LZW_SIZE text-bits16 swift=50441 compress=50441 clears=0
+LZW_SIZE clear-bits16 swift=472903 compress=472903 clears=3
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testVariableWidthsClearAndRealCompressCompatibility]' passed (8.283 seconds).
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testVariableWidthsClearAndRealCompressCompatibilityFullSize]' started.
+/private/tmp/gyoshuku-lh5-match8.lxWyjp/GyoshukuKit/Tests/GyoshukuKitTests/Support/OptInGate.swift:48: -[GyoshukuKitTests.LZWStreamEncoderTests testVariableWidthsClearAndRealCompressCompatibilityFullSize] : Test skipped - Set GYOSHUKU_LARGE_ENCODER_TESTS=1 to run LZWStreamEncoderTests; see Tests/README.md
+Test Case '-[GyoshukuKitTests.LZWStreamEncoderTests testVariableWidthsClearAndRealCompressCompatibilityFullSize]' skipped (0.001 seconds).
+Test Suite 'LZWStreamEncoderTests' passed at 2026-11-04 23:30:14.849.
+	 Executed 4 tests, with 1 test skipped and 0 failures (0 unexpected) in 11.419 (11.419) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 23:30:14.849.
+	 Executed 10 tests, with 1 test skipped and 0 failures (0 unexpected) in 56.707 (56.708) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 23:30:14.849.
+	 Executed 10 tests, with 1 test skipped and 0 failures (0 unexpected) in 56.707 (56.709) seconds

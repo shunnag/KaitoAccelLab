@@ -1,0 +1,10 @@
+explicit: preferred-device histogram: [GPU: 21, n/a: 20]
+stateful: preferred-device histogram: [GPU: 20, n/a: 14]
+match: OK (every fp16-derived Float probability, warmup)
+match: OK (every fp16-derived Float probability, all rounds)
+name	block_count	steps	median_s	MB_per_s	ms_per_step
+explicit-A/A-1	1024	256	0.598603741	0.438	2.338296
+explicit-A/A-2	1024	256	0.551142370	0.476	2.152900
+explicit	1024	256	0.765795417	0.342	2.991388
+MLState	1024	256	0.632507660	0.414	2.470733
+error: Failed to build the model execution plan using a model architecture file '/Users/nagash/Github/KaitoAccelLab/Models/gru-words-h1024-b1024-stateful-direct.mlmodelc/model.mil' with error code: -14.

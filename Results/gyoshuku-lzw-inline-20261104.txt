@@ -1,0 +1,16 @@
+LZW forced-inline experiment (2026-11-04)
+
+Candidate
+- Add @inline(__always) to put and flushGroup.
+
+Validation
+- LZWStreamEncoderTests and FilterSpeedDifferentialTests LZW case: 5 tests, 1 skipped, 0 failures.
+- Full alternating log: Results/gyoshuku-lzw-inline-ab-mini-20261104.txt.
+
+Ten alternating Mac mini LZW16-new runs
+- Baseline median: 81.55 MB/s; best 83.8 MB/s.
+- Forced-inline median: 75.95 MB/s; best 79.7 MB/s.
+- Candidate/baseline: 0.9313 (about 6.9% slower).
+
+Decision
+- Forced inlining was consistently slower and was reverted. No production LZW change remains.

@@ -1,0 +1,41 @@
+LH5 adaptive 8-byte match length (2026-11-04)
+
+Candidate
+- Keep the pointer dictionary and scalar match extension until two selected matches of length 8 or longer have been found.
+- Then use unaligned UInt64 XOR and trailing-zero count for subsequent match extension.
+- Both paths produce identical match lengths and output; the decision depends only on the input, not global state.
+
+Mac mini M4: median best MB/s of three pointer/match8/adaptive rounds
+corpus, level, pointer, match8, adaptive, adaptive/pointer
+text, 1, 151.010, 170.862, 167.579, 1.109721
+text, 6, 94.304, 104.079, 102.389, 1.085733
+text, 9, 51.232, 59.330, 59.191, 1.155352
+binary, 1, 120.704, 126.142, 126.786, 1.050388
+binary, 6, 100.028, 103.085, 104.938, 1.049086
+binary, 9, 43.414, 45.563, 45.499, 1.048026
+random, 1, 84.638, 84.585, 86.065, 1.016860
+random, 6, 85.449, 84.792, 85.773, 1.003792
+random, 9, 86.248, 84.560, 85.578, 0.992232
+
+M4 Max: one pointer/adaptive pair, best MB/s
+corpus, level, pointer, adaptive, adaptive/pointer
+text, 1, 145.798, 161.876, 1.110141
+text, 6, 87.707, 96.649, 1.101953
+text, 9, 48.053, 56.137, 1.168237
+binary, 1, 113.744, 118.686, 1.043448
+binary, 6, 94.488, 97.256, 1.029294
+binary, 9, 40.940, 43.190, 1.054959
+random, 1, 84.123, 84.695, 1.006800
+random, 6, 83.293, 85.515, 1.026675
+random, 9, 83.779, 86.363, 1.030843
+
+Validation completed
+- All 81 pointer/match8/adaptive frame pairs from three Mac mini rounds were byte-identical.
+- All 9 M4 Max pointer/adaptive frame pairs were byte-identical.
+- The scalar-prefix and early-length-3 variants were rejected; see Results/gyoshuku-lh5-match8-mini-20261104.txt.
+- Full pointer suite: 944 tests, 51 skipped, 0 failures.
+- Adaptive AddressSanitizer: 2 tests, 0 findings; Results/gyoshuku-lh5-adaptive-asan-20261104.txt.
+- Log: Results/gyoshuku-lh5-adaptive-ab-mini-20261104.txt.
+
+- Adaptive LHA integration: 23 tests, 0 failures; Results/gyoshuku-lh5-adaptive-integration-mini-20261104.txt.
+- Adopted in GyoshukuKit. The scalar-prefix, early-exit, and always-wide variants were not adopted.

@@ -1,0 +1,480 @@
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:37:37.556.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:37:37.556.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:37.556.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	99.6 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	40886.9 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	99.2 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	34675.4 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	104.0 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	46689.5 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.7 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3110.8 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.3 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	83.8 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	320.9 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5115.5 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.597 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:38.153.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.597 (0.597) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:37:38.153.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.597 (0.597) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:38.153.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.597 (0.597) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:37:38.389.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:37:38.390.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:38.390.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	102.1 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	28444.1 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	102.1 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	45160.7 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	99.7 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	28047.7 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.6 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3156.4 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.7 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	78.3 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	321.5 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5139.8 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.614 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:39.004.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.614) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:37:39.004.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.614) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:39.004.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.615) seconds
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:37:39.058.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:37:39.059.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:39.059.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	98.5 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	42118.3 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	98.4 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	44999.4 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	99.4 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	34892.1 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	604.4 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3170.5 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.2 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	82.0 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	321.4 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5072.0 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.605 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:39.663.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.605 (0.605) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:37:39.663.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.605 (0.605) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:39.663.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.605 (0.605) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:37:39.719.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:37:39.719.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:39.719.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	97.0 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	42153.8 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	99.8 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	35013.5 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	98.5 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	34916.2 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.8 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3165.7 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.5 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	79.7 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	321.9 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5121.5 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.608 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:40.327.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.608 (0.608) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:37:40.328.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.608 (0.608) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:40.328.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.608 (0.609) seconds
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:37:40.381.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:37:40.382.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:40.382.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	98.4 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	42048.2 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	98.3 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	43277.3 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	99.6 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	35013.2 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.2 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3169.1 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.5 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	82.0 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	320.9 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5178.4 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.605 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:40.987.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.605 (0.605) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:37:40.987.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.605 (0.605) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:40.987.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.605 (0.605) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:37:41.042.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:37:41.042.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:41.042.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	97.3 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	42474.0 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	96.8 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	44189.2 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	98.4 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	34940.3 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.8 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3160.9 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	28.8 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	75.4 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	328.3 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5991.5 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.614 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:41.656.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.614) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:37:41.656.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.614) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:41.656.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.614) seconds
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:37:41.710.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:37:41.710.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:41.710.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	94.3 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	41995.5 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	94.3 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	34759.3 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	98.4 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	26180.4 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.2 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3160.2 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	28.8 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	80.8 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	320.9 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5799.6 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.622 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:42.332.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.622 (0.622) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:37:42.332.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.622 (0.622) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:42.332.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.622 (0.622) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:37:42.387.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:37:42.387.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:42.387.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	96.8 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	42118.7 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	96.8 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	42224.3 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	98.0 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	34783.3 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	604.2 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3159.8 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.1 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	76.2 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	320.8 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5145.9 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.614 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:43.002.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.615) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:37:43.002.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.615) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:43.002.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.615) seconds
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:37:43.056.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:37:43.056.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:43.056.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	94.3 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	44054.1 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	98.9 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	34783.3 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	97.7 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	25984.3 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.8 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3170.6 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.5 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	81.1 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	322.5 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5332.6 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.614 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:43.671.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.614) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:37:43.671.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.614) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:43.671.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.614 (0.615) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:37:43.726.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:37:43.726.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:43.726.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	96.7 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	42171.6 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	96.7 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	35271.1 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	96.4 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	35432.3 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.8 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3165.3 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.2 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	79.0 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	328.0 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5241.5 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.613 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:44.340.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.613 (0.614) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:37:44.340.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.613 (0.614) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:44.340.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.613 (0.614) seconds
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:37:44.395.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:37:44.395.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:44.395.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	98.1 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	43520.7 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	98.1 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	40201.1 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	98.1 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	35025.5 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.7 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3173.6 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	28.9 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	81.8 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	320.9 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5897.4 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.608 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:45.003.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.608 (0.608) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:37:45.003.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.608 (0.608) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:45.003.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.608 (0.609) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:37:45.059.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:37:45.059.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:45.059.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	98.3 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	44898.7 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	98.4 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	34735.4 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	99.2 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	34568.2 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.2 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3090.3 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	28.7 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	74.8 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	318.9 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	4973.5 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.613 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:45.672.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.613 (0.613) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:37:45.672.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.613 (0.613) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:45.672.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.613 (0.613) seconds
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:37:45.727.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:37:45.727.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:45.727.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	98.0 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	42030.5 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	99.5 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	41630.8 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	98.1 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	35444.9 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.7 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3161.4 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.1 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	81.4 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	320.9 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5830.8 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.607 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:46.334.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.607 (0.607) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:37:46.334.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.607 (0.607) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:46.334.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.607 (0.607) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:37:46.388.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:37:46.388.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:46.388.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	98.3 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	44979.1 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	98.3 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	34783.5 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	99.0 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	34391.1 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	606.4 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3095.5 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	28.8 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	74.8 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	325.3 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	6112.7 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.612 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:47.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.612 (0.612) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:37:47.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.612 (0.612) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:47.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.612 (0.612) seconds
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:37:47.055.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:37:47.055.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:47.055.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	98.1 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	44858.9 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	98.0 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	41699.5 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	97.8 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	34735.4 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.5 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3155.5 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.8 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	79.1 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	321.5 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5889.5 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.607 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:47.662.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.607 (0.607) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:37:47.662.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.607 (0.607) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:47.662.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.607 (0.607) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:37:47.716.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:37:47.717.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:47.717.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	97.7 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	41873.1 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	97.6 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	34663.7 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	98.5 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	26085.4 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.3 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3095.6 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	28.5 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	73.7 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	319.2 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	4865.1 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.616 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:48.333.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.616 (0.616) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:37:48.333.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.616 (0.616) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:48.333.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.616 (0.617) seconds
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:37:48.388.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:37:48.388.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:48.388.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	98.9 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	42171.6 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	98.4 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	34687.5 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	98.7 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	25857.6 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.6 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3137.2 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.2 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	78.5 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	321.4 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5078.4 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.608 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:48.996.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.608 (0.608) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:37:48.996.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.608 (0.608) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:48.996.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.608 (0.608) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:37:49.051.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:37:49.052.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:49.052.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	96.5 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	42171.6 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	96.4 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	44170.1 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	98.3 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	34879.9 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	606.1 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3171.3 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.1 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	75.9 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	320.5 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5132.5 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.616 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:49.667.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.616 (0.616) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:37:49.667.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.616 (0.616) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:49.667.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.616 (0.616) seconds
+gyoshuku-lh5-research.Yk6aKe
+Test Suite 'Selected tests' started at 2026-11-04 20:37:49.721.
+Test Suite 'pointer-lh5.xctest' started at 2026-11-04 20:37:49.721.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:49.721.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	97.8 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	44521.3 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	97.6 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	34964.5 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	98.4 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	26187.1 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.7 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3165.2 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	29.3 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	81.7 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	321.5 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5809.0 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.607 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:50.328.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.607 (0.607) seconds
+Test Suite 'pointer-lh5.xctest' passed at 2026-11-04 20:37:50.328.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.607 (0.607) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:50.328.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.607 (0.607) seconds
+Release
+Test Suite 'Selected tests' started at 2026-11-04 20:37:50.382.
+Test Suite 'GyoshukuKitTests.xctest' started at 2026-11-04 20:37:50.383.
+Test Suite 'FilterSpeedProbeTests' started at 2026-11-04 20:37:50.383.
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' started.
+FILTER_SPEED	Delta-1-old	96.5 MB/s	checksum=468
+FILTER_SPEED	Delta-1-new	42437.9 MB/s	checksum=468
+FILTER_SPEED	Delta-4-old	96.4 MB/s	checksum=708
+FILTER_SPEED	Delta-4-new	42474.0 MB/s	checksum=708
+FILTER_SPEED	Delta-256-old	98.3 MB/s	checksum=357
+FILTER_SPEED	Delta-256-new	34855.5 MB/s	checksum=357
+FILTER_SPEED	CRC16-old	605.4 MB/s	checksum=186606
+FILTER_SPEED	CRC16-new	3165.2 MB/s	checksum=186606
+FILTER_SPEED	LZW16-old	28.7 MB/s	checksum=3895389
+FILTER_SPEED	LZW16-new	76.0 MB/s	checksum=3895389
+FILTER_SPEED	LH5-append-old	320.4 MB/s	checksum=0
+FILTER_SPEED	LH5-append-new	5187.2 MB/s	checksum=0
+Test Case '-[GyoshukuKitTests.FilterSpeedProbeTests testDeltaCRC16AndLZWThroughputWhenEnabled]' passed (0.617 seconds).
+Test Suite 'FilterSpeedProbeTests' passed at 2026-11-04 20:37:51.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.617 (0.617) seconds
+Test Suite 'GyoshukuKitTests.xctest' passed at 2026-11-04 20:37:51.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.617 (0.617) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 20:37:51.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.617 (0.618) seconds

@@ -1,0 +1,63 @@
+Building for production...
+[Pre-planning 1 / 241]
+[Planning deferred tasks]
+[19 / 56]
+[20 / 57] KaitoKit
+/Users/nagash/Github/KaitoKit/Sources/KaitoKit/Codecs/XZ/XZSyntheticStream.swift:1:8: warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 1 | public import Foundation
+   |        `- warning: public import of 'Foundation' was not used in public declarations or inlinable code [#UnusedImportAccess]
+ 2 | 
+ 3 | /// 連続する block をコピーせず、一つの独立した XZ stream として提示する。
+
+[#UnusedImportAccess]: <https://docs.swift.org/compiler/documentation/diagnostics/unused-import-access>
+[22 / 58] KaitoKit
+[33 / 68] kaito-product
+[36 / 70] KaitoKitTests-product
+[40 / 101]
+[43 / 101]
+[47 / 101]
+[50 / 101]
+[58 / 100]
+[63 / 100]
+[70 / 101]
+[73 / 102] KaitoKitCompat-product
+[74 / 102] KaitoKitDynamic-product
+[77 / 103]
+[80 / 103] KaitoKitDynamic-product
+[85 / 104] kaito-product
+[86 / 104] kaito-product
+[88 / 106] KaitoKitCompatTests-product
+[93 / 106] KaitoKitCompatTests-product
+[95 / 106] KaitoKitCompatTests-product
+/Users/nagash/Github/KaitoKit/Tests/KaitoKitTests/SevenZip/SevenZipFolderPrefetchTests.swift:370:17: warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+368 |         let holder = Mutex<Task<Void, any Error>?>(nil)
+369 |         let task = Task.detached {
+370 |             try await LeafDecodePool.$testingSubmission.withValue({ holder.withLock { $0?.cancel() } }) {
+    |                 `- warning: no 'async' operations occur within 'await' expression [#UnnecessaryEffectMarker]
+371 |                 let reader = try SevenZipReader(source: DataByteSource(archive), options: ReaderOptions(decodeThreads: 16))
+372 |                 for entry in reader.entries { _ = try reader.stream(for: entry, limits: ReadLimits()).readAll() }
+
+[#UnnecessaryEffectMarker]: <https://docs.swift.org/compiler/documentation/diagnostics/unnecessary-effect-marker>
+[97 / 106] KaitoKitTests-product
+[102 / 106] KaitoKitTests-product
+[104 / 106] KaitoKitTests-product
+Build complete! (198.75秒)
+Test Suite 'Selected tests' started at 2026-11-04 21:19:11.154.
+Test Suite 'KaitoKitTests.xctest' started at 2026-11-04 21:19:11.155.
+Test Suite 'Deflate64DifferentialTests' started at 2026-11-04 21:19:11.155.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' started.
+Test Case '-[KaitoKitTests.Deflate64DifferentialTests testDeflate64ThroughputMeasurement]' passed (2.387 seconds).
+Test Suite 'Deflate64DifferentialTests' passed at 2026-11-04 21:19:13.542.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.387 (2.387) seconds
+Test Suite 'KaitoKitTests.xctest' passed at 2026-11-04 21:19:13.542.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.387 (2.387) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:19:13.542.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.387 (2.388) seconds
+M1B Deflate64 reference: median 0.485948 s, 131.70 MiB/s (64 MiB, 3 runs)
+M1B Deflate64 table: median 0.017102 s, 3742.32 MiB/s (64 MiB, 3 runs)
+Test Suite 'Selected tests' started at 2026-11-04 21:19:13.620.
+Test Suite 'KaitoKitCompatTests.xctest' started at 2026-11-04 21:19:13.621.
+Test Suite 'KaitoKitCompatTests.xctest' passed at 2026-11-04 21:19:13.621.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-11-04 21:19:13.621.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
